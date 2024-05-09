@@ -39,4 +39,4 @@ jobs:
       uses: coverallsapp/github-action@v1.3.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: target/scala-2.13/scoverage-report/scoverage.lcov
+        path-to-lcov: target/scala-3.4.1/scoverage-report/scoverage.lcov
