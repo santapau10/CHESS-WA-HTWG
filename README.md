@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG)
+[![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg?branch=master)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG?branch=master)
 # Chess Game Project at HTWG Konstanz
 
 ## Overview
