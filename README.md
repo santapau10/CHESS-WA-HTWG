@@ -1,3 +1,4 @@
+[![Scala CI](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml/badge.svg)](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml)
 # Chess Game Project at HTWG Konstanz
 
 ## Overview
