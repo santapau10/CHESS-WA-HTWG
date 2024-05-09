@@ -1,4 +1,4 @@
-import Chess.models.Board
+import chess.models.Board
 
 import org.scalatest.matchers.should.Matchers._
 import org.scalatest.wordspec.AnyWordSpec

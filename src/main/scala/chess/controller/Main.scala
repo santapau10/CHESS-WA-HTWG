@@ -1,7 +1,7 @@
-package Chess.Controller
+package chess.controller
 
-import Chess.View.*
-import Chess.models.*
+import chess.view.TUI
+import chess.models.*
 import scala.language.postfixOps
 
 object Main {

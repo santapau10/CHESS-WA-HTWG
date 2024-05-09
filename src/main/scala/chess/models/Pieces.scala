@@ -1,4 +1,4 @@
-package Chess.models
+package chess.models
 trait Pieces {
   def getColor: Colors
   def getPiece: Chesspiece

@@ -1,4 +1,4 @@
-package Chess.models
+package chess.models
 
 class Knight(cords: (Int, Int), color: Colors) extends Pieces {
   override def getColor: Colors = color

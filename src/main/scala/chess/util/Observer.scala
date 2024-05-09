@@ -1,4 +1,4 @@
-package Chess.Util
+package chess.util
 
 trait Observer:
   def update(event: Event): Unit
