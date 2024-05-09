@@ -1,8 +1,8 @@
-package Chess.Controller
+package chess.controller
 
-import Chess.models.*
-import Chess.Util.*
-import Chess.View.TUI
+import chess.models.*
+import chess.util.*
+import chess.view.TUI
 
 case class Controller(size: Int) extends Observable:
   val b: Board = new Board(size)

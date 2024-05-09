@@ -1,4 +1,4 @@
-package Chess.models
+package chess.models
 
 object Board {
   def Board(size: Int): Unit = new Board(size)

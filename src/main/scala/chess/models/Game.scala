@@ -1,7 +1,7 @@
-package Chess.models
+package chess.models
 
-import Chess.View.*
-import Chess.Controller.*
+import chess.view.*
+import chess.controller.*
 
 class Game(board: Board, list: List[Pieces], tui: TUI, controller: Controller) {
   private def toStringBoard(): String = {

@@ -1,8 +1,8 @@
-package Chess.View
+package chess.view
 
-import Chess.Util.*
-import Chess.Controller.*
-import Chess.models.{Board, Pieces}
+import chess.util.*
+import chess.models.{Board, Pieces}
+import chess.controller.*
 
 import scala.io.StdIn
 import scala.util.matching.Regex

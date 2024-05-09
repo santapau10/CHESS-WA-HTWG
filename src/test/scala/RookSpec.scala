@@ -1,5 +1,5 @@
 import org.scalatest.wordspec.AnyWordSpec
-import Chess.models._
+import chess.models._
 
 class RookSpec extends AnyWordSpec {
 
