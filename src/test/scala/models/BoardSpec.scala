@@ -1,6 +1,7 @@
-import chess.models.Board
+package models
 
-import org.scalatest.matchers.should.Matchers._
+import chess.models.Board
+import org.scalatest.matchers.should.Matchers.*
 import org.scalatest.wordspec.AnyWordSpec
 
 class BoardSpec extends AnyWordSpec {

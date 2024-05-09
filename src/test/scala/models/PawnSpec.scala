@@ -1,5 +1,7 @@
+package models
+
+import chess.models.*
 import org.scalatest.wordspec.AnyWordSpec
-import chess.models._
 
 class PawnSpec extends AnyWordSpec {
 
