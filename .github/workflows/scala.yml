@@ -19,6 +19,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 11
@@ -32,3 +35,8 @@ jobs:
       # Optional: This step uploads information to the GitHub dependency graph and unblocking Dependabot alerts for the repository
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
+    - name: Upload coverage to Coveralls
+      uses: coverallsapp/github-action@v1.3.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: target/scala-2.13/scoverage-report/scoverage.lcov
