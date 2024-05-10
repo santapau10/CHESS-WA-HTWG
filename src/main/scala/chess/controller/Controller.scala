@@ -6,7 +6,7 @@ import chess.view.TUI
 
 case class Controller(size: Int) extends Observable:
   val b: Board = new Board(size)
-  val tui: TUI = new TUI(this)
+  var tui: TUI = new TUI(this)
   var game: Game = new Game(new Board(size), b.setupBoard, tui, this)
   add(tui)
   def updateBoard(list: List[Pieces]): Unit =
