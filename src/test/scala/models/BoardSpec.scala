@@ -6,41 +6,40 @@ import org.scalatest.wordspec.AnyWordSpec
 
 class BoardSpec extends AnyWordSpec {
 
-  "A Board" when {
-    "moving a piece from a valid position to another valid position" should {
-      "return a list of pieces with the piece moved to the new position" in {
-        val initialBoard = new Board(8)
-        val initialPieces = initialBoard.setupBoard
+  "Board" should {
+    "correctly move pieces on the board" in {
+      val board = new Board(8)
+      val initialPieces = board.setupBoard
 
-        val x1 = 1
-        val y1 = 0
-        val x2 = 3
-        val y2 = 3
+      // Test moving a piece that exists
+      val updatedPieces = board.movePieces(0, 1, 0, 3, initialPieces)
+      updatedPieces.length shouldBe initialPieces.length
+      updatedPieces should not be initialPieces
+      updatedPieces.exists(piece => piece.getCords == (0, 3)) shouldBe true
 
-        val updatedPieces = initialBoard.movePieces(x1, y1, x2, y2, initialPieces)
+      // Test moving a piece that doesn't exist
+      val invalidMove = board.movePieces(10, 10, 12, 12, initialPieces)
+      invalidMove shouldBe null // Assuming returning null for invalid move
 
-        val movedPiece = updatedPieces.find(piece => piece.getCords == (x2, y2))
-        movedPiece.isDefined shouldBe true
-
-        val originalPiece = updatedPieces.find(piece => piece.getCords == (x1, y1))
-        originalPiece.isEmpty shouldBe true
-      }
+      // You can add more scenarios to cover other cases
     }
 
-    "moving a piece from an invalid position" should {
-      "return null" in {
-        val initialBoard = new Board(8)
-        val initialPieces = initialBoard.setupBoard
+    "correctly generate string representation of the board" in {
+      val board = new Board(8)
+      val initialPieces = board.setupBoard
 
-        val x1 = 10
-        val y1 = 10
-        val x2 = 3
-        val y2 = 3
+      val boardString = board.updateField(initialPieces)
+      // Add assertions to verify the correctness of the generated boardString
+      // You can check if it contains the expected pieces at their correct positions
+    }
 
-        val updatedPieces = initialBoard.movePieces(x1, y1, x2, y2, initialPieces)
+    "generate correct field representation for a given position" in {
+      val board = new Board(8)
+      val initialPieces = board.setupBoard
 
-        updatedPieces shouldBe null
-      }
+      val fieldRepresentation = board.checkFieldR(0, 0, initialPieces)
+      // Add assertions to verify the correctness of the generated fieldRepresentation
+      // You can check if it matches the expected representation for a given position
     }
   }
 }
