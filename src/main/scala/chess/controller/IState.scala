@@ -49,10 +49,18 @@ case class GameState(controller: Controller) extends State(controller):
         val row1 = number1.toInt - 1
         val column2 = letter2.head - 'a'
         val row2 = number2.toInt - 1
-        new MovePiecesAction(column1, row1, column2, row2)
+        MovePiecesAction(column1, row1, column2, row2)
+      case "undo" =>
+        UndoAction()
+      case "u" =>
+        UndoAction()
+      case "redo" =>
+        RedoAction()
+      case "r" =>
+        RedoAction()
       case _ =>
         println("Ungültiges Eingabeformat. Bitte gib die Koordinaten im richtigen Format ein (z.B. a1 b3).")
-        new InputAction()
+        InputAction()
     }
   }
   /*

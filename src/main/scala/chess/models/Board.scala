@@ -45,19 +45,22 @@ class Board(size: Int) {
   }
   def updateField(list: List[Pieces]): String = {
     val sr = new StringBuilder
-    sr.append(space * 2 + "a" + space * 2)
-    sr.append(space * 2 + "b" + space * 2)
-    sr.append(space * 2 + "c" + space * 2)
-    sr.append(space * 2 + "d" + space * 2)
-    sr.append(space * 2 + "e" + space * 2)
-    sr.append(space * 2 + "f" + space * 2)
-    sr.append(space * 2 + "g" + space * 2)
-    sr.append(space * 2 + "h" + space * 2)
+    sr.append(firstLineR(0))
     sr.append("\n")
     sr.append(edgefield)
     sr.append(checkFieldR(0,0, list))
     sr.append(vLine + space * 2 + (size) + "\n" + edgefield)
     sr.toString()
+  }
+  def firstLineR(index: Int): String ={
+    val sr = new StringBuilder
+    if (index < size){
+      sr.append(space * 2 + ('a'.toInt + index).toChar + space * 2)
+      sr.append(firstLineR(index + 1))
+      sr.toString()
+    } else {
+      sr.toString()
+    }
   }
   val setupBoard: List[Pieces] = {
   val startingPositions = List(

@@ -11,3 +11,9 @@ case class MovePiecesAction(letter1: Int, number1: Int, letter2: Int, number2: I
 case class NoAction() extends IAction
 
 case class InputAction() extends IAction
+
+case class UndoAction() extends  IAction
+
+case class RedoAction() extends  IAction
+
+case class SaveSnapshot() extends  IAction
