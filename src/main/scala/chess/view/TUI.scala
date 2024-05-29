@@ -12,15 +12,24 @@ class TUI(controller: Controller) extends Observer with Observable {
   override def update(event: Event): Unit = {
     event match {
       case Event.BOARD_CHANGED => println(controller.boardToString())
-        notifyObservers(Event.COORDINATE_INPUT)
-      case Event.COORDINATE_INPUT => readCoordinates()
+        notifyObservers(Event.INPUT)
+      case Event.INPUT =>
+        read
+      case Event.STATE_CHANGED =>
+        controller.printState()
       case _ =>
     }
   }
-  def readCoordinates(): Unit = {
-    val inputPattern: Regex = "([a-z])(\\d) ([a-z])(\\d)".r
-    println("\nGib die Koordinaten im Format Buchstabe-Zahl Buchstabe-Zahl (z.B. a1 b3) ein: ")
-    val input = StdIn.readLine().toLowerCase.trim
-    controller.handleAction(controller.currentState.actionFromInput(input))
-    }
+  def read: Unit = {
+    controller.handleAction(actionFromInput)
+    read
+  }
+  def actionFromInput: IAction ={
+    controller.actionFromInput(StdIn.readLine().toLowerCase) match
+      case InvalidAction(msg) =>
+        println(msg)
+        actionFromInput
+      case action =>
+        action
+  }
 }

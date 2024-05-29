@@ -25,3 +25,8 @@ class MovePiecesCommand(controller: Controller, l1: Int, n1: Int, l2: Int, n2: I
   override def execute(): Unit = {
     controller.movePieces(l1, n1, l2, n2)
   }
+
+class ChangeStateCommand(state: State, c: Controller) extends Command(c):
+  override def execute(): Unit = {
+    c.changeState(state)
+  }

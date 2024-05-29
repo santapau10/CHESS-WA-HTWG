@@ -17,3 +17,7 @@ case class UndoAction() extends  IAction
 case class RedoAction() extends  IAction
 
 case class SaveSnapshot() extends  IAction
+
+case class StartGame() extends IAction
+
+case class InvalidAction(msg: String) extends IAction
