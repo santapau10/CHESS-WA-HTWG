@@ -19,8 +19,8 @@ class UndoManager:
         redoStack = head :: redoStack
         undoStack = stack
         head.undo()
-
-      case _ => throw IllegalStateException("Undo stack is empty")
+      case _ =>
+        println("Undo not possible")
   def canRedo: Boolean = redoStack.nonEmpty
 
   def redoCommand(): Unit =
@@ -29,4 +29,5 @@ class UndoManager:
         undoStack = head :: undoStack
         redoStack = stack
         head.execute()
-      case _ => throw IllegalStateException("Redo stack is empty")
+      case _ =>
+        println("Redo not possible")

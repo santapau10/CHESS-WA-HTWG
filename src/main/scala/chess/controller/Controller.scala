@@ -9,10 +9,10 @@ case class Controller(size: Int) extends Observable:
     new Board_equal_8(8)
   }
   else if (size < 8 && size > 0) {
-    null
+    new Board_smaller_8(size)
   }
   else if (size > 8) {
-    null
+    new Board_bigger_8(size)
   }
   else {
     throw new IllegalArgumentException("invalid size")
@@ -56,7 +56,7 @@ case class Controller(size: Int) extends Observable:
   def restoreSnapshot(snapshot: Snapshot): Unit =
     game = snapshot.getGame()
     currentState = snapshot.getState()
-    notifyObservers(Event.BOARD_CHANGED)
+    notifyObservers(Event.STATE_CHANGED)
 
   def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {
     game.movePieces(l1, n1, l2, n2)
