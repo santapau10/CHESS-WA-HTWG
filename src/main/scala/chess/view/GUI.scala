@@ -1,7 +1,9 @@
 package chess.view
 
+import chess.models.Coordinates
+
 import java.awt.Color
-import scala.swing.{Color, *}
+import scala.swing.{Button, Color, *}
 import scala.swing.event.*
 import javax.swing.ImageIcon
 import scala.util.Try
@@ -15,7 +17,7 @@ object GUI extends SimpleSwingApplication {
   // Panel für das Schachbrett
   val boardPanel = new GridPanel(s + 1, s + 1)
 
-  def top: Frame = new MainFrame {
+  def top: Frame = new ChessMainFrame {
     title = "Schachbrett"
 
     // Set the background color of the MainFrame
@@ -25,7 +27,8 @@ object GUI extends SimpleSwingApplication {
     addLabels(alphabet)
 
     // Erste Spalte (Zahlen)
-    addNumbers(1, s)
+    buttonMap = addNumbers(1, s, Map.empty[Coordinates, Button])
+    buttonMap.foreach(b => b._2.text = b._1.toString)
 
     // Haupt-Layout
     contents = new BorderPanel {
@@ -52,35 +55,34 @@ object GUI extends SimpleSwingApplication {
       addLabels(tail, n + 1)
   }
 
-
-  def addNumbers(start: Int, end: Int): Unit = {
+  def addNumbers(start: Int, end: Int, map: Map[Coordinates, Button]): Map[Coordinates, Button] = {
     if (start <= end) {
       if (start == 1) {
         boardPanel.contents += new Label("") {
           opaque = true
           background = color // Set background color to blue
         }
-        addButtonsRow(start, 1, end)
-        addNumbers(start + 1, end)
+        val updatedMap = addButtonsRow(start, 1, end, map)
+        addNumbers(start + 1, end, updatedMap)
       } else {
         val label = new Label((start - 1).toString) {
           opaque = true
           background = color // Set background color to blue
         }
         boardPanel.contents += label
-        addButtonsRow(start, 1, end)
-        addNumbers(start + 1, end)
+        val updatedMap = addButtonsRow(start, 1, end, map)
+        addNumbers(start + 1, end, updatedMap)
       }
     } else {
       boardPanel.contents += new Label((start - 1).toString) {
         opaque = true
         background = color // Set background color to blue
       }
+      map
     }
   }
 
-
-  def addButtonsRow(n: Int, i: Int, s: Int): Unit = {
+  def addButtonsRow(n: Int, i: Int, s: Int, map: Map[Coordinates, Button]): Map[Coordinates, Button] = {
     if (i <= s) {
       val button = new Button() {
         override def paintComponent(g: Graphics2D): Unit = {
@@ -98,7 +100,20 @@ object GUI extends SimpleSwingApplication {
         button.icon = scaledIcon
       }
       boardPanel.contents += button
-      addButtonsRow(n, i + 1, s)
+      val updatedMap = map + (new Coordinates(i - 1, n - 1) -> button)
+
+      addButtonsRow(n, i + 1, s, updatedMap)
+    } else map
+  }
+
+  def updateBoard(): Unit = {
+    top match {
+      case frame: ChessMainFrame =>
+        val buttonMap = frame.getButtonMap
+        // Beispiel: Ändern Sie den Hintergrund eines bestimmten Buttons
+        val coordinates = new Coordinates(0, 0)
+        buttonMap.get(coordinates).foreach(_.background = Color.RED)
+      case _ =>
     }
   }
 
@@ -110,5 +125,11 @@ object GUI extends SimpleSwingApplication {
       require(image != null, s"Das Bild unter dem Pfad '$path' konnte nicht geladen werden: Das Image-Objekt ist null.")
       new ImageIcon(image)
     }.toOption
+  }
+
+  class ChessMainFrame extends MainFrame {
+    var buttonMap: Map[Coordinates, Button] = Map.empty
+
+    def getButtonMap: Map[Coordinates, Button] = buttonMap
   }
 }

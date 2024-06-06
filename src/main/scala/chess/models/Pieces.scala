@@ -4,6 +4,7 @@ trait Pieces {
   def getPiece: Chesspiece
   def getCords: (Int, Int)
   def toString: String
+  def getIconPath: String
 }
 enum Colors:
   case WHITE, BLACK
