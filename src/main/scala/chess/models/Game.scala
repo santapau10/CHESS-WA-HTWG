@@ -19,4 +19,8 @@ class Game(board: BoardBuilder, list: List[Pieces], tui: TUI, controller: Contro
   override def toString: String = {
     toStringBoard
   }
+
+  def getBoardList(): List[Pieces] = {
+    list
+  }
 }

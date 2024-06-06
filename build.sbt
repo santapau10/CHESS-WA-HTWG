@@ -8,4 +8,5 @@ lazy val root = (project in file("."))
     name := "untitled",
     libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.18",
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.18" % "test",
+    libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "3.0.0"
   )

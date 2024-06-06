@@ -2,7 +2,7 @@ package chess.controller
 
 import chess.models.*
 import chess.util.*
-import chess.view.TUI
+import chess.view.*
 
 case class Controller(size: Int) extends Observable:
   val b: BoardBuilder = if (size == 8) {
@@ -35,6 +35,7 @@ case class Controller(size: Int) extends Observable:
     notifyObservers(Event.STATE_CHANGED)
   }
   def initGame(): Unit = {
+    GUI.main(Array.empty)
     notifyObservers(Event.STATE_CHANGED)
     tui.read
   }
@@ -67,4 +68,8 @@ case class Controller(size: Int) extends Observable:
 
   def actionFromInput(s: String): IAction = {
     currentState.actionFromInput(s)
+  }
+
+  def getGame(): Game = {
+    game
   }
