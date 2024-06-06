@@ -35,10 +35,14 @@ case class Controller(size: Int) extends Observable:
     notifyObservers(Event.STATE_CHANGED)
   }
   def initGame(): Unit = {
-    GUI.main(Array.empty)
+    val gui = new GUI(this)
+    gui.updateBoard()
+    gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
     tui.read
   }
+
+
   def handleAction(action: IAction): Unit = {
     action match {
       case MovePiecesAction(l1, n1, l2, n2) =>
