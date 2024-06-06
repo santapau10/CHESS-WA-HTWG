@@ -93,7 +93,7 @@ object GUI extends SimpleSwingApplication {
       if ((n + i) % 2 == 0) {
         button.background = Color.WHITE
       } else {
-        val path = "/black/Knight.png"
+        val path = "/white/Queen.png"
         val ic = new ImageIcon(getClass.getResource(path))
         val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance((dimensionSize * 0.08).toInt, (dimensionSize * 0.08).toInt, java.awt.Image.SCALE_SMOOTH))
         button.background = new Color(99, 176, 199)
