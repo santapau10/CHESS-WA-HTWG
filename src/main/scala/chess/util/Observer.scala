@@ -11,6 +11,7 @@ trait Observable:
 
 enum Event:
   case BOARD_CHANGED
-  case COORDINATE_INPUT
+  case INPUT
   case MOVE_PIECE
   case SAVE_SNAPSHOT
+  case STATE_CHANGED

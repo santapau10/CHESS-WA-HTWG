@@ -3,8 +3,8 @@ package chess.models
 import chess.view.*
 import chess.controller.*
 
-class Game(board: Board, list: List[Pieces], tui: TUI, controller: Controller) {
-  private def toStringBoard(): String = {
+class Game(board: BoardBuilder, list: List[Pieces], tui: TUI, controller: Controller) {
+  private def toStringBoard: String = {
     board.updateField(list)
   }
   def movePieces(l1: Int, n1: Int, l2: Int, n2: Int):Unit = {
@@ -12,11 +12,15 @@ class Game(board: Board, list: List[Pieces], tui: TUI, controller: Controller) {
     if (RList != null) {
       controller.updateBoard(RList)
     } else {
-      println("Ungültige Position!")
+      println("invalid position!")
       controller.updateBoard(list)
     }
   }
   override def toString: String = {
-    toStringBoard()
+    toStringBoard
+  }
+
+  def getBoardList(): List[Pieces] = {
+    list
   }
 }
