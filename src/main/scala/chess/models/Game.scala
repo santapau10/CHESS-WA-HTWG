@@ -12,7 +12,7 @@ class Game(board: BoardBuilder, list: List[Pieces], tui: TUI, controller: Contro
     if (RList != null) {
       controller.updateBoard(RList)
     } else {
-      println("Ungültige Position!")
+      println("invalid position!")
       controller.updateBoard(list)
     }
   }

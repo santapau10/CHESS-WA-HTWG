@@ -7,12 +7,13 @@ import chess.controller.*
 import scala.io.StdIn
 import scala.util.matching.Regex
 
-class TUI(controller: Controller) extends Observer with Observable {
-  add(this)
+class TUI(controller: Controller) extends Observer {
+  controller.add(this)
   override def update(event: Event): Unit = {
     event match {
       case Event.BOARD_CHANGED => println(controller.boardToString())
-        notifyObservers(Event.INPUT)
+        //notifyObservers(Event.INPUT)
+        controller.printState()
       case Event.INPUT =>
         read
       case Event.STATE_CHANGED =>

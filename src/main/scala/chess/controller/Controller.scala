@@ -4,6 +4,10 @@ import chess.models.*
 import chess.util.*
 import chess.view.*
 
+import scala.concurrent.{Future, ExecutionContext}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.{Failure, Success}
+
 case class Controller(size: Int) extends Observable:
   val b: BoardBuilder = if (size == 8) {
     new Board_equal_8(8)
@@ -22,7 +26,6 @@ case class Controller(size: Int) extends Observable:
   private val undoManager = new UndoManager
   var currentState: State = PreGameState(this)
   def snapshot: Snapshot = Snapshot(game, currentState)
-  add(tui)
   def updateBoard(list: List[Pieces]): Unit =
     game = new Game(b, list, tui, this)
     notifyObservers(Event.BOARD_CHANGED)
@@ -36,17 +39,25 @@ case class Controller(size: Int) extends Observable:
   }
   def initGame(): Unit = {
     val gui = new GUI(this)
-    gui.updateBoard()
     gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
-    tui.read
+    val tuiThread = new Thread(new Runnable {
+      def run(): Unit = {
+        tui.read
+      }
+    })
+    tuiThread.start()
   }
 
 
   def handleAction(action: IAction): Unit = {
     action match {
-      case MovePiecesAction(l1, n1, l2, n2) =>
+      case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
+      case MovePiecesBlack(l1, n1, l2, n2) =>
+        undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
@@ -54,7 +65,7 @@ case class Controller(size: Int) extends Observable:
       case RedoAction() =>
         undoManager.redoCommand()
       case StartGame() =>
-        undoManager.executeCommand(ChangeStateCommand(GameState(this), this))
+        undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
       case _ =>
     }
   }
@@ -65,6 +76,7 @@ case class Controller(size: Int) extends Observable:
 
   def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {
     game.movePieces(l1, n1, l2, n2)
+
   }
   def printState(): Unit ={
     currentState.print()

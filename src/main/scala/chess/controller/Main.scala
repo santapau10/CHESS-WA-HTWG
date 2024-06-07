@@ -6,7 +6,7 @@ import scala.language.postfixOps
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val size = 12
+    val size = 8
     val controller: Controller = new Controller(size)
     controller.initGame()
   }
