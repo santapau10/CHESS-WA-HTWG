@@ -1,17 +1,9 @@
-package chess.controller
+package chess.controller.controller
 
-trait ICommand:
+import chess.controller.*
 
-  def execute(): Unit = ()
-
-  def saveSnapshot(): Unit
-
-  def undo(): Unit
-
-
-
-class Command(controller: Controller) extends ICommand:
-  private var snapshot: Option[Snapshot] = None
+class Command(controller: IController) extends ICommand:
+  private var snapshot: Option[ISnapshot] = None
 
   override def saveSnapshot(): Unit = snapshot = Some(controller.snapshot)
 
@@ -21,12 +13,12 @@ class Command(controller: Controller) extends ICommand:
 
   override def execute(): Unit = ()
 
-class MovePiecesCommand(controller: Controller, l1: Int, n1: Int, l2: Int, n2: Int) extends Command(controller):
+class MovePiecesCommand(controller: IController, l1: Int, n1: Int, l2: Int, n2: Int) extends Command(controller):
   override def execute(): Unit = {
     controller.movePieces(l1, n1, l2, n2)
   }
 
-class ChangeStateCommand(state: State, c: Controller) extends Command(c):
+class ChangeStateCommand(state: IState, c: IController) extends Command(c):
   override def execute(): Unit = {
     c.changeState(state)
   }

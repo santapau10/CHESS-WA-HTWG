@@ -1,6 +1,7 @@
 package models
 
 import chess.models.*
+import chess.models.game.{Bishop, Chesspiece, Colors}
 import org.scalatest.wordspec.AnyWordSpec
 
 class BishopSpec extends AnyWordSpec {

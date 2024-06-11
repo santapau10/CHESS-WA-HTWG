@@ -1,6 +1,7 @@
 package models
 
 import chess.models.*
+import chess.models.game.{Chesspiece, Colors, Queen}
 import org.scalatest.wordspec.AnyWordSpec
 
 class QueenSpec extends AnyWordSpec {

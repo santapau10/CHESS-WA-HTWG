@@ -1,6 +1,9 @@
-package chess.models
+package chess.models.game
 
-class Rook(cords: (Int, Int), color: Colors) extends Pieces {
+import chess.models.IPieces
+import chess.models.game.{Chesspiece, Colors}
+
+class Rook(cords: (Int, Int), color: Colors) extends IPieces {
   override def getColor: Colors = color
   override def getPiece: Chesspiece = Chesspiece.ROOK
   override def getCords: (Int, Int) = cords

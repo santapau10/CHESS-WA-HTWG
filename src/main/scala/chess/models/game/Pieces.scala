@@ -1,19 +1,15 @@
-package chess.models
-trait Pieces {
-  def getColor: Colors
-  def getPiece: Chesspiece
-  def getCords: (Int, Int)
-  def toString: String
-  def getIconPath: String
-}
+package chess.models.game
+
+import chess.models.*
+
 enum Colors:
   case WHITE, BLACK
 
 enum Chesspiece:
   case KING, PAWN, QUEEN, BISHOP, KNIGHT, ROOK
 
-object Pieces {
-  def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors): Pieces = chesspiece match {
+class PiecesFactory extends IPiecesFactory {
+  override def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors): IPieces = chesspiece match {
     case Chesspiece.PAWN => new Pawn(cords, color)
     case Chesspiece.KNIGHT => new Knight(cords, color)
     case Chesspiece.BISHOP => new Bishop(cords, color)
@@ -22,3 +18,4 @@ object Pieces {
     case Chesspiece.KING => new King(cords, color)
   }
 }
+

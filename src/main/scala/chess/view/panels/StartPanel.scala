@@ -1,8 +1,9 @@
 package chess.view.panels
 
-import scala.swing._
-import scala.swing.event._
-import chess.controller._
+import scala.swing.*
+import scala.swing.event.*
+import chess.controller.*
+import chess.controller.controller.StartGame
 
 import javax.swing.ImageIcon
 import java.awt.geom.Ellipse2D
@@ -34,7 +35,7 @@ class RoundButton(icon: ImageIcon) extends Button {
   }
 }
 
-class StartPanel(controller: Controller) extends GridBagPanel {
+class StartPanel(controller: IController) extends GridBagPanel {
 
   val dimensionSize = 190 // Neue Größe für das Bild
 

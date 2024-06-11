@@ -1,13 +1,14 @@
 package chess.view
 
 import chess.util.*
-import chess.models.{Board, Pieces}
 import chess.controller.*
+import chess.controller.controller.InvalidAction
+import chess.models.IPieces
 
 import scala.io.StdIn
 import scala.util.matching.Regex
 
-class TUI(controller: Controller) extends Observer {
+class TUI(controller: IController) extends Observer {
   controller.add(this)
   override def update(event: Event): Unit = {
     event match {

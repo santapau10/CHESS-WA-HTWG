@@ -1,17 +1,15 @@
-package chess.controller
+package chess.controller.controller
 
-import scala.util.{Try, Success, Failure}
-import scala.util.matching.Regex
-import chess.util.{Observable, Observer, *}
+import chess.controller.*
 import chess.models.*
+import chess.models.game.Colors
+import chess.util.*
 
-trait IState(controller: Controller):
+import scala.util.matching.Regex
+import scala.util.{Failure, Success, Try}
 
-  def print(): Unit
-  def actionFromInput(input: String): IAction
-  def message: String
 
-private class State(controller: Controller) extends IState(controller):
+private class State(controller: IController) extends IState(controller):
 
   def print(): Unit = ()
 
@@ -19,7 +17,7 @@ private class State(controller: Controller) extends IState(controller):
 
   def actionFromInput(input: String): IAction = NoAction()
 
-case class TurnStateBlack(controller: Controller) extends State(controller):
+case class TurnStateBlack(controller: IController) extends State(controller):
 
   override def print(): Unit = {
     println(controller.boardToString())
@@ -37,7 +35,7 @@ case class TurnStateBlack(controller: Controller) extends State(controller):
           val row1 = number1.toInt - 1
           val column2 = letter2.head - 'a'
           val row2 = number2.toInt - 1
-          if (controller.getGame().getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
+          if (controller.getGame.getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
             MovePiecesBlack(column1, row1, column2, row2)
           } else {
             InvalidAction("invalid move")
@@ -59,7 +57,7 @@ case class TurnStateBlack(controller: Controller) extends State(controller):
     }
   }
 
-case class PreGameState(controller: Controller) extends State(controller):
+case class PreGameState(controller: IController) extends State(controller):
 
   override def print(): Unit = {
     println("welcome to an astonishing round of chess :)")
@@ -85,7 +83,7 @@ case class PreGameState(controller: Controller) extends State(controller):
     }
   }
 
-case class TurnStateWhite(controller: Controller) extends State(controller):
+case class TurnStateWhite(controller: IController) extends State(controller):
   override def print(): Unit = {
     println(controller.boardToString())
     println("\nWhites turn. Enter the coordinates in the format Letter-Number Letter-Number (e.g., a1 b3): ")
@@ -103,7 +101,7 @@ case class TurnStateWhite(controller: Controller) extends State(controller):
           val column2 = letter2.head - 'a'
           val row2 = number2.toInt - 1
 
-          if (controller.getGame().getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
+          if (controller.getGame.getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
             MovePiecesWhite(column1, row1, column2, row2)
           } else {
             InvalidAction("invalid move")
