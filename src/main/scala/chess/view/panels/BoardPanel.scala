@@ -1,11 +1,15 @@
 package chess.view.panels
 
-import scala.swing._
-import scala.swing.event._
+import scala.swing.*
+import scala.swing.event.*
 import java.awt.Color
 import javax.swing.ImageIcon
 import chess.models.*
-import chess.controller._
+import chess.controller.*
+import chess.controller.controller.{InvalidAction, MovePiecesBlack, MovePiecesWhite, TurnStateBlack, TurnStateWhite}
+import chess.models.game.Colors
+import chess.models.IPieces
+
 
 // Erweiterte Button-Klasse, die ein Tupel von Koordinaten akzeptiert
 class ChessButton(coords: (Int, Int)) extends Button {
@@ -13,12 +17,12 @@ class ChessButton(coords: (Int, Int)) extends Button {
   def getCords: (Int, Int) = coords
 }
 
-class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: Controller) extends GridPanel(rows, cols) {
-  private var clicks: Option[Pieces] = None // Initialisieren der Option mit None
+class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: IController) extends GridPanel(rows, cols) {
+  private var clicks: Option[IPieces] = None // Initialisieren der Option mit None
 
   super.rows = rows
   super.columns = cols
-  val backgroundColor = new Color(192,192,192)
+  val backgroundColor = new Color(200,200,200)
 
   // Initialize the board with labels and numbers
   val emptyLabel = new Label("") {
@@ -84,7 +88,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: Cont
   private def addButtonsRow(n: Int, i: Int, s: Int): Unit = {
     if (i < s - 1) {
       val button = new ChessButton((i - 1, n - 2)) // Erstellen eines ChessButton mit Koordinaten-Tupel
-      val foundPiece = controller.getGame().getBoardList().find(p => p.getCords.equals(button.getCords))
+      val foundPiece = controller.getGame.getBoardList().find(p => p.getCords.equals(button.getCords))
       val path = foundPiece match {
         case Some(piece) => piece.getIconPath
         case None => ""
@@ -103,7 +107,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: Cont
       // Hinzufügen des ActionListeners für den ChessButton
       button.reactions += {
         case ButtonClicked(_) =>
-          val foundPiece = controller.getGame().getBoardList().find(p => p.getCords.equals(button.getCords))
+          val foundPiece = controller.getGame.getBoardList().find(p => p.getCords.equals(button.getCords))
           if (foundPiece.nonEmpty && clicks.isEmpty) // Überprüfen, ob clicks leer ist
             clicks = foundPiece
           else if (foundPiece.isEmpty && clicks.isDefined) { // Überprüfen, ob foundPiece leer ist und clicks nicht
@@ -113,7 +117,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: Cont
 
             clicks match {
               case Some(piece) =>
-                controller.currentState match {
+                controller.getCurrentState match {
                   case _: TurnStateWhite =>
                     if (piece.getColor == Colors.WHITE) {
                       controller.handleAction(MovePiecesWhite(sourceCoords._1, sourceCoords._2, targetCoords._1, targetCoords._2))

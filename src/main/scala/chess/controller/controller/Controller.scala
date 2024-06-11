@@ -1,15 +1,18 @@
-package chess.controller
+package chess.controller.controller
 
+import chess.controller.*
+import chess.models.game.{Board_bigger_8, Board_equal_8, Board_smaller_8, Game}
 import chess.models.*
 import chess.util.*
 import chess.view.*
 
-import scala.concurrent.{Future, ExecutionContext}
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
 
-case class Controller(size: Int) extends Observable:
-  val b: BoardBuilder = if (size == 8) {
+
+case class Controller(size: Int) extends IController with Observable:
+  val b: IBoardBuilder = if (size == 8) {
     new Board_equal_8(8)
   }
   else if (size < 8 && size > 0) {
@@ -22,22 +25,26 @@ case class Controller(size: Int) extends Observable:
     throw new IllegalArgumentException("invalid size")
   }
   val tui: TUI = new TUI(this)
-  var game: Game = new Game(b, b.getSetupBoard(), tui, this)
-  private val undoManager = new UndoManager
-  var currentState: State = PreGameState(this)
-  def snapshot: Snapshot = Snapshot(game, currentState)
-  def updateBoard(list: List[Pieces]): Unit =
+  var game: IGame = new Game(b, b.getSetupBoard(), tui, this)
+  private val undoManager: IUndoManager = new UndoManager
+  var currentState: IState = PreGameState(this)
+
+  override def snapshot: ISnapshot = Snapshot(game, currentState)
+
+  override def updateBoard(list: List[IPieces]): Unit =
     game = new Game(b, list, tui, this)
     notifyObservers(Event.BOARD_CHANGED)
 
-  def boardToString(): String = {
+  override def boardToString(): String = {
     game.toString()
   }
-  def changeState(state: State): Unit = {
+
+  override def changeState(state: IState): Unit = {
     currentState = state
     notifyObservers(Event.STATE_CHANGED)
   }
-  def initGame(): Unit = {
+
+  override def initGame(): Unit = {
     val gui = new GUI(this)
     gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
@@ -49,15 +56,14 @@ case class Controller(size: Int) extends Observable:
     tuiThread.start()
   }
 
-
-  def handleAction(action: IAction): Unit = {
+  override def handleAction(action: IAction): Unit = {
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
         undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+        undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
@@ -65,27 +71,36 @@ case class Controller(size: Int) extends Observable:
       case RedoAction() =>
         undoManager.redoCommand()
       case StartGame() =>
-        undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+        undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
       case _ =>
     }
   }
-  def restoreSnapshot(snapshot: Snapshot): Unit =
+
+  override def restoreSnapshot(snapshot: ISnapshot): Unit =
     game = snapshot.getGame()
     currentState = snapshot.getState()
     notifyObservers(Event.STATE_CHANGED)
 
-  def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {
+  override def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {
     game.movePieces(l1, n1, l2, n2)
-
   }
-  def printState(): Unit ={
+
+  override def printState(): Unit = {
     currentState.print()
   }
 
-  def actionFromInput(s: String): IAction = {
+  override def actionFromInput(s: String): IAction = {
     currentState.actionFromInput(s)
   }
 
-  def getGame(): Game = {
+  override def getGame: IGame = {
     game
+  }
+
+  override def add(s: Observer): Unit = {
+    super.add(s)
+  }
+
+  override def getCurrentState: IState = {
+    this.currentState
   }

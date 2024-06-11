@@ -1,19 +1,21 @@
-package chess.controller
+package chess.controller.controller
 
-class UndoManager:
+import chess.controller.{ICommand, IUndoManager}
 
-  private var undoStack: List[Command] = List()
-  private var redoStack: List[Command] = List()
+class UndoManager extends IUndoManager:
 
-  def executeCommand(command: Command): Unit =
+  private var undoStack: List[ICommand] = List()
+  private var redoStack: List[ICommand] = List()
+
+  override def executeCommand(command: ICommand): Unit =
     undoStack = command :: undoStack
     redoStack = List()
     command.saveSnapshot()
     command.execute()
 
-  def canUndo: Boolean = undoStack.nonEmpty
+  override def canUndo: Boolean = undoStack.nonEmpty
 
-  def undoCommand(): Unit =
+  override def undoCommand(): Unit =
     undoStack match
       case head :: stack =>
         redoStack = head :: redoStack
@@ -21,9 +23,10 @@ class UndoManager:
         head.undo()
       case _ =>
         println("Undo not possible")
-  def canRedo: Boolean = redoStack.nonEmpty
 
-  def redoCommand(): Unit =
+  override def canRedo: Boolean = redoStack.nonEmpty
+
+  override def redoCommand(): Unit =
     redoStack match
       case head :: stack =>
         undoStack = head :: undoStack

@@ -2,12 +2,13 @@ package chess.view
 
 import chess.view.panels.*
 import chess.controller.*
-import chess.util._
+import chess.controller.controller.{PreGameState, TurnStateBlack, TurnStateWhite}
+import chess.util.*
 
-import scala.swing._
+import scala.swing.*
 import javax.swing.ImageIcon
 
-class GUI(controller: Controller) extends SimpleSwingApplication with Observer {
+class GUI(controller: IController) extends SimpleSwingApplication with Observer {
 
   controller.add(this)
 
@@ -52,7 +53,7 @@ class GUI(controller: Controller) extends SimpleSwingApplication with Observer {
   }
 
   def updateBoard(): Unit = {
-    controller.currentState match {
+    controller.getCurrentState match {
       case _: PreGameState =>
         val oldSize = top.size
         val newBoardPanel = new StartPanel(controller) // Erstellen eines neuen StartPanels

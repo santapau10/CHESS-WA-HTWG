@@ -1,7 +1,7 @@
 package controller
 
-import chess.models.Board
-import chess.controller.Controller
+import chess.controller.controller.Controller
+import chess.models.game.Board
 import chess.view.TUI
 import org.scalatest.wordspec.AnyWordSpec
 import java.io.ByteArrayOutputStream
