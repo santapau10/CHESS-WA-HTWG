@@ -113,38 +113,41 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
   override def getSetupBoard(): List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     val a = List(
-      pf.addPiece(Chesspiece.ROOK, (0, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.KNIGHT, (1, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.BISHOP, (2, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.QUEEN, (3, 0), Colors.WHITE),
+      pf.addPiece(Chesspiece.ROOK, (0, 0), Colors.WHITE), // 6
+      pf.addPiece(Chesspiece.KNIGHT, (1, 0), Colors.WHITE), // 2
+      pf.addPiece(Chesspiece.BISHOP, (2, 0), Colors.WHITE), // 4
+      pf.addPiece(Chesspiece.QUEEN, (3, 0), Colors.WHITE), // 1
       pf.addPiece(Chesspiece.KING, (4, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.BISHOP, (5, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.KNIGHT, (6, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.ROOK, (7, 0), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (0, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (1, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (2, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (3, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (4, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (5, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (6, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.PAWN, (7, 1), Colors.WHITE),
-      pf.addPiece(Chesspiece.ROOK, (0, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.KNIGHT, (1, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.BISHOP, (2, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.QUEEN, (3, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.KING, (4, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.BISHOP, (5, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.KNIGHT, (6, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.ROOK, (7, 7), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (0, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (1, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (2, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (3, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (4, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (5, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (6, 6), Colors.BLACK),
-      pf.addPiece(Chesspiece.PAWN, (7, 6), Colors.BLACK)
+      pf.addPiece(Chesspiece.BISHOP, (5, 0), Colors.WHITE), // 5
+      pf.addPiece(Chesspiece.KNIGHT, (6, 0), Colors.WHITE), // 3
+      //pf.addPiece(Chesspiece.ROOK, (7, 0), Colors.WHITE), // 7
+
+      pf.addPiece(Chesspiece.PAWN, (0, 1), Colors.WHITE), // 6
+      pf.addPiece(Chesspiece.PAWN, (1, 1), Colors.WHITE), // 3
+      pf.addPiece(Chesspiece.PAWN, (2, 1), Colors.WHITE), // 4
+      pf.addPiece(Chesspiece.PAWN, (3, 1), Colors.WHITE), // 3
+      pf.addPiece(Chesspiece.PAWN, (4, 1), Colors.WHITE), // 3
+      pf.addPiece(Chesspiece.PAWN, (5, 1), Colors.WHITE), // 5
+      pf.addPiece(Chesspiece.PAWN, (6, 1), Colors.WHITE), // 3
+      //pf.addPiece(Chesspiece.PAWN, (7, 1), Colors.WHITE), // 7
+
+      pf.addPiece(Chesspiece.ROOK, (0, 6), Colors.BLACK), // 6
+      pf.addPiece(Chesspiece.KNIGHT, (1, 6), Colors.BLACK), // 2
+      pf.addPiece(Chesspiece.BISHOP, (2, 6), Colors.BLACK), // 4
+      pf.addPiece(Chesspiece.QUEEN, (3, 6), Colors.BLACK), // 1
+      pf.addPiece(Chesspiece.KING, (4, 6), Colors.BLACK), // 1
+      pf.addPiece(Chesspiece.BISHOP, (5, 6), Colors.BLACK), // 5
+      pf.addPiece(Chesspiece.KNIGHT, (6, 6), Colors.BLACK), // 3
+      //pf.addPiece(Chesspiece.ROOK, (7, size - 1), Colors.BLACK), // 7
+
+      pf.addPiece(Chesspiece.PAWN, (0, 5), Colors.BLACK), // 6
+      pf.addPiece(Chesspiece.PAWN, (1, 5), Colors.BLACK), // 3
+      pf.addPiece(Chesspiece.PAWN, (2, 5), Colors.BLACK), // 4
+      pf.addPiece(Chesspiece.PAWN, (3, 5), Colors.BLACK), // 3
+      pf.addPiece(Chesspiece.PAWN, (4, 5), Colors.BLACK), // 3
+      pf.addPiece(Chesspiece.PAWN, (5, 5), Colors.BLACK), // 5
+      pf.addPiece(Chesspiece.PAWN, (6, 5), Colors.BLACK), // 3
+      //pf.addPiece(Chesspiece.PAWN, (7, size - 2), Colors.BLACK) // 7
     )
     return a
   }

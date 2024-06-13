@@ -95,7 +95,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       }
       if (path.nonEmpty) {
         val ic = new ImageIcon(getClass.getResource(path))
-        val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance((dimensionSize * 0.8).toInt, (dimensionSize * 0.8).toInt, java.awt.Image.SCALE_SMOOTH))
+        val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance((dimensionSize).toInt, (dimensionSize).toInt, java.awt.Image.SCALE_SMOOTH))
         button.icon = scaledIcon
       }
       if ((n + i) % 2 == 0) {

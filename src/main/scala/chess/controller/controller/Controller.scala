@@ -45,7 +45,7 @@ case class Controller(size: Int) extends IController with Observable:
   }
 
   override def initGame(): Unit = {
-    val gui = new GUI(this)
+    val gui = new GUI(this, size)
     gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
     val tuiThread = new Thread(new Runnable {

@@ -8,7 +8,7 @@ import chess.util.*
 import scala.swing.*
 import javax.swing.ImageIcon
 
-class GUI(controller: IController) extends SimpleSwingApplication with Observer {
+class GUI(controller: IController, boardSize: Int) extends SimpleSwingApplication with Observer {
 
   controller.add(this)
 
@@ -25,7 +25,7 @@ class GUI(controller: IController) extends SimpleSwingApplication with Observer 
     }
   }
 
-  val s = 8
+  val s: Int = boardSize
 
   // Main frame definition as a lazy value
   lazy val top: MainFrame = new MainFrame {
@@ -63,7 +63,8 @@ class GUI(controller: IController) extends SimpleSwingApplication with Observer 
 
       case _: TurnStateWhite | _: TurnStateBlack =>
         val oldSize = top.size
-        val newBoardPanel = new BoardPanel(s + 2, s + 3, 50, controller) // Erstellen eines neuen BoardPanels
+        val scalledSize = oldSize.height/(s * 2)
+        val newBoardPanel = new BoardPanel(s + 2, s + 3, scalledSize, controller) // Erstellen eines neuen BoardPanels
         top.contents = new BorderPanel {
           layout(newBoardPanel) = BorderPanel.Position.Center // Platzieren des BoardPanels in der Mitte
         }
