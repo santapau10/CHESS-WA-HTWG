@@ -10,6 +10,8 @@ import chess.controller.controller.{InvalidAction, MovePiecesBlack, MovePiecesWh
 import chess.models.game.Colors
 import chess.models.IPieces
 
+import scala.annotation.tailrec
+
 
 // Erweiterte Button-Klasse, die ein Tupel von Koordinaten akzeptiert
 class ChessButton(coords: (Int, Int)) extends Button {
@@ -22,10 +24,10 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
 
   super.rows = rows
   super.columns = cols
-  val backgroundColor = new Color(200,200,200)
+  private val backgroundColor = new Color(200,200,200)
 
   // Initialize the board with labels and numbers
-  val emptyLabel = new Label("") {
+  private val emptyLabel = new Label("") {
     opaque = true
     background = backgroundColor
   }
@@ -33,7 +35,8 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   addLabels(('A' to ('A' + cols - 4).toChar).toList)
   addNumbers(1, cols - 1)
 
-  private def addEmptyLabels(max:Int , n: Int = 0): Unit = {
+  @tailrec
+  private def addEmptyLabels(max:Int, n: Int = 0): Unit = {
     if (n <= max) {
       val label = new Label("") {
         opaque = true
@@ -45,6 +48,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   }
 
   // Method to add labels
+  @tailrec
   private def addLabels(alphabet: List[Char], n: Int = 0): Unit = alphabet match {
     case Nil =>
     case letter :: tail =>
@@ -57,6 +61,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   }
 
   // Method to add numbers and buttons
+  @tailrec
   private def addNumbers(start: Int, end: Int ): Unit = {
     if (start <= end) {
       if (start == 1) {
@@ -85,17 +90,18 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   }
 
   // Method to add a row of buttons
+  @tailrec
   private def addButtonsRow(n: Int, i: Int, s: Int): Unit = {
     if (i < s - 1) {
       val button = new ChessButton((i - 1, n - 2)) // Erstellen eines ChessButton mit Koordinaten-Tupel
-      val foundPiece = controller.getGame.getBoardList().find(p => p.getCords.equals(button.getCords))
+      val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
       val path = foundPiece match {
         case Some(piece) => piece.getIconPath
         case None => ""
       }
       if (path.nonEmpty) {
         val ic = new ImageIcon(getClass.getResource(path))
-        val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance((dimensionSize).toInt, (dimensionSize).toInt, java.awt.Image.SCALE_SMOOTH))
+        val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
         button.icon = scaledIcon
       }
       if ((n + i) % 2 == 0) {
@@ -107,7 +113,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       // Hinzufügen des ActionListeners für den ChessButton
       button.reactions += {
         case ButtonClicked(_) =>
-          val foundPiece = controller.getGame.getBoardList().find(p => p.getCords.equals(button.getCords))
+          val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
           if (foundPiece.nonEmpty && clicks.isEmpty) // Überprüfen, ob clicks leer ist
             clicks = foundPiece
           else if (foundPiece.isEmpty && clicks.isDefined) { // Überprüfen, ob foundPiece leer ist und clicks nicht

@@ -12,7 +12,7 @@ import scala.util.{Failure, Success}
 
 
 case class Controller(size: Int) extends IController with Observable:
-  val b: IBoardBuilder = if (size == 8) {
+  private val b: IBoardBuilder = if (size == 8) {
     new Board_equal_8(8)
   }
   else if (size < 8 && size > 0) {
@@ -24,10 +24,10 @@ case class Controller(size: Int) extends IController with Observable:
   else {
     throw new IllegalArgumentException("invalid size")
   }
-  val tui: TUI = new TUI(this)
-  var game: IGame = new Game(b, b.getSetupBoard(), tui, this)
+  private val tui: TUI = new TUI(this)
+  var game: IGame = new Game(b, b.getSetupBoard, tui, this)
   private val undoManager: IUndoManager = new UndoManager
-  var currentState: IState = PreGameState(this)
+  private var currentState: IState = PreGameState(this)
 
   override def snapshot: ISnapshot = Snapshot(game, currentState)
 
@@ -36,7 +36,7 @@ case class Controller(size: Int) extends IController with Observable:
     notifyObservers(Event.BOARD_CHANGED)
 
   override def boardToString(): String = {
-    game.toString()
+    game.toString
   }
 
   override def changeState(state: IState): Unit = {
@@ -48,10 +48,8 @@ case class Controller(size: Int) extends IController with Observable:
     val gui = new GUI(this, size)
     gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
-    val tuiThread = new Thread(new Runnable {
-      def run(): Unit = {
-        tui.read
-      }
+    val tuiThread = new Thread(() => {
+      tui.read()
     })
     tuiThread.start()
   }
@@ -77,8 +75,8 @@ case class Controller(size: Int) extends IController with Observable:
   }
 
   override def restoreSnapshot(snapshot: ISnapshot): Unit =
-    game = snapshot.getGame()
-    currentState = snapshot.getState()
+    game = snapshot.getGame
+    currentState = snapshot.getState
     notifyObservers(Event.STATE_CHANGED)
 
   override def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {

@@ -10,14 +10,14 @@ trait IBoardBuilder:
   def checkFieldR(x: Int, y: Int, list: List[IPieces]): String
   def updateField(list: List[IPieces]): String
   def firstLineR(index: Int): String
-  def getSetupBoard(): List[IPieces]
+  def getSetupBoard: List[IPieces]
 
 
 trait IGame:
 
   def movePieces(l1: Int, n1: Int, l2: Int, n2: Int):Unit
   override def toString: String
-  def getBoardList(): List[IPieces]
+  def getBoardList: List[IPieces]
 
 trait IPieces:
 

@@ -5,16 +5,17 @@ import chess.models.*
 abstract class Board(size: Int) extends IBoardBuilder {
   val h2Line = "__"
   val hLine = "_"
-  val vLine = "|"
-  val space = " "
+  private val vLine = "|"
+  private val space = " "
   val nextLVLine = "|\n"
-  val nextLPlus = "+\n"
-  val plus = "+"
-  val minus = "-"
-  val edge = plus + minus * 4
-  val edgefield = edge * this.size + nextLPlus
+  private val nextLPlus = "+\n"
+  private val nextL = "\n"
+  private val plus = "+"
+  private val minus = "-"
+  private val edge = s"$plus${minus * 4}"
+  private val edgeField = s"${edge * this.size}$nextLPlus"
 
-  override def getSetupBoard(): List[IPieces] ={
+  override def getSetupBoard: List[IPieces] ={
     List.empty
   }
 
@@ -27,21 +28,21 @@ abstract class Board(size: Int) extends IBoardBuilder {
         updatedBoard
       case None =>
         println("Piece not found at the specified Chess.models.coordinates.")
-        return null
+        null
     }
   }
 
   override def checkFieldR(x: Int, y: Int, list: List[IPieces]): String = {
     val sr = new StringBuilder
-    sr.append(vLine + space)
+    sr.append(s"$vLine$space")
     list.find(piece => piece.getCords == (x, y)) match {
-      case Some(foundPiece) => sr.append(foundPiece.toString + space * 2)
+      case Some(foundPiece) => sr.append(s"${foundPiece.toString}${space * 2}")
       case None => sr.append(space * 3)
     }
     if (x < size - 1) {
       sr.append(checkFieldR(x + 1, y, list))
     } else if (y < size - 1) {
-      sr.append(vLine + space * 2 + (y + 1) + "\n" + edgefield)
+      sr.append(s"$vLine${space * 2}${y + 1}$nextL$edgeField")
       sr.append(checkFieldR(0, y + 1, list))
     }
     sr.toString()
@@ -51,16 +52,16 @@ abstract class Board(size: Int) extends IBoardBuilder {
     val sr = new StringBuilder
     sr.append(firstLineR(0))
     sr.append("\n")
-    sr.append(edgefield)
+    sr.append(edgeField)
     sr.append(checkFieldR(0, 0, list))
-    sr.append(vLine + space * 2 + (this.size) + "\n" + edgefield)
+    sr.append(s"$vLine${space * 2}${this.size}$nextL$edgeField")
     sr.toString()
   }
 
   override def firstLineR(index: Int): String = {
     val sr = new StringBuilder
     if (index < this.size) {
-      sr.append(space * 2 + ('a'.toInt + index).toChar + space * 2)
+      sr.append(s"${space * 2}${('a'.toInt + index).toChar}${space * 2}")
       sr.append(firstLineR(index + 1))
       sr.toString()
     } else {
@@ -70,7 +71,7 @@ abstract class Board(size: Int) extends IBoardBuilder {
 }
 
 class Board_equal_8(size: Int) extends Board(size: Int) {
-  override def getSetupBoard(): List[IPieces] = {
+  override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     val a = List(
       pf.addPiece(Chesspiece.ROOK, (0, 0), Colors.WHITE),
@@ -110,7 +111,7 @@ class Board_equal_8(size: Int) extends Board(size: Int) {
   }
 }
 class Board_smaller_8(size: Int) extends Board(size: Int) {
-  override def getSetupBoard(): List[IPieces] = {
+  override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     val a = List(
       pf.addPiece(Chesspiece.ROOK, (0, 0), Colors.WHITE), // 6
@@ -149,11 +150,11 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
       pf.addPiece(Chesspiece.PAWN, (6, 5), Colors.BLACK), // 3
       //pf.addPiece(Chesspiece.PAWN, (7, size - 2), Colors.BLACK) // 7
     )
-    return a
+    a
   }
 }
 class Board_bigger_8(size: Int) extends Board(size: Int) {
-  override def getSetupBoard(): List[IPieces] = {
+  override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     if(size % 2 == 0 && size > 8) {
       val h = size / 2

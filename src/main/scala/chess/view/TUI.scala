@@ -16,15 +16,15 @@ class TUI(controller: IController) extends Observer {
         //notifyObservers(Event.INPUT)
         controller.printState()
       case Event.INPUT =>
-        read
+        read()
       case Event.STATE_CHANGED =>
         controller.printState()
       case _ =>
     }
   }
-  def read: Unit = {
+  def read(): Unit = {
     controller.handleAction(actionFromInput)
-    read
+    read()
   }
   def actionFromInput: IAction ={
     controller.actionFromInput(StdIn.readLine().toLowerCase) match

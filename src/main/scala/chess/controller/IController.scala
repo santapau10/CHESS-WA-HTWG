@@ -35,8 +35,8 @@ trait IState(controller: IController):
 
 trait ISnapshot:
 
-  def getState(): IState
-  def getGame(): IGame
+  def getState: IState
+  def getGame: IGame
 
 trait IUndoManager:
 
