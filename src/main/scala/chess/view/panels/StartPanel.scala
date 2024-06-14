@@ -47,7 +47,7 @@ class StartPanel(controller: IController) extends GridBagPanel {
   val button = new RoundButton(scaledIcon)
 
   // Konfiguration für das Layout
-  val gbc = new Constraints
+  private val gbc = new Constraints
   gbc.gridx = 0
   gbc.gridy = 0
   gbc.insets = new Insets(50, 50, 50, 50) // Abstand vom Rand des Panels

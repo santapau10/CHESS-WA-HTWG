@@ -35,7 +35,7 @@ case class TurnStateBlack(controller: IController) extends State(controller):
           val row1 = number1.toInt - 1
           val column2 = letter2.head - 'a'
           val row2 = number2.toInt - 1
-          if (controller.getGame.getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
+          if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
             MovePiecesBlack(column1, row1, column2, row2)
           } else {
             InvalidAction("invalid move")
@@ -101,7 +101,7 @@ case class TurnStateWhite(controller: IController) extends State(controller):
           val column2 = letter2.head - 'a'
           val row2 = number2.toInt - 1
 
-          if (controller.getGame.getBoardList().exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
+          if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
             MovePiecesWhite(column1, row1, column2, row2)
           } else {
             InvalidAction("invalid move")

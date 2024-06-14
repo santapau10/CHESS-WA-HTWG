@@ -22,7 +22,7 @@ class Game(board: IBoardBuilder, list: List[IPieces], tui: TUI, controller: ICon
     toStringBoard
   }
 
-  override def getBoardList(): List[IPieces] = {
+  override def getBoardList: List[IPieces] = {
     list
   }
 }
