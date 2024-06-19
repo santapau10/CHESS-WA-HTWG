@@ -6,7 +6,7 @@ import java.awt.Color
 import javax.swing.ImageIcon
 import chess.models.*
 import chess.controller.*
-import chess.controller.controller.{InvalidAction, MovePiecesBlack, MovePiecesWhite, TurnStateBlack, TurnStateWhite}
+import chess.controller.controller.{TurnStateBlack, TurnStateWhite}
 import chess.models.game.Colors
 import chess.models.IPieces
 
@@ -116,7 +116,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
           val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
           if (foundPiece.nonEmpty && clicks.isEmpty) // Überprüfen, ob clicks leer ist
             clicks = foundPiece
-          else if (foundPiece.isEmpty && clicks.isDefined) { // Überprüfen, ob foundPiece leer ist und clicks nicht
+          else if (clicks.isDefined) { // Überprüfen, ob foundPiece leer ist und clicks nicht
             val targetCoords = button.getCords
             val sourceCoords = clicks.get.getCords // Abrufen der Koordinaten aus der Option
 

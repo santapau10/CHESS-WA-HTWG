@@ -8,6 +8,7 @@ trait IBoardBuilder:
 
   def movePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): List[IPieces]
   def checkFieldR(x: Int, y: Int, list: List[IPieces]): String
+  def deletePiece (x1: Int, y1: Int, list: List[IPieces]): List[IPieces]
   def updateField(list: List[IPieces]): String
   def firstLineR(index: Int): String
   def getSetupBoard: List[IPieces]

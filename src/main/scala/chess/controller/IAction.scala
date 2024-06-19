@@ -1,4 +1,4 @@
-package chess.controller.controller
+package chess.controller
 
 import chess.controller.IAction
 

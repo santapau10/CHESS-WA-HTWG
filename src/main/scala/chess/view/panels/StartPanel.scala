@@ -3,7 +3,6 @@ package chess.view.panels
 import scala.swing.*
 import scala.swing.event.*
 import chess.controller.*
-import chess.controller.controller.StartGame
 
 import javax.swing.ImageIcon
 import java.awt.geom.Ellipse2D

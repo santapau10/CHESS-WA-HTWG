@@ -2,7 +2,6 @@ package chess.view
 
 import chess.util.*
 import chess.controller.*
-import chess.controller.controller.InvalidAction
 import chess.models.IPieces
 
 import scala.io.StdIn

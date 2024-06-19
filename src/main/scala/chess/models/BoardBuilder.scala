@@ -1,6 +1,7 @@
-package chess.models.game
+package chess.models
 
 import chess.models.*
+import chess.models.game.{Chesspiece, Colors, PiecesFactory}
 
 abstract class Board(size: Int) extends IBoardBuilder {
   val h2Line = "__"
@@ -24,14 +25,26 @@ abstract class Board(size: Int) extends IBoardBuilder {
       case Some(foundPiece) =>
         val pf: IPiecesFactory = new PiecesFactory
         val movedPiece = pf.addPiece(foundPiece.getPiece, (x2, y2), foundPiece.getColor)
-        val updatedBoard = list.filter(piece => piece != foundPiece) :+ movedPiece
-        updatedBoard
+        list.find(piece => piece.getCords == (x2, y2)) match {
+          case Some(foundOldPiece) =>
+            val updatedBoard = list.filter(piece => piece != foundPiece && piece != foundOldPiece) :+ movedPiece  // TODO
+            updatedBoard
+          case None =>
+            val updatedBoard = list.filter(piece => piece != foundPiece) :+ movedPiece
+            updatedBoard
+        }
       case None =>
         println("Piece not found at the specified Chess.models.coordinates.")
         null
     }
   }
-
+  override def deletePiece (x1: Int, y1: Int, list: List[IPieces]): List[IPieces] = {
+    list.find(piece => piece.getCords == (x1,y1)) match
+      case Some(foundPiece) =>
+        list.filter(piece => piece != foundPiece)
+      case None =>
+        throw new IllegalArgumentException("invalid coordinates for the deletion prozess")
+  }
   override def checkFieldR(x: Int, y: Int, list: List[IPieces]): String = {
     val sr = new StringBuilder
     sr.append(s"$vLine$space")
@@ -150,7 +163,52 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
       pf.addPiece(Chesspiece.PAWN, (6, 5), Colors.BLACK), // 3
       //pf.addPiece(Chesspiece.PAWN, (7, size - 2), Colors.BLACK) // 7
     )
+    if (size < 7) {
+      val a1 = a.filter(piece => (0,6) != piece.getCords && (6,1) != piece.getCords && (6,5) != piece.getCords)
+      val a2 = linePushR(5, 0, 1, 0, -1, 0, a1)
+      val a3 = linePushR(5, 0, 0, 5, 0, -1, a2)
+      val a4 = linePushR(5, 0, 1, 6, -1, -1, a3)
+      if (size < 6) {
+        val b1 = movePieces(5,0,4,0, a4)
+        val b2 = b1.filter(piece => (5,1) != piece.getCords && (5,4) != piece.getCords && (4,5) != piece.getCords)
+        val b3 = linePushR(4, 0, 0, 4, 0, -1, b2)
+        val b4 = linePushR(3, 0, 0, 5, 0, -1, b3)
+        val b5 = movePieces(5,5,4,4, b4)
+        if (size < 5) {
+          val c1 = b5.filter(piece => (4,1) != piece.getCords && (4,3) != piece.getCords && (1,4) != piece.getCords)
+          val c2 = linePushR(2, 0, 2, 0, -1, 0, c1)
+          val c3 = linePushR(3, 0, 0, 3, 0, -1, c2)
+          val c4 = movePieces(0,4,0,3, c3)
+          val c5 = linePushR(2, 0, 2, 4, -1, -1, c4)
+          if (size < 4) {
+            val d1 = c5.filter(piece => (0,1) != piece.getCords && (1,1) != piece.getCords && (2,1) != piece.getCords && (3,0) != piece.getCords && (3,1) != piece.getCords && (3,2) != piece.getCords && (3,3) != piece.getCords)
+            val d2 = linePushR(2, 0, 0, 3, 0, -1, d1)
+            if (size < 3) {
+              val e1 = d2.filter(piece => (0,2) != piece.getCords)
+              val e2 = linePushR(1, 0, 1, 0, -1, 0, e1)
+              val e3 = linePushR(1, 0, 1, 2, -1, -1, e2)
+              if (size < 2) {
+                val f = movePieces(1,0,0,0, e3)
+                return f.filter(piece => (0,1) != piece.getCords && (1,1) != piece.getCords)
+              }
+              return e3
+            }
+            return d2
+          }
+          return c5
+        }
+        return b5
+      }
+      return a4
+    }
     a
+  }
+  private def linePushR(limit: Int, counter: Int, x: Int, y: Int, xFactor: Int, yFactor: Int, list: List[IPieces]): List[IPieces] = {
+    if (counter <= limit)
+      val newList: List[IPieces] = movePieces(x, y, x + xFactor, y + yFactor, list)
+      linePushR(limit, counter + 1, x + 1, y, xFactor, yFactor, newList)
+    else
+      list
   }
 }
 class Board_bigger_8(size: Int) extends Board(size: Int) {

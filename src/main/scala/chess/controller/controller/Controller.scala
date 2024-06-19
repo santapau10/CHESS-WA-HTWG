@@ -1,7 +1,7 @@
 package chess.controller.controller
 
 import chess.controller.*
-import chess.models.game.{Board_bigger_8, Board_equal_8, Board_smaller_8, Game}
+import chess.models.game.Game
 import chess.models.*
 import chess.util.*
 import chess.view.*
@@ -12,17 +12,11 @@ import scala.util.{Failure, Success}
 
 
 case class Controller(size: Int) extends IController with Observable:
-  private val b: IBoardBuilder = if (size == 8) {
-    new Board_equal_8(8)
-  }
-  else if (size < 8 && size > 0) {
-    new Board_smaller_8(size)
-  }
-  else if (size > 8) {
-    new Board_bigger_8(size)
-  }
-  else {
-    throw new IllegalArgumentException("invalid size")
+  private val b: IBoardBuilder = size match {
+    case 8 => new Board_equal_8(8)
+    case s if s < 8 && s > 0 => new Board_smaller_8(s)
+    case s if s > 8 => new Board_bigger_8(s)
+    case _ => throw new IllegalArgumentException("invalid size")
   }
   private val tui: TUI = new TUI(this)
   var game: IGame = new Game(b, b.getSetupBoard, tui, this)
