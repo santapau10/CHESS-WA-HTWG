@@ -1,13 +1,16 @@
-package chess.view
+package chess.view.view
 
-import chess.util.*
 import chess.controller.*
 import chess.models.IPieces
+import chess.view.ITUI
+import chess.util.*
 
 import scala.io.StdIn
 import scala.util.matching.Regex
+import com.google.inject.Inject
 
-class TUI(controller: IController) extends Observer {
+
+class TUI @Inject() (controller: IController) extends Observer with ITUI {
   controller.add(this)
   override def update(event: Event): Unit = {
     event match {
@@ -21,7 +24,7 @@ class TUI(controller: IController) extends Observer {
       case _ =>
     }
   }
-  def read(): Unit = {
+  override def read(): Unit = {
     controller.handleAction(actionFromInput)
     read()
   }

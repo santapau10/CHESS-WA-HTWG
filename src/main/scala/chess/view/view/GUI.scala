@@ -1,14 +1,18 @@
-package chess.view
+package chess.view.view
 
-import chess.view.panels.*
 import chess.controller.*
 import chess.controller.controller.{PreGameState, TurnStateBlack, TurnStateWhite}
 import chess.util.*
+import chess.view.IGUI
+import chess.view.panels.*
 
-import scala.swing.*
 import javax.swing.ImageIcon
+import scala.swing.*
+import com.google.inject.Inject
 
-class GUI(controller: IController, boardSize: Int) extends SimpleSwingApplication with Observer {
+
+
+class GUI @Inject() (controller: IController, boardSize: Integer) extends SimpleSwingApplication with Observer with IGUI {
 
   controller.add(this)
 
@@ -47,7 +51,7 @@ class GUI(controller: IController, boardSize: Int) extends SimpleSwingApplicatio
   }
 
   // Entry point for the application
-  def run(): Unit = {
+  override def run(): Unit = {
     // Start the GUI application
     main(Array())
   }

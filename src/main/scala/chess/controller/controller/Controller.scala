@@ -5,13 +5,15 @@ import chess.models.game.Game
 import chess.models.*
 import chess.util.*
 import chess.view.*
+import chess.view.view.{GUI, TUI}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
+import com.google.inject.Inject
 
 
-case class Controller(size: Int) extends IController with Observable:
+case class Controller @Inject() (size: Int) extends IController with Observable:
   private val b: IBoardBuilder = size match {
     case 8 => new Board_equal_8(8)
     case s if s < 8 && s > 0 => new Board_smaller_8(s)

@@ -3,6 +3,7 @@ package chess.models.game
 import chess.controller.*
 import chess.models.{IBoardBuilder, IGame, IPieces}
 import chess.view.*
+import chess.view.view.TUI
 
 
 class Game(board: IBoardBuilder, list: List[IPieces], tui: TUI, controller: IController) extends IGame {
