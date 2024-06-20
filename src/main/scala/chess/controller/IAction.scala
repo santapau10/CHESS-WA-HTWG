@@ -1,6 +1,5 @@
 package chess.controller
 
-import chess.controller.IAction
 
 case class UpdateBoardAction() extends IAction
 
