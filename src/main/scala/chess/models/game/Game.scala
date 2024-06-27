@@ -6,7 +6,7 @@ import chess.view.*
 import chess.view.view.TUI
 
 
-class Game(board: IBoardBuilder, list: List[IPieces], tui: TUI, controller: IController) extends IGame {
+class Game(board: IBoardBuilder, list: List[IPieces], controller: IController) extends IGame {
   private def toStringBoard: String = {
     board.updateField(list)
   }

@@ -10,6 +10,13 @@ import scala.util.{Failure, Success, Try}
 
 
 private class State(controller: IController) extends IState(controller):
+  override def getRow: Int = {
+    -1
+  }
+
+  override def getColumn: Int = {
+    -1
+  }
 
   def print(): Unit = ()
 
@@ -18,6 +25,13 @@ private class State(controller: IController) extends IState(controller):
   def actionFromInput(input: String): IAction = NoAction()
 
 case class TurnStateBlack(controller: IController) extends State(controller):
+  override def getRow: Int = {
+    -1
+  }
+
+  override def getColumn: Int = {
+    -1
+  }
 
   override def print(): Unit = {
     println(controller.boardToString())
@@ -30,13 +44,11 @@ case class TurnStateBlack(controller: IController) extends State(controller):
     val inputPattern: Regex = "([a-z])(\\d) ([a-z])(\\d)".r
     Try {
       input match {
-        case inputPattern(letter1, number1, letter2, number2) =>
+        case inputPattern(letter1, number1) =>
           val column1 = letter1.head - 'a'
           val row1 = number1.toInt - 1
-          val column2 = letter2.head - 'a'
-          val row2 = number2.toInt - 1
           if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
-            MovePiecesBlack(column1, row1, column2, row2)
+            StartMovePiecesBlack(column1, row1)
           } else {
             InvalidAction("invalid move")
           }
@@ -59,6 +71,13 @@ case class TurnStateBlack(controller: IController) extends State(controller):
 
 case class PreGameState(controller: IController) extends State(controller):
 
+  override def getRow: Int = {
+    -1
+  }
+
+  override def getColumn: Int = {
+    -1
+  }
   override def print(): Unit = {
     println("welcome to an astonishing round of chess :)")
     println("type 'start' to begin a new game")
@@ -84,25 +103,129 @@ case class PreGameState(controller: IController) extends State(controller):
   }
 
 case class TurnStateWhite(controller: IController) extends State(controller):
+  override def getRow: Int = {
+    -1
+  }
+
+  override def getColumn: Int = {
+    -1
+  }
   override def print(): Unit = {
     println(controller.boardToString())
-    println("\nWhites turn. Enter the coordinates in the format Letter-Number Letter-Number (e.g., a1 b3): ")
+    println("\nSelect Piece with coordinates")
   }
 
   override def message: String = "playing"
 
   override def actionFromInput(input: String): IAction = {
-    val inputPattern: Regex = "([a-z])(\\d) ([a-z])(\\d)".r
+    val inputPattern: Regex = "([a-z])(\\d)".r
     Try {
       input match {
-        case inputPattern(letter1, number1, letter2, number2) =>
+        case inputPattern(letter1, number1) =>
           val column1 = letter1.head - 'a'
           val row1 = number1.toInt - 1
-          val column2 = letter2.head - 'a'
-          val row2 = number2.toInt - 1
 
           if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
+            StartMovePiecesWhite(column1, row1)
+          } else {
+            InvalidAction("invalid move")
+          }
+        case "undo" =>
+          UndoAction()
+        case "u" =>
+          UndoAction()
+        case "redo" =>
+          RedoAction()
+        case "r" =>
+          RedoAction()
+        case _ =>
+          InvalidAction("invalid format")
+      }
+    } match {
+      case Success(action) => action
+      case Failure(exception) => InvalidAction("invalid format")
+    }
+  }
+
+case class MovePieceWhite(controller: IController, column1: Int, row1: Int) extends State(controller):
+  override def getRow: Int = {
+    this.row1
+  }
+  override def getColumn: Int = {
+    this.column1
+  }
+  override def print(): Unit = {
+    println(controller.boardToString())
+    println("\nEnter target coordinate: ")
+  }
+
+  override def message: String = "playing"
+
+  override def actionFromInput(input: String): IAction = {
+    val inputPattern: Regex = "([a-z])(\\d)".r
+    Try {
+      input match {
+        case inputPattern(letter2, number2) =>
+          val column2 = letter2.head - 'a'
+          val row2 = number2.toInt - 1
+          if (!controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1)) {
             MovePiecesWhite(column1, row1, column2, row2)
+          } else if (column1 == column2 && row1 == row2) {
+            CancelMoveWhite()
+          } else if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
+            MovePiecesWhite(column1, row1, column2, row2)
+          } else if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
+            StartMovePiecesWhite(column2, row2)
+          } else {
+            InvalidAction("invalid move")
+          }
+        case "undo" =>
+          UndoAction()
+        case "u" =>
+          UndoAction()
+        case "redo" =>
+          RedoAction()
+        case "r" =>
+          RedoAction()
+        case _ =>
+          InvalidAction("invalid format")
+      }
+    } match {
+      case Success(action) => action
+      case Failure(exception) => InvalidAction("invalid format")
+    }
+  }
+
+case class MovePieceBlack(controller: IController, column1: Int, row1: Int) extends State(controller):
+  override def getRow: Int = {
+    this.row1
+  }
+
+  override def getColumn: Int = {
+    this.column1
+  }
+  override def print(): Unit = {
+    println(controller.boardToString())
+    println("\nEnter target coordinate: ")
+  }
+
+  override def message: String = "playing"
+
+  override def actionFromInput(input: String): IAction = {
+    val inputPattern: Regex = "([a-z])(\\d)".r
+    Try {
+      input match {
+        case inputPattern(letter2, number2) =>
+          val column2 = letter2.head - 'a'
+          val row2 = number2.toInt - 1
+          if (!controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1)) {
+            MovePiecesBlack(column1, row1, column2, row2)
+          } else if (column1 == column2 && row1 == row2) {
+            CancelMoveBlack()
+          } else if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.WHITE))) {
+            MovePiecesBlack(column1, row1, column2, row2)
+          } else if (controller.getGame.getBoardList.exists(piece => piece.getCords._1 == column1 && piece.getCords._2 == row1 && piece.getColor.equals(Colors.BLACK))) {
+            StartMovePiecesBlack(column2, row2)
           } else {
             InvalidAction("invalid move")
           }

@@ -20,16 +20,20 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     case s if s > 8 => new Board_bigger_8(s)
     case _ => throw new IllegalArgumentException("invalid size")
   }
-  private val tui: TUI = new TUI(this)
-  var game: IGame = new Game(b, b.getSetupBoard, tui, this)
+
+
+  var game: IGame = new Game(b, b.getSetupBoard, this)
   private val undoManager: IUndoManager = new UndoManager
   private var currentState: IState = PreGameState(this)
 
   override def snapshot: ISnapshot = Snapshot(game, currentState)
 
+  override def getSize: Int = {
+    this.size
+  }
+
   override def updateBoard(list: List[IPieces]): Unit =
-    game = new Game(b, list, tui, this)
-    notifyObservers(Event.BOARD_CHANGED)
+    game = new Game(b, list, this)
 
   override def boardToString(): String = {
     game.toString
@@ -41,13 +45,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   }
 
   override def initGame(): Unit = {
-    val gui = new GUI(this, size)
-    gui.top.visible = true
     notifyObservers(Event.STATE_CHANGED)
-    val tuiThread = new Thread(() => {
-      tui.read()
-    })
-    tuiThread.start()
   }
 
   override def handleAction(action: IAction): Unit = {
@@ -61,11 +59,29 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
+        getCurrentState match {
+          case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
+            undoManager.undoCommand()
+          case _ =>
+        }
         undoManager.undoCommand()
       case RedoAction() =>
+        getCurrentState match {
+          case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
+            undoManager.redoCommand()
+          case _ =>
+        }
         undoManager.redoCommand()
       case StartGame() =>
         undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
+      case StartMovePiecesBlack(column1, row1) =>
+        changeState(MovePieceBlack(this, column1, row1))
+      case StartMovePiecesWhite(column1, row1) =>
+        changeState(MovePieceWhite(this, column1, row1))
+      case CancelMoveWhite() =>
+        changeState(TurnStateWhite(this))
+      case CancelMoveBlack() =>
+        changeState(TurnStateBlack(this))
       case _ =>
     }
   }

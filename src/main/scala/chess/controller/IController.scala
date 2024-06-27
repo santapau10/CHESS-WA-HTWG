@@ -5,6 +5,7 @@ import chess.util.Observer
 
 trait IController:
 
+  def getSize: Int
   def add(s: Observer): Unit
   def snapshot: ISnapshot
   def updateBoard(list: List[IPieces]): Unit
@@ -29,9 +30,11 @@ trait ICommand:
 
 trait IState(controller: IController):
 
-    def print(): Unit
-    def actionFromInput(input: String): IAction
-    def message: String
+  def getRow: Int
+  def getColumn: Int
+  def print(): Unit
+  def actionFromInput(input: String): IAction
+  def message: String
 
 trait ISnapshot:
 

@@ -1,9 +1,10 @@
 package chess.view.panels
 
+import chess.controller.{IController, StartGame}
+
+
 import scala.swing.*
 import scala.swing.event.*
-import chess.controller.*
-
 import javax.swing.ImageIcon
 import java.awt.geom.Ellipse2D
 import java.awt.{Color, Dimension, Insets}

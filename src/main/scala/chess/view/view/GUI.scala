@@ -1,7 +1,7 @@
 package chess.view.view
 
 import chess.controller.*
-import chess.controller.controller.{PreGameState, TurnStateBlack, TurnStateWhite}
+import chess.controller.controller.{MovePieceBlack, MovePieceWhite, PreGameState, TurnStateBlack, TurnStateWhite}
 import chess.util.*
 import chess.view.IGUI
 import chess.view.panels.*
@@ -10,9 +10,7 @@ import javax.swing.ImageIcon
 import scala.swing.*
 import com.google.inject.Inject
 
-
-
-class GUI @Inject() (controller: IController, boardSize: Integer) extends SimpleSwingApplication with Observer with IGUI {
+class GUI @Inject() (controller: IController) extends Frame with Observer with IGUI {
 
   controller.add(this)
 
@@ -21,7 +19,6 @@ class GUI @Inject() (controller: IController, boardSize: Integer) extends Simple
       case Event.BOARD_CHANGED =>
         updateBoard()
       case Event.INPUT =>
-
       case Event.STATE_CHANGED =>
         updateBoard()
       case _ =>
@@ -29,7 +26,7 @@ class GUI @Inject() (controller: IController, boardSize: Integer) extends Simple
     }
   }
 
-  val s: Int = boardSize
+  val s: Int = controller.getSize
 
   // Main frame definition as a lazy value
   lazy val top: MainFrame = new MainFrame {
@@ -48,32 +45,24 @@ class GUI @Inject() (controller: IController, boardSize: Integer) extends Simple
 
     // Center the frame on the screen
     centerOnScreen()
-  }
-
-  // Entry point for the application
-  override def run(): Unit = {
-    // Start the GUI application
-    main(Array())
+    open() // Öffnen Sie das Fenster explizit
   }
 
   def updateBoard(): Unit = {
+    val currentSize = top.contents.head.size
     controller.getCurrentState match {
       case _: PreGameState =>
-        val oldSize = top.size
-        val newBoardPanel = new StartPanel(controller) // Erstellen eines neuen StartPanels
-        top.contents = newBoardPanel // Setzen des StartPanels als Inhalt des MainFrame
-        top.size = oldSize
-        top.visible = true // Sicherstellen, dass das Fenster sichtbar ist
+        val newBoardPanel = new StartPanel(controller) {preferredSize = currentSize}
+        top.contents = newBoardPanel // Nur die Inhalte aktualisieren, nicht den gesamten Panel
 
-      case _: TurnStateWhite | _: TurnStateBlack =>
-        val oldSize = top.size
-        val scalledSize = oldSize.height/(s * 2)
-        val newBoardPanel = new BoardPanel(s + 2, s + 3, scalledSize, controller) // Erstellen eines neuen BoardPanels
-        top.contents = new BorderPanel {
-          layout(newBoardPanel) = BorderPanel.Position.Center // Platzieren des BoardPanels in der Mitte
+      case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
+        val scalledSize = top.size.height / (s * 2)
+        val newBoardPanel = new BoardPanel(s + 2, s + 3, scalledSize, controller) {
+          preferredSize = currentSize
         }
-        top.size = oldSize
-        top.visible = true // Sicherstellen, dass das Fenster sichtbar ist
+        top.contents = new BorderPanel {
+          layout(newBoardPanel) = BorderPanel.Position.Center
+        }
     }
   }
 }

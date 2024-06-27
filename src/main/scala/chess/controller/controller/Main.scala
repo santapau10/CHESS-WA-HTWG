@@ -1,16 +1,15 @@
 package chess.controller.controller
 
+import chess.controller.IController
 import chess.module._
 import chess.view._
-import chess.view.view.*
-
+import chess.view.view._
 import com.google.inject.Guice
 
 object Main extends App {
-  // Create a Guice injector with ChessModule
   private val injector = Guice.createInjector(new ChessModule)
-
-  // Retrieve instances of GUI and start the application
-  val gui = injector.getInstance(classOf[GUI])
-  gui.run()
+  val controller = injector.getInstance(classOf[IController])
+  private val gui = GUI(controller)
+  gui.top.open()
+  TUI(controller)
 }
