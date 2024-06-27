@@ -2,6 +2,10 @@ package chess.models
 
 import chess.models.*
 import chess.models.game.{Chesspiece, Colors, PiecesFactory}
+import play.api.libs.json.{JsValue, Json, Reads, Writes}
+import scala.xml.{Elem, Node}
+
+import scala.xml._
 
 import scala.xml.Node
 
@@ -18,30 +22,13 @@ abstract class Board(size: Int) extends IBoardBuilder {
   private val edge = s"$plus${minus * 4}"
   private val edgeField = s"${edge * this.size}$nextLPlus"
 
+
+
+
   override def getSetupBoard: List[IPieces] ={
     List.empty
   }
 
-  override def toXML(node: Node): BoardBuilder = {
-    buildFromXML(node)
-  }
-  override def toJSON(json: JObject): BoardBuilder = {
-    buildFromJSON(json)
-  }
-  override def buildFromXML(node: Node): BoardBuilder = {
-    val pieceType = (node \ "PieceType").text
-    val color = (node \ "Color").text
-    val x = (node \ "Position" \ "X").text.toInt
-    val y = (node \ "Position" \ "Y").text.toInt
-    ChessPiece(pieceType, color, (x, y))
-  }
-  override def buildFromJSON(json: JObject): BoardBuilder = {
-    val pieceType = (json \ "PieceType").extract[String]
-    val color = (json \ "Color").extract[String]
-    val x = (json \ "Position" \ "X").extract[Int]
-    val y = (json \ "Position" \ "Y").extract[Int]
-    ChessPiece(pieceType, color, (x, y))
-  }
   override def movePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): List[IPieces] = {
     list.find(piece => piece.getCords == (x1, y1)) match {
       case Some(foundPiece) =>
@@ -106,6 +93,19 @@ abstract class Board(size: Int) extends IBoardBuilder {
 }
 
 class Board_equal_8(size: Int) extends Board(size: Int) {
+
+  override def toXml(): Elem = <game>
+    {getClass.getSimpleName}
+  </game>
+
+  override def toJSON(): JsValue = {
+    val json = Json.obj(
+      "className" -> this.getClass.getSimpleName,
+      "size" -> size
+    )
+    Json.toJson(json)
+  }
+
   override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     val a = List(
@@ -146,6 +146,19 @@ class Board_equal_8(size: Int) extends Board(size: Int) {
   }
 }
 class Board_smaller_8(size: Int) extends Board(size: Int) {
+
+  override def toXml(): Elem = <game>
+    {getClass.getSimpleName}
+  </game>
+
+  override def toJSON(): JsValue = {
+    val json = Json.obj(
+      "className" -> this.getClass.getSimpleName,
+      "size" -> size
+    )
+    Json.toJson(json)
+  }
+
   override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     val a = List(
@@ -234,6 +247,20 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
   }
 }
 class Board_bigger_8(size: Int) extends Board(size: Int) {
+
+  override def toXml(): Elem = <game>
+    {getClass.getSimpleName}
+  </game>
+
+  override def toJSON(): JsValue = {
+    val json = Json.obj(
+      "className" -> this.getClass.getSimpleName,
+      "size" -> size
+    )
+    Json.toJson(json)
+  }
+
+
   override def getSetupBoard: List[IPieces] = {
     val pf: IPiecesFactory = new PiecesFactory
     if(size % 2 == 0 && size > 8) {
@@ -318,4 +345,35 @@ class Board_bigger_8(size: Int) extends Board(size: Int) {
     }
   }
 }
+
+
+  object Board {
+
+    def fromJson(json: JsValue): IBoardBuilder = {
+      val className = (json\ "className").as[String]
+      val size = (json \ "size").as[Int]
+
+      className match {
+        case "board_bigger_8" => new Board_bigger_8(size)
+        case "board_equal_8" => new Board_equal_8(size)
+        case "board_smaller_8" => new Board_smaller_8(size)
+        case _ => throw new IllegalArgumentException(s"Unsupported board type: $className")
+      }
+    }
+
+    def fromXml(xmlNode: Node): IBoardBuilder = {
+      val className = (xmlNode \\ "game").text.trim
+
+      className match {
+        case "board_bigger_8" => Board_bigger_8((xmlNode \ "@size").text.toInt)
+        case "board_equal_8" => Board_equal_8((xmlNode \ "@size").text.toInt)
+        case "board_smaller_8" => Board_smaller_8((xmlNode \ "@size").text.toInt)
+        case _ => throw new IllegalArgumentException(s"Unsupported board type: $className")
+      }
+    }
+  }
+
+
+
+
 

@@ -10,6 +10,7 @@ import scala.xml.{Elem, Node}
 
 trait IController:
 
+  def save(): Unit
   def getSize: Int
   def add(s: Observer): Unit
   def notifyObservers(event: Event): Unit

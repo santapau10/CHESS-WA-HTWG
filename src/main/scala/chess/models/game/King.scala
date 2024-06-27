@@ -5,21 +5,7 @@ import chess.models.game.{Chesspiece, Colors}
 import play.api.libs.json.{JsValue, Json, Writes, Reads}
 import scala.xml.{Elem, Node}
 
-object King {
-  implicit val writes: Writes[King] = Json.writes[King]
-  implicit val reads: Reads[King] = Json.reads[King]
 
-  def fromXML(node: Node): King = {
-    val x = (node \ "cords" \ "x").text.toInt
-    val y = (node \ "cords" \ "y").text.toInt
-    val color = Colors.withName((node \ "color").text)
-    new King((x, y), color)
-  }
-
-  def fromJSON(json: JsValue): King = {
-    json.as[King]
-  }
-}
 
 class King(cords: (Int, Int), color: Colors) extends IPieces {
   override def getColor: Colors = color
@@ -38,5 +24,15 @@ class King(cords: (Int, Int), color: Colors) extends IPieces {
     </king>
   }
 
-  def toJson: JsValue = Json.toJson(this)
+  def toJson: JsValue = {
+    val baseJson = Json.obj(
+      "cords" -> Json.obj(
+        "x" -> cords._1,
+        "y" -> cords._2
+      ),
+      "color" -> color.toString,
+      "piece" -> getPiece.toString
+    )
+    baseJson
+  }
 }

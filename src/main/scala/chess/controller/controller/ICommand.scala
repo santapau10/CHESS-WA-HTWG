@@ -1,6 +1,9 @@
 package chess.controller.controller
 
 import chess.controller.*
+import play.api.libs.json.{JsValue, Json}
+
+import scala.xml.{Node, Utility}
 
 class Command(controller: IController) extends ICommand:
   private var snapshot: Option[ISnapshot] = None
@@ -22,3 +25,23 @@ class ChangeStateCommand(state: IState, c: IController) extends Command(c):
   override def execute(): Unit = {
     c.changeState(state)
   }
+
+case class LoadXmlCommand(controller: IController, node: Node) extends Command(controller):
+
+  override def execute(): Unit =
+    val hash = (node \ "hash").text
+    val xmlSnapshot = (node \ "snapshot").head
+    if hash == Snapshot.hash(Utility.trim(xmlSnapshot).toString) then
+      controller.restoreSnapshot(Snapshot.fromXml(xmlSnapshot, controller))
+    else
+      println("Invalid XML progress file!")
+
+case class LoadJsonCommand(controller: IController, json: JsValue) extends Command(controller):
+
+  override def execute(): Unit =
+    val hash = (json \ "hash").get.as[String]
+    val jsonSnapshot = (json \ "snapshot").get
+    if hash == Snapshot.hash(Json.stringify(jsonSnapshot)) then
+      controller.restoreSnapshot(Snapshot.fromJson(jsonSnapshot, controller))
+    else
+      println("Invalid JSON progress file!")

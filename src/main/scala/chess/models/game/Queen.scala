@@ -1,25 +1,11 @@
 package chess.models.game
 
-import chess.models.{IPieces, Chesspiece, Colors}
+import chess.models.*
 import play.api.libs.json.{JsValue, Json, Writes, Reads}
 import scala.xml.{Elem, Node}
 
 // JSON serializers and deserializers using Play JSON
-object Queen {
-  implicit val writes: Writes[Queen] = Json.writes[Queen]
-  implicit val reads: Reads[Queen] = Json.reads[Queen]
 
-  def fromXML(node: Node): Queen = {
-    val x = (node \ "cords" \ "x").text.toInt
-    val y = (node \ "cords" \ "y").text.toInt
-    val color = Colors.withName((node \ "color").text)
-    new Queen((x, y), color)
-  }
-
-  def fromJSON(json: JsValue): Queen = {
-    json.as[Queen]
-  }
-}
 
 case class Queen(cords: (Int, Int), color: Colors) extends IPieces {
   override def getColor: Colors = color
@@ -38,5 +24,15 @@ case class Queen(cords: (Int, Int), color: Colors) extends IPieces {
     </queen>
   }
 
-  def toJson: JsValue = Json.toJson(this)
+  def toJson: JsValue = {
+    val baseJson = Json.obj(
+      "cords" -> Json.obj(
+        "x" -> cords._1,
+        "y" -> cords._2
+      ),
+      "color" -> color.toString,
+      "piece" -> getPiece.toString
+    )
+    baseJson
+  }
 }

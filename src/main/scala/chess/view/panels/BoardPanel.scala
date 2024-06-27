@@ -10,8 +10,17 @@ import chess.util.{Event, Observable}
 import scala.swing.*
 import scala.swing.event.*
 import java.awt.Color
+import java.io.File
 import javax.swing.ImageIcon
 import scala.annotation.tailrec
+import javax.swing.filechooser.FileNameExtensionFilter
+import scala.io.Source
+import scala.swing.FileChooser.{Result, SelectionMode}
+import scala.swing.event.ButtonClicked
+import scala.swing.{BoxPanel, FileChooser, Orientation}
+import scala.xml.XML
+import scala.util.Using
+import play.api.libs.json.Json
 
 
 class ChessButton(coords: (Int, Int), defaultColor: Color) extends Button {
@@ -36,7 +45,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   @tailrec
   private def addEmptyLabels(max:Int, n: Int = 0): Unit = {
     if (n <= max) {
-      if (n == (max / 2) && max % 2 != 0) {
+      if ((n == (max / 2) && max % 2 != 0) || (n == (max / 2) - 1 && max % 2 == 0)) {
         val button = new Button()
         button.border = null
         button.background = backgroundColor
@@ -50,21 +59,49 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
             controller.handleAction(UndoAction())
         }
         addEmptyLabels(max, n + 1)
-      } else if (n == (max / 2) - 1 && max % 2 == 0) {
+      } else if ((n == (max / 2) - 2 && max % 2 == 0) || (n == (max / 2) - 1 && max % 2 != 0)) {
         val button = new Button()
         button.border = null
         button.background = backgroundColor
-        val path = "/buttons/undo.png"
+        val path = "/buttons/import.png"
+        val ic = new ImageIcon(getClass.getResource(path))
+        val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+        button.icon = scaledIcon
+        contents += button
+        reactions += {
+          case ButtonClicked(_) => filePicker match
+            case Some(file) =>
+              try
+                val extension = file.getName.split("\\.").lastOption.getOrElse("")
+                extension.toLowerCase match
+                  case "xml" =>
+                    val xml = XML.loadFile(file)
+                    controller.handleAction(LoadXmlAction(xml))
+                  case "json" =>
+                    val content = Using(Source.fromFile(file))(_.mkString).getOrElse("")
+                    val json = Json.parse(content)
+                    controller.handleAction(LoadJsonAction(json))
+                  case _ =>
+                    println("Unsupported file format")
+              catch case e: Exception => e.printStackTrace()
+            case None =>
+        }
+        addEmptyLabels(max, n + 1)
+      } else if ((n == (max / 2) + 2 && max % 2 == 0) || (n == (max / 2) + 2 && max % 2 != 0)) {
+        val button = new Button()
+        button.border = null
+        button.background = backgroundColor
+        val path = "/buttons/export.png"
         val ic = new ImageIcon(getClass.getResource(path))
         val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
         button.icon = scaledIcon
         contents += button
         button.reactions += {
-          case ButtonClicked(_) =>
-            controller.handleAction(UndoAction())
+        case ButtonClicked(_) =>
+        controller.save()
         }
         addEmptyLabels(max, n + 1)
-      } else if (n == (max/2) +1) {
+      } else if ((n == (max/2) +1 && max % 2 != 0) || (n == (max / 2) + 1 && max % 2 == 0)) {
         val button = new Button()
         button.border = null
         button.background = backgroundColor
@@ -217,8 +254,15 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
     for (c <- contents) {
       c match {
         case b: ChessButton => b.background = b.getDefaultColor
-        case _ => // Do nothing for non-buttons
+        case _ =>
       }
     }
   }
+
+  private def filePicker: Option[File] =
+    val fileChooser = FileChooser()
+    fileChooser.fileSelectionMode = SelectionMode.FilesOnly
+    fileChooser.fileFilter = FileNameExtensionFilter("XML/JSON files", "xml", "json")
+    val result = fileChooser.showOpenDialog(null)
+    if result == Result.Approve then Some(fileChooser.selectedFile) else None
 }

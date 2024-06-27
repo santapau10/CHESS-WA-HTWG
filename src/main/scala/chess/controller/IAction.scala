@@ -1,5 +1,7 @@
 package chess.controller
+import play.api.libs.json.JsValue
 
+import scala.xml.Node
 
 case class UpdateBoardAction() extends IAction
 
@@ -28,3 +30,7 @@ case class StartMovePiecesWhite(column1: Int, row1: Int) extends IAction
 case class CancelMoveWhite() extends IAction
 
 case class CancelMoveBlack() extends IAction
+
+case class LoadXmlAction(node: Node) extends IAction
+
+case class LoadJsonAction(json: JsValue) extends IAction

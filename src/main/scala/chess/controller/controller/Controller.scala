@@ -73,6 +73,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
+        //save()
         getCurrentState match {
           case _: TurnStateWhite | _: MovePieceWhite =>
             undoManager.undoCommand()
@@ -103,6 +104,8 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
         changeState(TurnStateWhite(this))
       case CancelMoveBlack() =>
         changeState(TurnStateBlack(this))
+      case LoadXmlAction(node) => undoManager.executeCommand(LoadXmlCommand(this, node))
+      case LoadJsonAction(json) => undoManager.executeCommand(LoadJsonCommand(this, json))  
       case _ =>
     }
   }

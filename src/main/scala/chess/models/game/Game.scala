@@ -1,10 +1,12 @@
 package chess.models.game
 
 import chess.controller.*
-import chess.models.{IBoardBuilder, IGame, IPieces}
+import chess.models.{Board, IBoardBuilder, IGame, IPieces}
+import chess.models.game.PiecesFactory
 import chess.view.*
 import chess.view.view.TUI
 import play.api.libs.json.{JsValue, Json, Reads, Writes}
+
 import scala.xml.{Elem, Node}
 
 class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
@@ -18,7 +20,7 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
   override def toXml: Elem = {
     <game>
       <board>
-        {board.toXML}
+        {board.toXml()}
       </board>
       <pieces>
         {list.map(_.toXml)}
@@ -28,7 +30,7 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
   override def toJson: JsValue = Json.obj(
     "game" -> Json.obj(
-      "board" -> board.toJSON(list),
+      "board" -> board.toJSON(),
       "pieces" -> Json.arr(list.map(_.toJson): _*)
     )
   )
@@ -44,14 +46,14 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
 object Game {
   def fromXml(node: Node): IGame = {
-    val board = (node \ "board").headOption.map(IBoardBuilder.fromXml).get
-    val pieces = (node \ "pieces" \ "piece").map(IPieces.fromXml).toList
+    val board = (node \ "board").headOption.map(Board.fromXml).get
+    val pieces = (node \ "pieces" \ "piece").map(PiecesFactory.fromXml).toList
     new Game(board, pieces)
   }
 
   def fromJson(json: JsValue): IGame = {
-    val board = IBoardBuilder.fromJson((json \ "game" \ "board").as[JsValue])
-    val pieces = (json \ "game" \ "pieces").as[Seq[JsValue]].map(IPieces.fromJson).toList
+    val board = Board.fromJson((json \ "game" \ "board").as[JsValue])
+    val pieces = (json \ "game" \ "pieces").as[Seq[JsValue]].map(PiecesFactory.fromJson).toList
     new Game(board, pieces)
   }
 }
