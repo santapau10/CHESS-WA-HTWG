@@ -24,7 +24,7 @@ class Snapshot(game: IGame, state: IState) extends ISnapshot {
 object Snapshot:
   def fromXml(node: Node, controller: IController): Snapshot =
     val game = Game.fromXml((node \ "game").head)
-    val state = (node \ "state").text match
+    val state = (node \ "state").text.trim match
       case "PreGameState" => PreGameState(controller)
       case "TurnStateWhite" => TurnStateWhite(controller)
       case "TurnStateBlack" => TurnStateBlack(controller)

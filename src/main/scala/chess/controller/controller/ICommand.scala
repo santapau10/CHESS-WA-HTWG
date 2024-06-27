@@ -31,9 +31,11 @@ case class LoadXmlCommand(controller: IController, node: Node) extends Command(c
   override def execute(): Unit =
     val hash = (node \ "hash").text
     val xmlSnapshot = (node \ "snapshot").head
-    if hash == Snapshot.hash(Utility.trim(xmlSnapshot).toString) then
+    if hash == " " + Snapshot.hash(Utility.trim(xmlSnapshot).toString) + " " then
       controller.restoreSnapshot(Snapshot.fromXml(xmlSnapshot, controller))
     else
+      println(hash)
+      println(Snapshot.hash(Utility.trim(xmlSnapshot).toString))
       println("Invalid XML progress file!")
 
 case class LoadJsonCommand(controller: IController, json: JsValue) extends Command(controller):

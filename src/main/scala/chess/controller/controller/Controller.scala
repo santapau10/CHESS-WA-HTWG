@@ -73,7 +73,6 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
-        //save()
         getCurrentState match {
           case _: TurnStateWhite | _: MovePieceWhite =>
             undoManager.undoCommand()
@@ -120,6 +119,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   private def saveXml(name: String): Unit =
     val xmlSnapshot = snapshot.toXml
     val hash = Snapshot.hash(Utility.trim(XML.loadString(xmlSnapshot.toString)).toString)
+    //println(hash)
     val xml =
       <progress>
         <hash>

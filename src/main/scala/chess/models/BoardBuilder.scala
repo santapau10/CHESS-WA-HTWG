@@ -95,8 +95,13 @@ abstract class Board(size: Int) extends IBoardBuilder {
 class Board_equal_8(size: Int) extends Board(size: Int) {
 
   override def toXml(): Elem = <game>
-    {getClass.getSimpleName}
+    <type>Board_equal_8</type>
+    <size>
+      {size}
+    </size>
   </game>
+
+
 
   override def toJSON(): JsValue = {
     val json = Json.obj(
@@ -149,6 +154,9 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
 
   override def toXml(): Elem = <game>
     {getClass.getSimpleName}
+    <size>
+      {size}
+    </size>
   </game>
 
   override def toJSON(): JsValue = {
@@ -250,6 +258,9 @@ class Board_bigger_8(size: Int) extends Board(size: Int) {
 
   override def toXml(): Elem = <game>
     {getClass.getSimpleName}
+    <size>
+      {size}
+    </size>
   </game>
 
   override def toJSON(): JsValue = {
@@ -354,20 +365,20 @@ class Board_bigger_8(size: Int) extends Board(size: Int) {
       val size = (json \ "size").as[Int]
 
       className match {
-        case "board_bigger_8" => new Board_bigger_8(size)
-        case "board_equal_8" => new Board_equal_8(size)
-        case "board_smaller_8" => new Board_smaller_8(size)
+        case "Board_bigger_8" => new Board_bigger_8(size)
+        case "Board_equal_8" => new Board_equal_8(size)
+        case "Board_smaller_8" => new Board_smaller_8(size)
         case _ => throw new IllegalArgumentException(s"Unsupported board type: $className")
       }
     }
 
     def fromXml(xmlNode: Node): IBoardBuilder = {
-      val className = (xmlNode \\ "game").text.trim
-
+      val className = (xmlNode \\ "type").text.trim
+      val s = (xmlNode \\ "size").text.trim
       className match {
-        case "board_bigger_8" => Board_bigger_8((xmlNode \ "@size").text.toInt)
-        case "board_equal_8" => Board_equal_8((xmlNode \ "@size").text.toInt)
-        case "board_smaller_8" => Board_smaller_8((xmlNode \ "@size").text.toInt)
+        case "Board_bigger_8" => Board_bigger_8(s.toInt)
+        case "Board_equal_8" => Board_equal_8(s.toInt)
+        case "Board_smaller_8" => Board_smaller_8(s.toInt)
         case _ => throw new IllegalArgumentException(s"Unsupported board type: $className")
       }
     }

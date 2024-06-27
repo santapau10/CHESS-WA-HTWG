@@ -68,7 +68,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
         val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
         button.icon = scaledIcon
         contents += button
-        reactions += {
+        button.reactions += {
           case ButtonClicked(_) => filePicker match
             case Some(file) =>
               try

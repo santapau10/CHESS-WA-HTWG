@@ -48,7 +48,9 @@ object Game {
   def fromXml(node: Node): IGame = {
     val board = (node \ "board").headOption.map(Board.fromXml).get
     val pieces = (node \ "pieces" \ "piece").map(PiecesFactory.fromXml).toList
-    new Game(board, pieces)
+    val r = new Game(board, pieces)
+    val t = 10
+    r
   }
 
   def fromJson(json: JsValue): IGame = {
