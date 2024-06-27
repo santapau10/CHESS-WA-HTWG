@@ -1,15 +1,15 @@
 package chess.controller.controller
 
 import chess.controller.IController
-import chess.models.*
-import chess.view.TUI
+import chess.module._
+import chess.view._
+import chess.view.view._
+import com.google.inject.Guice
 
-import scala.language.postfixOps
-
-object Main {
-  def main(args: Array[String]): Unit = {
-    val size = 8
-    val controller: IController = Controller(size)
-    controller.initGame()
-  }
+object Main extends App {
+  private val injector = Guice.createInjector(new ChessModule)
+  val controller = injector.getInstance(classOf[IController])
+  private val gui = GUI(controller)
+  gui.top.open()
+  TUI(controller)
 }

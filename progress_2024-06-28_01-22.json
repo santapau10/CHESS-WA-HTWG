@@ -1,0 +1,239 @@
+{
+  "hash" : "87a6d5f35ea6a77878efa88582ceca3a82b8964bfead8d69f32c84526db89e53",
+  "snapshot" : {
+    "game" : {
+      "game" : {
+        "board" : {
+          "className" : "Board_equal_8",
+          "size" : 8
+        },
+        "pieces" : [ {
+          "cords" : {
+            "x" : 0,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "ROOK"
+        }, {
+          "cords" : {
+            "x" : 1,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "KNIGHT"
+        }, {
+          "cords" : {
+            "x" : 2,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "BISHOP"
+        }, {
+          "cords" : {
+            "x" : 3,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "QUEEN"
+        }, {
+          "cords" : {
+            "x" : 5,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "BISHOP"
+        }, {
+          "cords" : {
+            "x" : 6,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "KNIGHT"
+        }, {
+          "cords" : {
+            "x" : 7,
+            "y" : 0
+          },
+          "color" : "WHITE",
+          "piece" : "ROOK"
+        }, {
+          "cords" : {
+            "x" : 0,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 1,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 2,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 3,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 4,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 5,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 6,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 7,
+            "y" : 1
+          },
+          "color" : "WHITE",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 0,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "ROOK"
+        }, {
+          "cords" : {
+            "x" : 1,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "KNIGHT"
+        }, {
+          "cords" : {
+            "x" : 2,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "BISHOP"
+        }, {
+          "cords" : {
+            "x" : 3,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "QUEEN"
+        }, {
+          "cords" : {
+            "x" : 4,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "KING"
+        }, {
+          "cords" : {
+            "x" : 5,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "BISHOP"
+        }, {
+          "cords" : {
+            "x" : 7,
+            "y" : 7
+          },
+          "color" : "BLACK",
+          "piece" : "ROOK"
+        }, {
+          "cords" : {
+            "x" : 0,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 1,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 2,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 3,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 4,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 5,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 6,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 7,
+            "y" : 6
+          },
+          "color" : "BLACK",
+          "piece" : "PAWN"
+        }, {
+          "cords" : {
+            "x" : 3,
+            "y" : 4
+          },
+          "color" : "WHITE",
+          "piece" : "KING"
+        }, {
+          "cords" : {
+            "x" : 4,
+            "y" : 3
+          },
+          "color" : "BLACK",
+          "piece" : "KNIGHT"
+        } ]
+      }
+    },
+    "state" : "TurnStateWhite"
+  }
+}
