@@ -25,10 +25,16 @@ class PiecesFactory extends IPiecesFactory {
 
 object PiecesFactory {
 
-
   def fromXml(xml: Node): IPieces = {
-    val pieceType = (xml \ "piece").headOption.map(_.text.trim.toUpperCase)
-      .getOrElse(throw new IllegalArgumentException("Missing or invalid piece type in XML"))
+    val pieceType = xml.label.toUpperCase match {
+      case "PAWN" => Chesspiece.PAWN
+      case "KNIGHT" => Chesspiece.KNIGHT
+      case "BISHOP" => Chesspiece.BISHOP
+      case "ROOK" => Chesspiece.ROOK
+      case "QUEEN" => Chesspiece.QUEEN
+      case "KING" => Chesspiece.KING
+      case _ => throw new IllegalArgumentException("Invalid piece type in XML")
+    }
 
     val cords = ((xml \ "cords" \ "x").headOption, (xml \ "cords" \ "y").headOption) match {
       case (Some(xNode), Some(yNode)) => (xNode.text.toInt, yNode.text.toInt)
@@ -44,16 +50,9 @@ object PiecesFactory {
       case _ => throw new IllegalArgumentException("Invalid color in XML")
     }
 
-    pieceType match {
-      case "PAWN" => new Pawn(cords, color)
-      case "KNIGHT" => new Knight(cords, color)
-      case "BISHOP" => new Bishop(cords, color)
-      case "ROOK" => new Rook(cords, color)
-      case "QUEEN" => new Queen(cords, color)
-      case "KING" => new King(cords, color)
-      case _ => throw new IllegalArgumentException("Invalid piece type in XML")
-    }
+    new PiecesFactory().addPiece(pieceType, cords, color)
   }
+
 
   def fromJson(json: JsValue): IPieces = {
     val pieceType = (json \ "piece").asOpt[String].map(_.toUpperCase)

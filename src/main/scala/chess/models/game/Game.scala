@@ -46,11 +46,21 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
 object Game {
   def fromXml(node: Node): IGame = {
-    val board = (node \ "board").headOption.map(Board.fromXml).get
-    val pieces = (node \ "pieces" \ "piece").map(PiecesFactory.fromXml).toList
-    val r = new Game(board, pieces)
-    val t = 10
-    r
+    val board = (node \ "board").headOption.map(Board.fromXml).getOrElse(
+      throw new IllegalArgumentException("Missing board in XML")
+    )
+
+    val pieces = (node \ "pieces").headOption.map(_.child.flatMap { pieceNode =>
+      if (pieceNode.label.nonEmpty && (pieceNode \ "cords" \ "x").nonEmpty && (pieceNode \ "cords" \ "y").nonEmpty && (pieceNode \ "color").nonEmpty) {
+        Some(PiecesFactory.fromXml(pieceNode))
+      } else {
+        None
+      }
+    }.toList).getOrElse(
+      throw new IllegalArgumentException("Missing pieces in XML")
+    )
+
+    new Game(board, pieces)
   }
 
   def fromJson(json: JsValue): IGame = {

@@ -31,7 +31,7 @@ case class LoadXmlCommand(controller: IController, node: Node) extends Command(c
   override def execute(): Unit =
     val hash = (node \ "hash").text
     val xmlSnapshot = (node \ "snapshot").head
-    if hash == " " + Snapshot.hash(Utility.trim(xmlSnapshot).toString) + " " then
+    if hash == " " + Snapshot.hash(Utility.trim(xmlSnapshot).toString) + " " then // neu = alt -> ladet
       controller.restoreSnapshot(Snapshot.fromXml(xmlSnapshot, controller))
     else
       println(hash)
