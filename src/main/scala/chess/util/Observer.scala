@@ -11,6 +11,7 @@ trait Observable:
 
 enum Event:
   case BOARD_CHANGED
+  case UPDATE_TUI
   case INPUT
   case MOVE_PIECE
   case SAVE_SNAPSHOT

@@ -12,6 +12,15 @@ import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
 import com.google.inject.Inject
 
+import java.nio.file.{Files, Paths}
+import java.security.MessageDigest
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import scala.xml.{Elem, PrettyPrinter, Utility, XML}
+import play.api.libs.json.{JsValue, Json}
+
+import java.nio.charset.StandardCharsets
+import java.security.MessageDigest
 
 case class Controller @Inject() (size: Int) extends IController with Observable:
   private val b: IBoardBuilder = size match {
@@ -22,7 +31,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   }
 
 
-  var game: IGame = new Game(b, b.getSetupBoard, this)
+  var game: IGame = new Game(b, b.getSetupBoard)
   private val undoManager: IUndoManager = new UndoManager
   private var currentState: IState = PreGameState(this)
 
@@ -33,15 +42,20 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   }
 
   override def updateBoard(list: List[IPieces]): Unit =
-    game = new Game(b, list, this)
+    game = new Game(b, list)
 
   override def boardToString(): String = {
     game.toString
   }
 
+  override def notifyObservers(event: Event): Unit = super.notifyObservers(event)
   override def changeState(state: IState): Unit = {
     currentState = state
     notifyObservers(Event.STATE_CHANGED)
+  }
+  def changeStateWithoutGUIChange(state: IState): Unit = {
+    currentState = state
+    notifyObservers(Event.UPDATE_TUI)
   }
 
   override def initGame(): Unit = {
@@ -60,11 +74,18 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
         notifyObservers(Event.INPUT)
       case UndoAction() =>
         getCurrentState match {
-          case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
+          case _: TurnStateWhite | _: MovePieceWhite =>
             undoManager.undoCommand()
+            undoManager.undoCommand()
+            handleAction(CancelMoveBlack())
+          case _: TurnStateBlack | _: MovePieceBlack =>
+            undoManager.undoCommand()
+            undoManager.undoCommand()
+            handleAction(CancelMoveWhite())
           case _ =>
+            undoManager.undoCommand()
         }
-        undoManager.undoCommand()
+
       case RedoAction() =>
         getCurrentState match {
           case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
@@ -75,9 +96,9 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case StartGame() =>
         undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
       case StartMovePiecesBlack(column1, row1) =>
-        changeState(MovePieceBlack(this, column1, row1))
+        changeStateWithoutGUIChange(MovePieceBlack(this, column1, row1))
       case StartMovePiecesWhite(column1, row1) =>
-        changeState(MovePieceWhite(this, column1, row1))
+        changeStateWithoutGUIChange(MovePieceWhite(this, column1, row1))
       case CancelMoveWhite() =>
         changeState(TurnStateWhite(this))
       case CancelMoveBlack() =>
@@ -86,13 +107,47 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     }
   }
 
+  override def save(): Unit =
+    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm")
+    val date = formatter.format(LocalDateTime.now)
+    val name = s"progress_$date"
+    saveXml(name)
+    saveJson(name)
+
+  private def saveXml(name: String): Unit =
+    val xmlSnapshot = snapshot.toXml
+    val hash = Snapshot.hash(Utility.trim(XML.loadString(xmlSnapshot.toString)).toString)
+    val xml =
+      <progress>
+        <hash>
+          {hash}
+        </hash>{xmlSnapshot}
+      </progress>
+    XML.save(name + ".xml", XML.loadString(PrettyPrinter(100, 2).format(xml)), "UTF-8", true, null)
+
+  private def saveJson(name: String): Unit =
+    val jsonSnapshot = snapshot.toJson
+    val hash = Snapshot.hash(Json.stringify(jsonSnapshot))
+    val json = Json.obj(
+      "hash" -> hash,
+      "snapshot" -> jsonSnapshot
+    )
+    Files.write(Paths.get(name + ".json"), Json.prettyPrint(json).getBytes(StandardCharsets.UTF_8))
+
+
   override def restoreSnapshot(snapshot: ISnapshot): Unit =
     game = snapshot.getGame
     currentState = snapshot.getState
     notifyObservers(Event.STATE_CHANGED)
 
   override def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit = {
-    game.movePieces(l1, n1, l2, n2)
+    val RList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
+    if (RList != null) {
+      updateBoard(RList)
+    } else {
+      println("invalid position!")
+      updateBoard(game.getBoardList)
+    }
   }
 
   override def printState(): Unit = {

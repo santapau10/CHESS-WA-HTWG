@@ -2,10 +2,10 @@ package chess.view.panels
 
 import chess.models.*
 import chess.controller.*
-import chess.controller.controller.{TurnStateBlack, TurnStateWhite, MovePieceWhite, MovePieceBlack}
+import chess.controller.controller.{MovePieceBlack, MovePieceWhite, TurnStateBlack, TurnStateWhite}
 import chess.models.game.Colors
 import chess.models.IPieces
-
+import chess.util.{Event, Observable}
 
 import scala.swing.*
 import scala.swing.event.*
@@ -14,11 +14,11 @@ import javax.swing.ImageIcon
 import scala.annotation.tailrec
 
 
-class ChessButton(coords: (Int, Int)) extends Button {
+class ChessButton(coords: (Int, Int), defaultColor: Color) extends Button {
   def getCords: (Int, Int) = coords
+  def getDefaultColor: Color = defaultColor
 }
-class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: IController) extends GridPanel(rows, cols) {
-  private var clicks: Option[IPieces] = None // Initialisieren der Option mit None
+class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: IController) extends GridPanel(rows, cols){
 
   super.rows = rows
   super.columns = cols
@@ -129,7 +129,15 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   @tailrec
   private def addButtonsRow(n: Int, i: Int, s: Int): Unit = {
     if (i < s - 1) {
-      val button = new ChessButton((i - 1, n - 2)) // Erstellen eines ChessButton mit Koordinaten-Tupel
+
+      val background = if ((n + i) % 2 == 0) {
+        Color.WHITE
+      } else {
+        new Color(99, 176, 199)
+      }
+
+      val button = new ChessButton((i - 1, n - 2), background) // Erstellen eines ChessButton mit Koordinaten-Tupel
+      button.background = button.getDefaultColor
       val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
       val path = foundPiece match {
         case Some(piece) => piece.getIconPath
@@ -139,14 +147,13 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
         val ic = new ImageIcon(getClass.getResource(path))
         val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
         button.icon = scaledIcon
+        button.opaque = true
       }
-      if ((n + i) % 2 == 0) {
-        button.background = Color.WHITE
-      } else {
-        button.background = new Color(99, 176, 199)
-      }
+
       button.reactions += {
-        case ButtonClicked(_) =>
+        case ButtonClicked(b) =>
+          resetButtonColors()
+          button.background = Color.YELLOW
           val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
           val coords = button.getCords
           foundPiece match {
@@ -156,13 +163,13 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                   if (piece.getColor == Colors.WHITE) {
                     controller.handleAction(StartMovePiecesWhite(coords._1, coords._2))
                   } else {
-                    controller.handleAction(InvalidAction("wrong color"))
+                    controller.handleAction(CancelMoveWhite())
                   }
                 case _: TurnStateBlack =>
                   if (piece.getColor == Colors.BLACK) {
                     controller.handleAction(StartMovePiecesBlack(coords._1, coords._2))
                   } else {
-                    controller.handleAction(InvalidAction("wrong color"))
+                    controller.handleAction(CancelMoveBlack())
                   }
                 case _: MovePieceBlack =>
                   if (coords._1 == controller.getCurrentState.getColumn && coords._2 == controller.getCurrentState.getRow) {
@@ -171,6 +178,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     controller.handleAction(MovePiecesBlack(controller.getCurrentState.getColumn, controller.getCurrentState.getRow, coords._1, coords._2))
                   } else {
                     controller.handleAction(StartMovePiecesBlack(coords._1,coords._2))
+
                   }
                 case _: MovePieceWhite =>
                   if (coords._1 == controller.getCurrentState.getColumn && coords._2 == controller.getCurrentState.getRow) {
@@ -179,12 +187,18 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     controller.handleAction(MovePiecesWhite(controller.getCurrentState.getColumn, controller.getCurrentState.getRow, coords._1, coords._2))
                   } else {
                     controller.handleAction(StartMovePiecesWhite(coords._1,coords._2))
+                    //controller.notifyObservers(Event.STATE_CHANGED)
+                    //button.background = Color.YELLOW
                   }
                 case _ =>
                   controller.handleAction(InvalidAction("balls"))
               }
             case None =>
               controller.getCurrentState match {
+                case _: TurnStateWhite =>
+                  controller.handleAction(CancelMoveWhite())
+                case _: TurnStateBlack =>
+                  controller.handleAction(CancelMoveBlack())
                 case _: MovePieceBlack =>
                   controller.handleAction(MovePiecesBlack(controller.getCurrentState.getColumn, controller.getCurrentState.getRow, coords._1, coords._2))
                 case _: MovePieceWhite =>
@@ -196,6 +210,15 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       }
       contents += button
       addButtonsRow(n, i + 1, s)
+    }
+  }
+
+  private def resetButtonColors(): Unit = {
+    for (c <- contents) {
+      c match {
+        case b: ChessButton => b.background = b.getDefaultColor
+        case _ => // Do nothing for non-buttons
+      }
     }
   }
 }

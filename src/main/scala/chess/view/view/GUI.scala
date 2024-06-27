@@ -22,7 +22,7 @@ class GUI @Inject() (controller: IController) extends Frame with Observer with I
       case Event.STATE_CHANGED =>
         updateBoard()
       case _ =>
-        println("update ohne passende event")
+        //println("update ohne passende event")
     }
   }
 
@@ -55,7 +55,7 @@ class GUI @Inject() (controller: IController) extends Frame with Observer with I
         val newBoardPanel = new StartPanel(controller) {preferredSize = currentSize}
         top.contents = newBoardPanel // Nur die Inhalte aktualisieren, nicht den gesamten Panel
 
-      case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
+      case _: MovePieceWhite | _: MovePieceBlack | _: TurnStateBlack | _: TurnStateWhite =>
         val scalledSize = top.size.height / (s * 2)
         val newBoardPanel = new BoardPanel(s + 2, s + 3, scalledSize, controller) {
           preferredSize = currentSize
@@ -63,6 +63,9 @@ class GUI @Inject() (controller: IController) extends Frame with Observer with I
         top.contents = new BorderPanel {
           layout(newBoardPanel) = BorderPanel.Position.Center
         }
+
+      case _ =>
+        
     }
   }
 }

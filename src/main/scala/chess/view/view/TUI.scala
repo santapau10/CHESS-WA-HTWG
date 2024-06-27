@@ -24,6 +24,8 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
         read()
       case Event.STATE_CHANGED =>
         controller.printState()
+      case Event.UPDATE_TUI =>
+        controller.printState()
       case _ =>
     }
   }

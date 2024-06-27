@@ -3,6 +3,8 @@ package chess.models
 import chess.models.*
 import chess.models.game.{Chesspiece, Colors, PiecesFactory}
 
+import scala.xml.Node
+
 abstract class Board(size: Int) extends IBoardBuilder {
   val h2Line = "__"
   val hLine = "_"
@@ -20,6 +22,26 @@ abstract class Board(size: Int) extends IBoardBuilder {
     List.empty
   }
 
+  override def toXML(node: Node): BoardBuilder = {
+    buildFromXML(node)
+  }
+  override def toJSON(json: JObject): BoardBuilder = {
+    buildFromJSON(json)
+  }
+  override def buildFromXML(node: Node): BoardBuilder = {
+    val pieceType = (node \ "PieceType").text
+    val color = (node \ "Color").text
+    val x = (node \ "Position" \ "X").text.toInt
+    val y = (node \ "Position" \ "Y").text.toInt
+    ChessPiece(pieceType, color, (x, y))
+  }
+  override def buildFromJSON(json: JObject): BoardBuilder = {
+    val pieceType = (json \ "PieceType").extract[String]
+    val color = (json \ "Color").extract[String]
+    val x = (json \ "Position" \ "X").extract[Int]
+    val y = (json \ "Position" \ "Y").extract[Int]
+    ChessPiece(pieceType, color, (x, y))
+  }
   override def movePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): List[IPieces] = {
     list.find(piece => piece.getCords == (x1, y1)) match {
       case Some(foundPiece) =>
