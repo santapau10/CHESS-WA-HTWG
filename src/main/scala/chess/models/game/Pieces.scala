@@ -12,14 +12,14 @@ enum Colors:
 enum Chesspiece:
   case KING, PAWN, QUEEN, BISHOP, KNIGHT, ROOK
 
-class PiecesFactory extends IPiecesFactory {
-  override def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors): IPieces = chesspiece match {
-    case Chesspiece.PAWN => new Pawn(cords, color)
-    case Chesspiece.KNIGHT => new Knight(cords, color)
-    case Chesspiece.BISHOP => new Bishop(cords, color)
-    case Chesspiece.ROOK => new Rook(cords, color)
-    case Chesspiece.QUEEN => new Queen(cords, color)
-    case Chesspiece.KING => new King(cords, color)
+class PiecesFactory() extends IPiecesFactory {
+  override def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean): IPieces = chesspiece match {
+    case Chesspiece.PAWN => new Pawn(cords, color, moved)
+    case Chesspiece.KNIGHT => new Knight(cords, color, moved)
+    case Chesspiece.BISHOP => new Bishop(cords, color, moved)
+    case Chesspiece.ROOK => new Rook(cords, color, moved)
+    case Chesspiece.QUEEN => new Queen(cords, color, moved)
+    case Chesspiece.KING => new King(cords, color, moved)
   }
 }
 
@@ -44,13 +44,22 @@ object PiecesFactory {
     val colorStr = (xml \ "color").headOption.map(_.text.trim.toUpperCase)
       .getOrElse(throw new IllegalArgumentException("Missing or invalid color in XML"))
 
+    val movedStr = (xml \ "moved").headOption.map(_.text.trim)
+      .getOrElse(throw new IllegalArgumentException("Missing or invalid color in XML"))
+
+    val moved = movedStr match {
+      case "true" => true
+      case "false" => false
+      case _ => throw new IllegalArgumentException("Invalid Boolean: moved in XML")
+    }
+
     val color = colorStr match {
       case "WHITE" => Colors.WHITE
       case "BLACK" => Colors.BLACK
       case _ => throw new IllegalArgumentException("Invalid color in XML")
     }
 
-    new PiecesFactory().addPiece(pieceType, cords, color)
+    new PiecesFactory().addPiece(pieceType, cords, color, moved)
   }
 
 
@@ -66,6 +75,15 @@ object PiecesFactory {
     val colorStr = (json \ "color").asOpt[String].map(_.toUpperCase)
       .getOrElse(throw new IllegalArgumentException("Missing or invalid color in JSON"))
 
+    val movedStr = (json \ "moved").asOpt[String]
+      .getOrElse(throw new IllegalArgumentException("Missing or invalid color in XML"))
+
+    val moved = movedStr match {
+      case "true" => true
+      case "false" => false
+      case _ => throw new IllegalArgumentException("Invalid Boolean: moved in JSON")
+    }
+
     val color = colorStr match {
       case "WHITE" => Colors.WHITE
       case "BLACK" => Colors.BLACK
@@ -73,16 +91,15 @@ object PiecesFactory {
     }
 
     pieceType match {
-      case "PAWN" => new Pawn(cords, color)
-      case "KNIGHT" => new Knight(cords, color)
-      case "BISHOP" => new Bishop(cords, color)
-      case "ROOK" => new Rook(cords, color)
-      case "QUEEN" => new Queen(cords, color)
-      case "KING" => new King(cords, color)
+      case "PAWN" => new Pawn(cords, color, moved)
+      case "KNIGHT" => new Knight(cords, color, moved)
+      case "BISHOP" => new Bishop(cords, color, moved)
+      case "ROOK" => new Rook(cords, color, moved)
+      case "QUEEN" => new Queen(cords, color, moved)
+      case "KING" => new King(cords, color, moved)
       case _ => throw new IllegalArgumentException("Invalid piece type in JSON")
     }
   }
-
 }
 
 

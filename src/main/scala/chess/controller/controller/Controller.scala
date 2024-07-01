@@ -66,10 +66,8 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>

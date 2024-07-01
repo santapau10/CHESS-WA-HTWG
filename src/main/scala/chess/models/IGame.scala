@@ -18,6 +18,8 @@ trait IBoardBuilder:
 
 
 trait IGame:
+  def isKingInCheck(kingX: Int, kingY: Int, list: List[IPieces]): Boolean
+  def isKingInCheckmate(kingX: Int, kingY: Int, list: List[IPieces]): Boolean
   def getBoard: IBoardBuilder
   override def toString: String
   def getBoardList: List[IPieces]
@@ -25,7 +27,8 @@ trait IGame:
   def toXml: Elem
 
 trait IPieces:
-
+  def isMoved: Boolean
+  def checkMove(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): Boolean
   def toJson: JsValue
   def toXml: Elem
   def getColor: Colors
@@ -36,4 +39,4 @@ trait IPieces:
 
 
 trait IPiecesFactory:
-  def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors): IPieces
+  def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean): IPieces
