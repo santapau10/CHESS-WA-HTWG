@@ -23,7 +23,7 @@ abstract class Board(size: Int) extends IBoardBuilder {
   private val edgeField = s"${edge * this.size}$nextLPlus"
 
 
-
+  override def getSize(): Int = size
 
   override def getSetupBoard: List[IPieces] ={
     List.empty

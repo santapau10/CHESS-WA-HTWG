@@ -253,3 +253,28 @@ case class MovePieceBlack(controller: IController, column1: Int, row1: Int) exte
       case Failure(exception) => InvalidAction("invalid format")
     }
   }
+
+case class GameOver(controller: IController) extends State(controller):
+  override def print(): Unit = {
+    println(controller.boardToString())
+    println("\nGame Over")
+  }
+
+  override def message: String = "Game Over"
+
+  override def actionFromInput(input: String): IAction = {
+    input match {
+      case "undo" =>
+        UndoAction()
+      case "u" =>
+        UndoAction()
+      case "redo" =>
+        RedoAction()
+      case "r" =>
+        RedoAction()
+      case "restart" =>
+        RestartGameAction()
+      case _ =>
+        InvalidAction("invalid format")
+    }
+  }

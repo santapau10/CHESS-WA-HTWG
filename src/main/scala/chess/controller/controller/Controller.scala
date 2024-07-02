@@ -1,9 +1,10 @@
 package chess.controller.controller
 
 import chess.controller.*
-import chess.models.game.Game
+import chess.models.game.{Colors, Game}
 import chess.models.*
 import chess.util.*
+import chess.util.Event.STATE_CHANGED
 import chess.view.*
 import chess.view.view.{GUI, TUI}
 
@@ -35,6 +36,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   private val undoManager: IUndoManager = new UndoManager
   private var currentState: IState = PreGameState(this)
 
+  
   override def snapshot: ISnapshot = Snapshot(game, currentState)
 
   override def getSize: Int = {
@@ -59,6 +61,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   }
 
   override def initGame(): Unit = {
+    game = new Game(b, b.getSetupBoard)
     notifyObservers(Event.STATE_CHANGED)
   }
 
@@ -66,31 +69,50 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
+          changeState(GameOver(this))
+        }
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
+          changeState(GameOver(this))
+        }
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
-        getCurrentState match {
-          case _: TurnStateWhite | _: MovePieceWhite =>
-            undoManager.undoCommand()
-            undoManager.undoCommand()
-            handleAction(CancelMoveBlack())
-          case _: TurnStateBlack | _: MovePieceBlack =>
-            undoManager.undoCommand()
-            undoManager.undoCommand()
-            handleAction(CancelMoveWhite())
-          case _ =>
-            undoManager.undoCommand()
+        if(undoManager.canUndo) {
+          getCurrentState match {
+            case _: TurnStateWhite | _: MovePieceWhite =>
+              undoManager.undoCommand()
+              handleAction(CancelMoveBlack())
+            case _: TurnStateBlack | _: MovePieceBlack =>
+              undoManager.undoCommand()
+              handleAction(CancelMoveWhite())
+            case _ =>
+              undoManager.undoCommand()
+          }
         }
+      case RestartGameAction() =>
+        undoManager.executeCommand(RestartCommand(this))
+
+       
 
       case RedoAction() =>
-        getCurrentState match {
-          case _: TurnStateWhite | _: TurnStateBlack | _: MovePieceWhite | _: MovePieceBlack =>
-            undoManager.redoCommand()
-          case _ =>
+        if (undoManager.canRedo) {
+          getCurrentState match {
+            case _: TurnStateWhite | _: MovePieceWhite   =>
+              undoManager.redoCommand()
+              changeState(TurnStateBlack(this))
+            case _: TurnStateBlack | _: MovePieceBlack =>
+              undoManager.redoCommand()
+              changeState(TurnStateWhite(this))
+            case _ =>
+              undoManager.redoCommand()
+          }
         }
-        undoManager.redoCommand()
+        
+        
+        notifyObservers(STATE_CHANGED)
       case StartGame() =>
         undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
       case StartMovePiecesBlack(column1, row1) =>

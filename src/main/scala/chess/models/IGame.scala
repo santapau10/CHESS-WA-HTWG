@@ -7,6 +7,7 @@ import scala.xml.{Elem, Node}
 import play.api.libs.json.{JsValue, Json, Reads, Writes}
 
 trait IBoardBuilder:
+  def getSize(): Int
   def toJSON(): JsValue
   def toXml(): Elem
   def movePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): List[IPieces]
@@ -18,8 +19,8 @@ trait IBoardBuilder:
 
 
 trait IGame:
-  def isKingInCheck(kingX: Int, kingY: Int, list: List[IPieces]): Boolean
-  def isKingInCheckmate(kingX: Int, kingY: Int, list: List[IPieces]): Boolean
+  def isKingInCheck(checklist: List[IPieces], colors: Colors): Boolean
+  def isKingInCheckmate(checklist: List[IPieces], colors: Colors): Boolean
   def getBoard: IBoardBuilder
   override def toString: String
   def getBoardList: List[IPieces]

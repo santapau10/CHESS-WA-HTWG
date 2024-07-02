@@ -57,7 +57,7 @@ class King(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
 
     if (!targetSquareValid) return false
 
-    val updatedList = list.filterNot(p => p.getCords == (x1, y1)) :+ new King((x2, y2), list.find(p => p.getCords == (x1, y1)).get.getColor, list.find(p => p.getCords == (x1, y1)).get.isMoved)
+    val updatedList = list.filterNot(p => p.getCords == (x1, y1)).filterNot(p => p.getCords == (x2, y2)) :+ new King((x2, y2), list.find(p => p.getCords == (x1, y1)).get.getColor, list.find(p => p.getCords == (x1, y1)).get.isMoved)
 
     !isKingInCheck(x2, y2, updatedList)
   }

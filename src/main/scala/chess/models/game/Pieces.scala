@@ -36,8 +36,8 @@ object PiecesFactory {
       case _ => throw new IllegalArgumentException("Invalid piece type in XML")
     }
 
-    val cords = ((xml \ "cords" \ "x").headOption.map(_.text.trim), (xml \ "cords" \ "y").headOption.map(_.text.trim)) match {
-      case (Some(xNode), Some(yNode)) => (xNode.toInt, yNode.toInt)
+    val cords = ((xml \ "cords" \ "x").headOption, (xml \ "cords" \ "y").headOption) match {
+      case (Some(xNode), Some(yNode)) => (xNode.text.toInt, yNode.text.toInt)
       case _ => throw new IllegalArgumentException("Missing or invalid coordinates in XML")
     }
 

@@ -3,7 +3,7 @@ package chess.view.panels
 import chess.models.*
 import chess.controller.*
 import chess.controller.controller.{MovePieceBlack, MovePieceWhite, TurnStateBlack, TurnStateWhite}
-import chess.models.game.Colors
+import chess.models.game.{Colors,PiecesFactory}
 import chess.models.IPieces
 import chess.util.{Event, Observable}
 
@@ -33,6 +33,8 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   super.columns = cols
   private val backgroundColor = new Color(200,200,200)
   private val selectedButton = new Color(16,78,139)
+  private val moveableButton = new Color(21,120,110)
+
 
   // Initialize the board with labels and numbers
   private val emptyLabel = new Label("") {
@@ -183,6 +185,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       if (path.nonEmpty) {
         val ic = new ImageIcon(getClass.getResource(path))
         val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+        
         button.icon = scaledIcon
         button.opaque = true
       }
@@ -193,16 +196,38 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
           button.background = Color.YELLOW
           val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
           val coords = button.getCords
+
+          
           foundPiece match {
             case Some(piece) =>
               controller.getCurrentState match {
                 case _: TurnStateWhite =>
+                  for (c <- contents) {
+                    c match {
+                      case b: ChessButton =>
+                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                        if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
+                          b.background = moveableButton
+                        }
+                      case _ =>
+                    }
+                  }
                   if (piece.getColor == Colors.WHITE) {
                     controller.handleAction(StartMovePiecesWhite(coords._1, coords._2))
                   } else {
                     controller.handleAction(CancelMoveWhite())
                   }
                 case _: TurnStateBlack =>
+                  for (c <- contents) {
+                    c match {
+                      case b: ChessButton =>
+                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                        if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
+                          b.background = moveableButton
+                        }
+                      case _ =>
+                    }
+                  }
                   if (piece.getColor == Colors.BLACK) {
                     controller.handleAction(StartMovePiecesBlack(coords._1, coords._2))
                   } else {
@@ -215,7 +240,16 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     controller.handleAction(MovePiecesBlack(controller.getCurrentState.getColumn, controller.getCurrentState.getRow, coords._1, coords._2))
                   } else {
                     controller.handleAction(StartMovePiecesBlack(coords._1,coords._2))
-
+                    for (c <- contents) {
+                      c match {
+                        case b: ChessButton =>
+                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                          if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
+                            b.background = moveableButton
+                          }
+                        case _ =>
+                      }
+                    }
                   }
                 case _: MovePieceWhite =>
                   if (coords._1 == controller.getCurrentState.getColumn && coords._2 == controller.getCurrentState.getRow) {
@@ -224,8 +258,16 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     controller.handleAction(MovePiecesWhite(controller.getCurrentState.getColumn, controller.getCurrentState.getRow, coords._1, coords._2))
                   } else {
                     controller.handleAction(StartMovePiecesWhite(coords._1,coords._2))
-                    //controller.notifyObservers(Event.STATE_CHANGED)
-                    //button.background = Color.YELLOW
+                    for (c <- contents) {
+                      c match {
+                        case b: ChessButton =>
+                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                          if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
+                            b.background = moveableButton
+                          }
+                        case _ =>
+                      }
+                    }
                   }
                 case _ =>
                   controller.handleAction(InvalidAction("balls"))
@@ -258,6 +300,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       }
     }
   }
+
 
   private def filePicker: Option[File] =
     val fileChooser = FileChooser()

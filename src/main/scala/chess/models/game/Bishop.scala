@@ -40,6 +40,7 @@ class Bishop(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
   }
 
   def checkMove(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): Boolean = {
+    
     if (math.abs(x2 - x1) == math.abs(y2 - y1)) {
       val xStep = if (x2 > x1) 1 else -1
       val yStep = if (y2 > y1) 1 else -1
