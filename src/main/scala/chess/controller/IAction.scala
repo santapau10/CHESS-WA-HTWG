@@ -34,3 +34,5 @@ case class CancelMoveBlack() extends IAction
 case class LoadXmlAction(node: Node) extends IAction
 
 case class LoadJsonAction(json: JsValue) extends IAction
+
+case class RestartGameAction() extends IAction
