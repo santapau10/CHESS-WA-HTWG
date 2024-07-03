@@ -1,3 +1,4 @@
+<img src="assets/game.png" />
 [![Scala CI](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml/badge.svg)](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg?branch=master)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG?branch=master)
 # Chess Game Project at HTWG Konstanz
