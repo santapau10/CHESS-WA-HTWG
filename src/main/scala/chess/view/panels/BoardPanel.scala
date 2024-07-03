@@ -31,7 +31,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
 
   super.rows = rows
   super.columns = cols
-  private val backgroundColor = new Color(200,200,200)
+  private val backgroundColor = new Color(239,239,239)
   private val selectedButton = new Color(16,78,139)
   private val moveableButton = new Color(255,83,83,120)
 
