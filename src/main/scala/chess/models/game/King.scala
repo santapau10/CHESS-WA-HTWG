@@ -63,16 +63,39 @@ class King(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,In
   def checkMove(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): Boolean = {
     val isValidKingMove = math.abs(x2 - x1) <= 1 && math.abs(y2 - y1) <= 1
 
-    if (!isValidKingMove) return false
+    // Check for regular king move
+    if (isValidKingMove) {
+      val targetSquare = list.find(p => p.getCords == (x2, y2))
+      val targetSquareValid = targetSquare.forall(_.getColor != list.find(p => p.getCords == (x1, y1)).get.getColor)
 
-    val targetSquare = list.find(p => p.getCords == (x2, y2))
-    val targetSquareValid = targetSquare.forall(_.getColor != list.find(p => p.getCords == (x1, y1)).get.getColor)
+      if (!targetSquareValid) return false
 
-    if (!targetSquareValid) return false
+      val updatedList = list.filterNot(p => p.getCords == (x1, y1)).filterNot(p => p.getCords == (x2, y2)) :+ new King((x2, y2), list.find(p => p.getCords == (x1, y1)).get.getColor, list.find(p => p.getCords == (x1, y1)).get.isMoved, (x1, x2))
 
-    val updatedList = list.filterNot(p => p.getCords == (x1, y1)).filterNot(p => p.getCords == (x2, y2)) :+ new King((x2, y2), list.find(p => p.getCords == (x1, y1)).get.getColor, list.find(p => p.getCords == (x1, y1)).get.isMoved, (x1,x2))
+      return !isKingInCheck(x2, y2, updatedList)
+    }
 
-    !isKingInCheck(x2, y2, updatedList)
+    // Check for castling
+    if (!moved && y1 == y2 && (x2 == 2 || x2 == 6)) {
+      val rookX = if (x2 == 2) 0 else 7
+      val rook = list.find(p => p.getCords == (rookX, y1) && p.getPiece == Chesspiece.ROOK && !p.isMoved)
+
+      if (rook.isDefined) {
+        val direction = if (x2 == 2) -1 else 1
+        val pathClear = (1 to math.abs(x2 - x1) - 1).forall(i => list.forall(p => p.getCords != (x1 + i * direction, y1)))
+
+        if (pathClear) {
+          val kingNewPosition = new King((x2, y2), color, moved = true, (x1, y1))
+          val rookNewPosition = new Rook((x1 + direction, y1), color, moved = true, (rookX, y1))
+
+          val updatedList = list.filterNot(p => p.getCords == (x1, y1) || p.getCords == (rookX, y1)) :+ kingNewPosition :+ rookNewPosition
+
+          return !isKingInCheck(x2, y2, updatedList)
+        }
+      }
+    }
+
+    false
   }
 
   def isKingInCheck(kingX: Int, kingY: Int, list: List[IPieces]): Boolean = {

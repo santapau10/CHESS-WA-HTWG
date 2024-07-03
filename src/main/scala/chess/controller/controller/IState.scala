@@ -296,13 +296,13 @@ case class PromotionState(controller: IController) extends State(controller):
         RedoAction()
       case "r" =>
         RedoAction()
-      case "Knight" =>
+      case "knight" =>
         PromoteToKnightAction()
-      case "Queen" =>
+      case "queen" =>
         PromoteToQueenAction()
-      case "Bishop" =>
+      case "bishop" =>
         PromoteToBishopAction()
-      case "Rook" =>
+      case "rook" =>
         PromoteToRookAction()
       case _ =>
         InvalidAction("invalid format")
