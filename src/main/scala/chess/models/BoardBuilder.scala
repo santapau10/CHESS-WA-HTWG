@@ -47,6 +47,9 @@ abstract class Board(size: Int) extends IBoardBuilder {
         null
     }
   }
+  override def promotePiece(chesspiece: Chesspiece, list: List[IPieces]): List[IPieces] = {
+    list.filterNot(p => p.getCords == list.last.getCords) :+ PiecesFactory().addPiece(chesspiece, list.last.getCords, list.last.getColor, list.last.isMoved, list.last.getLastCords)
+  }
   def preMovePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): List[IPieces] = {
     list.find(piece => piece.getCords == (x1, y1)) match {
       case Some(foundPiece) =>

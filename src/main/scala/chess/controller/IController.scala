@@ -22,6 +22,9 @@ trait IController:
   def handleAction(action: IAction): Unit
   def restoreSnapshot(snapshot: ISnapshot): Unit
   def movePieces(l1: Int, n1: Int, l2: Int, n2: Int): Unit
+  def enPassantPiece(l1: Int, n1: Int, l2: Int, n2: Int, defeated_x: Int, defeated_y: Int): Unit
+  def longCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit
+  def shortCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit
   def printState(): Unit
   def actionFromInput(s: String): IAction
   def getGame: IGame

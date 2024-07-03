@@ -44,12 +44,17 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
   }
 
   override def isKingInCheck(checklist: List[IPieces], colors: Colors): Boolean = {
-    val king = checklist.find(p => p.getPiece == Chesspiece.KING && p.getColor == colors)
+    val foundking = checklist.find(p => p.getPiece == Chesspiece.KING && p.getColor == colors)
+    
+    foundking match
+      case Some(king) =>
+        val kingX = king.getCords._1
+        val kingY = king.getCords._2
 
-    val kingX = king.get.getCords._1
-    val kingY = king.get.getCords._2
+        checklist.exists(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))
 
-    checklist.exists(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))
+      case None => false
+         
   }
 
   override def isKingInCheckmate(checklist: List[IPieces],color: Colors): Boolean = {

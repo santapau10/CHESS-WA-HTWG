@@ -1,7 +1,7 @@
 package chess.controller.controller
 
 import chess.controller.*
-import chess.models.game.{Colors, Game}
+import chess.models.game.{Chesspiece, Colors, Game, Rook}
 import chess.models.*
 import chess.util.*
 import chess.util.Event.STATE_CHANGED
@@ -69,25 +69,53 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
+        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == size - 1) {
+          undoManager.executeCommand(ChangeStateCommand(PromotionState(this), this))
+        }
+        else if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
           changeState(GameOver(this))
+        } else {
+          getCurrentState match {
+            case _: MovePieceWhite =>
+              handleAction(CancelMoveWhite())
+              undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
+            case _: MovePieceBlack =>
+              handleAction(CancelMoveBlack())
+              undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+            case _ =>
+          }
         }
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
+        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == 0) {
+          undoManager.executeCommand(ChangeStateCommand(PromotionState(this), this))
+        }
+        else if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
           changeState(GameOver(this))
+        } else {
+          getCurrentState match {
+            case _: MovePieceWhite =>
+              undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
+            case _: MovePieceBlack =>
+              undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+            case _ =>
+          }
         }
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
         if(undoManager.canUndo) {
           getCurrentState match {
-            case _: TurnStateWhite | _: MovePieceWhite =>
+            case _: TurnStateWhite | _: MovePieceWhite | _: TurnStateBlack | _: MovePieceBlack =>
+
               undoManager.undoCommand()
-              handleAction(CancelMoveBlack())
-            case _: TurnStateBlack | _: MovePieceBlack =>
               undoManager.undoCommand()
-              handleAction(CancelMoveWhite())
+              getCurrentState match
+                case _: MovePieceWhite =>
+                  handleAction(CancelMoveWhite())
+                case _: MovePieceBlack =>
+                  handleAction(CancelMoveBlack())
+                case _ =>
             case _ =>
               undoManager.undoCommand()
           }
@@ -95,17 +123,25 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case RestartGameAction() =>
         undoManager.executeCommand(RestartCommand(this))
 
-       
+      case PromoteToBishopAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.BISHOP, this))
+      case PromoteToQueenAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.QUEEN, this))
+      case PromoteToRookAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.ROOK, this))
+      case PromoteToKnightAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.KNIGHT, this))
 
       case RedoAction() =>
         if (undoManager.canRedo) {
           getCurrentState match {
             case _: TurnStateWhite | _: MovePieceWhite   =>
               undoManager.redoCommand()
-              changeState(TurnStateBlack(this))
+              undoManager.redoCommand()
+
             case _: TurnStateBlack | _: MovePieceBlack =>
               undoManager.redoCommand()
-              changeState(TurnStateWhite(this))
+              undoManager.redoCommand()
             case _ =>
               undoManager.redoCommand()
           }
@@ -172,6 +208,53 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       updateBoard(game.getBoardList)
     }
   }
+
+  override def enPassantPiece(l1: Int, n1: Int, l2: Int, n2: Int, defeated_x: Int, defeated_y: Int): Unit = {
+    val RList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList).filterNot(p => p.getCords == (defeated_x, defeated_y))
+    if (RList != null) {
+      updateBoard(RList)
+    } else {
+      println("invalid position!")
+      updateBoard(game.getBoardList)
+    }
+  }
+
+  override def longCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit = {
+    // Move the king to the new position
+    val kingMovedList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
+
+    // Move the rook to the new position
+    val RList = kingMovedList.map { p =>
+      if (p.getCords == (rook_x1, rook_y1)) new Rook((rook_x2, rook_y1), p.getColor, moved = true, (rook_x1, rook_y1))
+      else p
+    }
+
+    if (RList != null) {
+      updateBoard(RList)
+    } else {
+      println("invalid position!")
+      updateBoard(game.getBoardList)
+    }
+  }
+
+  override def shortCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit = {
+    // Move the king to the new position
+    val kingMovedList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
+
+    // Move the rook to the new position
+    val RList = kingMovedList.map { p =>
+      if (p.getCords == (rook_x1, rook_y1)) new Rook((rook_x2, rook_y1), p.getColor, moved = true, (rook_x1, rook_y1))
+      else p
+    }
+
+    if (RList != null) {
+      updateBoard(RList)
+    } else {
+      println("invalid position!")
+      updateBoard(game.getBoardList)
+    }
+  }
+
 
   override def printState(): Unit = {
     currentState.print()

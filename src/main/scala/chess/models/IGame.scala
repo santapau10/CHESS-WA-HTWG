@@ -7,6 +7,7 @@ import scala.xml.{Elem, Node}
 import play.api.libs.json.{JsValue, Json, Reads, Writes}
 
 trait IBoardBuilder:
+  def promotePiece(chesspiece: Chesspiece, list: List[IPieces]): List[IPieces]
   def getSize(): Int
   def toJSON(): JsValue
   def toXml(): Elem

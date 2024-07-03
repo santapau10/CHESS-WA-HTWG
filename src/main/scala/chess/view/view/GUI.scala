@@ -1,13 +1,13 @@
 package chess.view.view
 
-import chess.controller._
-import chess.controller.controller.{MovePieceBlack, MovePieceWhite, PreGameState, TurnStateBlack, TurnStateWhite, GameOver}
-import chess.util._
+import chess.controller.*
+import chess.controller.controller.{GameOver, MovePieceBlack, MovePieceWhite, PreGameState, PromotionState, TurnStateBlack, TurnStateWhite}
+import chess.util.*
 import chess.view.IGUI
-import chess.view.panels._
+import chess.view.panels.*
 
 import javax.swing.{ImageIcon, JLayeredPane}
-import scala.swing._
+import scala.swing.*
 import com.google.inject.Inject
 
 class GUI @Inject()(controller: IController) extends Frame with Observer with IGUI {
@@ -62,6 +62,9 @@ class GUI @Inject()(controller: IController) extends Frame with Observer with IG
         val newBoardPanel = new GameOverPanel(controller) { preferredSize = currentSize }
         top.contents = newBoardPanel
 
+      case _: PromotionState =>
+        val newBoardPanel = new PromotionPanel(controller) { preferredSize = currentSize }
+        top.contents = newBoardPanel
       case _ =>
     }
   }

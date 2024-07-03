@@ -278,3 +278,33 @@ case class GameOver(controller: IController) extends State(controller):
         InvalidAction("invalid format")
     }
   }
+case class PromotionState(controller: IController) extends State(controller):
+  override def print(): Unit = {
+    println(controller.boardToString())
+    println("\nPawnPromotion")
+  }
+
+  override def message: String = "PawnPromotion"
+
+  override def actionFromInput(input: String): IAction = {
+    input match {
+      case "undo" =>
+        UndoAction()
+      case "u" =>
+        UndoAction()
+      case "redo" =>
+        RedoAction()
+      case "r" =>
+        RedoAction()
+      case "knight" =>
+        PromoteToKnightAction()
+      case "queen" =>
+        PromoteToQueenAction()
+      case "bishop" =>
+        PromoteToBishopAction()
+      case "rook" =>
+        PromoteToRookAction()
+      case _ =>
+        InvalidAction("invalid format")
+    }
+  }
