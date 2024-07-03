@@ -37,3 +37,40 @@ Players take turns to move their pieces. A move consists of moving one of the pl
 - **Castling**: A special move where the king and a rook are simultaneously moved. It is only allowed under certain conditions.
 - **En passant**: A special rule that allows a pawn to capture an opponent's pawn that has moved two squares forward from its starting position, as if it had only moved one square.
 - **Pawn Promotion**: When a pawn reaches the opponent's back rank, it can be promoted to any other piece except the king.
+
+## Docker
+
+### Prerequisites
+
+Before running the project in Docker, make sure you have Docker installed on your system.
+
+### Installation and Execution
+
+To run the project using Docker, follow these steps:
+
+#### 1. Clone the Git repository:
+
+   ```sh
+   git clone https://github.com/Gewinkh/CHESS-SE-HTWG.git
+   ```
+#### 2. Navigate into the repository:
+
+   ```sh
+   cd CHESS-SE-HTWG
+   ```
+#### 3. Build Docker image:
+
+   ```sh
+   docker build -t chess-se-htwg .
+   ```
+#### 4. Start with GUI:
+
+   ```sh
+   docker run -it -e DISPLAY=host.docker.internal:0 -e HEADLESS=false chess-se-htwg
+   ```
+
+   if X11 server is missing download and start Xming
+#### or start without GUI
+  ```sh
+   docker run -it -e HEADLESS=true chess-se-htwg
+   ```
