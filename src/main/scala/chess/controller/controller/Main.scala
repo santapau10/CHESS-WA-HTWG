@@ -9,17 +9,22 @@ import com.google.inject.Guice
 object EnvironmentUtil {
   def isHeadless: Boolean = {
     val headlessProperty = System.getProperty("java.awt.headless")
-    headlessProperty != null && headlessProperty.equalsIgnoreCase("true")
+    val envHeadless = System.getenv("HEADLESS")
+    (headlessProperty != null && headlessProperty.equalsIgnoreCase("true")) ||
+      (envHeadless != null && envHeadless.equalsIgnoreCase("true"))
   }
 }
+
 object Main extends App {
   private val injector = Guice.createInjector(new ChessModule)
   val controller = injector.getInstance(classOf[IController])
+
   if (!EnvironmentUtil.isHeadless) {
     val gui = GUI(controller)
     gui.top.open()
   } else {
     println("Running in headless mode, GUI will not be started.")
   }
+
   TUI(controller)
 }
