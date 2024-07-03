@@ -76,7 +76,6 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,In
     val oneStepForward = x1 == x2 && y2 == y1 + direction && list.forall(p => p.getCords != (x2, y2))
 
     if (x1 == x2 && !isMoved && y2 == y1 + 2 * direction && list.forall(p => p.getCords != (x2, y2) && p.getCords != (x2, y1 + direction))) {
-      //println("(" + x1.toString + "," + y1.toString + ") is true")
       return true
     }
 
