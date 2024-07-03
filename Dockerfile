@@ -8,4 +8,3 @@ ADD . /app
 ENV JAVA_OPTS="-Djava.awt.headless=true"
 
 ENTRYPOINT sbt run
-n
