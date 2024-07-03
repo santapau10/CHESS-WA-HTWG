@@ -82,18 +82,18 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,In
 
 
     val captureMove = math.abs(x2 - x1) == 1 && y2 == y1 + direction && list.exists(p => p.getCords == (x2, y2) && p.getColor != color)
-    val enpassantPiece = list.find(p => p.getCords == (x1 + 1, y1) || p.getCords == (x1 - 1, y1))
-    val enpassant = enpassantPiece match {
-      case Some(p) =>
-        if (piece.get.getColor == Colors.WHITE) {
-          p.getLastCords._2 == p.getCords._2 + 2 && p.getLastCords._2 != -1 && p.getColor == Colors.BLACK
-        } else {
-          p.getLastCords._2 == p.getCords._2 - 2 && p.getLastCords._2 != -1 && p.getColor == Colors.WHITE
+    val enPassantPiece: IPieces = if (list.last.getCords == (x1 + 1, y1) || list.last.getCords == (x1 - 1, y1)) list.last else null
+
+    enPassantPiece match
+      case p: IPieces =>
+        if (isWhite && p.getColor == Colors.BLACK && p.getLastCords == (p.getCords._1, p.getCords._2 + 2) && x2 == p.getCords._1 && y2 == p.getCords._2 + 1) {
+          return true
+        } else if (!isWhite && p.getColor == Colors.WHITE && p.getLastCords == (p.getCords._1, p.getCords._2 - 2) && x2 == p.getCords._1 && y2 == p.getCords._2 - 1) {
+          return true
         }
-      case None =>
-        false
-    }
-    if (oneStepForward || captureMove || enpassant) {
+
+      case null =>
+    if (oneStepForward || captureMove) {
       return true
     }
     false
