@@ -13,9 +13,6 @@ This project was developed by Gewin and Arian as part of their computer science 
 <a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/game.png"><img src="assets/game.png" width="250px"/>
 <a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/promotion.png"><img src="assets/promotion.png" width="250px"/></a></a>
 
-### TUI
-<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/TUI.png"><img src="assets/TUI.png" width="400px"/></a>
-
 ## Game Rules
 
 ### Objective
