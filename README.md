@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg?branch=master)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG?branch=master)
 # Chess Game Project at HTWG Konstanz
 <img src="assets/game.png" />
+
 ## Overview
 
 This project was developed by Gewin and Arian as part of their computer science studies at the University of Applied Sciences in Konstanz (HTWG Konstanz). The aim of the project was to implement a fully functional chess game that incorporates all the basic rules and functionalities of chess.
