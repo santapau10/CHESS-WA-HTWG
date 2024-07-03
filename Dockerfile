@@ -5,4 +5,6 @@ RUN apt-get update && apt-get install -y libxrender1 libxtst6 libxi6
 WORKDIR /app
 ADD . /app
 
-ENTRYPOINT sbt -Djava.awt.headless=true run
+ENV HEADLESS=true
+
+ENTRYPOINT ["sbt", "run"]
