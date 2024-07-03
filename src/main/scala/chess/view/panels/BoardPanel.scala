@@ -233,13 +233,12 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                           if (controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
                             b.background = moveableButton
                           } else {
-                            println("Punkt bei " + b.getCords)
                             val path = "/buttons/dot.png"
                             val ic = new ImageIcon(getClass.getResource(path))
                             val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
                             b.icon = scaledIcon
                           }
-                        } else println(b.getCords)
+                        }
                       case _ =>
                     }
                   }
@@ -340,8 +339,6 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       }
     }
   }
-
-
   private def filePicker: Option[File] =
     val fileChooser = FileChooser()
     fileChooser.fileSelectionMode = SelectionMode.FilesOnly
