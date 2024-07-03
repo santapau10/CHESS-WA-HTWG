@@ -36,3 +36,11 @@ case class LoadXmlAction(node: Node) extends IAction
 case class LoadJsonAction(json: JsValue) extends IAction
 
 case class RestartGameAction() extends IAction
+
+case class PromoteToRookAction() extends IAction
+
+case class PromoteToQueenAction() extends IAction
+
+case class PromoteToBishopAction() extends IAction
+
+case class PromoteToKnightAction() extends IAction

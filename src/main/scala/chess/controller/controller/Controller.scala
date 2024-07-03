@@ -1,7 +1,7 @@
 package chess.controller.controller
 
 import chess.controller.*
-import chess.models.game.{Colors, Game}
+import chess.models.game.{Chesspiece, Colors, Game}
 import chess.models.*
 import chess.util.*
 import chess.util.Event.STATE_CHANGED
@@ -69,11 +69,17 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == size - 1) {
+          changeState(PromotionState(this))
+        }
         if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
           changeState(GameOver(this))
         }
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
+        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == 0) {
+          changeState(PromotionState(this))
+        }
         if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
           changeState(GameOver(this))
         }
@@ -95,7 +101,14 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case RestartGameAction() =>
         undoManager.executeCommand(RestartCommand(this))
 
-       
+      case PromoteToBishopAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.BISHOP, this))
+      case PromoteToQueenAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.QUEEN, this))
+      case PromoteToRookAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.ROOK, this))
+      case PromoteToKnightAction() =>
+        undoManager.executeCommand(PromotionCommand(Chesspiece.KNIGHT, this))
 
       case RedoAction() =>
         if (undoManager.canRedo) {

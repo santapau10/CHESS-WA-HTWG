@@ -75,3 +75,7 @@ class RestartCommand(c: IController) extends Command(c):
     c.initGame()
     c.changeState(TurnStateWhite(c))
   }
+class PromotionCommand(chesspiece: Chesspiece, c: IController) extends Command(c):
+  override def execute(): Unit = {
+    c.updateBoard(c.getGame.getBoard.promotePiece(chesspiece, c.getGame.getBoardList))
+  }
