@@ -7,7 +7,15 @@
 This project was developed by Gewin and Arian as part of their computer science studies at the University of Applied Sciences in Konstanz (HTWG Konstanz). The aim of the project was to implement a fully functional chess game that incorporates all the basic rules and functionalities of chess.
 
 ## Screenshots
-<img src="assets/game.png" />
+
+### GUI
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/start.png"><img src="assets/start.png" width="250px"/></a>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/game.png"><img src="assets/game.png" width="250px"/>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/promotion.png"><img src="assets/promotion.png" width="250px"/></a></a>
+
+### TUI
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/TUI1.png"><img src="assets/TUI1.png" width="250px"/></a>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/TUI2.png"><img src="assets/TUI2.png" width="250px"/></a>
 
 ## Game Rules
 
