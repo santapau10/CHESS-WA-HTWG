@@ -9,6 +9,6 @@ import com.google.inject.AbstractModule
 class ChessModule extends AbstractModule {
   override def configure(): Unit = {
     bind(classOf[IController]).to(classOf[Controller])
-    bind(classOf[Integer]).toInstance(5)
+    bind(classOf[Integer]).toInstance(8)
   }
 }

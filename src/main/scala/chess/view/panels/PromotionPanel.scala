@@ -15,7 +15,7 @@ import scala.swing.event.*
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 
-class RoundedButton(icon: ImageIcon) extends JButton(icon) {
+class RoundedButton extends JButton {
   setContentAreaFilled(false)
   setFocusPainted(false)
   setBorder(new EmptyBorder(0, 0, 0, 0))
@@ -45,11 +45,16 @@ class PromotionPanel(controller: IController) extends BorderPanel {
     }
   }
 
-  val customFont = loadCustomFont("/fonts/font2.ttf", 60f)
+  val customFont = loadCustomFont("/fonts/font.ttf", 60f)
 
-  private val button_knight = new RoundedButton(new ImageIcon(getClass.getResource("/white/Knight.png").getPath))
-  val icon_knight = new ImageIcon(button_knight.getIcon.asInstanceOf[ImageIcon].getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
-  button_knight.setIcon(icon_knight)
+  private val button_knight = new RoundedButton
+
+  val path_knight = "/white/Knight.png"
+  val ic_knight = new ImageIcon(getClass.getResource(path_knight))
+  val scaledIcon_knight = new ImageIcon(ic_knight.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+  button_knight.setIcon(scaledIcon_knight)
+
+
   button_knight.addActionListener(new ActionListener {
     override def actionPerformed(e: ActionEvent): Unit = {
       println("Knight selected")
@@ -57,9 +62,13 @@ class PromotionPanel(controller: IController) extends BorderPanel {
     }
   })
 
-  private val button_rook = new RoundedButton(new ImageIcon(getClass.getResource("/white/Rook.png").getPath))
-  val icon_rook = new ImageIcon(button_rook.getIcon.asInstanceOf[ImageIcon].getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
-  button_rook.setIcon(icon_rook)
+  private val button_rook = new RoundedButton
+
+  val path_rook = "/white/Rook.png"
+  val ic_rook = new ImageIcon(getClass.getResource(path_rook))
+  val scaledIcon_rook = new ImageIcon(ic_rook.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+  button_rook.setIcon(scaledIcon_rook)
+
   button_rook.addActionListener(new ActionListener {
     override def actionPerformed(e: ActionEvent): Unit = {
       println("Rook selected")
@@ -67,18 +76,26 @@ class PromotionPanel(controller: IController) extends BorderPanel {
     }
   })
 
-  private val button_bishop = new RoundedButton(new ImageIcon(getClass.getResource("/white/Bishop.png").getPath))
-  val icon_bishop = new ImageIcon(button_bishop.getIcon.asInstanceOf[ImageIcon].getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
-  button_bishop.setIcon(icon_bishop)
+  private val button_bishop = new RoundedButton
+
+  val path_bishop = "/white/Bishop.png"
+  val ic_bishop = new ImageIcon(getClass.getResource(path_bishop))
+  val scaledIcon_bishop = new ImageIcon(ic_bishop.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+  button_bishop.setIcon(scaledIcon_bishop)
+
   button_bishop.addActionListener(new ActionListener {
     override def actionPerformed(e: ActionEvent): Unit = {
       controller.handleAction(PromoteToBishopAction())
     }
   })
 
-  private val button_queen = new RoundedButton(new ImageIcon(getClass.getResource("/white/Queen.png").getPath))
-  val icon_queen = new ImageIcon(button_queen.getIcon.asInstanceOf[ImageIcon].getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
-  button_queen.setIcon(icon_queen)
+  private val button_queen = new RoundedButton
+
+  val path_queen = "/white/Queen.png"
+  val ic_queen = new ImageIcon(getClass.getResource(path_queen))
+  val scaledIcon_queen = new ImageIcon(ic_queen.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+  button_queen.setIcon(scaledIcon_queen)
+
   button_queen.addActionListener(new ActionListener {
     override def actionPerformed(e: ActionEvent): Unit = {
       println("Queen selected")
