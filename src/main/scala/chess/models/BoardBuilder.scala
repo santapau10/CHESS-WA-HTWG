@@ -33,7 +33,7 @@ abstract class Board(size: Int) extends IBoardBuilder {
     list.find(piece => piece.getCords == (x1, y1)) match {
       case Some(foundPiece) =>
         val pf: IPiecesFactory = new PiecesFactory()
-        val movedPiece = pf.addPiece(foundPiece.getPiece, (x2, y2), foundPiece.getColor, true, (x1,x2))
+        val movedPiece = pf.addPiece(foundPiece.getPiece, (x2, y2), foundPiece.getColor, true, (x1,y1))
         list.find(piece => piece.getCords == (x2, y2)) match {
           case Some(foundOldPiece) =>
             val updatedBoard = list.filter(piece => piece != foundPiece && piece != foundOldPiece) :+ movedPiece
