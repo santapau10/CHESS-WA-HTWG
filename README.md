@@ -6,6 +6,9 @@
 
 This project was developed by Gewin and Arian as part of their computer science studies at the University of Applied Sciences in Konstanz (HTWG Konstanz). The aim of the project was to implement a fully functional chess game that incorporates all the basic rules and functionalities of chess.
 
+## Screenshots
+<img src="assets/game.png" />
+
 ## Game Rules
 
 ### Objective
