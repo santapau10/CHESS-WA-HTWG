@@ -13,13 +13,13 @@ enum Chesspiece:
   case KING, PAWN, QUEEN, BISHOP, KNIGHT, ROOK
 
 class PiecesFactory() extends IPiecesFactory {
-  override def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean): IPieces = chesspiece match {
-    case Chesspiece.PAWN => new Pawn(cords, color, moved)
-    case Chesspiece.KNIGHT => new Knight(cords, color, moved)
-    case Chesspiece.BISHOP => new Bishop(cords, color, moved)
-    case Chesspiece.ROOK => new Rook(cords, color, moved)
-    case Chesspiece.QUEEN => new Queen(cords, color, moved)
-    case Chesspiece.KING => new King(cords, color, moved)
+  override def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean, last_coords: (Int, Int)): IPieces = chesspiece match {
+    case Chesspiece.PAWN => new Pawn(cords, color, moved, last_coords)
+    case Chesspiece.KNIGHT => new Knight(cords, color, moved, last_coords)
+    case Chesspiece.BISHOP => new Bishop(cords, color, moved, last_coords)
+    case Chesspiece.ROOK => new Rook(cords, color, moved, last_coords)
+    case Chesspiece.QUEEN => new Queen(cords, color, moved, last_coords)
+    case Chesspiece.KING => new King(cords, color, moved, last_coords)
   }
 }
 
@@ -37,7 +37,7 @@ object PiecesFactory {
     }
 
     val cords = ((xml \ "cords" \ "x").headOption, (xml \ "cords" \ "y").headOption) match {
-      case (Some(xNode), Some(yNode)) => (xNode.text.toInt, yNode.text.toInt)
+      case (Some(xNode), Some(yNode)) => (xNode.text.trim.toInt, yNode.text.trim.toInt)
       case _ => throw new IllegalArgumentException("Missing or invalid coordinates in XML")
     }
 
@@ -58,8 +58,12 @@ object PiecesFactory {
       case "BLACK" => Colors.BLACK
       case _ => throw new IllegalArgumentException("Invalid color in XML")
     }
+    val lastcords = ((xml \ "lastcords" \ "x").headOption, (xml \ "cords" \ "y").headOption) match {
+      case (Some(xNode), Some(yNode)) => (xNode.text.trim.toInt, yNode.text.trim.toInt)
+      case _ => throw new IllegalArgumentException("Missing or invalid coordinates in XML")
+    }
 
-    new PiecesFactory().addPiece(pieceType, cords, color, moved)
+    new PiecesFactory().addPiece(pieceType, cords, color, moved, lastcords)
   }
 
 
@@ -83,20 +87,26 @@ object PiecesFactory {
       case "false" => false
       case _ => throw new IllegalArgumentException("Invalid Boolean: moved in JSON")
     }
+    
 
     val color = colorStr match {
       case "WHITE" => Colors.WHITE
       case "BLACK" => Colors.BLACK
       case _ => throw new IllegalArgumentException("Invalid color in JSON")
     }
+    val lastcords = ((json \ "lastcords" \ "x").asOpt[Int], (json \ "lastcords" \ "y").asOpt[Int]) match {
+      case (Some(x), Some(y)) => (x, y)
+      case _ => throw new IllegalArgumentException("Missing or invalid coordinates in JSON")
+    }
+    
 
     pieceType match {
-      case "PAWN" => new Pawn(cords, color, moved)
-      case "KNIGHT" => new Knight(cords, color, moved)
-      case "BISHOP" => new Bishop(cords, color, moved)
-      case "ROOK" => new Rook(cords, color, moved)
-      case "QUEEN" => new Queen(cords, color, moved)
-      case "KING" => new King(cords, color, moved)
+      case "PAWN" => new Pawn(cords, color, moved, lastcords)
+      case "KNIGHT" => new Knight(cords, color, moved, lastcords)
+      case "BISHOP" => new Bishop(cords, color, moved, lastcords)
+      case "ROOK" => new Rook(cords, color, moved, lastcords)
+      case "QUEEN" => new Queen(cords, color, moved, lastcords)
+      case "KING" => new King(cords, color, moved, lastcords)
       case _ => throw new IllegalArgumentException("Invalid piece type in JSON")
     }
   }

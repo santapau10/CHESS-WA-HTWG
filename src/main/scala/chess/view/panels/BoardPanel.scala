@@ -33,7 +33,7 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
   super.columns = cols
   private val backgroundColor = new Color(200,200,200)
   private val selectedButton = new Color(16,78,139)
-  private val moveableButton = new Color(21,120,110)
+  private val moveableButton = new Color(255,83,83,120)
 
 
   // Initialize the board with labels and numbers
@@ -193,11 +193,11 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
       button.reactions += {
         case ButtonClicked(b) =>
           resetButtonColors()
+          resetButtonIcons()
           button.background = Color.YELLOW
           val foundPiece = controller.getGame.getBoardList.find(p => p.getCords.equals(button.getCords))
           val coords = button.getCords
 
-          
           foundPiece match {
             case Some(piece) =>
               controller.getCurrentState match {
@@ -205,9 +205,16 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                   for (c <- contents) {
                     c match {
                       case b: ChessButton =>
-                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved, foundPiece.get.getCords)
                         if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
-                          b.background = moveableButton
+                          if (controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
+                            b.background = moveableButton
+                          } else {
+                            val path = "/buttons/dot.png"
+                            val ic = new ImageIcon(getClass.getResource(path))
+                            val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+                            b.icon = scaledIcon
+                          }
                         }
                       case _ =>
                     }
@@ -221,10 +228,18 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                   for (c <- contents) {
                     c match {
                       case b: ChessButton =>
-                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                        val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved, foundPiece.get.getCords)
                         if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
-                          b.background = moveableButton
-                        }
+                          if (controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
+                            b.background = moveableButton
+                          } else {
+                            println("Punkt bei " + b.getCords)
+                            val path = "/buttons/dot.png"
+                            val ic = new ImageIcon(getClass.getResource(path))
+                            val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+                            b.icon = scaledIcon
+                          }
+                        } else println(b.getCords)
                       case _ =>
                     }
                   }
@@ -243,9 +258,16 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     for (c <- contents) {
                       c match {
                         case b: ChessButton =>
-                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved, foundPiece.get.getCords)
                           if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
-                            b.background = moveableButton
+                            if (controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
+                              b.background = moveableButton
+                            } else {
+                              val path = "/buttons/dot.png"
+                              val ic = new ImageIcon(getClass.getResource(path))
+                              val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+                              b.icon = scaledIcon
+                            }
                           }
                         case _ =>
                       }
@@ -261,9 +283,16 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
                     for (c <- contents) {
                       c match {
                         case b: ChessButton =>
-                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved)
+                          val updateList = controller.getGame.getBoardList.filterNot(p => p.getCords == foundPiece.get.getCords).filterNot(p => b.getCords == p.getCords) :+ PiecesFactory().addPiece(foundPiece.get.getPiece, b.getCords, foundPiece.get.getColor, foundPiece.get.isMoved, foundPiece.get.getCords)
                           if (foundPiece.get.checkMove(coords._1, coords._2, b.getCords._1, b.getCords._2, controller.getGame.getBoardList) && !controller.getGame.isKingInCheck(updateList, foundPiece.get.getColor)) {
-                            b.background = moveableButton
+                            if (controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
+                              b.background = moveableButton
+                            } else {
+                              val path = "/buttons/dot.png"
+                              val ic = new ImageIcon(getClass.getResource(path))
+                              val scaledIcon = new ImageIcon(ic.getImage.getScaledInstance(dimensionSize, dimensionSize, java.awt.Image.SCALE_SMOOTH))
+                              b.icon = scaledIcon
+                            }
                           }
                         case _ =>
                       }
@@ -296,6 +325,17 @@ class BoardPanel(rows: Int, cols: Int, dimensionSize: Int = 50, controller: ICon
     for (c <- contents) {
       c match {
         case b: ChessButton => b.background = b.getDefaultColor
+        case _ =>
+      }
+    }
+  }
+  private def resetButtonIcons(): Unit = {
+    for (c <- contents) {
+      c match {
+        case b: ChessButton =>
+          if (!controller.getGame.getBoardList.exists(p => p.getCords == b.getCords)) {
+            b.icon = null
+          }
         case _ =>
       }
     }

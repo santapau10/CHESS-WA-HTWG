@@ -28,6 +28,7 @@ trait IGame:
   def toXml: Elem
 
 trait IPieces:
+  def getLastCords: (Int, Int)
   def isMoved: Boolean
   def checkMove(x1: Int, y1: Int, x2: Int, y2: Int, list: List[IPieces]): Boolean
   def toJson: JsValue
@@ -40,4 +41,4 @@ trait IPieces:
 
 
 trait IPiecesFactory:
-  def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean): IPieces
+  def addPiece(chesspiece: Chesspiece, cords: (Int, Int), color: Colors, moved: Boolean, last_coords: (Int, Int)): IPieces

@@ -7,8 +7,10 @@ import scala.xml.{Elem, Node}
 
 
 
-class Pawn(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
+class Pawn(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,Int)) extends IPieces {
+
   override def isMoved: Boolean = moved
+  override def getLastCords: (Int, Int) = last_cords
   override def getColor: Colors = color
   override def getPiece: Chesspiece = Chesspiece.PAWN
   override def getCords: (Int, Int) = cords
@@ -31,6 +33,14 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
       <moved>
         {moved.toString}
       </moved>
+      <lastcords>
+        <x>
+          {last_cords._1}
+        </x>
+        <y>
+          {last_cords._2}
+        </y>
+      </lastcords>
     </pawn>
   }
 
@@ -42,7 +52,11 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
       ),
       "color" -> color.toString,
       "moved" -> moved.toString,
-      "piece" -> getPiece.toString
+      "piece" -> getPiece.toString,
+      "lastcords" -> Json.obj(
+        "x" -> last_cords._1,
+        "y" -> last_cords._2
+      )
     )
     baseJson
   }
@@ -61,12 +75,27 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
 
     val oneStepForward = x1 == x2 && y2 == y1 + direction && list.forall(p => p.getCords != (x2, y2))
 
-    val twoStepsForward = x1 == x2 && !isMoved && y2 == y1 + 2 * direction &&
-      list.forall(p => p.getCords != (x2, y2) && p.getCords != (x2, y1 + direction))
+    if (x1 == x2 && !isMoved && y2 == y1 + 2 * direction && list.forall(p => p.getCords != (x2, y2) && p.getCords != (x2, y1 + direction))) {
+      //println("(" + x1.toString + "," + y1.toString + ") is true")
+      return true
+    }
+
 
     val captureMove = math.abs(x2 - x1) == 1 && y2 == y1 + direction && list.exists(p => p.getCords == (x2, y2) && p.getColor != color)
-
-    oneStepForward || twoStepsForward || captureMove
+    val enpassantPiece = list.find(p => p.getCords == (x1 + 1, y1) || p.getCords == (x1 - 1, y1))
+    val enpassant = enpassantPiece match {
+      case Some(p) =>
+        if (piece.get.getColor == Colors.WHITE) {
+          p.getLastCords._2 == p.getCords._2 + 2 && p.getLastCords._2 != -1 && p.getColor == Colors.BLACK
+        } else {
+          p.getLastCords._2 == p.getCords._2 - 2 && p.getLastCords._2 != -1 && p.getColor == Colors.WHITE
+        }
+      case None =>
+        false
+    }
+    if (oneStepForward || captureMove || enpassant) {
+      return true
+    }
+    false
   }
-
 }

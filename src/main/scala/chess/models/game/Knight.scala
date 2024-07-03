@@ -7,7 +7,8 @@ import scala.xml.{Elem, Node}
 
 
 
-class Knight(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
+class Knight(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,Int)) extends IPieces {
+  override def getLastCords: (Int, Int) = last_cords
   override def isMoved: Boolean = moved
   override def getColor: Colors = color
   override def getPiece: Chesspiece = Chesspiece.KNIGHT
@@ -31,6 +32,14 @@ class Knight(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
       <moved>
         {moved.toString}
       </moved>
+      <lastcords>
+        <x>
+          {last_cords._1}
+        </x>
+        <y>
+          {last_cords._2}
+        </y>
+      </lastcords>
     </knight>
   }
 
@@ -42,7 +51,11 @@ class Knight(cords: (Int, Int), color: Colors, moved: Boolean) extends IPieces {
       ),
       "color" -> color.toString,
       "moved" -> moved.toString,
-      "piece" -> getPiece.toString
+      "piece" -> getPiece.toString,
+      "lastcords" -> Json.obj(
+        "x" -> last_cords._1,
+        "y" -> last_cords._2
+      )
     )
     baseJson
   }
