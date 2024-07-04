@@ -9,9 +9,9 @@ This project was developed by Gewin and Arian as part of their computer science 
 ## Screenshots
 
 ### GUI
-<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/start.png"><img src="assets/start.png" width="270px"/></a>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/start.png"><img src="assets/start.png" width="250px"/></a>
 <a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/game.png"><img src="assets/game.png" width="300px"/>
-<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/promotion.png"><img src="assets/promotion.png" width="270px"/></a></a>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/promotion.png"><img src="assets/promotion.png" width="250px"/></a></a>
 
 ## Game Rules
 
