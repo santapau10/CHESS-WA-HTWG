@@ -14,9 +14,11 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
   private def toStringBoard: String = {
     board.updateField(list)
   }
+
   override def getBoard: IBoardBuilder = {
     board
   }
+
   override def toXml: Elem = {
     <game>
       <board>
@@ -45,7 +47,7 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
   override def isKingInCheck(checklist: List[IPieces], colors: Colors): Boolean = {
     val foundking = checklist.find(p => p.getPiece == Chesspiece.KING && p.getColor == colors)
-    
+
     foundking match
       case Some(king) =>
         val kingX = king.getCords._1
@@ -54,16 +56,16 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
         checklist.exists(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))
 
       case None => false
-         
   }
 
-  override def isKingInCheckmate(checklist: List[IPieces],color: Colors): Boolean = {
+  override def isKingInCheckmate(checklist: List[IPieces], color: Colors): Boolean = {
     val king = checklist.find(p => p.getPiece == Chesspiece.KING && p.getColor == color)
     val kingX = king.get.getCords._1
     val kingY = king.get.getCords._2
     if (!isKingInCheck(checklist, color)) return false
     val size = board.getSize()
 
+    // Prüfen, ob der König sich in ein sicheres Feld bewegen kann
     for (dx <- -1 to 1; dy <- -1 to 1 if dx != 0 || dy != 0) {
       val newX = kingX + dx
       val newY = kingY + dy
@@ -74,25 +76,30 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
         }
       }
     }
+
+    // Prüfen, ob eine andere Figur den König decken kann
     val attacker = checklist.find(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))
-    if (checklist.exists(p => p.checkMove(p.getCords._1, p.getCords._2, attacker.get.getCords._1, attacker.get.getCords._2, checklist))) return false
+    attacker match {
+      case Some(attackerPiece) =>
+        for (piece <- checklist if piece.getColor == color) {
+          val potentialMoves = for {
+            dx <- 0 until size
+            dy <- 0 until size
+            if piece.checkMove(piece.getCords._1, piece.getCords._2, dx, dy, checklist)
+          } yield (dx, dy)
+
+          for ((newX, newY) <- potentialMoves) {
+            val updatedList = checklist.filterNot(p => p.getCords == piece.getCords).filterNot(p => p.getCords == (newX, newY)) :+ PiecesFactory().addPiece(piece.getPiece, (newX, newY), piece.getColor, piece.isMoved, piece.getLastCords)
+            if (!isKingInCheck(updatedList, king.get.getColor)) {
+              return false
+            }
+          }
+        }
+      case None => // Kein Angreifer gefunden, sollte nicht passieren, weil isKingInCheck true war
+    }
+
     true
   }
-
-  def pathBetween(x1: Int, y1: Int, x2: Int, y2: Int): List[(Int, Int)] = {
-    if (x1 == x2) {
-      (math.min(y1, y2) + 1 until math.max(y1, y2)).map((x1, _)).toList
-    } else if (y1 == y2) {
-      (math.min(x1, x2) + 1 until math.max(x1, x2)).map((_, y1)).toList
-    } else if (math.abs(x2 - x1) == math.abs(y2 - y1)) {
-      val xStep = if (x2 > x1) 1 else -1
-      val yStep = if (y2 > y1) 1 else -1
-      (1 until math.abs(x2 - x1)).map(i => (x1 + i * xStep, y1 + i * yStep)).toList
-    } else {
-      List()
-    }
-  }
-
 }
 
 object Game {
@@ -120,3 +127,4 @@ object Game {
     new Game(board, pieces)
   }
 }
+  
