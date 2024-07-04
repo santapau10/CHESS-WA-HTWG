@@ -4,16 +4,13 @@
 # documentation.
 
 name: Scala CI
-
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
 permissions:
   contents: read
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,3 +44,4 @@ jobs:
       run: sbt coverageReport coveralls -Dcoveralls.service_name=github -Dcoveralls.service_job_id=${{ github.run_id }}
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.3
+

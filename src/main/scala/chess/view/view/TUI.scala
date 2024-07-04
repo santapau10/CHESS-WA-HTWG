@@ -18,7 +18,6 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
   override def update(event: Event): Unit = {
     event match {
       case Event.BOARD_CHANGED => println(controller.boardToString())
-        //notifyObservers(Event.INPUT)
         controller.printState()
       case Event.INPUT =>
         read()
