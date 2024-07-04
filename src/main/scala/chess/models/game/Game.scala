@@ -69,7 +69,9 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
       val newY = kingY + dy
       if (newX >= 0 && newX < size && newY >= 0 && newY < size && king.get.checkMove(kingX, kingY, newX, newY, checklist)) {
         val updatedList = checklist.filterNot(p => p.getCords == king.get.getCords).filterNot(p => p.getCords == (newX, newY))
-        if (!isKingInCheck(updatedList, king.get.getColor)) return false
+        if (!isKingInCheck(updatedList, king.get.getColor)) {
+          return false
+        }
       }
     }
     val attacker = checklist.find(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))

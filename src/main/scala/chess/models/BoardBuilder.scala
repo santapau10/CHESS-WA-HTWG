@@ -228,7 +228,7 @@ class Board_smaller_8(size: Int) extends Board(size: Int) {
       //pf.addPiece(Chesspiece.PAWN, (7, size - 2), Colors.BLACK, (-1, -1)) // 7
     )
 
-  if (size < 7) {
+    if (size < 7) {
       val a1 = a.filter(piece => (0,6) != piece.getCords && (6,1) != piece.getCords && (6,5) != piece.getCords)
       val a2 = linePushR(5, 0, 1, 0, -1, 0, a1)
       val a3 = linePushR(5, 0, 0, 5, 0, -1, a2)
