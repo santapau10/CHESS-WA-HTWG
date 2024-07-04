@@ -6,6 +6,6 @@ WORKDIR /app
 ADD . /app
 
 ENV DISPLAY=:0
-ENV HEADLESS=false
+ENV HEADLESS=true
 
 ENTRYPOINT ["sbt", "run"]
