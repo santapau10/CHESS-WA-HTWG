@@ -1,8 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: Scala CI
 
 on:
@@ -44,12 +39,14 @@ jobs:
       run: sudo apt-get install -y xvfb
     - name: Start XVFB
       run: |
-        export DISPLAY=:99
         Xvfb :99 -screen 0 1920x1080x16 &
+        echo "Started XVFB"
+    - name: Set DISPLAY
+      run: echo "DISPLAY=:99" >> $GITHUB_ENV
     - name: Run Tests
-      run: |
-        export DISPLAY=:99
-        sbt clean coverage test
+      run: sbt clean coverage test
+      env:
+        DISPLAY: :99
     - name: Upload coverage report
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
