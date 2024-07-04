@@ -10,7 +10,7 @@ This project was developed by Gewin and Arian as part of their computer science 
 
 ### GUI
 <a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/start.png"><img src="assets/start.png" width="230px"/></a>
-<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/game.png"><img src="assets/game.png" width="350px"/>
+<a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/game.png"><img src="assets/game.png" width="323px"/>
 <a href="https://raw.githubusercontent.com/Gewinkh/CHESS-SE-HTWG/main/assets/promotion.png"><img src="assets/promotion.png" width="230px"/></a></a>
 
 ## Game Rules
