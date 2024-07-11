@@ -9,78 +9,90 @@ import scala.xml.{Elem, Node}
 
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
+import chess.models.game.{Bishop, Colors, Chesspiece}
 
 class BishopSpec extends AnyWordSpec with Matchers {
 
-  "A Bishop" when {
+  "A Bishop" should {
+    val bishop = new Bishop((3, 3), Colors.WHITE, moved = false, (3, 3))
+    val blackBishop = new Bishop((3, 3), Colors.BLACK, moved = true, (2, 2))
 
-    val cords = (3, 3)
-    val color = Colors.WHITE
-    val moved = false
-    val lastCords = (0, 0)
-    val bishop = new Bishop(cords, color, moved, lastCords)
-
-    "be queried for last coordinates" in {
-      bishop.getLastCords shouldEqual lastCords
+    "have correct properties" in {
+      bishop.getLastCords should be ((3, 3))
+      bishop.isMoved should be (false)
+      bishop.getColor should be (Colors.WHITE)
+      bishop.getPiece should be (Chesspiece.BISHOP)
+      bishop.getCords should be ((3, 3))
     }
 
-    "be queried for move status" in {
-      bishop.isMoved shouldEqual moved
+    "have correct string representation" in {
+      bishop.toString should be ("♝")
+      blackBishop.toString should be ("♗")
     }
 
-    "be queried for color" in {
-      bishop.getColor shouldEqual color
+    "have correct icon path" in {
+      bishop.getIconPath should be ("/white/Bishop.png")
+      blackBishop.getIconPath should be ("/black/Bishop.png")
     }
 
-    "be queried for piece type" in {
-      bishop.getPiece shouldEqual Chesspiece.BISHOP
+    "convert to XML correctly" in {
+      val xml = bishop.toXml
+      (xml \\ "bishop" \\ "cords" \\ "x").text.trim.toInt should be (3)
+      (xml \\ "bishop" \\ "cords" \\ "y").text.trim.toInt should be (3)
+      (xml \\ "bishop" \\ "color").text.trim should be ("WHITE")
+      (xml \\ "bishop" \\ "moved").text.trim.toBoolean should be (false)
+      (xml \\ "bishop" \\ "lastcords" \\ "x").text.trim.toInt should be (3)
+      (xml \\ "bishop" \\ "lastcords" \\ "y").text.trim.toInt should be (3)
     }
 
-    "be queried for current coordinates" in {
-      bishop.getCords shouldEqual cords
+    "convert to JSON correctly" in {
+      val json = bishop.toJson
+      (json \ "cords" \ "x").as[Int] should be (3)
+      (json \ "cords" \ "y").as[Int] should be (3)
+      (json \ "color").as[String] should be ("WHITE")
+      (json \ "moved").as[String].toBoolean should be (false)
+      (json \ "piece").as[String] should be ("BISHOP")
+      (json \ "lastcords" \ "x").as[Int] should be (3)
+      (json \ "lastcords" \ "y").as[Int] should be (3)
     }
 
-    "provide a string representation" in {
-      bishop.toString shouldEqual "♝"
+    "check valid moves correctly" in {
+      val emptyBoard: List[IPieces] = List(bishop)
+
+      bishop.checkMove(3, 3, 5, 5, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 1, 1, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 5, 1, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 1, 5, emptyBoard) should be (true)
+
+      bishop.checkMove(3, 3, 4, 4, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 2, 2, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 4, 2, emptyBoard) should be (true)
+      bishop.checkMove(3, 3, 2, 4, emptyBoard) should be (true)
+
+      bishop.checkMove(3, 3, 3, 4, emptyBoard) should be (false)
+      bishop.checkMove(3, 3, 4, 3, emptyBoard) should be (false)
     }
 
-    "provide an icon path based on color" in {
-      bishop.getIconPath shouldEqual "/white/Bishop.png"
+    "check invalid moves due to obstacles" in {
+      val obstaclePiece = new Bishop((4, 4), Colors.BLACK, moved = false, (4, 4))
+      val board: List[IPieces] = List(bishop, obstaclePiece)
+
+      bishop.checkMove(3, 3, 5, 5, board) should be (false)
+      bishop.checkMove(3, 3, 4, 4, board) should be (true)
     }
 
+    "check valid captures" in {
+      val targetPiece = new Bishop((5, 5), Colors.BLACK, moved = false, (5, 5))
+      val board: List[IPieces] = List(bishop, targetPiece)
 
-    "convert to JSON" in {
-      val expectedJson: JsValue = Json.obj(
-        "cords" -> Json.obj("x" -> 3, "y" -> 3),
-        "color" -> "WHITE",
-        "moved" -> "false",
-        "piece" -> "BISHOP",
-        "lastcords" -> Json.obj("x" -> 0, "y" -> 0)
-      )
-
-      bishop.toJson shouldEqual expectedJson
+      bishop.checkMove(3, 3, 5, 5, board) should be (true)
     }
 
-    "check valid move" in {
-      val piecesList = List(
-        new Bishop((1, 1), Colors.WHITE, true, (0, 0)),
-        new Bishop((3, 3), Colors.BLACK, true, (0, 0)),
-        new Bishop((1, 4), Colors.BLACK, true, (0, 0)),
-        new Bishop((1, 5), Colors.BLACK, true, (0, 0))
-      )
+    "check invalid captures of same color" in {
+      val samColorPiece = new Bishop((5, 5), Colors.WHITE, moved = false, (5, 5))
+      val board: List[IPieces] = List(bishop, samColorPiece)
 
-      bishop.checkMove(3, 3, 6, 6, piecesList) shouldEqual true
-    }
-
-    "check invalid move" in {
-      val piecesList = List(
-        new Bishop((1, 1), Colors.WHITE, true, (0, 0)),
-        new Bishop((3, 3), Colors.BLACK, true, (0, 0)),
-        new Bishop((4, 4), Colors.BLACK, true, (0, 0)),
-        new Bishop((5, 5), Colors.BLACK, true, (0, 0))
-      )
-
-      bishop.checkMove(3, 3, 5, 5, piecesList) shouldEqual false
+      bishop.checkMove(3, 3, 5, 5, board) should be (false)
     }
   }
 }

@@ -8,91 +8,88 @@ import scala.xml.{Elem, Node}
 
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
-import play.api.libs.json.{JsValue, Json}
 import scala.xml.XML
 
+
 class PawnSpec extends AnyWordSpec with Matchers {
+  "A Pawn" should {
+    val pawn = new Pawn((4, 2), Colors.WHITE, moved = false, last_cords = (4, 2))
+    val blackPawn = new Pawn((4, 7), Colors.BLACK, moved = true, last_cords = (4, 6))
 
-  "A Pawn" when {
-
-    val initialCoords = (3, 1)
-    val color = Colors.WHITE
-    val moved = false
-    val lastCoords = (3, 1)
-    val pawn = new Pawn(initialCoords, color, moved, lastCoords)
-
-    "be queried for its last coordinates" in {
-      pawn.getLastCords shouldEqual lastCoords
+    "have correct properties" in {
+      pawn.getCords should be ((4, 2))
+      pawn.getLastCords should be ((4, 2))
+      pawn.isMoved should be (false)
+      pawn.getColor should be (Colors.WHITE)
+      pawn.getPiece should be (Chesspiece.PAWN)
     }
 
-    "report if it has moved" in {
-      pawn.isMoved shouldEqual moved
+    "have correct string representation" in {
+      pawn.toString should be ("♟")
+      blackPawn.toString should be ("♙")
     }
 
-    "report its color" in {
-      pawn.getColor shouldEqual color
+    "have correct icon path" in {
+      pawn.getIconPath should be ("/white/Pawn.png")
+      blackPawn.getIconPath should be ("/black/Pawn.png")
     }
 
-    "identify itself as a Pawn piece" in {
-      pawn.getPiece shouldEqual Chesspiece.PAWN
+    "convert to correct XML" in {
+      val xml = pawn.toXml
+      (xml \\ "cords" \ "x").text.trim.toInt should be (4)
+      (xml \\ "cords" \ "y").text.trim.toInt should be (2)
+      (xml \\ "color").text.trim should be ("WHITE")
+      (xml \\ "moved").text.trim.toBoolean should be (false)
+      (xml \\ "lastcords" \ "x").text.trim.toInt should be (4)
+      (xml \\ "lastcords" \ "y").text.trim.toInt should be (2)
     }
 
-    "provide its current coordinates" in {
-      pawn.getCords shouldEqual initialCoords
+    "convert to correct JSON" in {
+      val json = pawn.toJson
+      (json \ "cords" \ "x").as[Int] should be (4)
+      (json \ "cords" \ "y").as[Int] should be (2)
+      (json \ "color").as[String] should be ("WHITE")
+      (json \ "moved").as[String].toBoolean should be (false)
+      (json \ "piece").as[String] should be ("PAWN")
+      (json \ "lastcords" \ "x").as[Int] should be (4)
+      (json \ "lastcords" \ "y").as[Int] should be (2)
     }
 
-    "display itself as a Unicode character" in {
-      pawn.toString shouldEqual "♟"
+    "validate correct pawn moves" in {
+      val pieces = List(pawn)
+      pawn.checkMove(4, 2, 4, 3, pieces) should be (true) // One step forward
+      pawn.checkMove(4, 2, 4, 4, pieces) should be (true) // Two steps forward (first move)
     }
 
-    "provide its icon path based on color" in {
-      pawn.getIconPath shouldEqual "/white/Pawn.png"
+    "invalidate incorrect pawn moves" in {
+      val pieces = List(pawn)
+      pawn.checkMove(4, 2, 4, 1, pieces) should be (false) // Backward move
+      pawn.checkMove(4, 2, 5, 2, pieces) should be (false) // Sideways move
+      pawn.checkMove(4, 2, 5, 3, pieces) should be (false) // Diagonal move without capture
     }
 
-
-    "convert to JSON format" in {
-      val expectedJson: JsValue = Json.obj(
-        "cords" -> Json.obj(
-          "x" -> 3,
-          "y" -> 1
-        ),
-        "color" -> "WHITE",
-        "moved" -> "false",
-        "piece" -> "PAWN",
-        "lastcords" -> Json.obj(
-          "x" -> 3,
-          "y" -> 1
-        )
-      )
-
-      pawn.toJson shouldEqual expectedJson
+    "validate diagonal capture moves" in {
+      val blackPiece = new Pawn((5, 3), Colors.BLACK, moved = false, last_cords = (5, 3))
+      val pieces = List(pawn, blackPiece)
+      pawn.checkMove(4, 2, 5, 3, pieces) should be (true)
     }
 
-    "check if it can move forward one step" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      pawn.checkMove(3, 1, 3, 2, list) shouldEqual false
+    "invalidate moves when path is blocked" in {
+      val blockingPiece = new Pawn((4, 3), Colors.BLACK, moved = false, last_cords = (4, 3))
+      val pieces = List(pawn, blockingPiece)
+      pawn.checkMove(4, 2, 4, 4, pieces) should be (false)
     }
 
-    "check if it can move forward two steps from initial position" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      pawn.checkMove(3, 1, 3, 3, list) shouldEqual false
+    "validate en passant capture" in {
+      val enPassantPawn = new Pawn((5, 4), Colors.BLACK, moved = false, last_cords = (5, 6))
+      val pieces = List(pawn, enPassantPawn)
+      pawn.checkMove(4, 4, 5, 5, pieces) should be (false)
     }
 
-    "check if it can't move forward two steps from non-initial position" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      pawn.checkMove(3, 2, 3, 4, list) shouldEqual false
-    }
-
-    "check if it can capture diagonally" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      pawn.checkMove(3, 1, 4, 2, list) shouldEqual false // No piece to capture
-    }
-
-    "check if it can perform en passant" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      // Simulate a scenario where en passant is possible
-      pawn.checkMove(3, 1, 4, 2, list :+ new Pawn((4, 3), Colors.BLACK, moved = true, (4, 1))) shouldEqual false
+    "invalidate en passant capture when conditions are not met" in {
+      val nonEnPassantPawn = new Pawn((5, 4), Colors.BLACK, moved = true, last_cords = (5, 5))
+      val pieces = List(pawn, nonEnPassantPawn)
+      pawn.checkMove(4, 4, 5, 5, pieces) should be (false)
     }
   }
 }
-

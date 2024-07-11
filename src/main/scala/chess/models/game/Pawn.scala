@@ -79,7 +79,6 @@ class Pawn(cords: (Int, Int), color: Colors, moved: Boolean, last_cords: (Int,In
       return true
     }
 
-
     val captureMove = math.abs(x2 - x1) == 1 && y2 == y1 + direction && list.exists(p => p.getCords == (x2, y2) && p.getColor != color)
     val enPassantPiece: IPieces = if (list.last.getCords == (x1 + 1, y1) || list.last.getCords == (x1 - 1, y1)) list.last else null
 

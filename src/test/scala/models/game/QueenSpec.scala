@@ -11,79 +11,80 @@ import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import scala.xml.XML
 
+
 class QueenSpec extends AnyWordSpec with Matchers {
+  "A Queen" should {
+    val queen = Queen((4, 4), Colors.WHITE, moved = false, last_cords = (4, 4))
+    val blackQueen = Queen((4, 4), Colors.BLACK, moved = true, last_cords = (3, 3))
 
-  "A Queen" when {
-
-    val initialCoords = (3, 3)
-    val color = Colors.WHITE
-    val moved = false
-    val lastCoords = (3, 3)
-    val queen = Queen(initialCoords, color, moved, lastCoords)
-
-    "be queried for its last coordinates" in {
-      queen.getLastCords shouldEqual lastCoords
+    "have correct properties" in {
+      queen.getCords should be ((4, 4))
+      queen.getLastCords should be ((4, 4))
+      queen.isMoved should be (false)
+      queen.getColor should be (Colors.WHITE)
+      queen.getPiece should be (Chesspiece.QUEEN)
     }
 
-    "report if it has moved" in {
-      queen.isMoved shouldEqual moved
+    "have correct string representation" in {
+      queen.toString should be ("♛")
+      blackQueen.toString should be ("♕")
     }
 
-    "report its color" in {
-      queen.getColor shouldEqual color
+    "have correct icon path" in {
+      queen.getIconPath should be ("/white/Queen.png")
+      blackQueen.getIconPath should be ("/black/Queen.png")
     }
 
-    "identify itself as a Queen piece" in {
-      queen.getPiece shouldEqual Chesspiece.QUEEN
+    "convert to correct XML" in {
+      val xml = queen.toXml
+      (xml \\ "cords" \ "x").text.trim.toInt should be (4)
+      (xml \\ "cords" \ "y").text.trim.toInt should be (4)
+      (xml \\ "color").text.trim should be ("WHITE")
+      (xml \\ "moved").text.trim.toBoolean should be (false)
+      (xml \\ "lastcords" \ "x").text.trim.toInt should be (4)
+      (xml \\ "lastcords" \ "y").text.trim.toInt should be (4)
     }
 
-    "provide its current coordinates" in {
-      queen.getCords shouldEqual initialCoords
+    "convert to correct JSON" in {
+      val json = queen.toJson
+      (json \ "cords" \ "x").as[Int] should be (4)
+      (json \ "cords" \ "y").as[Int] should be (4)
+      (json \ "color").as[String] should be ("WHITE")
+      (json \ "moved").as[String].toBoolean should be (false)
+      (json \ "piece").as[String] should be ("QUEEN")
+      (json \ "lastcords" \ "x").as[Int] should be (4)
+      (json \ "lastcords" \ "y").as[Int] should be (4)
     }
 
-    "display itself as a Unicode character" in {
-      queen.toString shouldEqual "♛"
+    "validate correct queen moves" in {
+      val pieces = List(queen)
+      queen.checkMove(4, 4, 4, 8, pieces) should be (true) // Vertical move
+      queen.checkMove(4, 4, 8, 4, pieces) should be (true) // Horizontal move
+      queen.checkMove(4, 4, 7, 7, pieces) should be (true) // Diagonal move
     }
 
-    "provide its icon path based on color" in {
-      queen.getIconPath shouldEqual "/white/Queen.png"
+    "invalidate incorrect queen moves" in {
+      val pieces = List(queen)
+      queen.checkMove(4, 4, 6, 5, pieces) should be (false) // Knight-like move
+      queen.checkMove(4, 4, 5, 7, pieces) should be (false) // Invalid move
     }
 
-
-    "convert to JSON format" in {
-      val expectedJson: JsValue = Json.obj(
-        "cords" -> Json.obj(
-          "x" -> 3,
-          "y" -> 3
-        ),
-        "color" -> "WHITE",
-        "moved" -> "false",
-        "piece" -> "QUEEN",
-        "lastcords" -> Json.obj(
-          "x" -> 3,
-          "y" -> 3
-        )
-      )
-
-      queen.toJson shouldEqual expectedJson
+    "invalidate moves to squares occupied by same color pieces" in {
+      val anotherWhitePiece = Queen((4, 8), Colors.WHITE, moved = false, last_cords = (4, 8))
+      val pieces = List(queen, anotherWhitePiece)
+      queen.checkMove(4, 4, 4, 8, pieces) should be (false)
     }
 
-    "check valid queen moves" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      queen.checkMove(3, 3, 5, 5, list) shouldEqual true
-      queen.checkMove(3, 3, 1, 3, list) shouldEqual true
-      queen.checkMove(3, 3, 3, 6, list) shouldEqual true
+    "validate moves to squares occupied by opposite color pieces" in {
+      val blackPiece = Queen((4, 8), Colors.BLACK, moved = false, last_cords = (4, 8))
+      val pieces = List(queen, blackPiece)
+      queen.checkMove(4, 4, 4, 8, pieces) should be (true)
     }
 
-    "check invalid queen moves" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      queen.checkMove(3, 3, 4, 5, list) shouldEqual false // Not a queen move
-      queen.checkMove(3, 3, 1, 1, list) shouldEqual true // a queen move
-      queen.checkMove(3, 3, 3, 3, list) shouldEqual true
-    }
-    "check path obstruction" in {
-      val list = List(new Pawn((4, 4), Colors.WHITE, moved = true, (4, 4))) // Simulate obstruction
-      queen.checkMove(3, 3, 5, 5, list) shouldEqual false
+    "invalidate moves when path is blocked" in {
+      val blockingPiece = Queen((4, 6), Colors.BLACK, moved = false, last_cords = (4, 6))
+      val pieces = List(queen, blockingPiece)
+      queen.checkMove(4, 4, 4, 8, pieces) should be (false)
     }
   }
 }

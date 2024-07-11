@@ -10,81 +10,122 @@ import org.scalatest.wordspec.AnyWordSpec
 import play.api.libs.json.{JsValue, Json}
 import scala.xml.XML
 
+
 class KingSpec extends AnyWordSpec with Matchers {
 
-  "A King" when {
+  "A King" should {
+    val king = new King((4, 0), Colors.WHITE, moved = false, (4, 0))
+    val blackKing = new King((4, 7), Colors.BLACK, moved = true, (4, 7))
 
-    val initialCoords = (4, 0)
-    val color = Colors.BLACK
-    val moved = false
-    val lastCoords = (4, 0)
-    val king = new King(initialCoords, color, moved, lastCoords)
-
-    "be queried for its last coordinates" in {
-      king.getLastCords shouldEqual lastCoords
+    "have correct properties" in {
+      king.getLastCords should be ((4, 0))
+      king.isMoved should be (false)
+      king.getColor should be (Colors.WHITE)
+      king.getPiece should be (Chesspiece.KING)
+      king.getCords should be ((4, 0))
     }
 
-    "report if it has moved" in {
-      king.isMoved shouldEqual moved
+    "have correct string representation" in {
+      king.toString should be ("♚")
+      blackKing.toString should be ("♔")
     }
 
-    "report its color" in {
-      king.getColor shouldEqual color
+    "have correct icon path" in {
+      king.getIconPath should be ("/white/King.png")
+      blackKing.getIconPath should be ("/black/King.png")
     }
 
-    "identify itself as a King piece" in {
-      king.getPiece shouldEqual Chesspiece.KING
+    "convert to XML correctly" in {
+      val xml = king.toXml
+      (xml \\ "king" \\ "cords" \\ "x").text.trim.toInt should be (4)
+      (xml \\ "king" \\ "cords" \\ "y").text.trim.toInt should be (0)
+      (xml \\ "king" \\ "color").text.trim should be ("WHITE")
+      (xml \\ "king" \\ "moved").text.trim.toBoolean should be (false)
+      (xml \\ "king" \\ "lastcords" \\ "x").text.trim.toInt should be (4)
+      (xml \\ "king" \\ "lastcords" \\ "y").text.trim.toInt should be (0)
     }
 
-    "provide its current coordinates" in {
-      king.getCords shouldEqual initialCoords
+    "convert to JSON correctly" in {
+      val json = king.toJson
+      (json \ "cords" \ "x").as[Int] should be (4)
+      (json \ "cords" \ "y").as[Int] should be (0)
+      (json \ "color").as[String] should be ("WHITE")
+      (json \ "moved").as[String].toBoolean should be (false)
+      (json \ "piece").as[String] should be ("KING")
+      (json \ "lastcords" \ "x").as[Int] should be (4)
+      (json \ "lastcords" \ "y").as[Int] should be (0)
     }
 
-    "display itself as a Unicode character" in {
-      king.toString shouldEqual "♔"
+    "check valid moves correctly" in {
+      val board = List(king)
+
+      king.checkMove(4, 0, 4, 1, board) should be (true)
+      king.checkMove(4, 0, 5, 1, board) should be (true)
+      king.checkMove(4, 0, 5, 0, board) should be (true)
+      king.checkMove(4, 0, 3, 0, board) should be (true)
+      king.checkMove(4, 0, 3, 1, board) should be (true)
+
+      king.checkMove(4, 0, 4, 2, board) should be (false)
+      king.checkMove(4, 0, 6, 0, board) should be (false)
     }
 
-    "provide its icon path based on color" in {
-      king.getIconPath shouldEqual "/black/King.png"
+    "check invalid moves due to other king's proximity" in {
+      val otherKing = new King((5, 2), Colors.BLACK, false, (5, 2))
+      val board = List(king, otherKing)
+
+      king.checkMove(4, 0, 4, 1, board) should be (false)
+      king.checkMove(4, 0, 5, 1, board) should be (false)
     }
 
+    "check valid captures" in {
+      val targetPiece = new Pawn((5, 1), Colors.BLACK, false, (5, 1))
+      val board = List(king, targetPiece)
 
-    "convert to JSON format" in {
-      val expectedJson: JsValue = Json.obj(
-        "cords" -> Json.obj(
-          "x" -> 4,
-          "y" -> 0
-        ),
-        "color" -> "BLACK",
-        "moved" -> "false",
-        "piece" -> "KING",
-        "lastcords" -> Json.obj(
-          "x" -> 4,
-          "y" -> 0
-        )
-      )
-
-      king.toJson shouldEqual expectedJson
+      king.checkMove(4, 0, 5, 1, board) should be (true)
     }
 
-    "check if it can't move to an invalid position" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      king.checkMove(4, 0, 6, 2, list) shouldEqual false
+    "check invalid captures of same color" in {
+      val samColorPiece = new Pawn((5, 1), Colors.WHITE, false, (5, 1))
+      val board = List(king, samColorPiece)
+
+      king.checkMove(4, 0, 5, 1, board) should be (false)
     }
 
-    "check if it can perform castling" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      king.checkMove(4, 0, 6, 0, list) shouldEqual false
+    "check castling" in {
+      val unmoved_king = new King((4, 0), Colors.WHITE, moved = false, (4, 0))
+      val left_rook = new Rook((0, 0), Colors.WHITE, moved = false, (0, 0))
+      val right_rook = new Rook((7, 0), Colors.WHITE, moved = false, (7, 0))
+      val board = List(unmoved_king, left_rook, right_rook)
+
+      unmoved_king.checkMove(4, 0, 2, 0, board) should be (true) // Left castling
+      unmoved_king.checkMove(4, 0, 6, 0, board) should be (true) // Right castling
+
+      val blocking_piece = new Pawn((3, 0), Colors.WHITE, false, (3, 0))
+      val blocked_board = blocking_piece :: board
+      unmoved_king.checkMove(4, 0, 2, 0, blocked_board) should be (false) // Blocked left castling
     }
 
-    "check if it can't perform invalid castling" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      king.checkMove(4, 0, 2, 0, list) shouldEqual false
+    "not allow castling if king has moved" in {
+      val moved_king = new King((4, 0), Colors.WHITE, moved = true, (4, 0))
+      val rook = new Rook((0, 0), Colors.WHITE, moved = false, (0, 0))
+      val board = List(moved_king, rook)
+
+      moved_king.checkMove(4, 0, 2, 0, board) should be (false)
     }
 
-    "check if it correctly identifies when it's in check" in {
-      val list = List.empty[IPieces] // Replace with actual list for meaningful test
-      king.isKingInCheck(4, 0, list) shouldEqual false
+    "not allow castling if rook has moved" in {
+      val unmoved_king = new King((4, 0), Colors.WHITE, moved = false, (4, 0))
+      val moved_rook = new Rook((0, 0), Colors.WHITE, moved = true, (0, 0))
+      val board = List(unmoved_king, moved_rook)
+
+      unmoved_king.checkMove(4, 0, 2, 0, board) should be (false)
+    }
+
+    "not allow moves that put the king in check" in {
+      val enemy_rook = new Rook((0, 1), Colors.BLACK, false, (0, 1))
+      val board = List(king, enemy_rook)
+
+      king.checkMove(4, 0, 3, 0, board) should be (true)
     }
   }
 }

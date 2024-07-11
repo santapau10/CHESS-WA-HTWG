@@ -60,45 +60,64 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
   override def isKingInCheckmate(checklist: List[IPieces], color: Colors): Boolean = {
     val king = checklist.find(p => p.getPiece == Chesspiece.KING && p.getColor == color)
-    val kingX = king.get.getCords._1
-    val kingY = king.get.getCords._2
-    if (!isKingInCheck(checklist, color)) return false
-    val size = board.getSize()
+    king match {
+      case Some(k) =>
+        val kingX = k.getCords._1
+        val kingY = k.getCords._2
+        if (!isKingInCheck(checklist, color)) {
+          false
+        } else {
+          val size = board.getSize()
 
-    // Prüfen, ob der König sich in ein sicheres Feld bewegen kann
-    for (dx <- -1 to 1; dy <- -1 to 1 if dx != 0 || dy != 0) {
-      val newX = kingX + dx
-      val newY = kingY + dy
-      if (newX >= 0 && newX < size && newY >= 0 && newY < size && king.get.checkMove(kingX, kingY, newX, newY, checklist)) {
-        val updatedList = checklist.filterNot(p => p.getCords == king.get.getCords).filterNot(p => p.getCords == (newX, newY))
-        if (!isKingInCheck(updatedList, king.get.getColor)) {
-          return false
-        }
-      }
-    }
+          // Prüfen, ob der König sich in ein sicheres Feld bewegen kann
+          val canKingEscape = (-1 to 1).exists { dx =>
+            (-1 to 1).exists { dy =>
+              if (dx != 0 || dy != 0) {
+                val newX = kingX + dx
+                val newY = kingY + dy
+                if (newX >= 0 && newX < size && newY >= 0 && newY < size && k.checkMove(kingX, kingY, newX, newY, checklist)) {
+                  val updatedList = checklist.filterNot(p => p.getCords == k.getCords).filterNot(p => p.getCords == (newX, newY))
+                  !isKingInCheck(updatedList, k.getColor)
+                } else {
+                  false
+                }
+              } else {
+                false
+              }
+            }
+          }
 
-    // Prüfen, ob eine andere Figur den König decken kann
-    val attacker = checklist.find(p => (p.getColor != checklist.find(k => k.getCords == (kingX, kingY)).get.getColor) && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist))
-    attacker match {
-      case Some(attackerPiece) =>
-        for (piece <- checklist if piece.getColor == color) {
-          val potentialMoves = for {
-            dx <- 0 until size
-            dy <- 0 until size
-            if piece.checkMove(piece.getCords._1, piece.getCords._2, dx, dy, checklist)
-          } yield (dx, dy)
+          if (canKingEscape) {
+            false
+          } else {
+            // Prüfen, ob eine andere Figur den König decken kann
+            val attacker = checklist.find(p =>
+              p.getColor != k.getColor && p.checkMove(p.getCords._1, p.getCords._2, kingX, kingY, checklist)
+            )
 
-          for ((newX, newY) <- potentialMoves) {
-            val updatedList = checklist.filterNot(p => p.getCords == piece.getCords).filterNot(p => p.getCords == (newX, newY)) :+ PiecesFactory().addPiece(piece.getPiece, (newX, newY), piece.getColor, piece.isMoved, piece.getLastCords)
-            if (!isKingInCheck(updatedList, king.get.getColor)) {
-              return false
+            attacker match {
+              case Some(attackerPiece) =>
+                !checklist.exists { piece =>
+                  piece.getColor == color && (0 until size).exists { dx =>
+                    (0 until size).exists { dy =>
+                      if (piece.checkMove(piece.getCords._1, piece.getCords._2, dx, dy, checklist)) {
+                        val updatedList = checklist
+                          .filterNot(p => p.getCords == piece.getCords)
+                          .filterNot(p => p.getCords == (dx, dy)) :+
+                          PiecesFactory().addPiece(piece.getPiece, (dx, dy), piece.getColor, piece.isMoved, piece.getLastCords)
+                        !isKingInCheck(updatedList, k.getColor)
+                      } else {
+                        false
+                      }
+                    }
+                  }
+                }
+              case None => false // Kein Angreifer gefunden, sollte nicht passieren, weil isKingInCheck true war
             }
           }
         }
-      case None => // Kein Angreifer gefunden, sollte nicht passieren, weil isKingInCheck true war
+      case None => false
     }
-
-    true
   }
 }
 
