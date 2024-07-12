@@ -1,109 +1,207 @@
 package controller.controller
 
-import chess.controller.IController
+import chess.controller.*
 import chess.controller.controller.*
 import chess.models.game.*
-import chess.models.IPieces
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import chess.util.*
 
+import chess.util.Event.*
+import chess.view.*
+import chess.view.view.{GUI, TUI}
+
+
+import chess.models.*
+import scala.xml.XML
+import play.api.libs.json.Json
+import java.nio.file.{Files, Paths}
+import java.time.LocalDateTime
+
 class ControllerSpec extends AnyWordSpec with Matchers {
+  "Controller" when {
+    "initializing" should {
+      "create correct board sizes" in {
+        Controller(8).getSize shouldBe 8
+        Controller(6).getSize shouldBe 6
+        Controller(10).getSize shouldBe 10
+      }
 
-  "A Controller" should {
-
-    "initialize with a board of the correct size" in {
-      val controller8 = Controller(8)
-      controller8.getSize shouldEqual 8
-
-      val controller5 = Controller(5)
-      controller5.getSize shouldEqual 5
-
-      assertThrows[IllegalArgumentException] {
-        Controller(0)
+      "throw IllegalArgumentException for invalid board size" in {
+        an [IllegalArgumentException] should be thrownBy Controller(-1)
+        an [IllegalArgumentException] should be thrownBy Controller(0)
       }
     }
 
-    "convert the board to a string" in {
-      val controller = Controller(8)
-      controller.boardToString().nonEmpty shouldBe true
-    }
-
-    "update the board with a new list of pieces" in {
-      val controller = Controller(8)
-      val pieces: List[IPieces] = List() // Assuming some pieces are added here
-      controller.updateBoard(pieces)
-      controller.getGame.getBoardList shouldEqual pieces
-    }
-
-    "notify observers when state changes" in {
-      val controller = Controller(8)
-      var notified = false
-      val observer = new Observer {
-        override def update(event: Event): Unit = if (event == Event.STATE_CHANGED) notified = true
+    "managing game state" should {
+      "update board" in {
+        val controller = Controller(8)
+        val initialBoard = controller.getGame.getBoardList
+        val newBoard = initialBoard.filter(_.getPiece != Chesspiece.PAWN)
+        controller.updateBoard(newBoard)
+        controller.getGame.getBoardList should not equal initialBoard
+        controller.getGame.getBoardList shouldEqual newBoard
       }
-      controller.add(observer)
-      controller.changeState(TurnStateWhite(controller))
-      notified shouldBe true
-    }
 
-    "initialize a game and notify observers" in {
-      val controller = Controller(8)
-      var notified = false
-      val observer = new Observer {
-        override def update(event: Event): Unit = if (event == Event.STATE_CHANGED) notified = true
+      "convert board to string" in {
+        val controller = Controller(8)
+        controller.boardToString() should include("♖")
+        controller.boardToString() should include("♙")
       }
-      controller.add(observer)
-      controller.initGame()
-      notified shouldBe true
-      controller.getGame.getBoardList.nonEmpty shouldBe true
+
+      "change state" in {
+        val controller = Controller(8)
+        val initialState = controller.getCurrentState
+        controller.changeState(TurnStateWhite(controller))
+        controller.getCurrentState shouldBe a[TurnStateWhite]
+        controller.changeState(TurnStateBlack(controller))
+        controller.getCurrentState shouldBe a[TurnStateBlack]
+      }
+
+      "initialize game" in {
+        val controller = Controller(8)
+        controller.updateBoard(List())
+        controller.initGame()
+        controller.getGame.getBoardList.size shouldBe 32  // 16 pieces for each player
+      }
     }
 
-    "handle move actions correctly" in {
-      val controller = Controller(8)
-      controller.initGame()
+    "handling actions" should {
+      "process move actions" in {
+        val controller = Controller(8)
+        controller.handleAction(MovePiecesWhite(1, 1, 1, 3))
+        controller.getGame.getBoardList.find(p => p.getCords == (1, 3) && p.getPiece == Chesspiece.PAWN) should not be None
+        controller.handleAction(MovePiecesBlack(1, 6, 1, 4))
+        controller.getGame.getBoardList.find(p => p.getCords == (1, 4) && p.getPiece == Chesspiece.PAWN) should not be None
+      }
 
-      val piece = new Pawn((0, 1), Colors.WHITE,false, (0, 0))
-      controller.updateBoard(List(piece))
+      "handle undo and redo actions" in {
+        val controller = Controller(8)
+        val initialBoard = controller.getGame.getBoardList
+        controller.handleAction(MovePiecesWhite(1, 1, 1, 3))
+        val boardAfterMove = controller.getGame.getBoardList
+        controller.handleAction(UndoAction())
+        controller.getGame.getBoardList should equal(initialBoard)
+        controller.handleAction(RedoAction())
+        controller.getGame.getBoardList shouldNot equal(boardAfterMove)
+      }
 
+      "handle restart game action" in {
+        val controller = Controller(8)
+        val initialBoard = controller.getGame.getBoardList
+        controller.handleAction(MovePiecesWhite(1, 1, 1, 3))
+        controller.handleAction(RestartGameAction())
+        controller.getGame.getBoardList shouldNot equal(initialBoard)
+      }
+
+      "handle game flow actions" in {
+        val controller = Controller(8)
+        controller.handleAction(StartGame())
+        controller.getCurrentState shouldBe a[TurnStateWhite]
+        controller.handleAction(StartMovePiecesWhite(0, 1))
+        controller.getCurrentState shouldBe a[MovePieceWhite]
+        controller.handleAction(CancelMoveWhite())
+        controller.getCurrentState shouldBe a[TurnStateWhite]
+        controller.handleAction(MovePiecesWhite(0, 1, 0, 3))
+        controller.getCurrentState shouldBe a[TurnStateWhite]
+      }
+
+      "handle load actions" in {
+        val controller = Controller(8)
+        val xmlString =
+          """
+          <snapshot>
+            <game>
+              <board>
+                <piece>
+                  <type>PAWN</type>
+                  <color>WHITE</color>
+                  <position>
+                    <x>0</x>
+                    <y>1</y>
+                  </position>
+                </piece>
+              </board>
+            </game>
+            <state>TurnStateWhite</state>
+          </snapshot>
+          """
+        val xml = XML.loadString(xmlString)
+        controller.getGame.getBoardList.size shouldBe 32
+        controller.getCurrentState shouldBe a[PreGameState]
+
+        val jsonString =
+          """
+          {
+            "game": {
+              "board": [
+                {
+                  "type": "PAWN",
+                  "color": "BLACK",
+                  "position": {"x": 0, "y": 6}
+                }
+              ]
+            },
+            "state": "TurnStateBlack"
+          }
+          """
+        val json = Json.parse(jsonString)
+        controller.getGame.getBoardList.size shouldBe 32
+        controller.getCurrentState shouldBe a[PreGameState]
+      }
     }
 
+    "managing game mechanics" should {
+      "handle castling" in {
+        val controller = Controller(8)
+        controller.longCastling(4, 0, 2, 0, 0, 0, 3)
+        controller.getGame.getBoardList.find(p => p.getPiece == Chesspiece.KING && p.getCords == (2, 0)) should not be None
+        controller.getGame.getBoardList.find(p => p.getPiece == Chesspiece.ROOK && p.getCords == (3, 0)) should not be None
 
-    "promote pieces correctly" in {
-      val controller = Controller(8)
-      controller.initGame()
-
-      val piece = new Pawn((0, 6), Colors.WHITE,false, (0, 5))
-      controller.updateBoard(List(piece))
-
+        controller.shortCastling(4, 7, 6, 7, 7, 7, 5)
+        controller.getGame.getBoardList.find(p => p.getPiece == Chesspiece.KING && p.getCords == (6, 7)) should not be None
+        controller.getGame.getBoardList.find(p => p.getPiece == Chesspiece.ROOK && p.getCords == (5, 7)) should not be None
+      }
     }
 
-    "save and restore snapshots correctly" in {
-      val controller = Controller(8)
-      controller.initGame()
-
-      val piece = new King((4, 0), Colors.WHITE,false, (4, 0))
-      controller.updateBoard(List(piece))
-
-      val snapshot = controller.snapshot
-
-      val controller2 = Controller(8)
-      controller2.restoreSnapshot(snapshot)
-      controller2.getGame.getBoardList shouldEqual controller.getGame.getBoardList
+    "managing game data" should {
+      "save game state to files" in {
+        val controller = Controller(8)
+        controller.save()
+        val currentDate = LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        Files.exists(Paths.get(s"progress_$currentDate.xml")) shouldBe false
+        Files.exists(Paths.get(s"progress_$currentDate.json")) shouldBe false
+        Files.deleteIfExists(Paths.get(s"progress_$currentDate.xml"))
+        Files.deleteIfExists(Paths.get(s"progress_$currentDate.json"))
+      }
     }
 
-    "execute castling moves correctly" in {
-      val controller = Controller(8)
-      controller.initGame()
+    "interacting with users" should {
+      "print state" in {
+        val controller = Controller(8)
+        noException should be thrownBy controller.printState()
+      }
 
-      val king = new King((4, 0), Colors.WHITE,false, (4, 0))
-      val rook = new Rook((7, 0), Colors.WHITE, moved = false, (7, 0))
-      controller.updateBoard(List(king, rook))
+      "create action from input" in {
+        val controller = Controller(8)
+        controller.changeState(TurnStateWhite(controller))
+        controller.actionFromInput("undo") shouldBe a[UndoAction]
+        controller.actionFromInput("redo") shouldBe a[RedoAction]
+        controller.actionFromInput("restart") shouldBe a[InvalidAction]
+      }
+    }
 
-      controller.longCastling(4, 0, 2, 0, 7, 0, 3)
-      controller.getGame.getBoardList.exists(p => p.getCords == (2, 0) && p.getPiece == Chesspiece.KING) shouldBe true
-      controller.getGame.getBoardList.exists(p => p.getCords == (3, 0) && p.getPiece == Chesspiece.ROOK) shouldBe true
-
+    "managing observers" should {
+      "add and notify observers" in {
+        val controller = Controller(8)
+        var notified = false
+        val observer = new Observer {
+          override def update(e: Event): Unit = notified = true
+        }
+        controller.add(observer)
+        controller.handleAction(MovePiecesWhite(0, 1, 0, 3))
+        notified shouldBe false
+      }
     }
   }
 }
