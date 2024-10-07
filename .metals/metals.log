@@ -1,0 +1,392 @@
+2024.10.03 14:08:36 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG' for client Visual Studio Code 1.92.2.[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6594b865]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@246d7651]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6594b865]
+2024.10.03 14:08:36 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+oct 03, 2024 2:08:37 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.10.03 14:08:43 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.10.03 14:08:43 INFO  copying runtime jar...[0m
+2024.10.03 14:08:43 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/metals.sbt[0m
+2024.10.03 14:08:43 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project/metals.sbt[0m
+2024.10.03 14:08:43 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:46 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:51 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:52 INFO  [info] welcome to sbt 1.9.9 (Oracle Corporation Java 19.0.2)[0m
+2024.10.03 14:08:54 INFO  [info] loading settings for project chess-wa-htwg-build-build-build from metals.sbt ...[0m
+2024.10.03 14:08:54 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project/project[0m
+2024.10.03 14:08:56 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:08:57 INFO  [info] loading settings for project chess-wa-htwg-build-build from metals.sbt ...[0m
+2024.10.03 14:08:57 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project[0m
+2024.10.03 14:08:59 INFO  [success] Generated .bloop/chess-wa-htwg-build-build.json[0m
+2024.10.03 14:08:59 INFO  [success] Total time: 2 s, completed 3 oct 2024, 14:08:59[0m
+2024.10.03 14:08:59 INFO  [info] loading settings for project chess-wa-htwg-build from metals.sbt,plugins.sbt ...[0m
+2024.10.03 14:08:59 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project[0m
+2024.10.03 14:09:01 INFO  [success] Generated .bloop/chess-wa-htwg-build.json[0m
+2024.10.03 14:09:01 INFO  [success] Total time: 1 s, completed 3 oct 2024, 14:09:01[0m
+2024.10.03 14:09:02 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.10.03 14:09:02 INFO  [info] set current project to untitled (in build file:/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/)[0m
+2024.10.03 14:09:08 INFO  [success] Generated .bloop/root-test.json[0m
+2024.10.03 14:09:08 INFO  [success] Generated .bloop/root.json[0m
+2024.10.03 14:09:08 INFO  [success] Total time: 5 s, completed 3 oct 2024, 14:09:08[0m
+2024.10.03 14:09:08 INFO  time: ran 'sbt bloopInstall' in 25s[0m
+2024.10.03 14:09:08 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:09:08 INFO  Setting up current java home /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home in /Users/pablolarraz/.bloop/bloop.json[0m
+2024.10.03 14:09:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:09:14 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:09:14 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:09:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:09:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:09:16 INFO  time: Connected to build server in 8.38s[0m
+2024.10.03 14:09:16 INFO  Connected to Build server: Bloop v1.6.0[0m
+2024.10.03 14:09:16 INFO  time: Imported build in 0.12s[0m
+2024.10.03 14:09:16 INFO  running doctor check[0m
+2024.10.03 14:09:16 INFO  java targets: chess-wa-htwg-build, root-test, root, chess-wa-htwg-build-build[0m
+2024.10.03 14:09:21 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.10.03 14:09:32 WARN  org.h2.jdbc.JdbcBatchUpdateException: Violación de indice de Unicidad ó Clave primaria: "PUBLIC.PRIMARY_KEY_3 ON PUBLIC.TOPLEVEL_SYMBOL(JAR, PATH, SYMBOL) VALUES ( /* key:5867 */ 23, '/org/scalatest/enablers/TableAsserting.scala', 'org/scalatest/enablers/ForResult#')"
+Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_3 ON PUBLIC.TOPLEVEL_SYMBOL(JAR, PATH, SYMBOL) VALUES ( /* key:5867 */ 23, '/org/scalatest/enablers/TableAsserting.scala', 'org/scalatest/enablers/ForResult#')"; SQL statement:
+insert into toplevel_symbol (symbol, path, jar) values (?, ?, ?) [23505-230]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1277)
+	at scala.meta.internal.metals.JarTopLevels.putToplevels(JarTopLevels.scala:139)
+	at scala.meta.internal.metals.JarTopLevels.$anonfun$putJarIndexingInfo$1(JarTopLevels.scala:85)
+	at scala.runtime.java8.JFunction1$mcII$sp.apply(JFunction1$mcII$sp.scala:17)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.JarTopLevels.putJarIndexingInfo(JarTopLevels.scala:84)
+	at scala.meta.internal.metals.Indexer.addSourceJarSymbols(Indexer.scala:666)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$5(Indexer.scala:491)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:905)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1(Indexer.scala:482)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1$adapted(Indexer.scala:481)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.meta.internal.metals.Indexer.indexDependencySources(Indexer.scala:481)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$17(Indexer.scala:302)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16(Indexer.scala:295)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16$adapted(Indexer.scala:291)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Indexer.indexWorkspace(Indexer.scala:291)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$2(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$1(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+[0m
+2024.10.03 14:09:35 INFO  time: indexed workspace in 18s[0m
+2024.10.03 14:09:41 INFO  time: code lens generation in 1.18s[0m
+2024.10.03 14:09:41 INFO  time: code lens generation in 1.18s[0m
+2024.10.03 14:09:41 INFO  time: code lens generation in 1.18s[0m
+2024.10.03 14:09:41 INFO  time: code lens generation in 1.19s[0m
+2024.10.03 14:09:53 INFO  compiling root (28 scala sources)[0m
+2024.10.03 14:10:04 INFO  time: compiled root in 11s[0m
+2024.10.03 14:14:56 INFO  Shutting down server[0m
+2024.10.03 14:14:56 INFO  shutting down Metals[0m
+2024.10.03 14:14:56 INFO  Shut down connection with build server.[0m
+2024.10.03 14:14:56 INFO  Shut down connection with build server.[0m
+2024.10.03 14:14:56 INFO  Shut down connection with build server.[0m
+2024.10.03 14:14:56 INFO  Exiting server[0m
+2024.10.03 14:15:06 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed, /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG' for client Visual Studio Code 1.92.2.[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@60914e3a]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@357a599a]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@60914e3a]
+2024.10.03 14:15:07 INFO  Flyway Community Edition 9.22.3 by Redgate[0m
+2024.10.03 14:15:07 INFO  Flyway Community Edition 9.22.3 by Redgate[0m
+2024.10.03 14:15:07 INFO  See release notes here: https://rd.gt/416ObMi[0m
+2024.10.03 14:15:07 INFO  See release notes here: https://rd.gt/416ObMi[0m
+2024.10.03 14:15:07 INFO  [0m
+2024.10.03 14:15:07 INFO  [0m
+2024.10.03 14:15:07 INFO  Database: jdbc:h2:file:/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/.metals/metals (H2 2.3)[0m
+2024.10.03 14:15:07 INFO  Database: jdbc:h2:file:/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/metals (H2 2.3)[0m
+2024.10.03 14:15:07 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.10.03 14:15:07 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.10.03 14:15:07 INFO  Schema history table "PUBLIC"."flyway_schema_history" does not exist yet[0m
+2024.10.03 14:15:07 INFO  Successfully validated 6 migrations (execution time 00:00.021s)[0m
+2024.10.03 14:15:07 INFO  Successfully validated 6 migrations (execution time 00:00.023s)[0m
+2024.10.03 14:15:07 INFO  Creating Schema History table "PUBLIC"."flyway_schema_history" ...[0m
+2024.10.03 14:15:07 INFO  Current version of schema "PUBLIC": 6[0m
+2024.10.03 14:15:07 INFO  Schema "PUBLIC" is up to date. No migration necessary.[0m
+2024.10.03 14:15:07 INFO  Current version of schema "PUBLIC": << Empty Schema >>[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "1 - Create tables"[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "2 - Server discovery"[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "3 - Jar symbols"[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "4 - Fingerprints"[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "5 - Jar type hierarchy"[0m
+2024.10.03 14:15:07 INFO  Migrating schema "PUBLIC" to version "6 - Delete indices"[0m
+2024.10.03 14:15:07 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:07 INFO  Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.108s)[0m
+2024.10.03 14:15:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:08 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:08 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:08 INFO  time: Connected to build server in 0.95s[0m
+2024.10.03 14:15:08 INFO  Connected to Build server: Bloop v1.6.0[0m
+2024.10.03 14:15:09 INFO  time: Imported build in 0.22s[0m
+2024.10.03 14:15:08 INFO  running doctor check[0m
+2024.10.03 14:15:08 INFO  java targets: chess-wa-htwg-build, root-test, root, chess-wa-htwg-build-build[0m
+2024.10.03 14:15:14 INFO  Database: jdbc:h2:file:/Users/pablolarraz/.metals/metals (H2 2.3)[0m
+2024.10.03 14:15:14 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.10.03 14:15:14 INFO  Successfully validated 1 migration (execution time 00:00.001s)[0m
+2024.10.03 14:15:14 INFO  Current version of schema "PUBLIC": 1[0m
+2024.10.03 14:15:14 INFO  Schema "PUBLIC" is up to date. No migration necessary.[0m
+2024.10.03 14:15:14 INFO  time: indexed workspace in 6.42s[0m
+2024.10.03 14:15:19 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.10.03 14:15:20 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/metals.sbt[0m
+2024.10.03 14:15:20 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/metals.sbt[0m
+2024.10.03 14:15:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:15:21 INFO  [info] welcome to sbt 1.10.1 (Oracle Corporation Java 19.0.2)[0m
+2024.10.03 14:15:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.10.03 14:15:23 INFO  [info] loading settings for project play-scala-seed-build-build-build from metals.sbt ...[0m
+2024.10.03 14:15:23 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/project[0m
+2024.10.03 14:15:26 INFO  [info] loading settings for project play-scala-seed-build-build from metals.sbt ...[0m
+2024.10.03 14:15:26 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project[0m
+2024.10.03 14:15:29 INFO  [success] Generated .bloop/play-scala-seed-build-build.json[0m
+2024.10.03 14:15:29 INFO  [success] Total time: 3 s, completed 3 oct 2024, 14:15:29[0m
+2024.10.03 14:15:29 INFO  [info] loading settings for project play-scala-seed-build from metals.sbt,plugins.sbt ...[0m
+2024.10.03 14:15:29 INFO  [info] loading project definition from /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project[0m
+2024.10.03 14:15:32 INFO  [success] Generated .bloop/play-scala-seed-build.json[0m
+2024.10.03 14:15:32 INFO  [success] Total time: 3 s, completed 3 oct 2024, 14:15:32[0m
+2024.10.03 14:15:34 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.10.03 14:15:34 INFO  [info]   __              __[0m
+2024.10.03 14:15:34 INFO  [info]   \ \     ____   / /____ _ __  __[0m
+2024.10.03 14:15:34 INFO  [info]    \ \   / __ \ / // __ `// / / /[0m
+2024.10.03 14:15:34 INFO  [info]    / /  / /_/ // // /_/ // /_/ /[0m
+2024.10.03 14:15:34 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /[0m
+2024.10.03 14:15:34 INFO  [info]       /_/               /____/[0m
+2024.10.03 14:15:34 INFO  [info] [0m
+2024.10.03 14:15:34 INFO  [info] Version 3.0.5 running Java 19.0.2[0m
+2024.10.03 14:15:34 INFO  [info] [0m
+2024.10.03 14:15:34 INFO  [info] Play is run entirely by the community. Please consider contributing and/or donating:[0m
+2024.10.03 14:15:34 INFO  [info] https://www.playframework.com/sponsors[0m
+2024.10.03 14:15:34 INFO  [info] [0m
+2024.10.03 14:15:34 INFO  [info] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+2024.10.03 14:15:34 INFO  [info]   Java version is 19. Play supports only Java 11, 17 and 21.[0m
+2024.10.03 14:15:34 INFO  [info] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+2024.10.03 14:15:34 INFO  [info] [0m
+2024.10.03 14:15:37 INFO  [success] Generated .bloop/root.json[0m
+2024.10.03 14:15:37 INFO  [success] Generated .bloop/root-test.json[0m
+2024.10.03 14:15:37 INFO  [success] Total time: 3 s, completed 3 oct 2024, 14:15:38[0m
+2024.10.03 14:15:38 INFO  time: ran 'sbt bloopInstall' in 18s[0m
+2024.10.03 14:15:38 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:39 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:39 INFO  Attempting to connect to the build server...[0m
+2024.10.03 14:15:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.10.03 14:15:40 INFO  time: Connected to build server in 2.3s[0m
+2024.10.03 14:15:40 INFO  Connected to Build server: Bloop v1.6.0[0m
+2024.10.03 14:15:40 INFO  running doctor check[0m
+2024.10.03 14:15:40 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build[0m
+2024.10.03 14:15:43 INFO  Database: jdbc:h2:file:/Users/pablolarraz/.metals/metals (H2 2.3)[0m
+2024.10.03 14:15:43 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.10.03 14:15:43 INFO  Successfully validated 1 migration (execution time 00:00.001s)[0m
+2024.10.03 14:15:43 INFO  Current version of schema "PUBLIC": 1[0m
+2024.10.03 14:15:43 INFO  Schema "PUBLIC" is up to date. No migration necessary.[0m
+2024.10.03 14:15:57 INFO  time: indexed workspace in 17s[0m
+oct 03, 2024 2:19:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.10.03 14:19:51 INFO  time: code lens generation in 1.67s[0m
+2024.10.03 14:19:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.14[0m
+2024.10.03 14:19:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.14[0m
+2024.10.03 14:21:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.14[0m
+2024.10.03 14:21:17 INFO  compiling root (7 scala sources and 1 java source)[0m
+2024.10.03 14:21:24 INFO  time: compiled root in 6.5s[0m
+2024.10.03 14:21:24 INFO  compiling root-test (1 scala source)[0m
+2024.10.03 14:21:25 INFO  time: compiled root-test in 1.68s[0m
+2024.10.03 14:23:32 INFO  compiling root (28 scala sources)[0m
+2024.10.03 14:23:37 INFO  time: compiled root in 5.34s[0m
+oct 03, 2024 2:29:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 177
+oct 03, 2024 2:29:49 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 232
+oct 03, 2024 2:30:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 284
+oct 03, 2024 2:32:59 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 427
+oct 03, 2024 2:44:41 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 729
+2024.10.03 14:44:52 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:44:53 INFO  time: compiled root in 1.07s[0m
+oct 03, 2024 2:45:04 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 771
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.11/scala-reflect-2.13.11.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.11/scala-reflect-2.13.11.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.11/scala-library-2.13.11.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.11/scala-library-2.13.11.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.12.0/metaconfig-core_2.13-0.12.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.12/scalap-2.13.12.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.12.0/metaconfig-core_2.13-0.12.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.12/scalap-2.13.12.pom
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.pom
+Downloading https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.4.3/paiges-core_2.13-0.4.3.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_2.13/0.12.0/metaconfig-pprint_2.13-0.12.0.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0.pom
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.4.3/paiges-core_2.13-0.4.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_2.13/0.12.0/metaconfig-pprint_2.13-0.12.0.pom
+Downloading https://repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.4.0/fansi_2.13-0.4.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.4.0/fansi_2.13-0.4.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.pom
+Downloading https://repo1.maven.org/maven2/org/jline/jline-parent/3.22.0/jline-parent-3.22.0.pom
+Downloaded https://repo1.maven.org/maven2/org/jline/jline-parent/3.22.0/jline-parent-3.22.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.1/sourcecode_2.13-0.3.1.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.1/sourcecode_2.13-0.3.1.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.12.0/metaconfig-core_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.12/scalap-2.13.12.jar
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.1/sourcecode_2.13-0.3.1.jar
+Downloading https://repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_2.13/0.12.0/metaconfig-pprint_2.13-0.12.0.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_2.13/0.12.0/metaconfig-pprint_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.1/sourcecode_2.13-0.3.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.12.0/metaconfig-core_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.4.0/fansi_2.13-0.4.0.jar
+Downloaded https://repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.4.0/fansi_2.13-0.4.0.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.12/scalap-2.13.12.jar
+Downloading https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.4.3/paiges-core_2.13-0.4.3.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.4.3/paiges-core_2.13-0.4.3.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+2024.10.03 14:46:56 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:46:56 INFO  time: compiled root in 0.23s[0m
+2024.10.03 14:46:58 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:46:58 INFO  time: compiled root in 0.15s[0m
+2024.10.03 14:46:59 WARN  Using indexes to guess the definition of about[0m
+oct 03, 2024 2:47:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 819
+2024.10.03 14:47:19 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:47:19 INFO  time: compiled root in 0.16s[0m
+2024.10.03 14:47:22 WARN  Using indexes to guess the definition of about[0m
+2024.10.03 14:47:27 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:47:27 INFO  time: compiled root in 0.31s[0m
+oct 03, 2024 2:47:29 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 860
+oct 03, 2024 2:47:30 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+2024.10.03 14:47:31 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:47:31 INFO  time: compiled root in 0.11s[0m
+oct 03, 2024 2:47:54 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 882
+oct 03, 2024 2:49:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 915
+2024.10.03 14:49:27 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:49:27 INFO  time: compiled root in 0.12s[0m
+2024.10.03 14:51:08 WARN  Using indexes to guess the definition of about[0m
+2024.10.03 14:51:08 WARN  Using indexes to guess the definition of about[0m
+2024.10.03 14:51:09 WARN  Using indexes to guess the definition of about[0m
+2024.10.03 14:51:10 WARN  Using indexes to guess the definition of about[0m
+2024.10.03 14:51:38 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:51:38 INFO  time: compiled root in 0.12s[0m
+2024.10.03 14:51:38 WARN  Using indexes to guess the definition of about[0m
+oct 03, 2024 2:51:41 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1049
+2024.10.03 14:52:08 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:52:08 INFO  time: compiled root in 0.12s[0m
+2024.10.03 14:52:20 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:52:20 INFO  time: compiled root in 0.1s[0m
+oct 03, 2024 2:52:55 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1147
+2024.10.03 14:53:01 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/build.sc. Using presentation compiler with project's scala-library version: 2.13.14[0m
+2024.10.03 14:53:01 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/build.sc. Using presentation compiler with project's scala-library version: 2.13.14[0m
+2024.10.03 14:53:02 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/build.sc. Using presentation compiler with project's scala-library version: 2.13.14[0m
+oct 03, 2024 2:53:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1175
+2024.10.03 14:53:07 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:53:07 INFO  time: compiled root in 0.14s[0m
+oct 03, 2024 2:53:13 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1185
+2024.10.03 14:53:16 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:53:16 INFO  time: compiled root in 0.12s[0m
+2024.10.03 14:53:27 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:53:27 INFO  time: compiled root in 0.11s[0m
+2024.10.03 14:53:41 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:53:42 INFO  time: compiled root in 1.02s[0m
+2024.10.03 14:54:17 INFO  compiling root (4 scala sources)[0m
+2024.10.03 14:54:18 INFO  time: compiled root in 1.62s[0m
+2024.10.03 14:54:18 INFO  compiling root (1 scala source and 1 java source)[0m
+2024.10.03 14:54:20 INFO  time: compiled root in 1.14s[0m
+2024.10.03 14:54:52 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:54:52 INFO  time: compiled root in 0.59s[0m
+2024.10.03 14:55:25 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:25: error: malformed xml literal, expected:
+Expected ("{{" | "}}" | "&" | "&#" | "&#x" | "{" | "<xml:unparsed" | "<![CDATA[" | "<?" | "<!--" | "<" | "</"):25:3, found "}\n}\n"
+  }
+  ^[0m
+2024.10.03 14:55:25 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:55:25 INFO  time: compiled root in 0.17s[0m
+2024.10.03 14:55:41 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:55:41 INFO  time: compiled root in 0.14s[0m
+2024.10.03 14:56:05 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:56:05 INFO  time: compiled root in 0.68s[0m
+2024.10.03 14:58:34 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:58:34 INFO  time: compiled root in 0.59s[0m
+2024.10.03 14:58:45 INFO  compiling root (1 scala source)[0m
+2024.10.03 14:58:45 INFO  time: compiled root in 0.52s[0m
+oct 03, 2024 3:00:16 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.03 15:00:16 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:16 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:16 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:17 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:17 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:17 INFO  Shut down connection with build server.[0m
+2024.10.03 15:00:17 INFO  logging to files /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/metals.log[0m

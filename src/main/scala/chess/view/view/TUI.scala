@@ -9,7 +9,6 @@ import scala.io.StdIn
 import scala.util.matching.Regex
 import com.google.inject.Inject
 
-
 class TUI @Inject() (controller: IController) extends Observer with ITUI {
   controller.add(this)
   println("Welcome to CHESS!")
@@ -17,8 +16,9 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
   read()
   override def update(event: Event): Unit = {
     event match {
-      case Event.BOARD_CHANGED => println(controller.boardToString())
-        //notifyObservers(Event.INPUT)
+      case Event.BOARD_CHANGED =>
+        println(controller.boardToString())
+        // notifyObservers(Event.INPUT)
         controller.printState()
       case Event.INPUT =>
         read()
@@ -33,12 +33,16 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
     controller.handleAction(actionFromInput)
     read()
   }
-  def actionFromInput: IAction ={
+  def actionFromInput: IAction = {
     controller.actionFromInput(StdIn.readLine().toLowerCase) match
       case InvalidAction(msg) =>
         println(msg)
         actionFromInput
       case action =>
         action
+  }
+  def getCurrentState: String = {
+    controller
+      .boardToString() // Suponiendo que este método retorna la representación del tablero
   }
 }
