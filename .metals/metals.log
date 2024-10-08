@@ -2364,3 +2364,255 @@ bad option '-Ytasty-reader' was ignored
 2024.10.08 08:25:02 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
 oct 08, 2024 8:29:22 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+oct 08, 2024 8:30:37 A. M. scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/routes.java
+java.nio.file.NoSuchFileException: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/routes.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3287)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:428)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:273)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:284)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:199)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:199)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:199)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:172)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:129)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at scala.meta.internal.pc.JavaHoverProvider.documentation(JavaHoverProvider.scala:205)
+	at scala.meta.internal.pc.JavaHoverProvider.$anonfun$hoverOffset$1(JavaHoverProvider.scala:72)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.JavaHoverProvider.hoverOffset(JavaHoverProvider.scala:68)
+	at scala.meta.internal.pc.JavaHoverProvider.hover(JavaHoverProvider.scala:44)
+	at scala.meta.internal.pc.JavaPresentationCompiler.hover(JavaPresentationCompiler.scala:77)
+	at scala.meta.internal.metals.Compilers.$anonfun$hover$1(Compilers.scala:890)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$12(Compilers.scala:1359)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$10(Compilers.scala:1359)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:1341)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:885)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$hover$1(MetalsLspService.scala:999)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.hover(MetalsLspService.scala:997)
+	at scala.meta.internal.metals.WorkspaceLspService.hover(WorkspaceLspService.scala:438)
+	at scala.meta.metals.lsp.DelegatingScalaService.hover(DelegatingScalaService.scala:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+oct 08, 2024 8:30:37 A. M. scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/routes.java
+java.nio.file.NoSuchFileException: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/routes.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3287)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:428)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:273)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:284)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:295)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:199)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:199)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:199)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:172)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:129)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at scala.meta.internal.pc.JavaHoverProvider.documentation(JavaHoverProvider.scala:205)
+	at scala.meta.internal.pc.JavaHoverProvider.$anonfun$hoverOffset$1(JavaHoverProvider.scala:72)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.JavaHoverProvider.hoverOffset(JavaHoverProvider.scala:68)
+	at scala.meta.internal.pc.JavaHoverProvider.hover(JavaHoverProvider.scala:44)
+	at scala.meta.internal.pc.JavaPresentationCompiler.hover(JavaPresentationCompiler.scala:77)
+	at scala.meta.internal.metals.Compilers.$anonfun$hover$1(Compilers.scala:890)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$12(Compilers.scala:1359)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$10(Compilers.scala:1359)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:1341)
+	at scala.meta.internal.metals.Compilers.hover(Compilers.scala:885)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$hover$1(MetalsLspService.scala:999)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.hover(MetalsLspService.scala:997)
+	at scala.meta.internal.metals.WorkspaceLspService.hover(WorkspaceLspService.scala:438)
+	at scala.meta.metals.lsp.DelegatingScalaService.hover(DelegatingScalaService.scala:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+2024.10.08 08:30:41 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:30:41 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:30:43 WARN  javac exited with exit code 1
+2024.10.08 08:30:43 INFO  time: compiled root in 2.06s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:31:16 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:31:24 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:31:24 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:31:24 INFO  time: compiled root in 0.17s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:31:25 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:31:25 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:31:26 WARN  javac exited with exit code 1
+2024.10.08 08:31:26 INFO  time: compiled root in 1.06s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:34:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:35:15 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:35:15 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:35:16 WARN  javac exited with exit code 1
+2024.10.08 08:35:16 INFO  time: compiled root in 1.6s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:35:22 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:35:22 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:35:22 INFO  time: compiled root in 0.16s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:35:33 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:35:50 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:35:50 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:35:50 INFO  time: compiled root in 0.18s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:00 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:36:00 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:00 INFO  time: compiled root in 0.17s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:14 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 08:36:14 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:15 INFO  time: compiled root in 1.4s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:15 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:36:15 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:15 INFO  time: compiled root in 0.42s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:36:37 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:36:37 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:37:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:37:17 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:37:17 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:37:18 WARN  javac exited with exit code 1
+2024.10.08 08:37:18 INFO  time: compiled root in 1.26s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:37:29 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 08:37:29 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:37:30 INFO  time: compiled root in 1.2s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:37:30 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:37:30 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:37:32 WARN  javac exited with exit code 1
+2024.10.08 08:37:32 INFO  time: compiled root in 1.7s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:38:36 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:40 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:38:40 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:47 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:27: error: [dialect scala3] identifier expected but ) found
+    Ok(views.html.chess(output.)) // Pasar el resultado a la vista
+                               ^
+2024.10.08 08:39:47 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:39:47 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:39:47 INFO  time: compiled root in 0.15s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:39:49 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:39:49 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:39:50 WARN  javac exited with exit code 1
+2024.10.08 08:39:50 INFO  time: compiled root in 1.42s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:39:51 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:59 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:59 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:59 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:39:59 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala
+2024.10.08 08:39:59 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:40:06 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:40:26 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:40:26 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:40:27 WARN  javac exited with exit code 1
+2024.10.08 08:40:27 INFO  time: compiled root in 1.31s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:40:31 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:40:31 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:42:00 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:42:00 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:42:01 WARN  javac exited with exit code 1
+2024.10.08 08:42:01 INFO  time: compiled root in 1.42s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:44:34 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:44:35 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:44:35 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 08:44:45 INFO  Shutting down server
+2024.10.08 08:44:45 INFO  shutting down Metals
+2024.10.08 08:44:45 INFO  Shut down connection with build server.
+2024.10.08 08:44:45 INFO  Shut down connection with build server.
+2024.10.08 08:44:45 INFO  Shut down connection with build server.
+2024.10.08 08:44:45 INFO  Exiting server
+2024.10.08 08:44:56 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@1e0fa04f]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@75d2941c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1e0fa04f]
+2024.10.08 08:44:56 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 08:44:57 INFO  Attempting to connect to the build server...
+2024.10.08 08:44:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 08:44:57 INFO  Attempting to connect to the build server...
+2024.10.08 08:44:57 INFO  Attempting to connect to the build server...
+2024.10.08 08:44:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 08:44:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 08:44:58 INFO  time: Connected to build server in 1s
+2024.10.08 08:44:58 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.08 08:44:58 INFO  running doctor check
+2024.10.08 08:44:58 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build

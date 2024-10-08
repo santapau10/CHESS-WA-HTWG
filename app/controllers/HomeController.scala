@@ -23,8 +23,9 @@ class HomeController @Inject() (
     val injector = Guice.createInjector(new ChessModule)
     val controller = injector.getInstance(classOf[IController])
     val tui = new TUI(controller)
-    val output = tui.read()
-    Ok(views.html.chess(output.toString())) // Pasar el resultado a la vista
+    println("hola")
+    val output = tui.getCurrentState
+    Ok(views.html.chess(output)) // Pasar el resultado a la vista
   }
 
   def about() = Action { implicit request: Request[AnyContent] =>

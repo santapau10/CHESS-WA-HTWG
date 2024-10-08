@@ -13,7 +13,6 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
   controller.add(this)
   println("Welcome to CHESS!")
   controller.printState()
-  read()
   override def update(event: Event): Unit = {
     event match {
       case Event.BOARD_CHANGED =>
