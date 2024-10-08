@@ -7,7 +7,14 @@
 GET     /                     controllers.HomeController.index()
 GET     /about                  controllers.HomeController.about()
 
+
+# route to get the board state
 GET     /chessBoard           controllers.HomeController.chessBoard()
+
+
+
+# route to move a piece, it should have a body the petition
+POST     /move              controllers.HomeController.move() 
 
 
 # Map static resources from the /public folder to the /assets URL path

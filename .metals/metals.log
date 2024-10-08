@@ -2618,3 +2618,686 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1e0fa04
 2024.10.08 08:44:58 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
 2024.10.08 08:45:02 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
 2024.10.08 08:45:04 INFO  time: indexed workspace in 5.81s
+2024.10.08 08:48:41 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:48:41 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:43 WARN  javac exited with exit code 1
+2024.10.08 08:48:43 INFO  time: compiled root in 2.04s
+bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:48 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:48:48 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:49 WARN  javac exited with exit code 1
+2024.10.08 08:48:49 INFO  time: compiled root in 1.18s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:49 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:48:49 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:51 WARN  javac exited with exit code 1
+2024.10.08 08:48:51 INFO  time: compiled root in 1.67s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:51 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:48:51 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:48:53 WARN  javac exited with exit code 1
+2024.10.08 08:48:53 INFO  time: compiled root in 1.4s
+bad option '-Ytasty-reader' was ignored
+oct 08, 2024 8:49:02 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+2024.10.08 08:59:35 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 08:59:35 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 08:59:36 WARN  javac exited with exit code 1
+2024.10.08 08:59:36 INFO  time: compiled root in 1.02s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:24:15 INFO  Shutting down server
+2024.10.08 09:24:15 INFO  shutting down Metals
+2024.10.08 09:24:15 INFO  Shut down connection with build server.
+2024.10.08 09:24:15 INFO  Shut down connection with build server.
+2024.10.08 09:24:15 INFO  Shut down connection with build server.
+2024.10.08 09:24:15 INFO  Exiting server
+2024.10.08 09:27:58 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@77b05ab3]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5467205d]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@77b05ab3]
+2024.10.08 09:27:58 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:27:59 INFO  Attempting to connect to the build server...
+2024.10.08 09:28:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:28:00 INFO  Attempting to connect to the build server...
+2024.10.08 09:28:00 INFO  Attempting to connect to the build server...
+2024.10.08 09:28:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:28:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:28:00 INFO  time: Connected to build server in 0.84s
+2024.10.08 09:28:00 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.08 09:28:00 INFO  time: Imported build in 0.21s
+2024.10.08 09:28:00 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+oct 08, 2024 9:28:00 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2024.10.08 09:28:01 INFO  running doctor check
+2024.10.08 09:28:01 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
+2024.10.08 09:28:06 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:28:07 INFO  time: indexed workspace in 6.2s
+2024.10.08 09:28:07 INFO  compiling root (1 scala source)
+2024.10.08 09:28:07 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:08 WARN  Invalid text document uri received from build server: file:///Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/routes/main/controllers/routes.java
+2024.10.08 09:28:08 INFO  time: compiled root in 1.22s
+2024.10.08 09:28:08 INFO  compiling root (1 scala source)
+2024.10.08 09:28:08 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:09 INFO  time: compiled root in 1.14s
+bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:12 INFO  compiling root (1 scala source)
+2024.10.08 09:28:12 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:13 INFO  time: compiled root in 1.25s
+2024.10.08 09:28:17 INFO  compiling root (1 scala source)
+2024.10.08 09:28:17 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:17 INFO  time: compiled root in 0.8s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:28:21 INFO  Shutting down server
+2024.10.08 09:28:21 INFO  shutting down Metals
+2024.10.08 09:28:21 INFO  Shut down connection with build server.
+2024.10.08 09:28:21 INFO  Shut down connection with build server.
+2024.10.08 09:28:21 INFO  Shut down connection with build server.
+2024.10.08 09:28:21 INFO  Exiting server
+2024.10.08 09:49:01 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7b63e165]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6f031777]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7b63e165]
+2024.10.08 09:49:01 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:49:02 INFO  Attempting to connect to the build server...
+oct 08, 2024 9:49:02 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+oct 08, 2024 9:49:02 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2024.10.08 09:49:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:49:03 INFO  Attempting to connect to the build server...
+2024.10.08 09:49:03 INFO  Attempting to connect to the build server...
+2024.10.08 09:49:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:49:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:49:03 INFO  time: Connected to build server in 0.9s
+2024.10.08 09:49:03 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.08 09:49:03 INFO  time: Imported build in 0.11s
+2024.10.08 09:49:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:49:03 INFO  running doctor check
+2024.10.08 09:49:03 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
+oct 08, 2024 9:49:03 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+2024.10.08 09:49:07 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:49:08 INFO  time: indexed workspace in 5.42s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:49:08 INFO  compiling root (1 scala source)
+2024.10.08 09:49:08 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:49:10 INFO  time: compiled root in 1.37s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:49:10 INFO  compiling root (1 scala source)
+2024.10.08 09:49:10 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:49:11 INFO  time: compiled root in 0.97s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:50:50 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 09:50:50 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:50:52 INFO  time: compiled root in 1.25s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:50:52 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 09:50:52 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:50:54 WARN  javac exited with exit code 1
+2024.10.08 09:50:54 INFO  time: compiled root in 2.03s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:51:32 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:51:32 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.08 09:51:32 WARN  scala-cli >= 0.1.3 not found in PATH, fetching and starting a JVM-based Scala CLI
+2024.10.08 09:51:35 INFO  time: code lens generation in 2.58s
+2024.10.08 09:51:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.08 09:51:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.08 09:51:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.08 09:51:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:51:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:51:55 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:51:57 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:52:02 INFO  Running List(/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/java, -cp, /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/cli_3/1.4.1/cli_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app_3/2.1.0-M28/case-app_3-2.1.0-M28.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-launcher_2.13/2.1.10/coursier-launcher_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-proxy-setup/2.1.10/coursier-proxy-setup-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/publish/publish_2.13/0.1.6/publish_2.13-0.1.6.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/jniutils/windows-jni-utils/0.3.3/windows-jni-utils-0.3.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_3/2.13.5.2/jsoniter-scala-core_3-2.13.5.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/libsodiumjni/0.0.4/libsodiumjni-0.0.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_3/0.12.0/metaconfig-typesafe-config_3-0.12.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ai/kien/python-native-libs_3/0.2.4/python-native-libs_3-0.2.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-packager_2.13/0.1.29/scala-packager_2.13-0.1.29.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli-signing/cli_3/0.2.3/cli_3-0.2.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.13/slf4j-nop-2.0.13.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.9.7/core_2.13-3.9.7.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/build-module_3/1.4.1/build-module_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/config_3/1.4.1/config_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/scala3-graal_3/1.4.1/scala3-graal_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/specification-level_3/1.4.1/specification-level_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.2/sourcecode_3-0.4.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app-annotations_3/2.1.0-M28/case-app-annotations_3-2.1.0-M28.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app-util_3/2.1.0-M28/case-app-util_3-2.1.0-M28.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/scala-cli/tmp/zip-input-stream/0.1.1/zip-input-stream-0.1.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.14/scala-library-2.13.14.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.13/2.1.10/coursier-cache_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-core_2.13/2.1.10/coursier-core_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.14.0/jna-5.14.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-core_3/0.12.0/metaconfig-core_3-0.12.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_3/2.12.0/scala-collection-compat_3-2.12.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/cloud/tools/jib-core/0.22.0/jib-core-0.22.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.76/bcpg-jdk18on-1.76.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli-signing/shared_3/0.2.3/shared_3-0.2.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.7.9/core_2.13-1.7.9.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.16/core_2.13-1.3.16.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.16/ws_2.13-1.3.16.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/java-class-name/java-class-name_3/0.1.3/java-class-name_3-0.1.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-shared_2.13.14/4.9.8/semanticdb-shared_2.13.14-4.9.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-native/test-runner_3/0.5.4/test-runner_3-0.5.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_3/0.10.2/os-lib_3-0.10.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.9.0/pprint_3-0.9.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-nodejs_2.13/1.4.0/scalajs-env-nodejs_2.13-1.4.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.13/1.16.0/scalajs-sbt-test-adapter_2.13-1.16.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/zip-input-stream/zip-input-stream/0.1.2/zip-input-stream-0.1.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/options_3/1.4.1/options_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/directives_3/1.4.1/directives_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/scala-cli-bsp/1.4.1/scala-cli-bsp-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/test-runner_3/1.4.1/test-runner_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/tasty-lib_3/1.4.1/tasty-lib_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.0/plexus-archiver-4.9.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.1/plexus-container-default-2.1.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/windows-ansi/windows-ansi/0.0.5/windows-ansi-0.0.5.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-util_2.13/2.1.10/coursier-util_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/concurrent-reference-hash-map/1.1.0/concurrent-reference-hash-map-1.1.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.3.0/scala-xml_2.13-2.3.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_3/0.12.0/metaconfig-pprint_3-0.12.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/paiges-core_3/0.4.3/paiges-core_3-0.4.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.14/scala-reflect-2.13.14.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/cloud/tools/jib-build-plan/0.4.0/jib-build-plan-0.4.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client/1.34.0/google-http-client-1.34.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client-apache-v2/1.34.0/google-http-client-apache-v2-1.34.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auth/google-auth-library-oauth2-http/0.18.0/google-auth-library-oauth2-http-0.18.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.9.8/scalameta_2.13-4.9.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.13/0.11.17/scalapb-runtime_2.13-0.11.17.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-native/tools_3/0.5.4/tools_3-0.5.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/junit-interface/0.13.3/junit-interface-0.13.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.1.0/geny_3-1.1.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.5.0/fansi_3-0.5.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.13/1.4.0/scalajs-js-envs_2.13-1.4.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.13/2.0.2/bloop-config_2.13-2.0.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/core_3/1.4.1/core_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/using_directives/1.1.1/using_directives-1.1.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/build-macros_3/1.4.1/build-macros_3-1.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bsp4j/2.1.1/bsp4j-2.1.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.5-10/zstd-jni-1.5.5-10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opencensus/opencensus-api/0.24.0/opencensus-api-0.24.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opencensus/opencensus-contrib-http-util/0.24.0/opencensus-contrib-http-util-0.24.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.6.6/auto-value-annotations-1.6.6.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auth/google-auth-library-credentials/0.18.0/google-auth-library-credentials-0.18.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client-jackson2/1.32.1/google-http-client-jackson2-1.32.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.9.8/parsers_2.13-4.9.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scalap/2.13.14/scalap-2.13.14.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.13/0.11.17/lenses_2.13-0.11.17.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.6/protobuf-java-3.19.6.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.12.0/scala-collection-compat_2.13-2.12.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-native/nir_3/0.5.4/nir_3-0.5.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-native/util_3/0.5.4/util_3-0.5.4.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-logging_2.13/1.1.1/scalajs-logging_2.13-1.1.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.13/0.1.12/unroll-annotation_2.13-0.1.12.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-rifle_2.13/1.5.17-sc-2/bloop-rifle_2.13-1.5.17-sc-2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-jvm_2.13/2.1.10/coursier-jvm_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/dependency_3/0.2.3/dependency_3-0.2.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/6.8.0.202311291450-r/org.eclipse.jgit-6.8.0.202311291450-r.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-jsdom-nodejs_2.13/1.1.0/scalajs-env-jsdom-nodejs_2.13-1.1.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/lsp4j/org.eclipse.lsp4j.generator/0.20.1/org.eclipse.lsp4j.generator-0.20.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/lsp4j/org.eclipse.lsp4j.jsonrpc/0.20.1/org.eclipse.lsp4j.jsonrpc-0.20.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/grpc/grpc-context/1.22.1/grpc-context-1.22.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.13/4.9.8/trees_2.13-4.9.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.14/scala-compiler-2.13.14.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.13/0.0.11/libdaemon_2.13-0.0.11.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/scala-cli/snailgun/snailgun-core_2.13/0.4.1-sc2/snailgun-core_2.13-0.4.1-sc2.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/argonaut-shapeless_6.3_2.13/1.3.1/argonaut-shapeless_6.3_2.13-1.3.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier_2.13/2.1.10/coursier_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-env_2.13/2.1.10/coursier-env_2.13-2.1.10.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.2.3/JavaEWAH-1.2.3.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.13/4.9.8/common_2.13-4.9.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut_2.13/6.3.8/argonaut_2.13-6.3.8.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.9/shapeless_2.13-2.3.9.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib.macro/2.28.0/org.eclipse.xtend.lib.macro-2.28.0.jar:/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.4.2/sourcecode_2.13-0.4.2.jar, scala.cli.ScalaCli, bsp, --workspace, /var/folders/g2/bb592kf11cd7hs1zdc6d03gm0000gn/T/metals-scala-cli11202239243259249264, --semantic-db-source-root, /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view, /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala)
+2024.10.08 09:52:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-frontend_2.12/1.5.17-sc-2/bloop-frontend_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-frontend_2.12/1.5.17-sc-2/bloop-frontend_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/scala-debug-adapter_2.12/4.1.1/scala-debug-adapter_2.12-4.1.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.12/0.0.11/libdaemon_2.12-0.0.11.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-backend_2.12/1.5.17-sc-2/bloop-backend_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.0/bloop-config_2.12-2.0.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/scala-debug-adapter_2.12/4.1.1/scala-debug-adapter_2.12-4.1.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.0/bloop-config_2.12-2.0.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.12/0.0.11/libdaemon_2.12-0.0.11.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-backend_2.12/1.5.17-sc-2/bloop-backend_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-parent/1.4.14/logback-parent-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/qos/logback/logback-parent/1.4.14/logback-parent-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.10.0/librarymanagement-ivy_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/nailgun-server/1.0.7/nailgun-server-1.0.7.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.9.5/parsers_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.1/sourcecode_2.12-0.4.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-shared_2.12/1.5.17-sc-2/bloop-shared_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/com-microsoft-java-debug-core/0.34.0+30/com-microsoft-java-debug-core-0.34.0+30.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.10.0/librarymanagement-ivy_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.9.5/parsers_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/nailgun-server/1.0.7/nailgun-server-1.0.7.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.10.0/test-agent-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.1/sourcecode_2.12-0.4.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/com-microsoft-java-debug-core/0.34.0+30/com-microsoft-java-debug-core-0.34.0+30.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.10.0/test-agent-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-shared_2.12/1.5.17-sc-2/bloop-shared_2.12-1.5.17-sc-2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.0/zinc_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.9.5/trees_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.4.0/jna-platform-4.4.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.10.0/librarymanagement-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.13/interface-1.0.13.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/jsonrpc4s_2.12/0.1.1/jsonrpc4s_2.12-0.1.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.0/zinc_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.4.0/jna-platform-4.4.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.13/interface-1.0.13.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/jsonrpc4s_2.12/0.1.1/jsonrpc4s_2.12-0.1.1.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.10.0/librarymanagement-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.9.5/trees_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.0/zinc-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.0/zinc-compile-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.0.0/launcher-interface-1.0.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.0/zinc-persist_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.0/zinc-classfile_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.0/zinc-classfile_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.9.5/common_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.0/zinc-persist_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.0.0/launcher-interface-1.0.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.0/zinc-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.0/zinc-compile-core_2.12-1.10.0.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.9.5/common_2.12-4.9.5.pom
+2024.10.08 09:52:04 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.0/zinc-classpath_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.0/zinc-persist-core-assembly-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.0/zinc-apiinfo_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.12/0.11.15/scalapb-runtime_2.12-0.11.15.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.0/compiler-interface-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.12/0.11.15/scalapb-runtime_2.12-0.11.15.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.0/zinc-persist-core-assembly-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.0/zinc-classpath_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.0/zinc-apiinfo_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.0/compiler-interface-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.0/compiler-bridge_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.12/0.11.15/lenses_2.12-0.11.15.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.0/compiler-bridge_2.12-1.10.0.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.12/0.11.15/lenses_2.12-0.11.15.pom
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.12/0.11.15/lenses_2.12-0.11.15.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.0/bloop-config_2.12-2.0.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-backend_2.12/1.5.17-sc-2/bloop-backend_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.1/sourcecode_2.12-0.4.1.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.0/zinc_2.12-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.12/0.11.15/scalapb-runtime_2.12-0.11.15.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.12/0.11.15/lenses_2.12-0.11.15.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.10.0/test-agent-1.10.0.jar
+2024.10.08 09:52:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.1/sourcecode_2.12-0.4.1.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.0/compiler-interface-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.10.0/test-agent-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/scala-debug-adapter_2.12/4.1.1/scala-debug-adapter_2.12-4.1.1.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.0/bloop-config_2.12-2.0.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.10.0/librarymanagement-core_2.12-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.0/zinc_2.12-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.0/zinc-apiinfo_2.12-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.0/compiler-interface-1.10.0.jar
+2024.10.08 09:52:05 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-frontend_2.12/1.5.17-sc-2/bloop-frontend_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:06 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.0/zinc-apiinfo_2.12-1.10.0.jar
+2024.10.08 09:52:06 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.jar
+2024.10.08 09:52:06 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.jar
+2024.10.08 09:52:06 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/jsonrpc4s_2.12/0.1.1/jsonrpc4s_2.12-0.1.1.jar
+2024.10.08 09:52:07 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/jsonrpc4s_2.12/0.1.1/jsonrpc4s_2.12-0.1.1.jar
+2024.10.08 09:52:07 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.0/compiler-bridge_2.12-1.10.0.jar
+2024.10.08 09:52:07 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-backend_2.12/1.5.17-sc-2/bloop-backend_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:07 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/epfl/scala/com-microsoft-java-debug-core/0.34.0+30/com-microsoft-java-debug-core-0.34.0+30.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.10.0/librarymanagement-core_2.12-1.10.0.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.0/compiler-bridge_2.12-1.10.0.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.0/zinc-classfile_2.12-1.10.0.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/com-microsoft-java-debug-core/0.34.0+30/com-microsoft-java-debug-core-0.34.0+30.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.9.5/parsers_2.12-4.9.5.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.0/zinc-classfile_2.12-1.10.0.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.9.5/trees_2.12-4.9.5.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/epfl/scala/scala-debug-adapter_2.12/4.1.1/scala-debug-adapter_2.12-4.1.1.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-shared_2.12/1.5.17-sc-2/bloop-shared_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-shared_2.12/1.5.17-sc-2/bloop-shared_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:09 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.0/zinc-classpath_2.12-1.10.0.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-frontend_2.12/1.5.17-sc-2/bloop-frontend_2.12-1.5.17-sc-2.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.0/zinc-core_2.12-1.10.0.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.0/zinc-classpath_2.12-1.10.0.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.9.5/common_2.12-4.9.5.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.12/0.11.15/scalapb-runtime_2.12-0.11.15.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.12/0.0.11/libdaemon_2.12-0.0.11.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.12/0.0.11/libdaemon_2.12-0.0.11.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/nailgun-server/1.0.7/nailgun-server-1.0.7.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/github/alexarchambault/bleep/nailgun-server/1.0.7/nailgun-server-1.0.7.jar
+2024.10.08 09:52:10 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.13/interface-1.0.13.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.0/zinc-core_2.12-1.10.0.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.0/zinc-compile-core_2.12-1.10.0.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.10.0/librarymanagement-ivy_2.12-1.10.0.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.0/zinc-compile-core_2.12-1.10.0.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.0/zinc-persist-core-assembly-1.10.0.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.9.5/parsers_2.12-4.9.5.jar
+2024.10.08 09:52:11 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.0/zinc-persist_2.12-1.10.0.jar
+2024.10.08 09:52:13 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.10.0/librarymanagement-ivy_2.12-1.10.0.jar
+2024.10.08 09:52:13 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.0/zinc-persist_2.12-1.10.0.jar
+2024.10.08 09:52:17 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.9.5/common_2.12-4.9.5.jar
+2024.10.08 09:52:17 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.0/zinc-persist-core-assembly-1.10.0.jar
+2024.10.08 09:52:23 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.9.5/trees_2.12-4.9.5.jar
+2024.10.08 09:52:24 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/io/get-coursier/interface/1.0.13/interface-1.0.13.jar
+2024.10.08 09:52:24 INFO  Scala CLI: Starting compilation server
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.2/scala3-compiler_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.2/scala3-compiler_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.4.2/tasty-core_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.4.2/scala3-interfaces-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.4.2/scala3-interfaces-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.4.2/tasty-core_3-3.4.2.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-native/3.25.1/jline-native-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-native/3.25.1/jline-native-3.25.1.pom
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.2/scala3-compiler_3-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-native/3.25.1/jline-native-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.4.2/tasty-core_3-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.4.2/tasty-core_3-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.4.2/scala3-interfaces-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.4.2/scala3-interfaces-3.4.2.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-native/3.25.1/jline-native-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.jar
+2024.10.08 09:52:26 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.jar
+2024.10.08 09:52:27 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2.jar
+2024.10.08 09:52:33 INFO  Scala CLI: Still downloading:
+2024.10.08 09:52:33 INFO  Scala CLI: https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.2/scala3-compiler_3-3.4.2.jar (50,35 %, 10481973 / 20817018)
+2024.10.08 09:52:33 INFO  Scala CLI: 
+2024.10.08 09:52:38 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.2/scala3-compiler_3-3.4.2.jar
+2024.10.08 09:52:38 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.4.2/scala3-sbt-bridge-3.4.2.pom
+2024.10.08 09:52:38 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.4.2/scala3-sbt-bridge-3.4.2.pom
+2024.10.08 09:52:38 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.4.2/scala3-sbt-bridge-3.4.2.jar
+2024.10.08 09:52:38 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.4.2/scala3-sbt-bridge-3.4.2.jar
+2024.10.08 09:52:38 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2-sources.jar
+2024.10.08 09:52:38 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.2/scala3-library_3-3.4.2-sources.jar
+2024.10.08 09:52:39 INFO  Connected to Scala CLI server v1.4.1
+2024.10.08 09:52:39 INFO  compiling metals-scala-cli11202239243259249264_11859ac371-29a8687869 (1 scala source)
+2024.10.08 09:52:41 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 09:52:42 INFO  time: indexed workspace in 3.21s
+2024.10.08 09:52:42 INFO  Scala CLI started for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala
+2024.10.08 09:52:43 INFO  time: compiled metals-scala-cli11202239243259249264_11859ac371-29a8687869 in 3.52s
+2024.10.08 09:52:43 INFO  compiling metals-scala-cli11202239243259249264_11859ac371-29a8687869 (1 scala source)
+2024.10.08 09:52:43 INFO  time: compiled metals-scala-cli11202239243259249264_11859ac371-29a8687869 in 0.6s
+2024.10.08 09:52:43 INFO  compiling metals-scala-cli11202239243259249264_11859ac371-29a8687869 (1 scala source)
+2024.10.08 09:52:44 INFO  time: compiled metals-scala-cli11202239243259249264_11859ac371-29a8687869 in 0.59s
+2024.10.08 09:53:06 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:08 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:29 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:29 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:53:29 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:54:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:54:38 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala
+2024.10.08 09:54:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:54:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:10 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:41 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:56:41 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:57:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:57:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:57:52 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:57:54 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala
+2024.10.08 09:57:54 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+oct 08, 2024 9:58:45 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 316
+2024.10.08 09:59:02 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 09:59:02 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 09:59:04 WARN  javac exited with exit code 1
+2024.10.08 09:59:04 INFO  time: compiled root in 1.37s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 09:59:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 09:59:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:00:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:00:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:00:35 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:00:46 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:00:51 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala
+2024.10.08 10:01:05 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/view/view/TUI.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:01:05 WARN  Using indexes to guess the definition of Unit
+2024.10.08 10:01:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:03:30 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:03:30 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:03:31 WARN  javac exited with exit code 1
+2024.10.08 10:03:31 INFO  time: compiled root in 1.07s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:04:21 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:04:21 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:04:22 WARN  javac exited with exit code 1
+2024.10.08 10:04:22 INFO  time: compiled root in 1.23s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:05:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:05:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/IState.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:05:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/IState.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:05:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/IState.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:05:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/IState.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:10 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pieces.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:10 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pieces.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:11 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pieces.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pieces.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pawn.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pawn.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pawn.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pawn.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:30 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/game/Pawn.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:40 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:40 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:44 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:44 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:08:44 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:09:02 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:10:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:10:45 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/models/BoardBuilder.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:11:12 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:11:12 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:11:12 INFO  time: compiled root in 0.15s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:11:18 WARN  Using indexes to guess the definition of Injector
+2024.10.08 10:12:22 WARN  Using indexes to guess the definition of Injector
+2024.10.08 10:16:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:14 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:14 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/test/scala/module/ChessModuleSpec.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:14 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/test/scala/module/ChessModuleSpec.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:14 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/test/scala/module/ChessModuleSpec.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/test/scala/module/ChessModuleSpec.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.08 10:16:24 WARN  Using indexes to guess the definition of Injector
+2024.10.08 10:16:28 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:16:28 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:16:29 WARN  javac exited with exit code 1
+2024.10.08 10:16:29 INFO  time: compiled root in 1.04s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:16:30 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:16:30 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:16:30 WARN  javac exited with exit code 1
+2024.10.08 10:16:31 INFO  time: compiled root in 1s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:16:49 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:16:49 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:16:50 WARN  javac exited with exit code 1
+2024.10.08 10:16:50 INFO  time: compiled root in 1.26s
+bad option '-Ytasty-reader' was ignored
+oct 08, 2024 10:17:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1080
+2024.10.08 10:17:20 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:17:20 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:17:21 WARN  javac exited with exit code 1
+2024.10.08 10:17:21 INFO  time: compiled root in 1.02s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:21 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:18:21 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:22 WARN  javac exited with exit code 1
+2024.10.08 10:18:22 INFO  time: compiled root in 1.07s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:25 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:18:25 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:26 WARN  javac exited with exit code 1
+2024.10.08 10:18:26 INFO  time: compiled root in 1.18s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:31 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:18:31 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:31 WARN  javac exited with exit code 1
+2024.10.08 10:18:31 INFO  time: compiled root in 0.98s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:33 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:18:33 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:34 WARN  javac exited with exit code 1
+2024.10.08 10:18:34 INFO  time: compiled root in 1.15s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:46 INFO  compiling root (5 scala sources)
+2024.10.08 10:18:46 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:18:46 WARN  Invalid text document uri received from build server: file:///Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/routes/main/controllers/routes.java
+2024.10.08 10:18:46 INFO  time: compiled root in 0.11s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:19:18 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 10:19:18 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:19:19 INFO  time: compiled root in 1.24s
+2024.10.08 10:19:19 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:19:19 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:19:21 WARN  javac exited with exit code 1
+2024.10.08 10:19:21 INFO  time: compiled root in 1.42s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:34 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:20:34 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:34 INFO  time: compiled root in 0.18s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:39 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:20:39 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:40 WARN  javac exited with exit code 1
+2024.10.08 10:20:40 INFO  time: compiled root in 1.06s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:47 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:20:47 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:20:48 WARN  javac exited with exit code 1
+2024.10.08 10:20:48 INFO  time: compiled root in 1.08s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:26:51 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:33: error: [dialect scala3] = expected but def found
+  def about() = Action { implicit request: Request[AnyContent] =>
+  ^
+2024.10.08 10:26:51 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:26:51 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:26:51 INFO  time: compiled root in 0.14s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:01 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:01 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:02 WARN  javac exited with exit code 1
+2024.10.08 10:27:02 INFO  time: compiled root in 1.47s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:04 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:04 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:05 WARN  javac exited with exit code 1
+2024.10.08 10:27:05 INFO  time: compiled root in 1.05s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:25 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:37: error: [dialect scala3] identifier expected but val found
+        val originY = data.get("originY")
+        ^
+2024.10.08 10:27:25 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:25 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:25 INFO  time: compiled root in 0.14s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:31 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:31 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:32 WARN  javac exited with exit code 1
+2024.10.08 10:27:32 INFO  time: compiled root in 1.17s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:44 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:44 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:44 INFO  time: compiled root in 0.16s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:48 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:27:48 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:27:48 INFO  time: compiled root in 0.13s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:09 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:28:09 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:09 WARN  javac exited with exit code 1
+2024.10.08 10:28:10 INFO  time: compiled root in 1s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:14 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:28:14 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:15 WARN  javac exited with exit code 1
+2024.10.08 10:28:15 INFO  time: compiled root in 1.07s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:44 INFO  compiling root (11 scala sources and 2 java sources)
+2024.10.08 10:28:44 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:28:44 INFO  time: compiled root in 0.77s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:10 INFO  compiling root (7 scala sources and 2 java sources)
+2024.10.08 10:29:10 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:12 INFO  time: compiled root in 1.25s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:12 INFO  compiling root (11 scala sources and 2 java sources)
+2024.10.08 10:29:12 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:13 INFO  time: compiled root in 1.06s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:54 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 10:29:54 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:55 INFO  time: compiled root in 1.18s
+2024.10.08 10:29:55 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:29:55 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:29:56 WARN  javac exited with exit code 1
+2024.10.08 10:29:56 INFO  time: compiled root in 1.38s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:13 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:30:13 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:13 INFO  time: compiled root in 0.8s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:25 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:45: error: [dialect scala3] end of file expected but } found
+}
+^
+2024.10.08 10:30:25 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:30:25 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:25 INFO  time: compiled root in 0.9s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:28 ERROR scalafmt: /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala:45: error: [dialect scala3] end of file expected but } found
+}
+^
+2024.10.08 10:30:28 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:30:28 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:28 INFO  time: compiled root in 0.75s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:32 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:30:32 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:33 WARN  javac exited with exit code 1
+2024.10.08 10:30:33 INFO  time: compiled root in 1.23s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:48 INFO  compiling root (5 scala sources and 1 java source)
+2024.10.08 10:30:48 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:50 INFO  time: compiled root in 1.29s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:50 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:30:50 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:30:52 WARN  javac exited with exit code 1
+2024.10.08 10:30:52 INFO  time: compiled root in 2s
+bad option '-Ytasty-reader' was ignored
+oct 08, 2024 10:32:10 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.08 10:35:21 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 10:35:21 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 10:35:22 WARN  javac exited with exit code 1
+2024.10.08 10:35:22 INFO  time: compiled root in 1.14s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 12:45:43 INFO  Shutting down server
+2024.10.08 12:45:43 INFO  shutting down Metals
+2024.10.08 12:45:43 INFO  Shut down connection with build server.
+2024.10.08 12:45:43 INFO  Shut down connection with build server.
+2024.10.08 12:45:43 INFO  Shut down connection with build server.
+2024.10.08 12:45:43 INFO  Exiting server
+2024.10.08 12:45:54 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@736ee4a7]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5dc94979]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@736ee4a7]
+2024.10.08 12:45:54 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 12:45:55 INFO  Attempting to connect to the build server...
+2024.10.08 12:45:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 12:45:56 INFO  Attempting to connect to the build server...
+2024.10.08 12:45:56 INFO  Attempting to connect to the build server...
+2024.10.08 12:45:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 12:45:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.08 12:45:56 INFO  time: Connected to build server in 0.95s
+2024.10.08 12:45:56 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.08 12:45:57 INFO  time: Imported build in 0.2s
+2024.10.08 12:45:56 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+oct 08, 2024 12:45:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+oct 08, 2024 12:45:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+oct 08, 2024 12:45:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+oct 08, 2024 12:45:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.10.08 12:45:57 INFO  running doctor check
+2024.10.08 12:45:57 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
+2024.10.08 12:46:02 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 12:46:03 INFO  time: indexed workspace in 6.32s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 12:46:03 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 12:46:03 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 12:46:05 WARN  javac exited with exit code 1
+2024.10.08 12:46:05 INFO  time: compiled root in 1.51s
+bad option '-Ytasty-reader' was ignored
+2024.10.08 12:46:05 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.08 12:46:05 WARN  bad option '-Ytasty-reader' was ignored
