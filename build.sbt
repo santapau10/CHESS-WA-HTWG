@@ -1,18 +1,21 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+name := """play-scala-seed"""
+organization := "com.example"
 
-ThisBuild / scalaVersion := "3.3.1"
+version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file("."))
-  .settings(
-    name := "untitled",
-    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.18",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.18" % "test",
-    libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "3.0.0",
-    libraryDependencies += "net.codingwell" %% "scala-guice" % "7.0.0",
-    libraryDependencies += "com.google.inject" % "guice" % "7.0.0",
-    libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.3.0",
-    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.5"
-  )
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
+// Cambiar la versión de Scala a 3.3.1 para coincidir con el JAR
+scalaVersion := "3.3.1"
 
+// Añadir la opción del compilador para TASTy
+scalacOptions ++= Seq("-Ytasty-reader")
 
+libraryDependencies += guice
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test
+
+// Adds additional packages into Twirl
+//TwirlKeys.templateImports += "com.example.controllers._"
+
+// Adds additional packages into conf/routes
+// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
