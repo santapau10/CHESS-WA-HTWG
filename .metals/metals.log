@@ -2616,3 +2616,5 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1e0fa04
 2024.10.08 08:44:58 INFO  Connected to Build server: Bloop v1.6.0
 2024.10.08 08:44:58 INFO  running doctor check
 2024.10.08 08:44:58 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
+2024.10.08 08:45:02 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.08 08:45:04 INFO  time: indexed workspace in 5.81s
