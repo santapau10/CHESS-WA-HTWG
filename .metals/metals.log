@@ -3301,3 +3301,5 @@ bad option '-Ytasty-reader' was ignored
 bad option '-Ytasty-reader' was ignored
 2024.10.08 12:46:05 INFO  compiling root (9 scala sources and 1 java source)
 2024.10.08 12:46:05 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.08 12:46:06 WARN  javac exited with exit code 1
+2024.10.08 12:46:06 INFO  time: compiled root in 1.35s
