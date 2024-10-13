@@ -11,7 +11,7 @@ object EnvironmentUtil {
     val headlessProperty = System.getProperty("java.awt.headless")
     val envHeadless = System.getenv("HEADLESS")
     (headlessProperty != null && headlessProperty.equalsIgnoreCase("true")) ||
-      (envHeadless != null && envHeadless.equalsIgnoreCase("true"))
+    (envHeadless != null && envHeadless.equalsIgnoreCase("true"))
   }
 }
 

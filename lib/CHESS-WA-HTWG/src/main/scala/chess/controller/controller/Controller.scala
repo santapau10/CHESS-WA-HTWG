@@ -25,18 +25,16 @@ import java.security.MessageDigest
 
 case class Controller @Inject() (size: Int) extends IController with Observable:
   private val b: IBoardBuilder = size match {
-    case 8 => new Board_equal_8(8)
+    case 8                   => new Board_equal_8(8)
     case s if s < 8 && s > 0 => new Board_smaller_8(s)
-    case s if s > 8 => new Board_bigger_8(s)
+    case s if s > 8          => new Board_bigger_8(s)
     case _ => throw new IllegalArgumentException("invalid size")
   }
-
 
   var game: IGame = new Game(b, b.getSetupBoard)
   private val undoManager: IUndoManager = new UndoManager
   private var currentState: IState = PreGameState(this)
 
-  
   override def snapshot: ISnapshot = Snapshot(game, currentState)
 
   override def getSize: Int = {
@@ -50,7 +48,8 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     game.toString
   }
 
-  override def notifyObservers(event: Event): Unit = super.notifyObservers(event)
+  override def notifyObservers(event: Event): Unit =
+    super.notifyObservers(event)
   override def changeState(state: IState): Unit = {
     currentState = state
     notifyObservers(Event.STATE_CHANGED)
@@ -69,45 +68,59 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     action match {
       case MovePiecesWhite(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == size - 1) {
-          undoManager.executeCommand(ChangeStateCommand(PromotionState(this), this))
-        }
-        else if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
+        if (
+          game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == size - 1
+        ) {
+          undoManager.executeCommand(
+            ChangeStateCommand(PromotionState(this), this)
+          )
+        } else if (game.isKingInCheckmate(game.getBoardList, Colors.BLACK)) {
           changeState(GameOver(this))
         } else {
           getCurrentState match {
             case _: MovePieceWhite =>
               handleAction(CancelMoveWhite())
-              undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
+              undoManager.executeCommand(
+                ChangeStateCommand(TurnStateBlack(this), this)
+              )
             case _: MovePieceBlack =>
               handleAction(CancelMoveBlack())
-              undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+              undoManager.executeCommand(
+                ChangeStateCommand(TurnStateWhite(this), this)
+              )
             case _ =>
           }
         }
       case MovePiecesBlack(l1, n1, l2, n2) =>
         undoManager.executeCommand(MovePiecesCommand(this, l1, n1, l2, n2))
-        if (game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == 0) {
-          undoManager.executeCommand(ChangeStateCommand(PromotionState(this), this))
-        }
-        else if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
+        if (
+          game.getBoardList.last.getPiece == Chesspiece.PAWN && game.getBoardList.last.getCords._2 == 0
+        ) {
+          undoManager.executeCommand(
+            ChangeStateCommand(PromotionState(this), this)
+          )
+        } else if (game.isKingInCheckmate(game.getBoardList, Colors.WHITE)) {
           changeState(GameOver(this))
         } else {
           getCurrentState match {
             case _: MovePieceWhite =>
-              undoManager.executeCommand(ChangeStateCommand(TurnStateBlack(this), this))
+              undoManager.executeCommand(
+                ChangeStateCommand(TurnStateBlack(this), this)
+              )
             case _: MovePieceBlack =>
-              undoManager.executeCommand(ChangeStateCommand(TurnStateWhite(this), this))
+              undoManager.executeCommand(
+                ChangeStateCommand(TurnStateWhite(this), this)
+              )
             case _ =>
           }
         }
       case InputAction() =>
         notifyObservers(Event.INPUT)
       case UndoAction() =>
-        if(undoManager.canUndo) {
+        if (undoManager.canUndo) {
           getCurrentState match {
-            case _: TurnStateWhite | _: MovePieceWhite | _: TurnStateBlack | _: MovePieceBlack =>
-
+            case _: TurnStateWhite | _: MovePieceWhite | _: TurnStateBlack |
+                _: MovePieceBlack =>
               undoManager.undoCommand()
               undoManager.undoCommand()
               getCurrentState match
@@ -135,7 +148,7 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       case RedoAction() =>
         if (undoManager.canRedo) {
           getCurrentState match {
-            case _: TurnStateWhite | _: MovePieceWhite   =>
+            case _: TurnStateWhite | _: MovePieceWhite =>
               undoManager.redoCommand()
               undoManager.redoCommand()
 
@@ -146,11 +159,12 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
               undoManager.redoCommand()
           }
         }
-        
-        
+
         notifyObservers(STATE_CHANGED)
       case StartGame() =>
-        undoManager.executeCommand(ChangeStateCommand(controller.TurnStateWhite(this), this))
+        undoManager.executeCommand(
+          ChangeStateCommand(controller.TurnStateWhite(this), this)
+        )
       case StartMovePiecesBlack(column1, row1) =>
         changeStateWithoutGUIChange(MovePieceBlack(this, column1, row1))
       case StartMovePiecesWhite(column1, row1) =>
@@ -159,8 +173,10 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
         changeState(TurnStateWhite(this))
       case CancelMoveBlack() =>
         changeState(TurnStateBlack(this))
-      case LoadXmlAction(node) => undoManager.executeCommand(LoadXmlCommand(this, node))
-      case LoadJsonAction(json) => undoManager.executeCommand(LoadJsonCommand(this, json))  
+      case LoadXmlAction(node) =>
+        undoManager.executeCommand(LoadXmlCommand(this, node))
+      case LoadJsonAction(json) =>
+        undoManager.executeCommand(LoadJsonCommand(this, json))
       case _ =>
     }
   }
@@ -174,15 +190,22 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
 
   private def saveXml(name: String): Unit =
     val xmlSnapshot = snapshot.toXml
-    val hash = Snapshot.hash(Utility.trim(XML.loadString(xmlSnapshot.toString)).toString)
-    //println(hash)
+    val hash =
+      Snapshot.hash(Utility.trim(XML.loadString(xmlSnapshot.toString)).toString)
+    // println(hash)
     val xml =
       <progress>
         <hash>
           {hash}
         </hash>{xmlSnapshot}
       </progress>
-    XML.save(name + ".xml", XML.loadString(PrettyPrinter(100, 2).format(xml)), "UTF-8", true, null)
+    XML.save(
+      name + ".xml",
+      XML.loadString(PrettyPrinter(100, 2).format(xml)),
+      "UTF-8",
+      true,
+      null
+    )
 
   private def saveJson(name: String): Unit =
     val jsonSnapshot = snapshot.toJson
@@ -191,8 +214,10 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       "hash" -> hash,
       "snapshot" -> jsonSnapshot
     )
-    Files.write(Paths.get(name + ".json"), Json.prettyPrint(json).getBytes(StandardCharsets.UTF_8))
-
+    Files.write(
+      Paths.get(name + ".json"),
+      Json.prettyPrint(json).getBytes(StandardCharsets.UTF_8)
+    )
 
   override def restoreSnapshot(snapshot: ISnapshot): Unit =
     game = snapshot.getGame
@@ -209,8 +234,17 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     }
   }
 
-  override def enPassantPiece(l1: Int, n1: Int, l2: Int, n2: Int, defeated_x: Int, defeated_y: Int): Unit = {
-    val RList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList).filterNot(p => p.getCords == (defeated_x, defeated_y))
+  override def enPassantPiece(
+      l1: Int,
+      n1: Int,
+      l2: Int,
+      n2: Int,
+      defeated_x: Int,
+      defeated_y: Int
+  ): Unit = {
+    val RList = game.getBoard
+      .movePieces(l1, n1, l2, n2, game.getBoardList)
+      .filterNot(p => p.getCords == (defeated_x, defeated_y))
     if (RList != null) {
       updateBoard(RList)
     } else {
@@ -219,13 +253,28 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     }
   }
 
-  override def longCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit = {
+  override def longCastling(
+      l1: Int,
+      n1: Int,
+      l2: Int,
+      n2: Int,
+      rook_x1: Int,
+      rook_y1: Int,
+      rook_x2: Int
+  ): Unit = {
     // Move the king to the new position
-    val kingMovedList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
+    val kingMovedList =
+      game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
 
     // Move the rook to the new position
     val RList = kingMovedList.map { p =>
-      if (p.getCords == (rook_x1, rook_y1)) new Rook((rook_x2, rook_y1), p.getColor, moved = true, (rook_x1, rook_y1))
+      if (p.getCords == (rook_x1, rook_y1))
+        new Rook(
+          (rook_x2, rook_y1),
+          p.getColor,
+          moved = true,
+          (rook_x1, rook_y1)
+        )
       else p
     }
 
@@ -237,13 +286,28 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
     }
   }
 
-  override def shortCastling(l1: Int, n1: Int, l2: Int, n2: Int, rook_x1: Int, rook_y1: Int, rook_x2: Int): Unit = {
+  override def shortCastling(
+      l1: Int,
+      n1: Int,
+      l2: Int,
+      n2: Int,
+      rook_x1: Int,
+      rook_y1: Int,
+      rook_x2: Int
+  ): Unit = {
     // Move the king to the new position
-    val kingMovedList = game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
+    val kingMovedList =
+      game.getBoard.movePieces(l1, n1, l2, n2, game.getBoardList)
 
     // Move the rook to the new position
     val RList = kingMovedList.map { p =>
-      if (p.getCords == (rook_x1, rook_y1)) new Rook((rook_x2, rook_y1), p.getColor, moved = true, (rook_x1, rook_y1))
+      if (p.getCords == (rook_x1, rook_y1))
+        new Rook(
+          (rook_x2, rook_y1),
+          p.getColor,
+          moved = true,
+          (rook_x1, rook_y1)
+        )
       else p
     }
 
@@ -254,7 +318,6 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
       updateBoard(game.getBoardList)
     }
   }
-
 
   override def printState(): Unit = {
     currentState.print()
