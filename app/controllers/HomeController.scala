@@ -26,7 +26,7 @@ class HomeController @Inject() (
   /** Create an Action to render an HTML page. */
   def chessBoard() = Action { implicit request: Request[AnyContent] =>
     val output = tui.getCurrentState
-    Ok(views.html.chess(output))
+    Ok(views.html.chess(output)) // Pasar el resultado a la vista
   }
 
   def move() = Action { implicit request: Request[AnyContent] =>
@@ -68,14 +68,14 @@ class HomeController @Inject() (
   def moveLink(origin: String, destination: String) = Action {
     implicit request: Request[AnyContent] =>
       val originX = origin.charAt(0).toInt - 97
-      val originY: Int = origin.charAt(1).toInt
-      println(originY)
+      val originY: Int = origin.charAt(1).asDigit -1
       val destinationX = destination.charAt(0).toInt - 97
-      val destinationY: Int = destination.charAt(1).toInt
+      val destinationY: Int = destination.charAt(1).asDigit - 1
       controller.movePieces(originX, originY, destinationX, destinationY)
       val output = tui.getCurrentState
       Ok(views.html.chess(output))
   }
+
 
   def about() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.about())

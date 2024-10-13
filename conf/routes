@@ -4,13 +4,12 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                     controllers.HomeController.index()
+GET     /index                  controllers.HomeController.index()
 GET     /about                  controllers.HomeController.about()
 
 
 # route to get the board state
 GET     /chessBoard           controllers.HomeController.chessBoard()
-
 
 
 # route to move a piece, it should have a body the petition
