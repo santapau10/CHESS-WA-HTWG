@@ -31,7 +31,7 @@ class HomeController @Inject() (
   /** Create an Action to render an HTML page. */
   def chessBoard() = Action { implicit request: Request[AnyContent] =>
     val output = tui.getCurrentState
-    Ok(views.html.chess(output)) // Pasar el resultado a la vista
+    Ok(views.html.chess(output))
   }
 
   def move() = Action { implicit request: Request[AnyContent] =>

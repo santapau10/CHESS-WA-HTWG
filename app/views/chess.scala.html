@@ -4,11 +4,29 @@
 
 <head>
     <title>Chess Game</title>
+    <script>
+        function changeRoute() {
+            const inputValue = document.getElementById("routeInput").value.trim();
+            const parts = inputValue.split(" ");
+            if (parts.length === 2) {
+                const from = parts[0];
+                const to = parts[1];
+                window.location.href = "/moveLink/" + from + "/" + to;
+            } else {
+                alert("Please enter a valid route in the format 'a1 a2'.");
+            }
+        }
+    </script>
 </head>
 
 <body>
     <h1>Welcome to CHESS!</h1>
-    <pre>@boardString</pre> 
+    <pre>@boardString</pre>
+
+    <label for="routeInput">Enter route:</label>
+    <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1 a2'" />
+
+    <button type="button" onclick="changeRoute()">Change Route</button>
 </body>
 
 </html>
