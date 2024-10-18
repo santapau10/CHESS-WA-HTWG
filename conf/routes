@@ -21,5 +21,9 @@ POST     /move              controllers.HomeController.move()
 GET      /moveLink/:origin/:destination  controllers.HomeController.moveLink(origin: String, destination: String) 
 
 
+# route to get rules
+GET     /rules                      controllers.HomeController.rules()
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

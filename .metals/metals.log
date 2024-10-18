@@ -4821,3 +4821,900 @@ bad option '-Ytasty-reader' was ignored
 oct 13, 2024 6:36:57 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
 2024.10.13 18:37:04 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/CHESS-WA-HTWG/src/main/scala/chess/controller/controller/Controller.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.13 18:37:30 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 18:37:31 INFO  Shutting down server
+2024.10.13 18:37:31 INFO  shutting down Metals
+2024.10.13 18:37:30 INFO  Shut down connection with build server.
+2024.10.13 18:37:31 INFO  Shut down connection with build server.
+2024.10.13 18:37:31 INFO  Shut down connection with build server.
+2024.10.13 18:37:31 INFO  Exiting server
+2024.10.13 22:27:36 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7b63e165]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6f031777]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7b63e165]
+2024.10.13 22:27:36 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.13 22:27:36 INFO  Attempting to connect to the build server...
+2024.10.13 22:27:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.13 22:27:37 INFO  Attempting to connect to the build server...
+2024.10.13 22:27:37 INFO  Attempting to connect to the build server...
+2024.10.13 22:27:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.13 22:27:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.13 22:27:36 INFO  time: Connected to build server in 0.84s
+2024.10.13 22:27:36 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.13 22:27:38 INFO  time: Imported build in 0.18s
+2024.10.13 22:27:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.13 22:27:38 INFO  running doctor check
+2024.10.13 22:27:38 INFO  java targets: play-scala-seed-build-build, root-test, root, play-scala-seed-build
+2024.10.13 22:27:43 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.13 22:27:44 INFO  time: indexed workspace in 6.45s
+bad option '-Ytasty-reader' was ignored
+2024.10.13 22:27:44 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.13 22:27:44 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.13 22:27:46 WARN  javac exited with exit code 1
+2024.10.13 22:27:46 INFO  time: compiled root in 2.07s
+2024.10.13 22:27:46 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:46 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:46 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:46 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:46 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:46 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.13 22:27:46 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.10.13 22:27:47 WARN  javac exited with exit code 1
+2024.10.13 22:27:47 INFO  time: compiled root in 1.2s
+bad option '-Ytasty-reader' was ignored
+2024.10.13 22:27:49 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:55 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:59 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:27:59 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:28:00 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.13 22:28:01 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+oct 13, 2024 10:28:03 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.13 22:28:27 INFO  Shutting down server
+2024.10.13 22:28:27 INFO  shutting down Metals
+2024.10.13 22:28:27 INFO  Shut down connection with build server.
+2024.10.13 22:28:27 INFO  Shut down connection with build server.
+2024.10.13 22:28:27 INFO  Shut down connection with build server.
+2024.10.13 22:28:27 INFO  Exiting server
+2024.10.14 08:15:11 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7b63e165]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6f031777]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7b63e165]
+2024.10.14 08:15:11 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.14 08:15:12 INFO  Attempting to connect to the build server...
+2024.10.14 08:15:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.14 08:15:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 08:15:13 INFO  Attempting to connect to the build server...
+2024.10.14 08:15:13 INFO  Attempting to connect to the build server...
+2024.10.14 08:15:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 08:15:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 08:15:13 INFO  time: Connected to build server in 0.91s
+2024.10.14 08:15:13 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.14 08:15:13 INFO  time: Imported build in 0.19s
+2024.10.14 08:15:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.14 08:15:14 INFO  running doctor check
+2024.10.14 08:15:14 INFO  java targets: root-test, root
+bad option '-Ytasty-reader' was ignored
+2024.10.14 08:15:18 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.14 08:15:18 INFO  time: indexed workspace in 5.07s
+2024.10.14 08:15:39 INFO  compiling root (9 scala sources and 1 java source)
+2024.10.14 08:15:39 WARN  bad option '-Ytasty-reader' was ignored
+2024.10.14 08:15:39 INFO  Shutting down server
+2024.10.14 08:15:39 INFO  shutting down Metals
+2024.10.14 08:15:39 INFO  Shut down connection with build server.
+2024.10.14 08:15:39 INFO  Shut down connection with build server.
+2024.10.14 08:15:39 INFO  Shut down connection with build server.
+oct 14, 2024 8:15:39 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:191)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:160)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.$anonfun$cancel$1(FutureWithTimeout.scala:37)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.cancel(FutureWithTimeout.scala:37)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.utils.RequestRegistry.cancel(RequestRegistry.scala:94)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:450)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:182)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:174)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:268)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:290)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:102)
+	at java.base/java.io.OutputStream.write(OutputStream.java:124)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:79)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 20 more
+
+2024.10.14 08:15:39 INFO  Cancelling compilation on Bloop server
+2024.10.14 08:15:39 WARN  Target root /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/bloop-bsp-clients-classes/classes-Metals-bEHyavWxQ2ukBw4Px0pP-Q== does not exist
+2024.10.14 08:15:39 WARN  Target root /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/bloop-bsp-clients-classes/classes-Metals-bEHyavWxQ2ukBw4Px0pP-Q== does not exist
+2024.10.14 08:15:39 WARN  Target root /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/bloop-bsp-clients-classes/classes-Metals-bEHyavWxQ2ukBw4Px0pP-Q== does not exist
+2024.10.14 08:15:39 WARN  Target root /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/bloop-bsp-clients-classes/classes-Metals-bEHyavWxQ2ukBw4Px0pP-Q== does not exist
+2024.10.14 08:15:39 WARN  Target root /Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/bloop-bsp-clients-classes/classes-Metals-bEHyavWxQ2ukBw4Px0pP-Q== does not exist
+2024.10.14 08:15:39 INFO  Exiting server
+2024.10.14 10:43:15 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@55aa5032]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2ddf0f90]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@55aa5032]
+2024.10.14 10:43:19 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.14 10:43:19 INFO  Attempting to connect to the build server...
+2024.10.14 10:43:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+oct 14, 2024 10:43:20 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2024.10.14 10:43:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 10:43:20 INFO  Attempting to connect to the build server...
+2024.10.14 10:43:20 INFO  Attempting to connect to the build server...
+2024.10.14 10:43:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 10:43:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.14 10:43:20 INFO  time: Connected to build server in 1.19s
+2024.10.14 10:43:20 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.14 10:44:34 INFO  running doctor check
+2024.10.14 10:44:34 INFO  java targets: root-test, root
+2024.10.14 10:45:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 10:45:34 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 10:45:37 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.7/twirl-api_3-2.0.7-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.5/play-server_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.5/play-logback_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.5/play-pekko-http-server_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.5/play-filters-helpers_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.5/play-guice_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.5/play_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.5/play-streams_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.5/play-configuration_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.13/jcl-over-slf4j-2.0.13-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.4/play-json_3-3.0.4-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.4/play-functional_3-3.0.4-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-test_3/3.0.5/play-test_3-3.0.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/play/scalatestplus-play_3/7.0.1/scalatestplus-play_3-7.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/junit-interface/0.13.3/junit-interface-0.13.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/fluentlenium/fluentlenium-core/6.0.0/fluentlenium-core-6.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/htmlunit-driver/4.13.0/htmlunit-driver-4.13.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws_3/3.0.0/play-ahc-ws_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3/3.2.17/scalatest_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/mockito-4-11_3/3.2.17.0/mockito-4-11_3-3.2.17.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/selenium-4-12_3/3.2.17.0/selenium-4-12_3-3.2.17.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-cssparser/1.14.0/htmlunit-cssparser-1.14.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/atteo/classindex/classindex/3.13/classindex-3.13-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/maven/maven-model/3.9.1/maven-model-3.9.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.70.0/htmlunit-2.70.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/appium/java-client/8.2.1/java-client-8.2.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_3/3.0.0/play-ws_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws-standalone_3/3.0.0/play-ahc-ws-standalone_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-asynchttpclient/3.0.0/shaded-asynchttpclient-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-oauth/3.0.0/shaded-oauth-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3/3.2.17/scalatest-core_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3/3.2.17/scalatest-featurespec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3/3.2.17/scalatest-flatspec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3/3.2.17/scalatest-freespec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3/3.2.17/scalatest-funsuite_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3/3.2.17/scalatest-funspec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3/3.2.17/scalatest-propspec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3/3.2.17/scalatest-refspec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3/3.2.17/scalatest-wordspec_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3/3.2.17/scalatest-diagrams_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3/3.2.17/scalatest-matchers-core_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3/3.2.17/scalatest-shouldmatchers_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3/3.2.17/scalatest-mustmatchers_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.70.0/htmlunit-core-js-2.70.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.70.0/neko-htmlunit-2.70.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-xpath/2.70.0/htmlunit-xpath-2.70.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/brotli/dec/0.1.2/dec-0.1.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/shapesecurity/salvation2/3.0.1/salvation2-3.0.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.4.50.v20221201/websocket-client-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10/gson-2.10-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/cglib/cglib/3.3.0/cglib-3.3.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-validator/commons-validator/1.7/commons-validator-1.7-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-net/commons-net/3.9.0/commons-net-3.9.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_3/3.0.0/play-ws-standalone_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_3/3.0.0/play-ws-standalone-xml_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_3/3.0.0/play-ws-standalone-json_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/cachecontrol_3/3.0.0/cachecontrol_3-3.0.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3/3.2.17/scalactic_3-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.17/scalatest-compatible-3.2.17-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.4.50.v20221201/jetty-client-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.50.v20221201/jetty-util-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.50.v20221201/jetty-io-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.4.50.v20221201/websocket-common-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.1/asm-7.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.50.v20221201/jetty-http-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.4.50.v20221201/websocket-api-9.4.50.v20221201-sources.jar
+2024.10.14 10:45:37 INFO  time: indexed workspace in 1m3s
+2024.10.14 10:45:37 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.14 10:45:37 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 10:45:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 10:47:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 10:47:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.10.14 11:17:38 INFO  Shutting down server
+2024.10.14 11:17:38 INFO  shutting down Metals
+2024.10.14 11:17:38 INFO  Shut down connection with build server.
+2024.10.14 11:17:38 INFO  Shut down connection with build server.
+2024.10.14 11:17:38 INFO  Shut down connection with build server.
+2024.10.14 11:17:38 INFO  Exiting server
+2024.10.15 17:40:41 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@a6e059]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6925afca]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@a6e059]
+2024.10.15 17:40:42 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.15 17:40:42 INFO  Attempting to connect to the build server...
+2024.10.15 17:40:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.15 17:40:42 INFO  Attempting to connect to the build server...
+2024.10.15 17:40:42 INFO  Attempting to connect to the build server...
+2024.10.15 17:40:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.15 17:40:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.10.15 17:40:45 INFO  time: Connected to build server in 3.17s
+2024.10.15 17:40:45 INFO  Connected to Build server: Bloop v1.6.0
+2024.10.15 17:40:45 INFO  running doctor check
+2024.10.15 17:40:45 INFO  java targets: play-scala-seed-build, root-test, root, play-scala-seed-build-build
+2024.10.15 17:40:51 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.7/twirl-api_3-2.0.7-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.5/play-server_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.5/play-logback_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.5/play-pekko-http-server_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.5/play-filters-helpers_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.5/play-guice_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.5/play_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.5/play-streams_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.5/play-configuration_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.13/jcl-over-slf4j-2.0.13-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.4/play-json_3-3.0.4-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.4/play-functional_3-3.0.4-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-test_3/3.0.5/play-test_3-3.0.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/play/scalatestplus-play_3/7.0.1/scalatestplus-play_3-7.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/junit-interface/0.13.3/junit-interface-0.13.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/fluentlenium/fluentlenium-core/6.0.0/fluentlenium-core-6.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/htmlunit-driver/4.13.0/htmlunit-driver-4.13.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws_3/3.0.0/play-ahc-ws_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3/3.2.17/scalatest_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/mockito-4-11_3/3.2.17.0/mockito-4-11_3-3.2.17.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/selenium-4-12_3/3.2.17.0/selenium-4-12_3-3.2.17.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-cssparser/1.14.0/htmlunit-cssparser-1.14.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/atteo/classindex/classindex/3.13/classindex-3.13-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/maven/maven-model/3.9.1/maven-model-3.9.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.70.0/htmlunit-2.70.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/appium/java-client/8.2.1/java-client-8.2.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_3/3.0.0/play-ws_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws-standalone_3/3.0.0/play-ahc-ws-standalone_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-asynchttpclient/3.0.0/shaded-asynchttpclient-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-oauth/3.0.0/shaded-oauth-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3/3.2.17/scalatest-core_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3/3.2.17/scalatest-featurespec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3/3.2.17/scalatest-flatspec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3/3.2.17/scalatest-freespec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3/3.2.17/scalatest-funsuite_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3/3.2.17/scalatest-funspec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3/3.2.17/scalatest-propspec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3/3.2.17/scalatest-refspec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3/3.2.17/scalatest-wordspec_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3/3.2.17/scalatest-diagrams_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3/3.2.17/scalatest-matchers-core_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3/3.2.17/scalatest-shouldmatchers_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3/3.2.17/scalatest-mustmatchers_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.70.0/htmlunit-core-js-2.70.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.70.0/neko-htmlunit-2.70.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-xpath/2.70.0/htmlunit-xpath-2.70.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/brotli/dec/0.1.2/dec-0.1.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/shapesecurity/salvation2/3.0.1/salvation2-3.0.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.4.50.v20221201/websocket-client-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10/gson-2.10-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/cglib/cglib/3.3.0/cglib-3.3.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-validator/commons-validator/1.7/commons-validator-1.7-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-net/commons-net/3.9.0/commons-net-3.9.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_3/3.0.0/play-ws-standalone_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_3/3.0.0/play-ws-standalone-xml_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_3/3.0.0/play-ws-standalone-json_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/cachecontrol_3/3.0.0/cachecontrol_3-3.0.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3/3.2.17/scalactic_3-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.17/scalatest-compatible-3.2.17-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.4.50.v20221201/jetty-client-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.50.v20221201/jetty-util-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.50.v20221201/jetty-io-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.4.50.v20221201/websocket-common-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.1/asm-7.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.50.v20221201/jetty-http-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.4.50.v20221201/websocket-api-9.4.50.v20221201-sources.jar
+2024.10.15 17:40:51 INFO  time: indexed workspace in 6.61s
+2024.10.15 17:41:26 INFO  Shutting down server
+2024.10.15 17:41:26 INFO  shutting down Metals
+2024.10.15 17:41:26 INFO  Shut down connection with build server.
+2024.10.15 17:41:26 INFO  Shut down connection with build server.
+2024.10.15 17:41:26 INFO  Shut down connection with build server.
+2024.10.15 17:41:26 INFO  Exiting server
+2024.10.18 16:05:23 INFO  Started: Metals version 1.3.5 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed' for client Visual Studio Code 1.94.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@3f4f9ffc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@30a078c3]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@3f4f9ffc]
+2024.10.18 16:05:24 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.18 16:05:24 INFO  Attempting to connect to the build server...
+oct 18, 2024 4:05:25 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.18 16:05:31 ERROR Starting the bsp launcher for bloop...
+2024.10.18 16:05:31 ERROR Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/g2/bb592kf11cd7hs1zdc6d03gm0000gn/T/bsp-launcher403276172484888198/bsp.socket'...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR error: The command bsp --protocol local --socket /var/folders/g2/bb592kf11cd7hs1zdc6d03gm0000gn/T/bsp-launcher403276172484888198/bsp.socket returned with an error
+2024.10.18 16:05:31 ERROR > No server running at 127.0.0.1:8212, let's fire one...
+2024.10.18 16:05:31 ERROR > Resolving ch.epfl.scala:bloop-frontend_2.12:1.6.0...
+2024.10.18 16:05:31 ERROR > Starting bloop server at 127.0.0.1:8212...
+2024.10.18 16:05:31 ERROR > Attempting a connection to the server...
+2024.10.18 16:05:31 ERROR > Attempting a connection to the server...
+2024.10.18 16:05:31 ERROR > Attempting a connection to the server...
+2024.10.18 16:05:31 ERROR > Attempting a connection to the server...
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[31m[E][0m Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.bloop/root.json
+2024.10.18 16:05:31 ERROR error: Trying a tcp-based connection to the server instead...
+2024.10.18 16:05:31 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 20510'...
+2024.10.18 16:05:31 ERROR Waiting for the bsp connection to come up...
+2024.10.18 16:05:31 ERROR error: The command bsp --protocol tcp --port 20510 returned with an error
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2024.10.18 16:05:31 ERROR > [0m[31m[E][0m Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.bloop/root.json
+2024.10.18 16:05:31 ERROR > [0m[33m[W][0m Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2024.10.18 16:05:31 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2024.10.18 16:05:32 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:385)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+
+2024.10.18 16:25:02 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:03 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:06 INFO  time: code lens generation in 3.58s
+2024.10.18 16:25:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:19 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:19 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:26 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:26 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:27 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.18 16:25:27 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:28 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:30 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:30 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:30 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:53 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:25:57 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:00 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:01 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:01 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:16 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:18 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:18 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:26 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+oct 18, 2024 4:26:26 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 149
+2024.10.18 16:26:26 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:33 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:34 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:34 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.18 16:26:34 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:26:35 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:15 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:15 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:15 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:30 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:31 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:56 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:27:57 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:32 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:32 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:32 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:33 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:33 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:41 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:42 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.18 16:28:42 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:43 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:43 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:28:43 WARN  Using indexes to guess the definition of controller
+2024.10.18 16:31:33 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:31:36 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:31:36 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:31:51 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:32:08 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:32:12 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:32:13 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:36:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:36:50 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:37:44 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:06 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:06 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:18 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:20 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:21 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:22 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:23 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:24 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.18 16:38:25 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:36 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:37 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:36 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:39 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.18 16:38:39 WARN  no build target for: /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala
+2024.10.18 16:38:38 INFO  no build target found for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
