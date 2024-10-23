@@ -40,8 +40,4 @@ class TUI @Inject() (controller: IController) extends Observer with ITUI {
       case action =>
         action
   }
-  def getCurrentState: String = {
-    controller
-      .boardToString()
-  }
 }

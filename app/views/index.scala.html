@@ -1,5 +1,67 @@
-@()
+@import helper.CSRF
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
-}
+@(message: String)(implicit request: play.api.mvc.RequestHeader)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <style>
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #f4f4f9;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              margin: 0;
+            }
+            .container {
+              text-align: center;
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"] {
+              padding: 10px;
+              font-size: 16px;
+              width: 80%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            }
+            input[type="submit"] {
+              padding: 10px 20px;
+              background-color: #28a745;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-top: 10px;
+            }
+            input[type="submit"]:hover {
+              background-color: #218838;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to an astonishing round of chess :)</h1>
+      <p>Type 'start' to begin a new game:</p>
+
+        <!-- Formular für den 'start'-Befehl -->
+      <form action="@routes.HomeController.start()" method="post">
+          <!-- CSRF Token hinzufügen -->
+        @CSRF.formField
+        <input type="text" name="command" placeholder="Enter your command">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <p>@message</p>
+    </div>
+  </body>
+</html>

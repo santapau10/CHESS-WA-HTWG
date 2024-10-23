@@ -8,12 +8,10 @@
         function changeRoute() {
             const inputValue = document.getElementById("routeInput").value.trim();
             const parts = inputValue.split(" ");
-            if (parts.length === 2) {
-                const from = parts[0];
-                const to = parts[1];
-                window.location.href = "/moveLink/" + from + "/" + to;
+            if (parts.length === 1) {
+                window.location.href = "/moveLink/" + parts[0];
             } else {
-                alert("Please enter a valid route in the format 'a1 a2'.");
+                alert("Please enter a valid route in the format 'a1'.");
             }
         }
     </script>
@@ -24,7 +22,7 @@
     <pre>@boardString</pre>
 
     <label for="routeInput">Enter route:</label>
-    <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1 a2'" />
+    <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" />
 
     <button type="button" onclick="changeRoute()">Change Route</button>
 </body>

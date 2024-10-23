@@ -9,16 +9,20 @@ GET     /about                  controllers.HomeController.about()
 
 
 # route to get the board state
-GET     /chessBoard           controllers.HomeController.chessBoard()
+GET     /start           controllers.HomeController.start()
 
-
-# route to move a piece, it should have a body the petition
-POST     /move              controllers.HomeController.move() 
 
 
 # route to move with link
 
-GET      /moveLink/:origin/:destination  controllers.HomeController.moveLink(origin: String, destination: String) 
+GET      /moveLink/:origin  controllers.HomeController.moveLink(origin: String)
+
+
+
++noCSRF
+POST    /start     controllers.HomeController.start()
+
+
 
 
 # route to get rules
