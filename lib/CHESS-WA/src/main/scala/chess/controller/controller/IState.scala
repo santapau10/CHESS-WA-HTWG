@@ -87,7 +87,7 @@ case class PreGameState(controller: IController) extends State(controller):
     -1
   }
   override def print(): Unit = {
-    println("welcome to an astonishing round of chess :)")
+    println("Welcome Chess")
     println("type 'start' to begin a new game")
   }
 

@@ -22,6 +22,8 @@ GET      /moveLink/:origin  controllers.HomeController.moveLink(origin: String)
 +noCSRF
 POST    /start     controllers.HomeController.start()
 
++noCSRF
+POST     /rules                      controllers.HomeController.rules()
 
 
 
