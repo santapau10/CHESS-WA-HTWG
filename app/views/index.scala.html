@@ -53,38 +53,35 @@
                     padding: 5px 15px;
                     font-size: 18px;
                     color: white;
-                    background-color: #28a745;
+                    background-color: #404040;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
                     text-decoration: none;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 }
 
                 .start-button:hover, .rules-button:hover {
                     background-color: #218838;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
                 }
     </style>
   </head>
     <body>
         <div class="container">
-                <!-- Überschrift oben zentriert -->
             <h2>Welcome to Chess</h2>
-
-                <!-- Wrapper für die Buttons -->
             <div class="button-wrapper">
                     <!-- Start-Button -->
                 <form action="@routes.HomeController.start()" method="post">
                     @CSRF.formField
                     <button type="submit" class="start-button">Start</button>
                 </form>
-
                     <!-- Regeln-Button -->
                 <form action="@routes.HomeController.rules()" method="post">
                     @CSRF.formField
                     <button type="submit" class="rules-button">Rules</button>
                 </form>
             </div>
-
             <p>@message</p>
         </div>
     </body>
