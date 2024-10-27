@@ -1,91 +1,32 @@
 @(boardString: String)
 
-<html>
+@main("HTWG CHESS") {
 
-    <head>
-        <title>Chess Game</title>
-        <style>
-                body {
-                    font-family: Arial, sans-serif; /* Schriftart */
-                    background-color: #f4f4f4; /* Hintergrundfarbe */
-                    color: #333; /* Textfarbe */
-                    margin: 0;
-                    padding: 20px; /* Abstand vom Rand */
-                    display: flex; /* Flexbox für zentriertes Layout */
-                    justify-content: center; /* Horizontale Zentrierung */
-                    align-items: center; /* Vertikale Zentrierung */
-                    height: 100vh; /* Volle Höhe des Viewports */
-                    text-align: center; /* Zentriere den Text */
-                }
+<head>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")" />
+    <title>Chess Game</title>
+    <script>
+        function changeRoute() {
+            const inputValue = document.getElementById("routeInput").value.trim();
+            const parts = inputValue.split(" ");
+            if (parts.length === 1) {
+                window.location.href = "/moveLink/" + parts[0];
+            } else {
+                alert("Please enter a valid route in the format 'a1'.");
+            }
+        }
+    </script>
+</head>
 
-                h1 {
-                    color: #2c3e50; /* Dunkelblaue Farbe für den Titel */
-                    margin-bottom: 20px; /* Abstand unter dem Titel */
-                }
+<body class="body-style">
+    <div class="container">
+        <h1 class="title">Welcome to CHESS!</h1>
+        <pre class="chessboard">@boardString</pre>
 
-                pre {
-                    display: inline-block; /* Erlaubt das Inline-Block-Layout */
-                    font-size: 20px; /* Schriftgröße für das Schachbrett */
-                    line-height: 1.5; /* Zeilenhöhe für bessere Lesbarkeit */
-                    margin: 20px 0; /* Abstand über und unter dem Schachbrett */
-                    background-color: #ffffff; /* Weißer Hintergrund für das Schachbrett */
-                    border: 2px solid #2980b9; /* Blauer Rahmen um das Schachbrett */
-                    border-radius: 8px; /* Abgerundete Ecken */
-                    padding: 10px; /* Innenabstand */
-                }
+        <label for="routeInput">Enter move:</label>
+        <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" class="input-style" />
 
-                #routeInput {
-                    width: 150px; /* Breite des Eingabefelds */
-                    padding: 10px; /* Innenabstand */
-                    margin: 10px 0; /* Abstand über und unter dem Eingabefeld */
-                    border: 1px solid #2980b9; /* Blauer Rahmen */
-                    border-radius: 4px; /* Abgerundete Ecken */
-                }
-
-                button {
-                    padding: 10px 15px; /* Innenabstand für die Schaltfläche */
-                    background-color: #2980b9; /* Blaue Hintergrundfarbe für die Schaltfläche */
-                    color: white; /* Schriftfarbe für die Schaltfläche */
-                    border: none; /* Kein Rahmen */
-                    border-radius: 4px; /* Abgerundete Ecken */
-                    cursor: pointer; /* Zeiger-Cursor beim Hover */
-                    transition: background-color 0.3s; /* Übergangseffekt für die Hintergrundfarbe */
-                }
-
-                button:hover {
-                    background-color: #1c5980; /* Dunklere Farbe beim Hover */
-                }
-
-                /* Stil für den Container */
-                .container {
-                    display: flex;
-                    flex-direction: column; /* Elemente untereinander anordnen */
-                    align-items: center; /* Elemente horizontal zentrieren */
-                }
-        </style>
-        <script>
-                function changeRoute() {
-                    const inputValue = document.getElementById("routeInput").value.trim();
-                    const parts = inputValue.split(" ");
-                    if (parts.length === 1) {
-                        window.location.href = "/moveLink/" + parts[0];
-                    } else {
-                        alert("Please enter a valid route in the format 'a1'.");
-                    }
-                }
-        </script>
-    </head>
-
-    <body>
-        <div class="container">
-            <h1>Welcome to CHESS!</h1>
-            <pre>@boardString</pre>
-
-            <label for="routeInput">Enter move:</label>
-            <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" />
-
-            <button type="button" onclick="changeRoute()">Apply</button>
-        </div>
-    </body>
-
-</html>
+        <button id="buttonChange" type="button" onclick="changeRoute()" class="button-style">Apply</button>
+    </div>
+</body>
+}

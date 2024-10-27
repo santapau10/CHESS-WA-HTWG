@@ -1,0 +1,48 @@
+/* Transparenter, mittlerer Container */
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+/* Stil der Überschrift */
+h2 {
+    margin: 0;
+}
+
+/* Wrapper für die Buttons */
+.button-wrapper {
+    position: absolute;
+    bottom: 20px;
+    /* Abstand vom unteren Rand */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    /* Abstand zwischen den Buttons */
+}
+
+/* Start-Button-Stil */
+.start-button,
+.rules-button {
+    padding: 5px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #404040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-button:hover,
+.rules-button:hover {
+    background-color: #218838;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}

@@ -2,25 +2,20 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed",
-        "workspaceDir": "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed",
+        "directory": "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed",
+        "workspaceDir": "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed",
         "sources": [
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/app-3",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/src_managed/main",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/routes/main",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/twirl/main",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/router/Routes.scala",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/routes.java",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/router/RoutesPrefix.scala",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala"
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/app-3",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/target/scala-3.3.1/src_managed/main",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/target/scala-3.3.1/routes/main",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/target/scala-3.3.1/twirl/main"
         ],
         "dependencies": [
             
         ],
         "classpath": [
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/untitled_3-0.1.0-SNAPSHOT.jar",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/lib/untitled_3-0.1.0-SNAPSHOT.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.7/twirl-api_3-2.0.7.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.5/play-server_3-3.0.5.jar",
@@ -81,11 +76,11 @@
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3.jar"
         ],
-        "out": "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root",
-        "classesDir": "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/scala-3/classes",
+        "out": "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.bloop/root",
+        "classesDir": "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.bloop/root/scala-3/classes",
         "resources": [
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/conf",
-            "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/target/scala-3.3.1/resource_managed/main"
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/conf",
+            "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/target/scala-3.3.1/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -231,7 +226,7 @@
             "config": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed"
+                    "-Duser.dir=/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed"
                 ]
             },
             "mainClass": [
@@ -240,12 +235,12 @@
             "runtimeConfig": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed"
+                    "-Duser.dir=/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed"
                 ]
             },
             "classpath": [
-                "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/.bloop/root/scala-3/classes",
-                "/Users/pablolarraz/Desktop/Universidad/4oCurso/web-applikationen/play-scala-seed/lib/untitled_3-0.1.0-SNAPSHOT.jar",
+                "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/.bloop/root/scala-3/classes",
+                "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/web-applikationen/play-scala-seed/lib/untitled_3-0.1.0-SNAPSHOT.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.7/twirl-api_3-2.0.7.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.5/play-server_3-3.0.5.jar",
