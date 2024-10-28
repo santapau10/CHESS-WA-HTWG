@@ -47,6 +47,9 @@ case class Controller @Inject() (size: Int) extends IController with Observable:
   override def boardToString(): String = {
     game.toString
   }
+  override def boardToStringOnline(): String = {
+    game.toStringOnline
+  }
 
   override def notifyObservers(event: Event): Unit =
     super.notifyObservers(event)

@@ -24,6 +24,7 @@ trait IGame:
   def isKingInCheckmate(checklist: List[IPieces], colors: Colors): Boolean
   def getBoard: IBoardBuilder
   override def toString: String
+  def toStringOnline: String
   def getBoardList: List[IPieces]
   def toJson: JsValue
   def toXml: Elem

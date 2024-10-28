@@ -91,7 +91,32 @@ abstract class Board(size: Int) extends IBoardBuilder {
     sr.toString()
   }
 
+  override def checkFieldROnline(x: Int, y: Int, list: List[IPieces]): String = {
+    val sr = new StringBuilder
+    sr.append(s"$vLine$space")
+    list.find(piece => piece.getCords == (x, y)) match {
+      case Some(foundPiece) => sr.append(s"${foundPiece.toString}${space}")
+      case None => sr.append(space * 3)
+    }
+    if (x < size - 1) {
+      sr.append(checkFieldR(x + 1, y, list))sbt
+    } else if (y < size - 1) {
+      sr.append(s"$vLine${space * 2}${y + 1}$nextL$edgeField")
+      sr.append(checkFieldR(0, y + 1, list))
+    }
+    sr.toString()
+  }
+
   override def updateField(list: List[IPieces]): String = {
+    val sr = new StringBuilder
+    sr.append(firstLineR(0))
+    sr.append("\n")
+    sr.append(edgeField)
+    sr.append(checkFieldR(0, 0, list))
+    sr.append(s"$vLine${space * 2}${this.size}$nextL$edgeField")
+    sr.toString()
+  }
+  override def updateFieldOnline(list: List[IPieces]): String = {
     val sr = new StringBuilder
     sr.append(firstLineR(0))
     sr.append("\n")

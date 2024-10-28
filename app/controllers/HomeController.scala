@@ -30,7 +30,7 @@ class HomeController @Inject() (
 
   /** Create an Action to render an HTML page. */
   def start() = Action { implicit request: Request[AnyContent] =>
-    val output = controller.boardToString()
+    val output = controller.boardToStringOnline()
     controller.changeState(TurnStateWhite(controller))
     Ok(views.html.chess(output))
   }

@@ -17,6 +17,7 @@ trait IController:
   def snapshot: ISnapshot
   def updateBoard(list: List[IPieces]): Unit
   def boardToString(): String
+  def boardToStringOnline(): String
   def changeState(state: IState): Unit
   def initGame(): Unit
   def handleAction(action: IAction): Unit

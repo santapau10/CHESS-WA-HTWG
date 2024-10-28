@@ -14,6 +14,9 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
   private def toStringBoard: String = {
     board.updateField(list)
   }
+  private def toStringBoardOnline: String = {
+    board.updateFieldOnine(list)
+  }
 
   override def getBoard: IBoardBuilder = {
     board
@@ -39,6 +42,10 @@ class Game(board: IBoardBuilder, list: List[IPieces]) extends IGame {
 
   override def toString: String = {
     toStringBoard
+  }
+  
+  override def toStringOnline: String = {
+    toStringBoardOnline
   }
 
   override def getBoardList: List[IPieces] = {
