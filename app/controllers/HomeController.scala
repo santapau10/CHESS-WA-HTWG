@@ -31,17 +31,19 @@ class HomeController @Inject() (
   /** Create an Action to render an HTML page. */
   def start() = Action { implicit request: Request[AnyContent] =>
     val output = controller.boardToString()
+    print(output)
     controller.changeState(TurnStateWhite(controller))
     Ok(views.html.chess(output))
   }
 
   def moveLink(origin: String) = Action {
     implicit request: Request[AnyContent] =>
-      controller.handleAction(controller.getCurrentState.actionFromInput(origin))
+      controller.handleAction(
+        controller.getCurrentState.actionFromInput(origin)
+      )
       val output = controller.boardToString()
       Ok(views.html.chess(output))
   }
-
 
   def about() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.about())

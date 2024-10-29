@@ -1,30 +1,51 @@
-.body-style {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+body {
+    background-color: #ecf0f1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-}
-
-.title {
-    color: #2c3e50;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .chessboard {
-    display: inline-block;
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 20px 0;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
     border: 2px solid #2980b9;
     border-radius: 8px;
-    padding: 10px;
+    background-color: #ffffff;
+}
+
+.chess-row {
+    display: flex;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell img.piece {
+    width: 50px;
+    height: 50px;
+}
+
+.light-cell {
+    background-color: #f0d9a9;
+}
+
+.dark-cell {
+    background-color: #b58863;
+}
+
+.cell:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.05);
 }
 
 .input-style {
@@ -33,6 +54,13 @@
     margin: 10px 0;
     border: 1px solid #2980b9;
     border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input-style:focus {
+    border-color: #1c5980;
+    outline: none;
 }
 
 .button-style {
@@ -42,11 +70,12 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-style:hover {
     background-color: #1c5980;
+    transform: scale(1.05);
 }
 
 .container {

@@ -1,5 +1,37 @@
 @(boardString: String)
 
+@pieceSymbol(row: Int, col: Int) = @{
+(row, col) match {
+case (0, c) => c match {
+case 0 => "r" // Torre negra
+case 1 => "n" // Caballo negro
+case 2 => "b" // Alfil negro
+case 3 => "q" // Reina negra
+case 4 => "k" // Rey negro
+case 5 => "b" // Alfil negro
+case 6 => "n" // Caballo negro
+case 7 => "r" // Torre negra
+}
+case (1, _) => "p" // Peones negros
+case (6, _) => "P" // Peones blancos
+case (7, c) => c match {
+case 0 => "R" // Torre blanca
+case 1 => "N" // Caballo blanco
+case 2 => "B" // Alfil blanco
+case 3 => "Q" // Reina blanca
+case 4 => "K" // Rey blanco
+case 5 => "B" // Alfil blanco
+case 6 => "N" // Caballo blanco
+case 7 => "R" // Torre blanca
+}
+case _ => "E" // Casilla vacía
+}
+}
+
+@cellClass(row: Int, col: Int) = @{
+if ((row + col) % 2 == 0) "light-cell" else "dark-cell"
+}
+
 @main("HTWG CHESS") {
 
 <head>
@@ -8,9 +40,8 @@
     <script>
         function changeRoute() {
             const inputValue = document.getElementById("routeInput").value.trim();
-            const parts = inputValue.split(" ");
-            if (parts.length === 1) {
-                window.location.href = "/moveLink/" + parts[0];
+            if (inputValue) {
+                window.location.href = "/moveLink/" + inputValue;
             } else {
                 alert("Please enter a valid route in the format 'a1'.");
             }
@@ -21,12 +52,23 @@
 <body class="body-style">
     <div class="container">
         <h1 class="title">Welcome to CHESS!</h1>
-        <pre class="chessboard">@boardString</pre>
 
-        <label for="routeInput">Enter move:</label>
-        <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" class="input-style" />
+        <div class="chessboard">
+            @for(row <- 0 until 8) { <div class="chess-row">
+                @for(col <- 0 until 8) { <div class="cell @cellClass(row, col)">
+                    @if(pieceSymbol(row, col) != "E") {
+                    <img src="@routes.Assets.versioned(s"images/${if (pieceSymbol(row, col).head.isUpper) "white"
+                        else "black" }/${pieceSymbol(row, col)}.png")" alt="@pieceSymbol(row, col)" class="piece" />
+                    }
+        </div>
+        }
+    </div>
+    }
+    </div>
 
-        <button id="buttonChange" type="button" onclick="changeRoute()" class="button-style">Apply</button>
+    <label for="routeInput">Enter move:</label>
+    <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" class="input-style" />
+    <button id="buttonChange" type="button" onclick="changeRoute()" class="button-style">Apply</button>
     </div>
 </body>
 }
