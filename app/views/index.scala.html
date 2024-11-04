@@ -2,8 +2,7 @@
 
 @(message: String)(implicit request: play.api.mvc.RequestHeader)
 
-<!DOCTYPE html>
-<html lang="en">
+@main("Welcome to Play") {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,24 +20,39 @@
                     height: 100vh;
                     margin: 0;
                 }
-    </style>
-  </head>
+        </style>
+    </head>
     <body>
+        <div class="nav-container">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@routes.HomeController.rules()" aria-current="page">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/santapau10/CHESS-WA-HTWG.git" target="_blank">GitHub Repo</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="container">
-            <h2>Welcome to Chess</h2>
-            <div class="button-wrapper">
-                    <!-- Start-Button -->
-                <form action="@routes.HomeController.start()" method="post">
-                    @CSRF.formField
-                    <button type="submit" class="start-button">Start</button>
-                </form>
-                    <!-- Regeln-Button -->
-                <form action="@routes.HomeController.rules()" method="post">
-                    @CSRF.formField
-                    <button type="submit" class="rules-button">Rules</button>
-                </form>
+            <div class="main-content">
+                <h2>Welcome to Chess</h2>
+                <div class="button-wrapper">
+                        <!-- Start-Button -->
+                    <form action="@routes.HomeController.start()" method="post">
+                        @CSRF.formField
+                        <button type="submit" class="start-button">Start</button>
+                    </form>
+                        <!-- Regeln-Button -->
+                    <form action="@routes.HomeController.rules()" method="post">
+                        @CSRF.formField
+                        <button type="submit" class="rules-button">Rules</button>
+                    </form>
+                </div>
             </div>
-            <p>@message</p>
         </div>
     </body>
-</html>
+}

@@ -1,33 +1,70 @@
-/* Transparenter, mittlerer Container */
 .container {
     position: relative;
-    width: 600px;
-    height: 600px;
-    padding: 10px 0;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    width: 100vw;   /* Vollbild-Breite */
+    height: 100vh;  /* Vollbild-Höhe */
+    background-color: rgba(255, 255, 255, 0); /* Hintergrundfarbe bleibt unverändert */
+    border-radius: 0; /* Entfernt abgerundete Ecken für ein sauberes Vollbild */
+    box-shadow: none; /* Entfernt den Schatten, falls gewünscht */
     text-align: center;
+    overflow: hidden; /* Verhindert das Scrollen, falls Inhalte größer sind */
 }
+
+/* Navigation oben fixieren */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Links ausrichten */
+    background-color: transparent; /* Entfernt die weiße Hintergrundfarbe */
+    padding: 10px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    box-shadow: none; /* Entfernt den Schatten */
+    z-index: 1000; /* Füge dies hinzu */
+}
+
+/* Navigationselemente im flexiblen Layout */
+.nav-container .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Links ausrichten */
+    font-size: 1rem; /* Standard-Schriftgröße */
+}
+
+
 
 /* Stil der Überschrift */
 h2 {
+    height: 30%; /* 10% der Container-Höhe */
+    display: flex;
+    align-items: center; /* Vertikal zentriert innerhalb des Elements */
+    justify-content: center; /* Zentriert den Text horizontal */
     margin: 0;
+    padding: 0;
 }
 
-/* Wrapper für die Buttons */
+
+/* Hauptinhalt-Container */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Button-Stil und Anordnung */
 .button-wrapper {
     position: absolute;
-    bottom: 20px;
-    /* Abstand vom unteren Rand */
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 20%; /* Positioniert die Buttons am Anfang des unteren Drittels */
     display: flex;
-    gap: 20px;
-    /* Abstand zwischen den Buttons */
+    gap: 15px; /* Abstand zwischen Buttons */
+    width: 100%;
+    justify-content: center;
 }
 
-/* Start-Button-Stil */
+
 .start-button,
 .rules-button {
     padding: 5px 15px;
@@ -45,4 +82,108 @@ h2 {
 .rules-button:hover {
     background-color: #218838;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+/* Media Queries für Tablets und kleinere Bildschirme */
+@media (max-width: 800px) and (max-height: 768px){
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-top: 30px; /* Verschiebt den Text weiter nach oben */
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Navigation auf mehrere Zeilen bei kleinerer Breite */
+    }
+
+    .button-wrapper {
+        flex-direction: row; /* Buttons untereinander anordnen */
+        align-items: center;
+        gap: 20px; /* Abstand von 40px zwischen den Buttons */
+    }
+
+    .start-button,
+    .rules-button {
+        max-width: 300px;
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+
+}
+
+/* Media Queries für sehr kleine Bildschirme */
+@media (max-width: 480px) and (max-height: 600px){
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-top: 20px; /* Verschiebt Inhalt nach oben */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding-top: 20px; /* Verschiebt den Titel noch etwas weiter nach oben */
+        text-align: center;
+    }
+
+    /* Button-Stil und Anordnung */
+    .button-wrapper {
+        position: absolute;
+        bottom: 40%; /* Positioniert die Buttons am Anfang des unteren Drittels */
+        display: flex; /* Flexbox verwenden */
+        gap: 100px; /* Abstand zwischen Buttons */
+        width: 100%; /* Optional: kann je nach Layout angepasst werden */
+        justify-content: center; /* Zentriert die Buttons im Container */
+    }
+
+    .start-button,
+    .rules-button {
+        width: auto; /* Schaltflächen auf automatische Breite setzen */
+        padding: 5px 15px; /* Padding hinzufügen */
+        font-size: 0.9rem; /* Schriftgröße */
+    }
+
+}
+
+@media (max-height: 300px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-top: 20px; /* Verschiebt Inhalt nach oben */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding-top: 0; /* Entferne das padding-top, da es nicht mehr notwendig ist */
+        text-align: left; /* Text innerhalb des Titels wird rechtsbündig ausgerichtet */
+        position: absolute;
+        left: 0; /* Setzt den Titel rechtsbündig */
+        bottom: 45%; /* Positioniert die Buttons am Anfang des unteren Drittels */
+    }
+
+    /* Button-Stil und Anordnung */
+    .button-wrapper {
+        position: absolute;
+        bottom: 30%; /* Positioniert die Buttons am Anfang des unteren Drittels */
+        display: flex; /* Flexbox verwenden */
+        gap: 100px; /* Abstand zwischen Buttons */
+        width: 100%; /* Optional: kann je nach Layout angepasst werden */
+        justify-content: center; /* Zentriert die Buttons im Container */
+    }
+
+    .start-button,
+    .rules-button {
+        width: auto; /* Schaltflächen auf automatische Breite setzen */
+        padding: 5px 15px; /* Padding hinzufügen */
+        font-size: 0.9rem; /* Schriftgröße */
+    }
 }

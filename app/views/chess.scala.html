@@ -29,7 +29,7 @@ case _ => "E" // Casilla vacía
 }
 
 @cellClass(row: Int, col: Int) = @{
-if ((row + col) % 2 == 0) "light-cell" else "dark-cell"
+if ((row + col) % 2 == 0) "dark-cell" else "light-cell"
 }
 
 @main("HTWG CHESS") {
@@ -57,8 +57,8 @@ if ((row + col) % 2 == 0) "light-cell" else "dark-cell"
             @for(row <- 0 until 8) { <div class="chess-row">
                 @for(col <- 0 until 8) { <div class="cell @cellClass(row, col)">
                     @if(pieceSymbol(row, col) != "E") {
-                    <img src="@routes.Assets.versioned(s"images/${if (pieceSymbol(row, col).head.isUpper) "white"
-                        else "black" }/${pieceSymbol(row, col)}.png")" alt="@pieceSymbol(row, col)" class="piece" />
+                    <img src="@routes.Assets.versioned(s"images/${if (pieceSymbol(row, col).head.isUpper) "black"
+                        else "white" }/${pieceSymbol(row, col)}.png")" alt="@pieceSymbol(row, col)" class="piece" />
                     }
         </div>
         }
