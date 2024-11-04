@@ -44,12 +44,7 @@
                         <!-- Start-Button -->
                     <form action="@routes.HomeController.start()" method="post">
                         @CSRF.formField
-                        <button type="submit" class="start-button">Start</button>
-                    </form>
-                        <!-- Regeln-Button -->
-                    <form action="@routes.HomeController.rules()" method="post">
-                        @CSRF.formField
-                        <button type="submit" class="rules-button">Rules</button>
+                        <button type="submit" class="start-button">&#9655</button>
                     </form>
                 </div>
             </div>

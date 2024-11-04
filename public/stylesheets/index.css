@@ -59,30 +59,34 @@ h2 {
     position: absolute;
     bottom: 20%; /* Positioniert die Buttons am Anfang des unteren Drittels */
     display: flex;
-    gap: 15px; /* Abstand zwischen Buttons */
     width: 100%;
     justify-content: center;
 }
 
 
-.start-button,
-.rules-button {
-    padding: 5px 15px;
-    font-size: 18px;
+.start-button {
+    width: 100px; /* Breite für den Button */
+    height: 100px; /* Höhe für den Button */
+    font-size: 40px; /* Schriftgröße */
     color: white;
     background-color: #404040;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%; /* Macht den Button rund */
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    padding-left: 12px; /* Optional: zusätzlicher Raum auf der linken Seite */
 }
 
-.start-button:hover,
-.rules-button:hover {
+
+.start-button:hover {
     background-color: #218838;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
+
 
 /* Media Queries für Tablets und kleinere Bildschirme */
 @media (max-width: 800px) and (max-height: 768px){
@@ -101,16 +105,14 @@ h2 {
     }
 
     .button-wrapper {
-        flex-direction: row; /* Buttons untereinander anordnen */
         align-items: center;
-        gap: 20px; /* Abstand von 40px zwischen den Buttons */
     }
 
-    .start-button,
-    .rules-button {
-        max-width: 300px;
-        padding: 4px 14px;
-        font-size: 15px;
+    .start-button {
+        width: 70px;  /* Kleinere Größe für den Button */
+        height: 70px; /* Gleiche Höhe */
+        font-size: 30px; /* Kleinere Schriftgröße */
+        padding-left: 7px; /* Optional: zusätzlicher Raum auf der linken Seite */
     }
 
 }
@@ -134,21 +136,54 @@ h2 {
 
     /* Button-Stil und Anordnung */
     .button-wrapper {
+        align-items: center;
         position: absolute;
         bottom: 40%; /* Positioniert die Buttons am Anfang des unteren Drittels */
         display: flex; /* Flexbox verwenden */
-        gap: 100px; /* Abstand zwischen Buttons */
         width: 100%; /* Optional: kann je nach Layout angepasst werden */
         justify-content: center; /* Zentriert die Buttons im Container */
     }
 
-    .start-button,
-    .rules-button {
-        width: auto; /* Schaltflächen auf automatische Breite setzen */
-        padding: 5px 15px; /* Padding hinzufügen */
-        font-size: 0.9rem; /* Schriftgröße */
+    .start-button {
+        width: 55px;  /* Noch kleinere Größe für den Button */
+        height: 55px; /* Gleiche Höhe */
+        font-size: 15px; /* Weitere Anpassung der Schriftgröße */
     }
 
+}
+
+
+@media (max-height: 460px){
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-top: 20px; /* Verschiebt Inhalt nach oben */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding-top: 20px; /* Verschiebt den Titel noch etwas weiter nach oben */
+        text-align: center;
+    }
+
+    /* Button-Stil und Anordnung */
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 10%; /* Positioniert die Buttons am Anfang des unteren Drittels */
+        display: flex; /* Flexbox verwenden */
+        width: 100%; /* Optional: kann je nach Layout angepasst werden */
+        justify-content: center; /* Zentriert die Buttons im Container */
+    }
+
+    .start-button {
+        width: 55px;  /* Noch kleinere Größe für den Button */
+        height: 55px; /* Gleiche Höhe */
+        font-size: 15px; /* Weitere Anpassung der Schriftgröße */
+    }
 }
 
 @media (max-height: 300px) {
@@ -172,18 +207,21 @@ h2 {
 
     /* Button-Stil und Anordnung */
     .button-wrapper {
+        align-items: center;
         position: absolute;
         bottom: 30%; /* Positioniert die Buttons am Anfang des unteren Drittels */
         display: flex; /* Flexbox verwenden */
-        gap: 100px; /* Abstand zwischen Buttons */
         width: 100%; /* Optional: kann je nach Layout angepasst werden */
         justify-content: center; /* Zentriert die Buttons im Container */
     }
 
-    .start-button,
-    .rules-button {
-        width: auto; /* Schaltflächen auf automatische Breite setzen */
-        padding: 5px 15px; /* Padding hinzufügen */
-        font-size: 0.9rem; /* Schriftgröße */
+    .start-button {
+        width: 45px;  /* Größe für den Button */
+        height: 45px; /* Gleiche Höhe */
+        font-size: 15px; /* Schriftgröße */
+        position: relative; /* Macht die Position relativ zu seinem normalen Platz */
+        right: 190px; /* Verschiebt den Button nach links (kann nach Bedarf angepasst werden) */
+        bottom: -18px; /* Verschiebt den Button nach unten (kann nach Bedarf angepasst werden) */
+        padding-left: 7px; /* Optional: zusätzlicher Raum auf der linken Seite */
     }
 }
