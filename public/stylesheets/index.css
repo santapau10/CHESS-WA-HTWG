@@ -36,7 +36,7 @@
 
 /* Stil der Überschrift */
 h2 {
-    height: 30%; /* 10% der Container-Höhe */
+    height: 30%;
     display: flex;
     align-items: center; /* Vertikal zentriert innerhalb des Elements */
     justify-content: center; /* Zentriert den Text horizontal */
