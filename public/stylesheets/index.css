@@ -40,8 +40,6 @@ h2 {
     display: flex;
     align-items: center; /* Vertikal zentriert innerhalb des Elements */
     justify-content: center; /* Zentriert den Text horizontal */
-    margin: 0;
-    padding: 0;
 }
 
 
