@@ -32,6 +32,34 @@
     font-size: 1rem; /* Standard-Schriftgröße */
 }
 
+.btn {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px; /* Rundere Ecken für den Button */
+    background-color: #6c757d; /* Grauer Hintergrund */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover-Effekt */
+.btn:hover {
+    background-color: #5a6268; /* Dunklerer Grauton bei Hover */
+    transform: scale(1.05); /* Vergrößert den Button leicht */
+}
+
+/* Disabled-Status für den Button */
+.btn.disabled,
+.btn:disabled {
+    border-radius: 20px; /* Rundere Ecken im Disabled-Zustand */
+    background-color: #c6c8ca; /* Grauer Hintergrund für den deaktivierten Zustand */
+    color: #868e96; /* Graue Schriftfarbe */
+    pointer-events: none; /* Verhindert das Klicken auf den Button */
+    cursor: not-allowed; /* Zeigt den "nicht erlaubt"-Zeiger */
+}
 
 
 /* Stil der Überschrift */
@@ -87,7 +115,7 @@ h2 {
 
 
 /* Media Queries für Tablets und kleinere Bildschirme */
-@media (max-width: 800px) and (max-height: 768px){
+@media (max-width: 800px) {
     .container {
         width: 100%;
     }
@@ -97,7 +125,10 @@ h2 {
         padding-top: 30px; /* Verschiebt den Text weiter nach oben */
         text-align: center;
     }
-
+    .btn {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
     .nav-container {
         flex-direction: column; /* Navigation auf mehrere Zeilen bei kleinerer Breite */
     }
@@ -131,7 +162,10 @@ h2 {
         padding-top: 20px; /* Verschiebt den Titel noch etwas weiter nach oben */
         text-align: center;
     }
-
+    .btn {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
     /* Button-Stil und Anordnung */
     .button-wrapper {
         align-items: center;
@@ -150,6 +184,41 @@ h2 {
 
 }
 
+@media (max-height: 700px) and (min-width: 337px){
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-top: 20px; /* Verschiebt Inhalt nach oben */
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding-top: 20px; /* Verschiebt den Titel noch etwas weiter nach oben */
+        text-align: center;
+    }
+    .btn {
+        padding: 5px 8px;
+        font-size: 15px;
+    }
+    /* Button-Stil und Anordnung */
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 20%; /* Positioniert die Buttons am Anfang des unteren Drittels */
+        display: flex; /* Flexbox verwenden */
+        width: 100%; /* Optional: kann je nach Layout angepasst werden */
+        justify-content: center; /* Zentriert die Buttons im Container */
+    }
+
+    .start-button {
+        width: 55px;  /* Noch kleinere Größe für den Button */
+        height: 55px; /* Gleiche Höhe */
+        font-size: 15px; /* Weitere Anpassung der Schriftgröße */
+    }
+}
 
 @media (max-height: 460px){
     .container {
@@ -166,7 +235,10 @@ h2 {
         padding-top: 20px; /* Verschiebt den Titel noch etwas weiter nach oben */
         text-align: center;
     }
-
+    .btn {
+        padding: 5px 8px;
+        font-size: 15px;
+    }
     /* Button-Stil und Anordnung */
     .button-wrapper {
         align-items: center;
@@ -202,7 +274,10 @@ h2 {
         left: 0; /* Setzt den Titel rechtsbündig */
         bottom: 45%; /* Positioniert die Buttons am Anfang des unteren Drittels */
     }
-
+    .btn {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
     /* Button-Stil und Anordnung */
     .button-wrapper {
         align-items: center;
@@ -221,5 +296,212 @@ h2 {
         right: 190px; /* Verschiebt den Button nach links (kann nach Bedarf angepasst werden) */
         bottom: -18px; /* Verschiebt den Button nach unten (kann nach Bedarf angepasst werden) */
         padding-left: 7px; /* Optional: zusätzlicher Raum auf der linken Seite */
+    }
+}
+
+@media (min-width: 502px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 20px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    }
+
+    /* Navigationselemente im flexiblen Layout */
+    .nav-container .nav {
+        gap: 5px;
+        font-size: 1.55rem; /* Standard-Schriftgröße */
+    }
+    .btn {
+        padding: 9px 18px;
+        font-size: 20px;
+    }
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 16%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3rem;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 20px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    }
+
+    /* Navigationselemente im flexiblen Layout */
+    .nav-container .nav {
+        gap: 10px;
+        font-size: 1.75rem; /* Standard-Schriftgröße */
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .btn {
+        font-size: 30px;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 20px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    }
+
+    /* Navigationselemente im flexiblen Layout */
+    .nav-container .nav {
+        gap: 25px;
+        font-size: 2.25rem; /* Standard-Schriftgröße */
+    }
+
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 15%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 135px;
+        height: 135px;
+        font-size: 60px;
+    }
+}
+
+
+/* Media Queries für FullHD (1080p) */
+@media (min-width: 1920px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .btn {
+        padding: 15px 30px;
+        font-size: 37px;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 20px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    }
+
+    /* Navigationselemente im flexiblen Layout */
+    .nav-container .nav {
+        gap: 25px;
+        font-size: 3rem; /* Standard-Schriftgröße */
+    }
+
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 13%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 150px;
+        height: 150px;
+        font-size: 60px;
+    }
+}
+
+/* Media Queries für 4K Auflösung */
+@media (min-width: 2560px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 5rem;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .btn {
+        padding: 20px 40px;
+        font-size: 45px;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 40px; /* Füge etwas Padding hinzu, wenn gewünscht */
+    }
+
+    /* Navigationselemente im flexiblen Layout */
+    .nav-container .nav {
+        gap: 50px;
+        font-size: 3.5rem; /* Standard-Schriftgröße */
+    }
+
+    .button-wrapper {
+        align-items: center;
+        position: absolute;
+        bottom: 7%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .start-button {
+        width: 180px;
+        height: 180px;
+        font-size: 70px;
     }
 }

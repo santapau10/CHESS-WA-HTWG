@@ -68,13 +68,14 @@
 .input-style {
     margin-top: 20px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .button-style {
+    font-size: 25px;
     margin-top: 20px;
     margin-left: 10px;
-    padding: 8px 16px;
+    padding: 12px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
