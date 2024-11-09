@@ -2,6 +2,7 @@ package controllers
 
 import javax.inject.*
 import play.api.*
+import play.api.libs.json._
 import play.api.mvc.*
 import chess.view.view.TUI
 import chess.controller.*
@@ -31,17 +32,18 @@ class HomeController @Inject() (
   /** Create an Action to render an HTML page. */
   def start() = Action { implicit request: Request[AnyContent] =>
     val output = controller.boardToString()
+    print(output)
     controller.changeState(TurnStateWhite(controller))
-    Ok(views.html.chess(output))
+    Ok(views.html.chesshtml(controller))
   }
 
   def moveLink(origin: String) = Action {
     implicit request: Request[AnyContent] =>
-      controller.handleAction(controller.getCurrentState.actionFromInput(origin))
-      val output = controller.boardToString()
-      Ok(views.html.chess(output))
+      controller.handleAction(
+        controller.getCurrentState.actionFromInput(origin)
+      )
+      Ok(views.html.chesshtml(controller))
   }
-
 
   def about() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.about())

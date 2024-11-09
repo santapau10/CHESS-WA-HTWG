@@ -1,0 +1,50 @@
+@(controller: chess.controller.IController)
+
+@cellClass(row: Int, col: Int) = @{
+    if ((row + col) % 2 == 0) "dark-cell" else "light-cell"
+}
+
+@main("HTWG CHESS") {
+
+    <head>
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/chess.css")"/><title>Chess Game</title>
+        <script>
+                function changeRoute() {
+                    const inputValue = document.getElementById("routeInput").value.trim();
+                    if (inputValue) {
+                        window.location.href = "/moveLink/" + inputValue;
+                    } else {
+                        alert("Please enter a valid route in the format 'a1'.");
+                    }
+                }
+        </script>
+    </head>
+
+    <body class="body-style">
+        <div class="container">
+            <h1 class="title">Welcome to CHESS!</h1>
+
+            <div class="chessboard">
+            @for(row <- 0 until controller.getSize) {
+                <div class="chesshtml-row">
+                @for(col <- 0 until controller.getSize) {
+                    <div class="cell @cellClass(row, col)">
+                    @{
+                        val foundPiece = controller.getGame.getBoardList.find(p => p.getCords._1 == row && p.getCords._2 == col)
+                        foundPiece.map { piece =>
+                            val path = "images/" + piece.getIconPath
+                            Html(s"""<img src="${routes.Assets.versioned(path)}" alt="" class="piece" />""")
+                        }
+                    }
+                    </div>
+                }
+                </div>
+            }
+            </div>
+
+            <label for="routeInput" class="input-style">Enter move</label>
+            <input type="text" id="routeInput" name="routeInput" placeholder="Enter route like 'a1'" class="input-style" />
+            <button id="buttonChange" type="button" onclick="changeRoute()" class="button-style">Apply</button>
+        </div>
+    </body>
+}
