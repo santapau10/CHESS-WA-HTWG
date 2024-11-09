@@ -2,6 +2,7 @@ package controllers
 
 import javax.inject.*
 import play.api.*
+import play.api.libs.json._
 import play.api.mvc.*
 import chess.view.view.TUI
 import chess.controller.*
@@ -33,7 +34,7 @@ class HomeController @Inject() (
     val output = controller.boardToString()
     print(output)
     controller.changeState(TurnStateWhite(controller))
-    Ok(views.html.chess(output))
+    Ok(views.html.chesshtml(controller))
   }
 
   def moveLink(origin: String) = Action {
@@ -41,8 +42,7 @@ class HomeController @Inject() (
       controller.handleAction(
         controller.getCurrentState.actionFromInput(origin)
       )
-      val output = controller.boardToString()
-      Ok(views.html.chess(output))
+      Ok(views.html.chesshtml(controller))
   }
 
   def about() = Action { implicit request: Request[AnyContent] =>
