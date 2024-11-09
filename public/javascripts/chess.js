@@ -1,38 +1,41 @@
+// public/javascripts/chess.js
+
+
 $(document).ready(function() {
-    let firstCell = null;
-    let secondCell = null;
-
-    $(".cell").click(function() {
-        console.log($(this).data("position"))
-        const cellPosition = $(this).data("position");
-
-        // Si no hay celda seleccionada, asigna la primera
-        if (!firstCell) {
-            firstCell = cellPosition;
-            $(this).addClass("selected"); // Añade estilo para resaltar la celda seleccionada
-        } else if (!secondCell) {
-            // Asigna la segunda celda y envía la solicitud
-            secondCell = cellPosition;
-            $(this).addClass("selected");
-
-            // Enviar solicitud AJAX para mover pieza entre las celdas seleccionadas
+    $(".cell").on("click", function() {
+        const targetCell = $(this).data("coords");
+        
+        if (targetCell) {
+            const origin = convertToChessNotation(targetCell);
+            console.log(origin, )
+            
             $.ajax({
-                url: `/move/${firstCell}-${secondCell}`,
-                method: "POST",
+                url: "/move/",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ origin: origin }),
                 success: function(response) {
-                    console.log("Movimiento realizado:", response);
-                    // Actualiza el tablero según la respuesta o recarga la página
-                    $(".cell").removeClass("selected"); // Elimina selección
-                    firstCell = null;
-                    secondCell = null;
                 },
                 error: function() {
-                    alert("Error al realizar el movimiento.");
-                    $(".cell").removeClass("selected");
-                    firstCell = null;
-                    secondCell = null;
+                    alert("Invalid move or server error.");
                 }
             });
+            
+        } else {
+            selectedCell = targetCell;
+            console.log(selectedCell)
         }
     });
 });
+
+// Convierte las coordenadas numéricas a notación de ajedrez (ej. 1,0 -> "a2")
+function convertToChessNotation(coords) {
+    console.log(coords)
+    const [row, col] = coords.split(',').map(Number);
+    const rowA = row 
+    const colA = col + 1
+    const file = String.fromCharCode('a'.charCodeAt(0) + rowA); 
+    const rank = (colA).toString(); 
+    return file + rank;
+}
+
