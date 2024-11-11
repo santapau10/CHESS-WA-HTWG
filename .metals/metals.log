@@ -6151,3 +6151,240 @@ INFO: Unsupported notification method: $/setTrace
 2024.11.09 17:28:38 INFO  java targets: root, play-scala-seed-build-build, play-scala-seed-build, root-test
 2024.11.09 17:28:43 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
 2024.11.09 17:28:44 INFO  time: indexed workspace in 6.18s
+2024.11.09 17:30:20 INFO  Shutting down server
+2024.11.09 17:30:20 INFO  shutting down Metals
+2024.11.09 17:30:20 INFO  Shut down connection with build server.
+2024.11.09 17:30:20 INFO  Shut down connection with build server.
+2024.11.09 17:30:20 INFO  Shut down connection with build server.
+2024.11.09 17:30:20 INFO  Exiting server
+2024.11.10 16:48:33 INFO  Started: Metals version 1.4.0 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed' for client Visual Studio Code 1.95.2.
+2024.11.10 16:48:34 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.10 16:48:35 INFO  Attempting to connect to the build server...
+2024.11.10 16:48:35 INFO  Found a Bloop server running
+2024.11.10 16:48:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.10 16:48:34 INFO  Attempting to connect to the build server...
+2024.11.10 16:48:34 INFO  Found a Bloop server running
+2024.11.10 16:48:34 INFO  Attempting to connect to the build server...
+2024.11.10 16:48:34 INFO  Found a Bloop server running
+2024.11.10 16:48:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.10 16:48:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.10 16:48:35 INFO  time: Connected to build server in 0.49s
+2024.11.10 16:48:35 INFO  Connected to Build server: Bloop v2.0.3
+2024.11.10 16:48:35 INFO  time: Imported build in 0.16s
+2024.11.10 16:48:35 INFO  running doctor check
+2024.11.10 16:48:35 INFO  java targets: root, play-scala-seed-build-build, play-scala-seed-build, root-test
+2024.11.10 16:48:40 INFO  Shutting down server
+2024.11.10 16:48:40 INFO  shutting down Metals
+2024.11.10 16:48:40 INFO  Shut down connection with build server.
+2024.11.10 16:48:40 INFO  Shut down connection with build server.
+2024.11.10 16:48:40 INFO  Shut down connection with build server.
+2024.11.10 16:48:40 INFO  Exiting server
+2024.11.11 16:49:55 INFO  Started: Metals version 1.4.0 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed' for client Visual Studio Code 1.95.2.
+2024.11.11 16:49:56 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.11 16:49:56 INFO  Attempting to connect to the build server...
+2024.11.11 16:49:56 INFO  Found a Bloop server running
+2024.11.11 16:49:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 16:49:56 INFO  Attempting to connect to the build server...
+2024.11.11 16:49:56 INFO  Found a Bloop server running
+2024.11.11 16:49:56 INFO  Attempting to connect to the build server...
+2024.11.11 16:49:56 INFO  Found a Bloop server running
+2024.11.11 16:49:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 16:49:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 16:49:56 INFO  time: Connected to build server in 0.45s
+2024.11.11 16:49:56 INFO  Connected to Build server: Bloop v2.0.3
+2024.11.11 16:49:57 INFO  time: Imported build in 0.12s
+2024.11.11 16:49:57 INFO  running doctor check
+2024.11.11 16:49:57 INFO  java targets: root, play-scala-seed-build-build, play-scala-seed-build, root-test
+2024.11.11 16:50:02 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.11 16:50:03 INFO  time: indexed workspace in 6.28s
+nov 11, 2024 4:50:24 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.11.11 16:50:44 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 16:50:44 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.11.11 16:50:47 WARN  javac exited with exit code 1
+2024.11.11 16:50:47 INFO  time: compiled root in 2.73s
+2024.11.11 16:50:47 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+bad option '-Ytasty-reader' was ignored
+2024.11.11 16:52:25 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:30 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:42 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:43 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:44 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:49 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:52 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:52:55 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:53:08 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:53:09 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:53:09 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:53:09 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+bad option '-Ytasty-reader' was ignored
+2024.11.11 16:53:10 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:57:37 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:58:18 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:58:32 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 16:58:45 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:01:36 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:01:53 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:02:31 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:02:43 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:03:01 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:03:44 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:05:48 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:05:55 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:06:38 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:07:16 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:07:17 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:08:07 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:08:48 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:08:51 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:09:10 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:13:27 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:13:29 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:13:32 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:13:32 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:13:32 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:13:32 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:13:34 WARN  javac exited with exit code 1
+2024.11.11 17:13:34 INFO  time: compiled root in 1.68s
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:14:51 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:14:58 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:14:58 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:14:58 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:14:58 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:14:58 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:15:00 WARN  javac exited with exit code 1
+2024.11.11 17:15:00 INFO  time: compiled root in 1.44s
+2024.11.11 17:17:43 INFO  Shutting down server
+2024.11.11 17:17:43 INFO  shutting down Metals
+2024.11.11 17:17:43 INFO  Shut down connection with build server.
+2024.11.11 17:17:43 INFO  Shut down connection with build server.
+2024.11.11 17:17:43 INFO  Shut down connection with build server.
+2024.11.11 17:17:43 INFO  Exiting server
+2024.11.11 17:31:55 INFO  Started: Metals version 1.4.0 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed' for client Visual Studio Code 1.95.2.
+2024.11.11 17:31:57 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.11 17:31:57 INFO  Attempting to connect to the build server...
+2024.11.11 17:31:57 INFO  Found a Bloop server running
+2024.11.11 17:31:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 17:31:58 INFO  Attempting to connect to the build server...
+2024.11.11 17:31:58 INFO  Found a Bloop server running
+2024.11.11 17:31:58 INFO  Attempting to connect to the build server...
+2024.11.11 17:31:58 INFO  Found a Bloop server running
+2024.11.11 17:31:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 17:31:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 17:31:58 INFO  time: Connected to build server in 1.14s
+2024.11.11 17:31:58 INFO  Connected to Build server: Bloop v2.0.3
+2024.11.11 17:31:59 INFO  time: Imported build in 0.2s
+2024.11.11 17:31:59 INFO  running doctor check
+2024.11.11 17:31:59 INFO  java targets: root, play-scala-seed-build-build, play-scala-seed-build, root-test
+2024.11.11 17:32:03 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.11 17:32:05 INFO  time: indexed workspace in 5.98s
+2024.11.11 17:34:39 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:34:39 WARN  bad option '-Ytasty-reader' was ignored
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:34:42 WARN  javac exited with exit code 1
+2024.11.11 17:34:42 INFO  time: compiled root in 2.49s
+bad option '-Ytasty-reader' was ignored
+nov 11, 2024 5:38:59 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.11.11 17:43:26 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:43:27 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:43:28 WARN  Could not find semantic tokens for: file:///Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:43:28 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:43:50 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:43:50 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:43:51 WARN  javac exited with exit code 1
+2024.11.11 17:43:51 INFO  time: compiled root in 1.39s
+2024.11.11 17:44:08 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:44:08 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:44:10 WARN  javac exited with exit code 1
+2024.11.11 17:44:10 INFO  time: compiled root in 1.2s
+2024.11.11 17:44:39 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:44:39 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:44:41 WARN  javac exited with exit code 1
+2024.11.11 17:44:41 INFO  time: compiled root in 1.7s
+2024.11.11 17:45:34 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:45:40 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:40 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:41 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:41 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:56 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:56 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:57 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:57 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:45:59 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:03 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:05 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:46:05 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:05 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:05 INFO  time: compiled root in 0.26s
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:06 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:10 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:12 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:13 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:14 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:19 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:20 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:21 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:22 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:22 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:23 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:23 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:24 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:25 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:25 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:26 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:26 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:27 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:28 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:29 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:31 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:31 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:46:31 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:32 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:32 WARN  javac exited with exit code 1
+2024.11.11 17:46:32 INFO  time: compiled root in 1.17s
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:33 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:35 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:35 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:46:35 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:35 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:46:36 WARN  javac exited with exit code 1
+2024.11.11 17:46:36 INFO  time: compiled root in 1.23s
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:46:44 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:47:32 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:36 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:49 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:53 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:54 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:54 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:55 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:56 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:56 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:56 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:48:56 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:48:56 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:48:57 WARN  javac exited with exit code 1
+2024.11.11 17:48:57 INFO  time: compiled root in 1.23s
+bad option '-Ytasty-reader' was ignored
+2024.11.11 17:48:58 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:49:16 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:49:19 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:51:26 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:54:26 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:54:54 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+2024.11.11 17:58:49 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 17:58:49 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 17:58:51 WARN  javac exited with exit code 1
+2024.11.11 17:58:51 INFO  time: compiled root in 1.63s
+2024.11.11 18:02:20 WARN  Could not load snapshot text for /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/app/controllers/HomeController.scala
+bad option '-Ytasty-reader' was ignored
+2024.11.11 18:04:57 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 18:04:57 WARN  bad option '-Ytasty-reader' was ignored
+2024.11.11 18:04:59 WARN  javac exited with exit code 1
+2024.11.11 18:04:59 INFO  time: compiled root in 1.69s

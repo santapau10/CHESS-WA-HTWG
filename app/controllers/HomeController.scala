@@ -48,6 +48,7 @@ class HomeController @Inject() (
   def about() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.about())
   }
+
   def move() = Action { implicit request: Request[AnyContent] =>
     val jsonBody: Option[JsValue] = request.body.asJson
     jsonBody match {
@@ -56,7 +57,6 @@ class HomeController @Inject() (
         controller.handleAction(
           controller.getCurrentState.actionFromInput(origin)
         )
-
         Ok(views.html.chesshtml(controller))
       case None =>
         BadRequest("Invalid JSON data")
