@@ -65,31 +65,6 @@
     height: 50px;
 }
 
-.input-style {
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 24px;
-}
-
-.button-style {
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 12px 25px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.button-style:hover {
-    background-color: #45a049;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
-
 @media (max-width: 375px) {
     .title {
         font-size: 55px;
@@ -105,14 +80,6 @@
     .piece:hover {
         width: 80px;
         height: 80px;
-    }
-    .input-style {
-        font-size: 27px;
-        padding: 14px 23px;
-    }
-    .button-style {
-        font-size: 27px;
-        padding: 14px 27px;
     }
 }
 
@@ -134,7 +101,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1079px) {
+@media (min-width: 768px) or (min-height: 1080px){
     .title {
         font-size: 73px;
     }
@@ -149,27 +116,6 @@
     .piece:hover {
         width: 78px;
         height: 78px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1079px) and (min-height: 1025px) and (max-height: 1180px) {
-    .title {
-        font-size: 50px;
-    }
-
-    .cell {
-        width: 64px;
-        height: 64px;
-    }
-
-    .piece {
-        width: 47px;
-        height: 47px;
-    }
-
-    .piece:hover {
-        width: 54px;
-        height: 54px;
     }
 }
 
@@ -193,19 +139,6 @@
         width: 68px;
         height: 68px;
     }
-
-    .input-style {
-        font-size: 22px;
-        padding: 11px 19px;
-        margin-top: 20px;
-    }
-
-    .button-style {
-        margin-top: 20px;
-        font-size: 25px;
-        padding: 14px 28px;
-    }
-
 }
 
 @media (min-width: 1080px) and (max-width: 1280px) and (min-height: 740px) and (max-height: 800px)  {
@@ -228,17 +161,6 @@
         width: 50px;
         height: 50px;
     }
-    .input-style {
-        font-size: 16px;
-        padding: 8px 14px;
-        margin-top: 15px;
-    }
-    .button-style {
-        font-size: 16px;
-        padding: 8px 16px;
-        margin-top: 15px;
-    }
-
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) and (min-height: 600px) and (max-height: 739px)  {
@@ -261,21 +183,9 @@
         width: 40px;
         height: 40px;
     }
-
-    .input-style {
-        font-size: 12px;
-        padding: 6px 10px;
-        margin-top: 11px;
-    }
-
-    .button-style {
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-top: 11px;
-    }
 }
 
-@media (min-width: 1280px) and (max-width: 1919px) and (min-height: 719px) and (min-height: 1079px) {
+@media (min-width: 1280px) and (max-width: 1919px) and (min-height: 719px) and (max-height: 1079px) {
     .title {
         font-size: 39px; /* Reduced by 30% */
         margin-bottom: 21px; /* Reduced by 30% */
@@ -291,40 +201,5 @@
     .piece:hover {
         width: 56px; /* Reduced by 30% */
         height: 56px; /* Reduced by 30% */
-    }
-    .input-style {
-        font-size: 14px; /* Reduced by 30% */
-        padding: 7px 13px; /* Reduced by 30% */
-    }
-    .button-style {
-        font-size: 15px; /* Reduced by 30% */
-        padding: 9px 17px; /* Reduced by 30% */
-    }
-}
-
-@media (min-width: 1920px) and (min-height: 1080px) {
-    .title {
-        font-size: 49px; /* Reduced by 30% */
-        margin-bottom: 28px; /* Reduced by 30% */
-    }
-    .cell {
-        width: 77px; /* Reduced by 30% */
-        height: 77px; /* Reduced by 30% */
-    }
-    .piece {
-        width: 63px; /* Reduced by 30% */
-        height: 63px; /* Reduced by 30% */
-    }
-    .piece:hover {
-        width: 70px; /* Reduced by 30% */
-        height: 70px; /* Reduced by 30% */
-    }
-    .input-style {
-        font-size: 17px; /* Reduced by 30% */
-        padding: 9px 14px; /* Reduced by 30% */
-    }
-    .button-style {
-        font-size: 17px; /* Reduced by 30% */
-        padding: 10px 19px; /* Reduced by 30% */
     }
 }
