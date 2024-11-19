@@ -5,7 +5,6 @@
 
 # An example controller showing a sample home page
 GET     /index                  controllers.HomeController.index()
-GET     /about                  controllers.HomeController.about()
 
 
 # route to get the board state

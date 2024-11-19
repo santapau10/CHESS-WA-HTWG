@@ -18,13 +18,13 @@
         "classpath": [
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.10.1/sbt-1.10.1.jar",
             "/Users/pablolarraz/.sbt/boot/scala-2.12.19/lib/scala-library.jar",
-            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.3/sbt-bloop_2.12_1.0-2.0.3.jar",
+            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.5/sbt-bloop_2.12_1.0-2.0.5.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.5/sbt-plugin_2.12_1.0-3.0.5.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.16.2/sbt-giter8-scaffold-0.16.2.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-less/scala_2.12/sbt_1.0/1.1.2/jars/sbt-less.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.10.1/main_2.12-1.10.1.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.0/io_2.12-1.10.0.jar",
-            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.3/bloop-config_2.12-2.0.3.jar",
+            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.1.0/bloop-config_2.12-2.1.0.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.5/sbt-routes-compiler_2.12-3.0.5.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.5/play-run-support_2.12-3.0.5.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
@@ -65,7 +65,7 @@
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar",
-            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar",
+            "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.30.14/jsoniter-scala-core_2.12-2.30.14.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.7/twirl-api_2.12-2.0.7.jar",
             "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar",
@@ -311,11 +311,11 @@
             },
             "classpath": [
                 "/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/play-scala-seed/project/.bloop/play-scala-seed-build/scala-2.12/sbt-1.0/classes",
-                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.3/sbt-bloop_2.12_1.0-2.0.3.jar",
+                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.5/sbt-bloop_2.12_1.0-2.0.5.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.5/sbt-plugin_2.12_1.0-3.0.5.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.16.2/sbt-giter8-scaffold-0.16.2.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-less/scala_2.12/sbt_1.0/1.1.2/jars/sbt-less.jar",
-                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.3/bloop-config_2.12-2.0.3.jar",
+                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.1.0/bloop-config_2.12-2.1.0.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.5/sbt-routes-compiler_2.12-3.0.5.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.5/play-run-support_2.12-3.0.5.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
@@ -333,7 +333,7 @@
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/webjars/es6-promise-node/2.1.1/es6-promise-node-2.1.1.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-js-engine/scala_2.12/sbt_1.0/1.2.2/jars/sbt-js-engine.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/jars/sbt-web.jar",
-                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar",
+                "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.30.14/jsoniter-scala-core_2.12-2.30.14.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12.jar",
                 "/Users/pablolarraz/.sbt/boot/scala-2.12.19/lib/scala-library.jar",
                 "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.7/twirl-api_2.12-2.0.7.jar",
@@ -415,17 +415,17 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "2.0.3",
+                    "version": "2.0.5",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.3/sbt-bloop_2.12_1.0-2.0.3.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.5/sbt-bloop_2.12_1.0-2.0.5.jar"
                         },
                         {
                             "name": "sbt-bloop",
                             "classifier": "sources",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.3/sbt-bloop_2.12_1.0-2.0.3-sources.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.5/sbt-bloop_2.12_1.0-2.0.5-sources.jar"
                         }
                     ]
                 },
@@ -483,17 +483,17 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "bloop-config_2.12",
-                    "version": "2.0.3",
+                    "version": "2.1.0",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "bloop-config_2.12",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.3/bloop-config_2.12-2.0.3.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.1.0/bloop-config_2.12-2.1.0.jar"
                         },
                         {
                             "name": "bloop-config_2.12",
                             "classifier": "sources",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.3/bloop-config_2.12-2.0.3-sources.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.1.0/bloop-config_2.12-2.1.0-sources.jar"
                         }
                     ]
                 },
@@ -774,17 +774,17 @@
                 {
                     "organization": "com.github.plokhotnyuk.jsoniter-scala",
                     "name": "jsoniter-scala-core_2.12",
-                    "version": "2.4.0",
+                    "version": "2.30.14",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "jsoniter-scala-core_2.12",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.30.14/jsoniter-scala-core_2.12-2.30.14.jar"
                         },
                         {
                             "name": "jsoniter-scala-core_2.12",
                             "classifier": "sources",
-                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0-sources.jar"
+                            "path": "/Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.30.14/jsoniter-scala-core_2.12-2.30.14-sources.jar"
                         }
                     ]
                 },

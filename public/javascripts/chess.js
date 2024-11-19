@@ -22,7 +22,6 @@ $(document).ready(function() {
         }
     });
     connectWebSocket()
-    // Initial board load
     loadBoard();
 });
 function connectWebSocket() {
@@ -30,7 +29,7 @@ function connectWebSocket() {
     websocket.setTimeout
 
     websocket.onopen = function(event) {
-        console.log("Connected to Websocket");
+        console.log("Connected to Websocket", websocket);
     }
 
     websocket.onclose = function () {
@@ -42,11 +41,16 @@ function connectWebSocket() {
     };
 
     websocket.onmessage = function (e) {
-        if (typeof e.data === "string") {
-            let json = JSON.parse(e.data);
-            //do something
+        if (e.data.startsWith("I received your message")) {
+            // Handle any test or debug messages from the backend
+            console.log("Received move confirmation", websocket);
+        } else {
+            // Assume it's the updated game state in JSON
+            console.log("muevo")
+            let gameState = JSON.parse(e.data);
+            updateBoardState(gameState);
         }
-
+        
     };
 }
 function loadBoard() {
