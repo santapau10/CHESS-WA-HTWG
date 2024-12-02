@@ -106,5 +106,4 @@ class HomeController @Inject() (
         out ! (msg.toString())
     }
   }
-
 }

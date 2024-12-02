@@ -7,8 +7,6 @@
 GET     /index                  controllers.HomeController.index()
 
 
-# route to get the board state
-GET     /start           controllers.HomeController.start()
 
 
 
@@ -31,7 +29,6 @@ POST     /rules                      controllers.HomeController.rules()
 
 # route to get rules
 GET     /rules                      controllers.HomeController.rules()
-
 
 GET     /jsonGame                   controllers.HomeController.jsonGame()
 

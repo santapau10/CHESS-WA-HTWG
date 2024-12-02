@@ -3,10 +3,10 @@
 $(document).ready(function() {
     $(".cell").on("click", function() {
         const targetCell = $(this).data("coords");
-        
+
         if (targetCell) {
             const origin = convertToChessNotation(targetCell);
-            
+
             $.ajax({
                 url: "/move/",
                 type: "POST",
@@ -50,7 +50,7 @@ function connectWebSocket() {
             let gameState = JSON.parse(e.data);
             updateBoardState(gameState);
         }
-        
+
     };
 }
 function loadBoard() {
@@ -101,7 +101,7 @@ function renderBoard(pieces) {
 // Convert board coordinates to chess notation (e.g., 1,0 -> "a2")
 function convertToChessNotation(coords) {
     const [row, col] = coords.split(',').map(Number);
-    const file = String.fromCharCode('a'.charCodeAt(0) + row); 
-    const rank = (col + 1).toString(); 
+    const file = String.fromCharCode('a'.charCodeAt(0) + row);
+    const rank = (col + 1).toString();
     return file + rank;
 }
