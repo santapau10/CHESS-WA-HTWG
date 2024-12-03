@@ -13,7 +13,7 @@ $(document).ready(function() {
                 contentType: "application/json",
                 data: JSON.stringify({ origin: origin }),
                 success: function() {
-                    updateBoardState();
+                    loadBoard();
                 },
                 error: function() {
                     alert("Invalid move or server error.");
@@ -48,7 +48,7 @@ function connectWebSocket() {
             // Assume it's the updated game state in JSON
             console.log("muevo")
             let gameState = JSON.parse(e.data);
-            updateBoardState(gameState);
+            loadBoard(gameState);
         }
 
     };
@@ -63,20 +63,6 @@ function loadBoard() {
         },
         error: function() {
             alert("Error loading the board.");
-        }
-    });
-}
-
-function updateBoardState() {
-    $.ajax({
-        url: "/jsonGame",
-        type: "GET",
-        dataType: "json",
-        success: function(boardData) {
-            renderBoard(boardData.game.pieces); // Render board with updated data
-        },
-        error: function() {
-            alert("Error updating board state.");
         }
     });
 }

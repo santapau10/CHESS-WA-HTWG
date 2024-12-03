@@ -1,113 +1,127 @@
 $(document).ready(function () {
     Vue.component('chess-board', {
-        template: `
-    <div v-for="(row, rowIndex) in board" :key="rowIndex" class="chesshtml-row">
-      <div
-        v-for="(cell, colIndex) in row"
-        :key="colIndex"
-        :class="cellClass(rowIndex, colIndex)"
-        :data-coords="\`\${rowIndex},\${colIndex}\`"
-        class="cell"
-        @click="handleCellClick(rowIndex, colIndex)"
-      >
-        <img v-if="cell.piece" :src="getPieceImage(cell.piece)" alt="piece" class="piece" />
-      </div>
-    </div>
-  `,
-        data: function () {
+        data() {
             return {
-                // Board-Daten, initialisiert mit den Schachbrett-Daten
-                board: [
-                    [
-                        {piece: {icon: 'rook.png', color: 'white'}, row: 0, col: 0},
-                        {piece: {icon: 'knight.png', color: 'white'}, row: 0, col: 1},
-                        {piece: {icon: 'bishop.png', color: 'white'}, row: 0, col: 2},
-                        {piece: {icon: 'queen.png', color: 'white'}, row: 0, col: 3},
-                        {piece: {icon: 'king.png', color: 'white'}, row: 0, col: 4},
-                        {piece: {icon: 'bishop.png', color: 'white'}, row: 0, col: 5},
-                        {piece: {icon: 'knight.png', color: 'white'}, row: 0, col: 6},
-                        {piece: {icon: 'rook.png', color: 'white'}, row: 0, col: 7}
-                    ],
-                    [
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 0},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 1},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 2},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 3},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 4},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 5},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 6},
-                        {piece: {icon: 'pawn.png', color: 'white'}, row: 1, col: 7}
-                    ],
-                    [
-                        {piece: null, row: 2, col: 0},
-                        {piece: null, row: 2, col: 1},
-                        {piece: null, row: 2, col: 2},
-                        {piece: null, row: 2, col: 3},
-                        {piece: null, row: 2, col: 4},
-                        {piece: null, row: 2, col: 5},
-                        {piece: null, row: 2, col: 6},
-                        {piece: null, row: 2, col: 7}
-                    ],
-                    [
-                        {piece: null, row: 3, col: 0},
-                        {piece: null, row: 3, col: 1},
-                        {piece: null, row: 3, col: 2},
-                        {piece: null, row: 3, col: 3},
-                        {piece: null, row: 3, col: 4},
-                        {piece: null, row: 3, col: 5},
-                        {piece: null, row: 3, col: 6},
-                        {piece: null, row: 3, col: 7}
-                    ],
-                    [
-                        {piece: null, row: 4, col: 0},
-                        {piece: null, row: 4, col: 1},
-                        {piece: null, row: 4, col: 2},
-                        {piece: null, row: 4, col: 3},
-                        {piece: null, row: 4, col: 4},
-                        {piece: null, row: 4, col: 5},
-                        {piece: null, row: 4, col: 6},
-                        {piece: null, row: 4, col: 7}
-                    ],
-                    [
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 0},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 1},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 2},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 3},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 4},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 5},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 6},
-                        {piece: {icon: 'pawn.png', color: 'black'}, row: 5, col: 7}
-                    ],
-                    [
-                        {piece: {icon: 'rook.png', color: 'black'}, row: 6, col: 0},
-                        {piece: {icon: 'knight.png', color: 'black'}, row: 6, col: 1},
-                        {piece: {icon: 'bishop.png', color: 'black'}, row: 6, col: 2},
-                        {piece: {icon: 'queen.png', color: 'black'}, row: 6, col: 3},
-                        {piece: {icon: 'king.png', color: 'black'}, row: 6, col: 4},
-                        {piece: {icon: 'bishop.png', color: 'black'}, row: 6, col: 5},
-                        {piece: {icon: 'knight.png', color: 'black'}, row: 6, col: 6},
-                        {piece: {icon: 'rook.png', color: 'black'}, row: 6, col: 7}
-                    ]
-                ]
-            }
+                board: [], // Rendered board
+                basePath: basePath, // Base path for images
+            };
+        },
+        template: `
+            <div class="chess-board">
+                <div v-for="(row, rowIndex) in board" :key="rowIndex" class="chesshtml-row">
+                    <div
+                        v-for="(cell, colIndex) in row"
+                        :key="colIndex"
+                        :class="cellClass(rowIndex, colIndex)"
+                        :data-coords="\`\${rowIndex},\${colIndex}\`"
+                        class="cell"
+                        @click="handleCellClick(rowIndex, colIndex)"
+                    >
+                        <img v-if="cell.piece" :src="getPieceImage(cell)" alt="piece" class="piece" />
+                    </div>
+                </div>
+            </div>
+        `,
+        created() {
+            this.connectWebSocket(); // Establish WebSocket connection
+            this.loadBoard(); // Load the board when component is created
         },
         methods: {
-            // Bestimmt die Hintergrundfarbe der Zellen (Schwarz oder Weiß)
+            loadBoard() {
+                $.ajax({
+                    url: "/jsonGame", // Endpoint that returns game state
+                    type: "GET",
+                    dataType: "json",
+                    success: (response) => {
+                        this.board = this.renderBoard(response.game.pieces);
+                    },
+                    error: () => {
+                        alert("Error loading the board.");
+                    }
+                });
+            },
+            renderBoard(pieces) {
+                const board = Array.from({ length: 8 }, () => Array(8).fill({}));
+                pieces.forEach(piece => {
+                    const { x, y } = piece.cords;
+                    board[x][y] = {
+                        piece: piece.piece,
+                        color: piece.color.toLowerCase().trim()
+                    };
+                });
+                return board;
+            },
             cellClass(rowIndex, colIndex) {
                 return (rowIndex + colIndex) % 2 === 0 ? 'dark-cell' : 'light-cell';
             },
-            // Gibt das Bild des Schachstücks basierend auf dem Stück zurück
-            getPieceImage(piece) {
-                if (piece) {
-                    return `images/${piece.color}/${piece.icon}`;
+            getPieceImage(cell) {
+                if (cell.piece && cell.color) {
+                    return `${this.basePath}/${cell.color}/${cell.piece.toLowerCase()}.png`;
                 }
-                return ''; // Keine Figur in der Zelle
+                return '';
             },
-            // Handle Click auf eine Zelle
             handleCellClick(rowIndex, colIndex) {
                 console.log(`Clicked on cell at: ${rowIndex}, ${colIndex}`);
-                // Hier kann die Logik zum Ziehen der Schachfiguren implementiert werden
+                const targetCell = `${rowIndex},${colIndex}`;
+                const origin = this.convertToChessNotation(targetCell); // Convert to chess notation
+                this.sendMove(origin); // Send move via POST request to backend
+            },
+            sendMove(origin) {
+                $.ajax({
+                    url: "/move/", // The route where the move is processed
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ origin: origin }),
+                    success: () => {
+                        this.loadBoard(); // Reload the board after move
+                    },
+                    error: () => {
+                        alert("Invalid move or server error.");
+                    }
+                });
+            },
+            convertToChessNotation(coords) {
+                const [row, col] = coords.split(',').map(Number);
+                const file = String.fromCharCode('a'.charCodeAt(0) + row);
+                const rank = (col + 1).toString();
+                return file + rank; // Convert to chess notation like "a2", "h8", etc.
+            },
+            connectWebSocket() {
+                const websocket = new WebSocket("ws://localhost:9000/websocket");
+
+                websocket.onopen = (event) => {
+                    console.log("Connected to Websocket", websocket);
+                };
+
+                websocket.onclose = () => {
+                    console.log('Connection with Websocket Closed!');
+                };
+
+                websocket.onerror = (error) => {
+                    console.log('Error in Websocket Occurred: ' + error);
+                };
+
+                websocket.onmessage = (e) => {
+                    if (e.data.startsWith("I received your message")) {
+                        // Handle any test or debug messages from the backend
+                        console.log("Received move confirmation", websocket);
+                    } else {
+                        // Assume it's the updated game state in JSON
+                        console.log("Received game state update");
+                        console.log(e.data)
+                        let gameState = JSON.parse(e.data);
+                        this.loadBoardFromWebSocket(gameState); // Properly call Vue's method
+                    }
+                };
+            },
+            loadBoardFromWebSocket(gameState) {
+                // If the game state contains a list of pieces, load the board
+                this.board = this.renderBoard(gameState.game.pieces);
             }
         }
+    });
+
+    new Vue({
+        el: "#game"
     });
 });
