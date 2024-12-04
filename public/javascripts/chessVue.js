@@ -56,7 +56,8 @@ $(document).ready(function () {
             },
             getPieceImage(cell) {
                 if (cell.piece && cell.color) {
-                    return `${this.basePath}/${cell.color}/${cell.piece.toLowerCase()}.png`;
+                    const pieceName = cell.piece.charAt(0).toUpperCase() + cell.piece.slice(1).toLowerCase();
+                    return `${this.basePath}/${cell.color}/${pieceName}.png`;
                 }
                 return '';
             },

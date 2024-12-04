@@ -1,15 +1,15 @@
 package controllers
 
-import javax.inject.*
-import play.api.*
+import javax.inject._
+import play.api._
 import play.api.libs.json._
-import play.api.mvc.*
+import play.api.mvc._
 import chess.view.view.TUI
-import chess.controller.*
-import chess.module.*
+import chess.controller._
+import chess.module._
 import com.google.inject.Guice
 import com.google.inject.Injector
-import chess.controller.controller.*
+import chess.controller.controller._
 import org.apache.pekko.actor._
 import org.apache.pekko.stream.Materializer
 import play.api.libs.streams.ActorFlow
@@ -20,9 +20,9 @@ import play.libs.Json
 
 @Singleton
 class HomeController @Inject() (
-    val controllerComponents: ControllerComponents
-)(implicit system: ActorSystem, mat: Materializer)
-    extends BaseController
+                                 val controllerComponents: ControllerComponents
+                               )(implicit system: ActorSystem, mat: Materializer)
+  extends BaseController
     with Observer {
 
   val injector = Guice.createInjector(new ChessModule)
@@ -73,15 +73,19 @@ class HomeController @Inject() (
   def jsonGame() = Action { implicit request: Request[AnyContent] =>
     Ok(controller.getGame.toJson)
   }
+
   controller.add(this)
+
+  /** WebSocket endpoint */
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
-      println("Connect received")
+      println("WebSocket connection received")
       websocketActors = out :: websocketActors
-      // websocketActor = out
       MyWebSocketActor.props(out)
     }
   }
+
+  /** Observer callback for game state changes */
   override def update(event: Event): Unit = {
     event match {
       case Event.STATE_CHANGED =>
@@ -94,16 +98,25 @@ class HomeController @Inject() (
     }
   }
 
+  /** WebSocket actor to handle incoming messages */
   object MyWebSocketActor {
     def props(out: ActorRef) = Props(new MyWebSocketActor(out))
   }
+
   class MyWebSocketActor(out: ActorRef) extends Actor {
     def receive = {
       case msg: String =>
-        out ! ("I received your message: " + msg)
+        // Handle the start message
+        if (msg == "start") {
+          controller.changeState(TurnStateWhite(controller))  // Start the game
+          out ! "Game Started"  // Notify the client
+        } else {
+          out ! ("I received your message: " + msg)  // Handle other messages
+        }
       case msg: JsValue =>
+        // Handle JSON messages
         println(msg)
-        out ! (msg.toString())
+        out ! msg.toString()  // Send the JSON back to the client
     }
   }
 }
