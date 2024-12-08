@@ -16,14 +16,14 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* Links ausrichten */
-    background-color: transparent; /* Entfernt die weiße Hintergrundfarbe */
-    padding: 10px; /* Füge etwas Padding hinzu, wenn gewünscht */
-    box-shadow: none; /* Entfernt den Schatten */
-    z-index: 1000; /* Füge dies hinzu */
+    justify-content: flex-start;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: none;
+    z-index: 1000;
 }
 
-/* Navigationselemente im flexiblen Layout */
+
 .nav-container .nav {
     display: flex;
     flex-wrap: wrap;

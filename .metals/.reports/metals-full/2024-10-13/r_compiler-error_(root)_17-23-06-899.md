@@ -60,9 +60,7 @@ class HomeController @Inject() (
     Ok("Good response")
   }
 
-  def about() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.about())
-  }
+
 }
 
 ```
