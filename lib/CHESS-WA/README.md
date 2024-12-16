@@ -68,16 +68,16 @@ To run the project using Docker, follow these steps:
 #### 3. Build Docker image:
 
    ```sh
-   docker build -t chessBoard-se-htwg .
+   docker build -t chesshtml-se-htwg .
    ```
 #### 4. Start with GUI:
 
    ```sh
-   docker run -it -e DISPLAY=host.docker.internal:0 -e HEADLESS=false chessBoard-se-htwg
+   docker run -it -e DISPLAY=host.docker.internal:0 -e HEADLESS=false chesshtml-se-htwg
    ```
 
    if X11 server is missing download and start Xming
 #### or start without GUI
   ```sh
-   docker run -it -e HEADLESS=true chessBoard-se-htwg
+   docker run -it -e HEADLESS=true chesshtml-se-htwg
    ```
