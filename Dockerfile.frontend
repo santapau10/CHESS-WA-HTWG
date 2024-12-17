@@ -1,0 +1,26 @@
+# Stage 1: Build Vue app (Frontend)
+FROM node:18 AS build
+
+# Set working directory for Vue app
+WORKDIR /app/frontend
+
+# Copy package.json and package-lock.json for Vue app
+COPY chess-app/package*.json ./
+
+# Install Vue app dependencies
+RUN npm install
+
+# Copy the rest of the Vue app files
+COPY chess-app/ ./
+
+# Build the Vue app
+RUN npm run build
+
+# Stage 2: Set up Nginx to serve the Vue app
+FROM nginx:alpine
+
+# Copy the build from the Vue app build stage to the Nginx server folder
+COPY --from=build /app/frontend/dist /usr/share/nginx/html
+
+# Expose port 80 for Nginx
+EXPOSE 80

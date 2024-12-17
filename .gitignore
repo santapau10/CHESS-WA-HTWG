@@ -8,3 +8,5 @@ target
 /.settings
 /.bloop
 /RUNNING_PID
+node_modules
+node_modules

@@ -36,7 +36,7 @@ export default {
     getPieceImage(cell) {
       if (cell.piece && cell.color) {
         const pieceName = cell.piece.charAt(0).toUpperCase() + cell.piece.slice(1).toLowerCase();
-        return `http://localhost:9000/assets/images/${cell.color}/${pieceName}.png`;
+        return `${process.env.VUE_APP_BACKEND_URL}/assets/images/${cell.color}/${pieceName}.png`;
 
 
       }

@@ -1,0 +1,20 @@
+# Stage 1: Set up Play Framework backend (using Java 19)
+FROM openjdk:23-jdk-slim AS backend
+
+# Set working directory for Play app
+WORKDIR /app
+
+# Copy the Play Framework distribution file (adjust path if needed)
+COPY target/universal/play-scala-seed-1.0-SNAPSHOT.zip /app/
+
+# Install unzip utility and unpack the distribution
+RUN apt-get update && apt-get install -y unzip && \
+    unzip play-scala-seed-1.0-SNAPSHOT.zip && \
+    mv play-scala-seed-1.0-SNAPSHOT/* . && \
+    rm -rf play-scala-seed-1.0-SNAPSHOT.zip play-scala-seed-1.0-SNAPSHOT
+
+# Expose port 9000 for Play Framework app
+EXPOSE 8008
+
+# Define the command to run the Play app
+CMD ["bin/play-scala-seed", "-Dplay.http.secret.key=wOZy52FIaz2nWf2sguS5Nkw7KXmwDmbY0HACyHYz0wFWCW26odgAoBHMyqaveFzC", "-Dhttp.port=8080"]

@@ -31,7 +31,7 @@ import ChessBoard from "./components/Chess-board.vue";
 import Settings from "./components/Start.vue";
 import OfflineComponent from "./components/OfflineComponent.vue";
 
-const API_BASE_URL = "http://localhost:9000";
+const API_BASE_URL = process.env.VUE_APP_BACKEND_URL;
 
 export default {
   name: "App",

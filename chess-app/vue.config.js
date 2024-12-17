@@ -4,9 +4,10 @@ module.exports = defineConfig({
 })
 module.exports = {
   devServer: {
+    port: 8080,
     proxy: {
       "/": {
-        target: "http://localhost:9000", // URL deines Backends
+        target: process.env.VUE_APP_BACKEND_URL, // URL deines Backends
         changeOrigin: true,
       },
     },
