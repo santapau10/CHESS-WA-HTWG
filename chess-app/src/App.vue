@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <div v-if="currentView === 'Settings'">
-      <Settings @navigate="navigate" :socket="socket" />
+    <!-- Ladeoverlay (nur für Start/Board-Laden, nicht beim Bewegen) -->
+    <div v-if="loading" class="loading-overlay">
+      <p>Loading...</p>
     </div>
-    <div v-else-if="currentView === 'ChessBoard'">
-      <ChessBoard
-          :board="board"
-          :basePath="basePath"
-          @cell-click="handleCellClick"
-      />
+
+    <!-- Offline-Komponente anzeigen -->
+    <div v-else-if="isOffline">
+      <OfflineComponent @go-to-settings="reloadPage" />
+    </div>
+
+    <!-- Hauptansichten -->
+    <div v-else>
+      <div v-if="currentView === 'Settings'">
+        <Settings @start="startGame" />
+      </div>
+      <div v-else-if="currentView === 'ChessBoard'">
+        <ChessBoard
+            :board="board"
+            :basePath="basePath"
+            @cell-click="handleCellClick"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -16,120 +29,143 @@
 <script>
 import ChessBoard from "./components/Chess-board.vue";
 import Settings from "./components/Start.vue";
+import OfflineComponent from "./components/OfflineComponent.vue";
+
+const API_BASE_URL = "http://localhost:9000";
 
 export default {
   name: "App",
+  components: { ChessBoard, Settings, OfflineComponent },
   data() {
     return {
-      currentView: "ChessBoard", // Initial view
+      currentView: "Settings", // Startansicht
       board: [],
       basePath: "/path/to/your/images",
-      socket: new WebSocket("ws://localhost:9000/socket"),
+      loading: false, // Ladezustand (außer Moves)
+      isOffline: false, // Offline-Zustand
     };
   },
-  components: {
-    ChessBoard,
-    Settings,
-  },
-  mounted() {
-    console.log("App mounted, setting up WebSocket...");
-    this.setupWebSocket();
+  created() {
+    this.registerServiceWorker(); // Service Worker registrieren
   },
   methods: {
-    navigate(view) {
-      console.log(`Navigating to view: ${view}`);
-      this.currentView = view;
-      if (view === "ChessBoard") {
-        this.loadBoard();
+    registerServiceWorker() {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+            .register("/service-worker.js") // Pfad zur SW-Datei
+            .then((registration) => {
+              console.log("Service Worker registered with scope:", registration.scope);
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
       }
     },
-    loadBoard() {
-      console.log("Loading board from server...");
-      fetch("http://localhost:9000/jsonGame", {
-        method: "GET",
-        mode: "no-cors", // 'no-cors' sollte eher vermieden werden, falls der Server es unterstützt
-      })
-          .then((response) => {
-            console.log("Response received from server:", response);
-            return response.json();
-          })
-          .then((data) => {
-            console.log("Board data received:", data);
-            this.board = this.renderBoard(data.game.pieces);
-          })
-          .catch((error) => {
-            console.error("Error loading board:", error);
-            alert("Error loading the board.");
-          });
+    async startGame() {
+      this.loading = true;
+      const isServerOnline = await this.checkServerStatusWithTimeout(5000);
+
+      if (isServerOnline) {
+        try {
+          await fetch(`${API_BASE_URL}/start`, { method: "POST" });
+          this.currentView = "ChessBoard";
+          await this.loadBoard();
+        } catch (error) {
+          console.error("Error starting the game:", error);
+          alert("Failed to start the game.");
+        }
+      }
+      this.loading = false; // Ladeanzeige immer deaktivieren
     },
-    renderBoard(pieces) {
-      console.log("Rendering board with pieces:", pieces);
-      const board = Array.from({ length: 8 }, () => Array(8).fill({}));
-      pieces.forEach((piece) => {
-        const { x, y } = piece.cords;
-        board[x][y] = {
-          piece: piece.piece,
-          color: piece.color.toLowerCase().trim(),
-        };
-      });
-      console.log("Rendered board:", board);
-      return board;
-    },
-    handleCellClick(rowIndex, colIndex) {
-      console.log(`Clicked on cell at: ${rowIndex}, ${colIndex}`);
+    async loadBoard() {
+      this.loading = true;
+      const isServerOnline = await this.checkServerStatusWithTimeout(5000);
+
+      if (isServerOnline) {
+        try {
+          const response = await fetch(`${API_BASE_URL}/jsonGame`);
+          const data = await response.json();
+          this.board = this.renderBoard(data.game.pieces);
+        } catch (error) {
+          console.error("Error loading board:", error);
+        }
+      }
+      this.loading = false; // Ladeanzeige deaktivieren
+    }
+    ,
+    async handleCellClick(rowIndex, colIndex) {
       const targetCell = `${rowIndex},${colIndex}`;
       const origin = this.convertToChessNotation(targetCell);
-      console.log("Origin in chess notation:", origin);
-      this.sendMove(origin);
+      console.log("Sending move:", origin);
+
+      try {
+        await fetch(`${API_BASE_URL}/move/`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ origin }),
+        });
+        this.loadBoard(); // Lade Board neu, ohne `loading` zu aktivieren
+      } catch (error) {
+        console.error("Error sending move:", error);
+        alert("Invalid move or server error.");
+      }
     },
-    sendMove(origin) {
-      console.log("Sending move with origin:", origin);
-      fetch("/move/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ origin }),
-      })
-          .then(() => {
-            console.log("Move sent successfully, reloading board...");
-            this.loadBoard();
-          })
-          .catch((error) => {
-            console.error("Error sending move:", error);
-            alert("Invalid move or server error.");
-          });
+    async checkServerStatusWithTimeout(timeout) {
+      try {
+        const response = await Promise.race([
+          fetch(`${API_BASE_URL}/`, { method: "GET" }),
+          new Promise((_, reject) =>
+              setTimeout(() => reject(new Error("Timeout")), timeout)
+          ),
+        ]);
+        if (response && response.ok) {
+          this.isOffline = false; // Server antwortet erfolgreich
+          return true;
+        }
+      } catch (error) {
+        console.error("Server status check failed:", error.message);
+        this.isOffline = true; // Server nicht erreichbar
+        return false;
+      }
+    }
+    ,
+    renderBoard(pieces) {
+      const board = Array.from({ length: 8 }, () => Array(8).fill({}));
+      pieces.forEach(({ cords, piece, color }) => {
+        board[cords.x][cords.y] = {
+          piece,
+          color: color.toLowerCase().trim(),
+        };
+      });
+      return board;
     },
     convertToChessNotation(coords) {
       const [row, col] = coords.split(",").map(Number);
       const file = String.fromCharCode("a".charCodeAt(0) + row);
       const rank = (col + 1).toString();
-      const chessNotation = file + rank;
-      console.log(`Converted coordinates ${coords} to chess notation: ${chessNotation}`);
-      return chessNotation;
+      return file + rank;
     },
-    setupWebSocket() {
-      console.log("Setting up WebSocket connection...");
-      this.socket = new WebSocket("ws://localhost:9000/socket");
-
-      this.socket.onopen = () => {
-        console.log("WebSocket connected");
-      };
-
-      this.socket.onmessage = (event) => {
-        console.log("Message from server: ", event.data);
-        if (event.data === "Game Started") {
-          console.log("Game started, switching to ChessBoard view.");
-          this.currentView = "ChessBoard";
-        }
-      };
-
-      this.socket.onerror = (error) => {
-        console.error("WebSocket error: ", error);
-      };
-
-      this.socket.onclose = () => {
-        console.log("WebSocket connection closed");
-      };
+    reloadPage() {
+      this.isOffline = false;
+      this.currentView = "Settings";
     },
   },
 };
 </script>
+
+<style scoped>
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+</style>
