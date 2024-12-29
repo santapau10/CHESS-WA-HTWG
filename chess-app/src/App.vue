@@ -46,6 +46,7 @@ export default {
     };
   },
   created() {
+    console.log("API_BASE_URL:", API_BASE_URL);
     this.registerServiceWorker(); // Service Worker registrieren
   },
   methods: {
