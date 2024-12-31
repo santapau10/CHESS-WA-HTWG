@@ -46,7 +46,6 @@ export default {
     };
   },
   created() {
-    console.log("API_BASE_URL:", API_BASE_URL);
     this.registerServiceWorker(); // Service Worker registrieren
   },
   methods: {
@@ -68,7 +67,7 @@ export default {
 
       if (isServerOnline) {
         try {
-          await fetch(`${API_BASE_URL}/start`, { method: "POST" });
+          await fetch(`${API_BASE_URL}/start`, { method: "POST", headers: {"Content-Type": "application/json"},});
           this.currentView = "ChessBoard";
           await this.loadBoard();
         } catch (error) {
@@ -114,7 +113,7 @@ export default {
     async checkServerStatusWithTimeout(timeout) {
       try {
         const response = await Promise.race([
-          fetch(`${API_BASE_URL}/`, { method: "GET" }),
+          fetch(`${API_BASE_URL}/`, { method: "GET", headers: {"Content-Type": "application/json",},}),
           new Promise((_, reject) =>
               setTimeout(() => reject(new Error("Timeout")), timeout)
           ),
