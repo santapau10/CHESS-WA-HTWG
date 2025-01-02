@@ -16,20 +16,21 @@ import play.api.libs.streams.ActorFlow
 import org.apache.pekko.actor.ActorRef
 import chess.util.Observer
 import chess.util.Event
+import org.apache.pekko.actor.TypedActor.self
 import play.libs.Json
 
 @Singleton
 class HomeController @Inject() (
-                                 val controllerComponents: ControllerComponents
-                               )(implicit system: ActorSystem, mat: Materializer)
-  extends BaseController
-    with Observer {
+                                 val controllerComponents: ControllerComponents,
+                                 implicit val system: ActorSystem,
+                                 implicit val mat: Materializer
+                               ) extends BaseController
+  with Observer {
 
   val injector = Guice.createInjector(new ChessModule)
-  private val controller = injector.getInstance(classOf[IController])
+  private var controller = injector.getInstance(classOf[IController])
   private val tui = new TUI(controller)
-  var websocketActor: ActorRef = null;
-  var websocketActors: List[ActorRef] = List() // Lista de actores WebSocket
+  var websocketActors: List[ActorRef] = List() // Liste der WebSocket-Actors
 
   /** Action to render the homepage */
   def index() = Action { implicit request: Request[AnyContent] =>
@@ -81,7 +82,7 @@ class HomeController @Inject() (
     ActorFlow.actorRef { out =>
       println("WebSocket connection received")
       websocketActors = out :: websocketActors
-      MyWebSocketActor.props(out)
+      MyWebSocketActor.props(out, self)
     }
   }
 
@@ -89,7 +90,7 @@ class HomeController @Inject() (
   override def update(event: Event): Unit = {
     event match {
       case Event.STATE_CHANGED =>
-        if (websocketActors != null) {
+        if (websocketActors.nonEmpty) {
           websocketActors.foreach { actor =>
             actor ! controller.getGame.toJson.toString()
           }
@@ -100,23 +101,35 @@ class HomeController @Inject() (
 
   /** WebSocket actor to handle incoming messages */
   object MyWebSocketActor {
-    def props(out: ActorRef) = Props(new MyWebSocketActor(out))
+    def props(out: ActorRef, parent: ActorRef) = Props(new MyWebSocketActor(out, parent))
   }
 
-  class MyWebSocketActor(out: ActorRef) extends Actor {
+  class MyWebSocketActor(out: ActorRef, parent: ActorRef) extends Actor {
     def receive = {
       case msg: String =>
-        // Handle the start message
         if (msg == "start") {
-          controller.changeState(TurnStateWhite(controller))  // Start the game
-          out ! "Game Started"  // Notify the client
+          controller.changeState(TurnStateWhite(controller))
+          out ! "Game Started"
         } else {
-          out ! ("I received your message: " + msg)  // Handle other messages
+          out ! ("I received your message: " + msg)
         }
       case msg: JsValue =>
-        // Handle JSON messages
         println(msg)
-        out ! msg.toString()  // Send the JSON back to the client
+        out ! msg.toString()
     }
+
+    override def postStop(): Unit = {
+      websocketActors = websocketActors.filterNot(_ == out) // Actor entfernen
+      if (websocketActors.isEmpty) {
+        println("No WebSocket connections remaining. Resetting controller.")
+        resetController()
+      }
+    }
+  }
+
+  /** Resets the controller state */
+  private def resetController(): Unit = {
+    controller.initGame()
+    println("Controller has been reset.")
   }
 }

@@ -10675,3 +10675,832 @@ Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/
 [0m
 dic 31, 2024 9:42:01 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.12.31 09:55:31 INFO  Shutting down server[0m
+2024.12.31 09:55:31 INFO  shutting down Metals[0m
+2024.12.31 09:55:31 INFO  Exiting server[0m
+2025.01.01 21:29:02 INFO  Started: Metals version 1.4.2 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG' for client Visual Studio Code 1.96.2.[0m
+2025.01.01 21:29:04 INFO  Attempting to connect to the build server...[0m
+2025.01.01 21:29:04 INFO  No running Bloop server found, starting one.[0m
+2025.01.01 21:29:11 INFO  Starting compilation server[0m
+2025.01.01 21:29:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist![0m
+2025.01.01 21:29:12 ERROR Bloop server PID: 31105
+Ignoring SIGINT
+Will truncate output file /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/socket.
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+[0m
+2025.01.01 21:29:12 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:755)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:630)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+[0m
+2025.01.01 21:31:22 INFO  Shutting down server[0m
+2025.01.01 21:31:22 INFO  shutting down Metals[0m
+2025.01.01 21:31:22 INFO  Exiting server[0m
+2025.01.01 23:26:32 INFO  Started: Metals version 1.4.2 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG' for client Visual Studio Code 1.96.2.
+2025.01.01 23:26:34 INFO  Attempting to connect to the build server...
+2025.01.01 23:26:34 INFO  Found a Bloop server running
+2025.01.01 23:26:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.01.01 23:26:34 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.01.01 23:26:35 ERROR Bloop server PID: 31105
+Ignoring SIGINT
+Will truncate output file /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/socket.
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+
+2025.01.01 23:26:35 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:755)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:630)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.01.01 23:26:38 INFO  Shutting down server
+2025.01.01 23:26:38 INFO  shutting down Metals
+2025.01.01 23:26:38 INFO  Exiting server
+2025.01.02 09:19:22 INFO  Started: Metals version 1.4.2 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG' for client Visual Studio Code 1.96.2.
+2025.01.02 09:19:24 INFO  Attempting to connect to the build server...
+2025.01.02 09:19:24 INFO  Found a Bloop server running
+2025.01.02 09:19:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.1/scala3-compiler_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.1/scala3-interfaces-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.1/tasty-core_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.5.0-scala-1/scala-asm-9.5.0-scala-1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.01.02 09:19:24 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.1/scaladoc_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.1/scala3-tasty-inspector_3-3.3.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 ERROR Bloop server PID: 31105
+Ignoring SIGINT
+Will truncate output file /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/pablolarraz/Library/Caches/ScalaCli/bloop/daemon/socket.
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+/Users/pablolarraz/Library/Caches/ScalaCli/bloop
+
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 WARN  Scala instance jar /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.01.02 09:19:25 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:755)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:630)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: bloop.data.Project$ProjectReadException: Failed to load project from /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.bloop/root.json
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:276)
+	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:264)
+	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:59)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskShift$Register$$anon$1.run(TaskShift.scala:65)
+	at monix.execution.internal.InterceptRunnable.run(InterceptRunnable.scala:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:56)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:172)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1865)
+	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:114)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at bloop.ScalaInstance.<init>(ScalaInstance.scala:110)
+	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:198)
+	at bloop.ScalaInstance$.$anonfun$apply$9(ScalaInstance.scala:204)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at bloop.ScalaInstance$.apply(ScalaInstance.scala:204)
+	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:298)
+	at scala.Option.flatMap(Option.scala:271)
+	at bloop.data.Project$.fromConfig(Project.scala:287)
+	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:270)
+	... 10 more
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.01.02 09:29:54 INFO  Shutting down server
+2025.01.02 09:29:54 INFO  shutting down Metals
+2025.01.02 09:29:54 INFO  Exiting server
+2025.01.02 09:30:06 INFO  Started: Metals version 1.4.2 in folders '/Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG' for client Visual Studio Code 1.96.2.
+2025.01.02 09:30:07 INFO  Attempting to connect to the build server...
+2025.01.02 09:30:07 INFO  Found a Bloop server running
+2025.01.02 09:30:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.01.02 09:30:09 INFO  Attempting to connect to the build server...
+2025.01.02 09:30:09 INFO  Found a Bloop server running
+2025.01.02 09:30:09 INFO  Attempting to connect to the build server...
+2025.01.02 09:30:09 INFO  Found a Bloop server running
+2025.01.02 09:30:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/project/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.01.02 09:30:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/pablolarraz/Desktop/Universidad/4oCurso/1erCuatrimestre/webapp/CHESS-WA-HTWG/project/.metals/bsp.trace.json or /Users/pablolarraz/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.01.02 09:30:12 INFO  time: Connected to build server in 5.13s
+2025.01.02 09:30:12 INFO  Connected to Build server: Bloop v2.0.6
+2025.01.02 09:30:13 INFO  time: Imported build in 0.34s
+2025.01.02 09:30:13 INFO  running doctor check
+2025.01.02 09:30:13 INFO  java targets: root, chess-wa-htwg-build, chess-wa-htwg-build-build, root-test
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.7/twirl-api_3-2.0.7-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.5/play-server_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.5/play-logback_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.5/play-pekko-http-server_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.5/play-filters-helpers_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.5/play-guice_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.5/play_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.5/play-streams_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.5/play-configuration_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.13/jcl-over-slf4j-2.0.13-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.4/play-json_3-3.0.4-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.4/play-functional_3-3.0.4-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-test_3/3.0.5/play-test_3-3.0.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/play/scalatestplus-play_3/7.0.1/scalatestplus-play_3-7.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/junit-interface/0.13.3/junit-interface-0.13.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/fluentlenium/fluentlenium-core/6.0.0/fluentlenium-core-6.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/htmlunit-driver/4.13.0/htmlunit-driver-4.13.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws_3/3.0.0/play-ahc-ws_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3/3.2.17/scalatest_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/mockito-4-11_3/3.2.17.0/mockito-4-11_3-3.2.17.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/selenium-4-12_3/3.2.17.0/selenium-4-12_3-3.2.17.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-cssparser/1.14.0/htmlunit-cssparser-1.14.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/atteo/classindex/classindex/3.13/classindex-3.13-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/maven/maven-model/3.9.1/maven-model-3.9.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.70.0/htmlunit-2.70.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/appium/java-client/8.2.1/java-client-8.2.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_3/3.0.0/play-ws_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws-standalone_3/3.0.0/play-ahc-ws-standalone_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-asynchttpclient/3.0.0/shaded-asynchttpclient-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-oauth/3.0.0/shaded-oauth-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3/3.2.17/scalatest-core_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3/3.2.17/scalatest-featurespec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3/3.2.17/scalatest-flatspec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3/3.2.17/scalatest-freespec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3/3.2.17/scalatest-funsuite_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3/3.2.17/scalatest-funspec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3/3.2.17/scalatest-propspec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3/3.2.17/scalatest-refspec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3/3.2.17/scalatest-wordspec_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3/3.2.17/scalatest-diagrams_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3/3.2.17/scalatest-matchers-core_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3/3.2.17/scalatest-shouldmatchers_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3/3.2.17/scalatest-mustmatchers_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.70.0/htmlunit-core-js-2.70.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.70.0/neko-htmlunit-2.70.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-xpath/2.70.0/htmlunit-xpath-2.70.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/brotli/dec/0.1.2/dec-0.1.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/shapesecurity/salvation2/3.0.1/salvation2-3.0.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.4.50.v20221201/websocket-client-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10/gson-2.10-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/cglib/cglib/3.3.0/cglib-3.3.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-validator/commons-validator/1.7/commons-validator-1.7-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-net/commons-net/3.9.0/commons-net-3.9.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_3/3.0.0/play-ws-standalone_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_3/3.0.0/play-ws-standalone-xml_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_3/3.0.0/play-ws-standalone-json_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/cachecontrol_3/3.0.0/cachecontrol_3-3.0.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3/3.2.17/scalactic_3-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.17/scalatest-compatible-3.2.17-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.4.50.v20221201/jetty-client-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.50.v20221201/jetty-util-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.50.v20221201/jetty-io-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.4.50.v20221201/websocket-common-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.1/asm-7.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-digester/commons-digester/2.1/commons-digester-2.1-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.50.v20221201/jetty-http-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:20 WARN  unexpected dependency: /Users/pablolarraz/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.4.50.v20221201/websocket-api-9.4.50.v20221201-sources.jar
+2025.01.02 09:30:22 INFO  time: indexed workspace in 9.05s
+ene 02, 2025 10:10:18 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
