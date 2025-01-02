@@ -67,7 +67,7 @@ export default {
 
       if (isServerOnline) {
         try {
-          await fetch(`${API_BASE_URL}/start`, { method: "POST", headers: {"Content-Type": "application/json"},});
+          await fetch(`${API_BASE_URL}/start`, { method: "POST", headers: {"Content-Type": "application/json"}, mode: 'cors'});
           this.currentView = "ChessBoard";
           await this.loadBoard();
         } catch (error) {
@@ -83,7 +83,7 @@ export default {
 
       if (isServerOnline) {
         try {
-          const response = await fetch(`${API_BASE_URL}/jsonGame`);
+          const response = await fetch(`${API_BASE_URL}/jsonGame`, { method: "GET", headers: {"Content-Type": "application/json"}, mode: 'cors'});
           const data = await response.json();
           this.board = this.renderBoard(data.game.pieces);
         } catch (error) {
@@ -103,6 +103,7 @@ export default {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ origin }),
+          mode: 'cors'
         });
         this.loadBoard(); // Lade Board neu, ohne `loading` zu aktivieren
       } catch (error) {
@@ -113,7 +114,7 @@ export default {
     async checkServerStatusWithTimeout(timeout) {
       try {
         const response = await Promise.race([
-          fetch(`${API_BASE_URL}/`, { method: "GET", headers: {"Content-Type": "application/json",},}),
+          fetch(`${API_BASE_URL}/`, { method: "GET", headers: {"Content-Type": "application/json",}, mode: 'cors'}),
           new Promise((_, reject) =>
               setTimeout(() => reject(new Error("Timeout")), timeout)
           ),
