@@ -7,7 +7,7 @@
             :key="colIndex"
             :class="cellClass(rowIndex, colIndex)"
             class="cell"
-            @click="handleCellClick(rowIndex, colIndex)"
+            @click="handleCellClick(rowIndex, colIndex, $event)"
         >
           <img v-if="cell.piece" :src="getPieceImage(cell)" alt="piece" class="piece" />
         </div>

@@ -61,6 +61,35 @@ export default {
             });
       }
     },
+    connectWebSocket() {
+      this.websocket = new WebSocket(`${API_BASE_URL}/websocket`);
+
+      this.websocket.onopen = () => {
+        console.log("Connected to WebSocket", this.websocket);
+      };
+
+      this.websocket.onclose = () => {
+        console.log("Connection with WebSocket Closed!");
+      };
+
+      this.websocket.onerror = (error) => {
+        console.log("Error in WebSocket Occurred: ", error);
+      };
+
+      this.websocket.onmessage = (e) => {
+        if (e.data.startsWith("I received your message")) {
+          console.log("Received move confirmation", this.websocket);
+        } else {
+          console.log("Received game state update");
+          const gameState = JSON.parse(e.data);
+          console.log("Game state:", gameState);
+          this.loadBoardFromWebSocket(gameState);
+        }
+      };
+    },
+    loadBoardFromWebSocket(gameState) {
+      this.board = this.renderBoard(gameState.game.pieces);
+    },
     async startGame() {
       this.loading = true;
       const isServerOnline = await this.checkServerStatusWithTimeout(5000);
@@ -70,6 +99,7 @@ export default {
           await fetch(`${API_BASE_URL}/start`, { method: "POST", headers: {"Content-Type": "application/json"}, mode: 'cors'});
           this.currentView = "ChessBoard";
           await this.loadBoard();
+          this.connectWebSocket(); // WebSocket-Verbindung herstellen
         } catch (error) {
           console.error("Error starting the game:", error);
           alert("Failed to start the game.");
@@ -105,7 +135,7 @@ export default {
           body: JSON.stringify({ origin }),
           mode: 'cors'
         });
-        this.loadBoard(); // Lade Board neu, ohne `loading` zu aktivieren
+        // this.loadBoard(); // Lade Board neu, ohne `loading` zu aktivieren
       } catch (error) {
         console.error("Error sending move:", error);
         alert("Invalid move or server error.");
