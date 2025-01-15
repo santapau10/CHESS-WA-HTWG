@@ -70,36 +70,46 @@ export default {
 
 <style scoped>
 .login-container {
-  max-width: 400px;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
+  background-image: url('@/assets/pictures/knight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Text sichtbar auf Hintergrundbild */
 }
 
 h2 {
   margin-bottom: 10px;
-  color: #333;
-  font-size: 24px;
+  color: white;
+  font-size: 30px;
 }
 
 .subtitle {
   margin-bottom: 20px;
-  color: #555;
+  color: white;
   font-size: 14px;
 }
 
 .input-group {
   margin-bottom: 15px;
   text-align: left;
+  width: 87%;
+  max-width: 400px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  color: #555;
+  color: white;
   font-weight: bold;
 }
 
@@ -112,35 +122,36 @@ input {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: darkslategrey;
   color: white;
   padding: 12px 15px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   width: 100%;
+  max-width: 400px;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: seagreen;
 }
 
 .or-divider {
   margin: 15px 0;
   font-size: 14px;
-  color: #888;
+  color: white;
 }
 
 .btn-secondary {
-  background-color: #ffffff;
-  color: #333;
-  border: 1px solid #ccc;
+  background-color: darkslategrey;
+  color: white;
   padding: 12px 15px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   width: 100%;
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +159,7 @@ input {
 }
 
 .btn-secondary:hover {
-  background-color: #f8f9fa;
+  background-color: seagreen;
 }
 
 .icon {
@@ -158,7 +169,7 @@ input {
 
 .switch-text {
   margin-top: 15px;
-  color: #555;
+  color: white;
 }
 
 .switch-text a {

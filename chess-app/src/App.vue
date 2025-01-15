@@ -18,7 +18,10 @@
     <!-- Hauptansicht nach erfolgreicher Anmeldung -->
     <div v-else>
       <div v-if="currentView === 'Settings'">
-        <Settings @start="startGame" />
+        <Settings @start="startGame" @rules="switchToRules" />
+      </div>
+      <div v-else-if="currentView === 'Rules'">
+        <Rules @back="switchToSettings" />
       </div>
       <div v-else-if="currentView === 'ChessBoard'">
         <ChessBoard
@@ -36,6 +39,7 @@ import Login from "./components/LoginComponent.vue";
 import Register from "./components/registerComponent.vue";
 import ChessBoard from "./components/Chess-board.vue";
 import Settings from "./components/Start.vue";
+import Rules from "./components/Rules.vue";
 import {auth} from "./firebase";
 import {onAuthStateChanged} from "firebase/auth";
 
@@ -43,57 +47,63 @@ const API_BASE_URL = process.env.VUE_APP_BACKEND_URL;
 
 export default {
   name: "App",
-  components: {Login, Register, ChessBoard, Settings},
+  components: { Login, Register, ChessBoard, Settings, Rules },
   data() {
     return {
-      user: null, // Benutzerobjekt für den angemeldeten Nutzer
-      currentView: "Login", // Startansicht (Login)
+      user: null,
+      currentView: "Login",
       board: [],
       basePath: "/path/to/your/images",
-      loading: false, // Ladezustand
-      socket: null, // WebSocket-Verbindung
+      loading: false,
+      socket: null,
     };
   },
   created() {
-    this.checkPersistentLogin(); // Prüft, ob der Benutzer bereits eingeloggt ist
+    this.checkPersistentLogin();
   },
   mounted() {
-    // Hier kannst du den WebSocket-Verbindungsmechanismus hinzufügen
     this.setupWebSocket();
   },
   unmounted() {
-    // Schließt die WebSocket-Verbindung, wenn die Seite verlassen wird
     if (this.socket) {
       this.socket.close();
     }
   },
   methods: {
-    // Prüft auf persistente Anmeldung
     checkPersistentLogin() {
       onAuthStateChanged(auth, (user) => {
         if (user) {
-          this.user = user; // Benutzer setzen
-          this.currentView = "Settings"; // Hauptansicht laden
+          this.user = user;
+          if (this.currentView === "Login" || this.currentView === "Register") {
+            this.currentView = "Settings";
+          }
+        } else {
+          this.user = null;
+          this.currentView = "Login";
         }
       });
     },
-    // Wird nach erfolgreichem Login ausgeführt
     handleLoginSuccess(user) {
       this.user = user;
       this.currentView = "Settings";
     },
-    // Wird nach erfolgreicher Registrierung ausgeführt
     handleRegistrationSuccess(user) {
       this.user = user;
       this.currentView = "Settings";
     },
-    // Zur Registrierung wechseln
     switchToRegister() {
       this.currentView = "Register";
     },
-    // Zum Login wechseln
     switchToLogin() {
       this.currentView = "Login";
+    },
+    switchToRules() {
+      console.log("Switching to Rules");
+      this.currentView = "Rules";
+    },
+    switchToSettings() {
+      console.log("Switching to Settings");
+      this.currentView = "Settings";
     },
     connectWebSocket() {
       this.websocket = new WebSocket(`${API_BASE_URL}/websocket`);
@@ -120,7 +130,6 @@ export default {
     loadBoardFromWebSocket(gameState) {
       this.board = this.renderBoard(gameState.game.pieces);
     },
-    // Spiel starten
     async startGame() {
       this.loading = true;
       try {
@@ -139,7 +148,6 @@ export default {
         this.loading = false;
       }
     },
-    // Spielbrett laden
     async loadBoard() {
       this.loading = true;
       try {
@@ -156,7 +164,6 @@ export default {
         this.loading = false;
       }
     },
-    // Spielfeld rendern
     renderBoard(pieces) {
       const board = Array.from({length: 8}, () => Array(8).fill({}));
       pieces.forEach(({cords, piece, color}) => {
@@ -167,7 +174,6 @@ export default {
       });
       return board;
     },
-    // Zellenklick verarbeiten
     async handleCellClick(rowIndex, colIndex) {
       const targetCell = `${rowIndex},${colIndex}`;
       const origin = this.convertToChessNotation(targetCell);
@@ -178,37 +184,28 @@ export default {
           body: JSON.stringify({origin}),
           mode: "cors",
         });
-        // this.loadBoard();
       } catch (error) {
         console.error("Error sending move:", error);
         alert("Invalid move or server error.");
       }
     },
-    // Koordinaten in Schachnotation umwandeln
     convertToChessNotation(coords) {
       const [row, col] = coords.split(",").map(Number);
       const file = String.fromCharCode("a".charCodeAt(0) + row);
       const rank = (col + 1).toString();
       return file + rank;
     },
-    // WebSocket-Verbindung einrichten
     setupWebSocket() {
-      // Erstelle eine WebSocket-Verbindung zu deinem Server (URL anpassen)
       this.socket = new WebSocket("ws://your-websocket-url");
-
-      // Füge Event-Listener hinzu
       this.socket.onopen = () => {
         console.log("WebSocket connected");
       };
-
       this.socket.onmessage = (event) => {
         console.log("Received message:", event.data);
       };
-
       this.socket.onerror = (error) => {
         console.error("WebSocket error:", error);
       };
-
       this.socket.onclose = () => {
         console.log("WebSocket closed");
       };

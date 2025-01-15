@@ -50,32 +50,32 @@ export default {
 </script>
 
 <style scoped>
-/* Container to center the chessboard */
+
 .chess-board-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the screen */
-  width: 100vw; /* Full width of the screen */
+  height: 100vh;
+  width: 100vw;
   padding: 10px;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent overflow */
+  overflow: hidden;
 }
 
-/* Chessboard itself */
+
 .chess-board {
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(8, 1fr);
   border: 1px solid #333;
   box-sizing: border-box;
-  width: 80vmin; /* Set width to 80% of the smaller viewport dimension */
-  height: 80vmin; /* Set height to 80% of the smaller viewport dimension */
-  max-width: 80vh; /* Prevent the board from exceeding 80% of the viewport height */
-  max-height: 80vh; /* Prevent the board from exceeding 80% of the viewport height */
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 80vh;
+  max-height: 80vh;
 }
 
-/* Cell styles */
+
 .cell {
   display: flex;
   align-items: center;
@@ -84,7 +84,6 @@ export default {
   height: 100%;
 }
 
-/* Color styles for dark and light cells */
 .dark-cell {
   background-color: #7AB7F5;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -105,7 +104,6 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Piece styles */
 .piece {
   width: 80%;
   height: 80%;
@@ -117,33 +115,27 @@ export default {
   height: 90%;
 }
 
-/* Media Queries for responsive design */
-
-/* For wide screens or landscape orientation */
 @media (min-width: 800px) {
   .chess-board {
-    width: 80vh; /* 80% of the screen height */
-    height: 80vh; /* 80% of the screen height */
+    width: 80vh;
+    height: 80vh;
   }
 
-  /* Ensure cells stay square */
   .chess-board .cell {
-    height: 9.95vh; /* Each cell will be 1/8th of the board's width */
-    width: 9.95vh;  /* Each cell will be 1/8th of the board's width */
+    height: 9.95vh;
+    width: 9.95vh;
   }
 }
 
-/* For smaller screens */
 @media (max-width: 800px) {
   .chess-board {
-    width: 80vw; /* 80% of the screen width */
-    height: 80vw; /* 80% of the screen width */
+    width: 80vw;
+    height: 80vw;
   }
 
-  /* Ensure cells stay square */
   .chess-board .cell {
-    height: 9.95vw; /* Each cell will be 1/8th of the board's width */
-    width: 9.95vw;  /* Each cell will be 1/8th of the board's width */
+    height: 9.95vw;
+    width: 9.95vw;
   }
 }
 </style>

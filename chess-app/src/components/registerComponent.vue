@@ -51,59 +51,72 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .register-container {
-  max-width: 400px;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-image: url('@/assets/pictures/knight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Text sichtbar auf Hintergrundbild */
 }
 
 h2 {
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
 }
 
 .input-group {
   margin-bottom: 15px;
   text-align: left;
+  width: 87%;
+  max-width: 400px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  color: #555;
+  color: white;
+  font-weight: bold;
 }
 
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 14px;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: darkslategrey;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: seagreen;
 }
 
 .switch-text {
   margin-top: 15px;
-  color: #555;
+  color: white;
 }
 
 .switch-text a {
