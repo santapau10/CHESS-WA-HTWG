@@ -41,6 +41,9 @@
       <h3>Chessboard Image</h3>
       <img :src="require('@/assets/pictures/game.png')" alt="Chessboard Image" width="400" height="400" />
       <p><a href="https://github.com/santapau10/CHESS-WA-HTWG.git" target="_blank">GitHub Repo</a></p>
+      <div class="back-button-container">
+        <button class="back-button" @click="$emit('back')">Back</button>
+      </div>
     </div>
   </div>
 </template>
@@ -54,14 +57,22 @@ export default {
 <style scoped>
 body {
   font-family: Arial, sans-serif;
-  background-image: url('@/assets/pictures/knight.jpg');
-  color: #333;
   margin: 0;
   padding: 20px;
 }
 
+.rules-container {
+  background-image: url('@/assets/pictures/knight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
 h1 {
-  color: #2c3e50;
+  color: white;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
@@ -69,27 +80,27 @@ h1 {
 }
 
 h1 a {
-  color: #2c3e50;
+  color: white;
   text-decoration: none;
 }
 
 h1 a:hover {
-  color: #2980b9;
+  color: #ddd;
   text-decoration: underline;
 }
 
 .rules {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: darkslategrey;
   padding: 50px;
-  border: 2px solid #ddd;
+  border: 2px solid #444;
   border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .rules h3 {
-  color: #2980b9;
+  color: white;
   font-size: 1.8rem;
   margin-top: 20px;
 }
@@ -114,19 +125,42 @@ h1 a:hover {
 .rules img {
   display: block;
   margin: 20px auto;
-  border: 2px solid #2980b9;
+  border: 2px solid white;
   border-radius: 8px;
   max-width: 100%;
 }
 
 .rules a {
-  color: #2980b9;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 .rules a:hover {
-  color: #1c5980;
+  color: #ddd;
   text-decoration: underline;
+}
+
+.back-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #444;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
 }
 </style>

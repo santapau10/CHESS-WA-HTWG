@@ -28,6 +28,8 @@
             :board="board"
             :basePath="basePath"
             @cell-click="handleCellClick"
+            @back-to-menu="switchToSettings"
+            @move-made="loadBoard"
         />
       </div>
     </div>
@@ -47,7 +49,7 @@ const API_BASE_URL = process.env.VUE_APP_BACKEND_URL;
 
 export default {
   name: "App",
-  components: { Login, Register, ChessBoard, Settings, Rules },
+  components: {Login, Register, ChessBoard, Settings, Rules},
   data() {
     return {
       user: null,
@@ -55,18 +57,29 @@ export default {
       board: [],
       basePath: "/path/to/your/images",
       loading: false,
-      socket: null,
+      websocket: null,
     };
+  },
+  watch: {
+    currentView(newView) {
+      if (newView === 'ChessBoard') {
+        this.connectWebSocket();
+      } else if (this.websocket) {
+        this.websocket.close();
+      }
+    }
   },
   created() {
     this.checkPersistentLogin();
   },
   mounted() {
-    this.setupWebSocket();
+    if (this.currentView === 'ChessBoard') {
+      this.connectWebSocket();
+    }
   },
   unmounted() {
-    if (this.socket) {
-      this.socket.close();
+    if (this.websocket) {
+      this.websocket.close();
     }
   },
   methods: {
@@ -106,29 +119,37 @@ export default {
       this.currentView = "Settings";
     },
     connectWebSocket() {
+      if (this.websocket) {
+        this.websocket.close();
+      }
+
       this.websocket = new WebSocket(`${API_BASE_URL}/websocket`);
+
       this.websocket.onopen = () => {
-        console.log("Connected to WebSocket", this.websocket);
+        console.log("Connected to WebSocket");
       };
-      this.websocket.onclose = () => {
-        console.log("Connection with WebSocket Closed!");
-      };
-      this.websocket.onerror = (error) => {
-        console.log("Error in WebSocket Occurred: ", error);
-      };
+
       this.websocket.onmessage = (e) => {
-        if (e.data.startsWith("I received your message")) {
-          console.log("Received move confirmation", this.websocket);
-        } else {
-          console.log("Received game state update");
-          const gameState = JSON.parse(e.data);
-          console.log("Game state:", gameState);
-          this.loadBoardFromWebSocket(gameState);
+        try {
+          const data = JSON.parse(e.data);
+          if (data.game && data.game.pieces) {
+            console.log("Received game state update");
+            this.board = this.renderBoard(data.game.pieces);
+          }
+        } catch (error) {
+          console.log("Received message:", e.data);
         }
       };
-    },
-    loadBoardFromWebSocket(gameState) {
-      this.board = this.renderBoard(gameState.game.pieces);
+
+      this.websocket.onerror = (error) => {
+        console.error("WebSocket error:", error);
+      };
+
+      this.websocket.onclose = () => {
+        console.log("WebSocket connection closed");
+        // Optional: Implement reconnection logic here
+        setTimeout(() => this.connectWebSocket(), 5000);
+      };
     },
     async startGame() {
       this.loading = true;
@@ -140,7 +161,6 @@ export default {
         });
         this.currentView = "ChessBoard";
         await this.loadBoard();
-        this.connectWebSocket();
       } catch (error) {
         console.error("Error starting the game:", error);
         alert("Failed to start the game.");
@@ -177,15 +197,24 @@ export default {
     async handleCellClick(rowIndex, colIndex) {
       const targetCell = `${rowIndex},${colIndex}`;
       const origin = this.convertToChessNotation(targetCell);
+
       try {
-        await fetch(`${API_BASE_URL}/move/`, {
+        const response = await fetch(`${API_BASE_URL}/move/`, {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({origin}),
           mode: "cors",
         });
+
+        if (!response.ok) {
+          throw new Error('Invalid move');
+        }
+
+        // After successful move, reload the board
+        await this.loadBoard();
+
       } catch (error) {
-        console.error("Error sending move:", error);
+        console.error("Error making move:", error);
         alert("Invalid move or server error.");
       }
     },
@@ -194,21 +223,6 @@ export default {
       const file = String.fromCharCode("a".charCodeAt(0) + row);
       const rank = (col + 1).toString();
       return file + rank;
-    },
-    setupWebSocket() {
-      this.socket = new WebSocket("ws://your-websocket-url");
-      this.socket.onopen = () => {
-        console.log("WebSocket connected");
-      };
-      this.socket.onmessage = (event) => {
-        console.log("Received message:", event.data);
-      };
-      this.socket.onerror = (error) => {
-        console.error("WebSocket error:", error);
-      };
-      this.socket.onclose = () => {
-        console.log("WebSocket closed");
-      };
     },
   },
 };

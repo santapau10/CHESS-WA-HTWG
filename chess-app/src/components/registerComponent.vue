@@ -67,7 +67,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; /* Text sichtbar auf Hintergrundbild */
+  color: white;
 }
 
 h2 {

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="nav-container">
       <nav class="nav">
-        <a class="btn" href="/rules" aria-current="page">Rules</a>
+        <button class="btn" @click="$emit('rules')">Rules</button>
         <a class="btn" href="https://github.com/santapau10/CHESS-WA-HTWG.git" target="_blank">GitHub Repo</a>
       </nav>
     </div>
@@ -62,14 +62,16 @@ export default {
   text-align: center;
   text-decoration: none;
   border-radius: 20px;
-  background-color: #6c757d;
+  background-color: #3A7CA5;
   color: white;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #5a6268;
+  background-color: #326488;
   transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
