@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  # Servicio para el frontend (Vue + Nginx)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        VUE_APP_BACKEND_URL: "http://localhost:9000"
+    ports:
+      - "8080:80" # Nginx sirve el frontend en el puerto 8080
+    depends_on:
+      - backend
+    networks:
+      - chess-network
+
+  # Servicio para el backend (Play Framework)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "9000:9000" # Play Framework corre en el puerto 9000
+    networks:
+      - chess-network
+
+networks:
+  chess-network:
+    driver: bridge

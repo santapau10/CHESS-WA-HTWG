@@ -1,0 +1,26 @@
+# Use Node.js image for building and serving the Vue app
+FROM node:18
+
+# Set working directory for Vue app
+WORKDIR /app
+
+# Copy package.json and package-lock.json for Vue app
+COPY chess-app/package*.json ./
+
+# Install Vue app dependencies
+RUN npm install
+
+# Copy the rest of the Vue app files
+COPY chess-app/ ./
+
+# Build the Vue app for production (output to dist/)
+RUN npm run build
+
+# Install the 'serve' package to serve the app
+RUN npm install -g serve
+
+# Expose port 8080 for Vue app
+EXPOSE 8080
+
+# Serve the built app using 'serve' package
+CMD ["serve", "-s", "dist", "-l", "8080"]
